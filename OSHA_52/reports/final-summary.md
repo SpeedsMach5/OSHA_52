@@ -46,7 +46,7 @@ Prepared 2026-10-04. Phase 1 (content only) is complete: both tracks are fully d
 
 ## 3. Remaining open flags
 
-1. **No second check yet on 1926 weeks 1-30 (except W17 Q4) or 1910 weeks 1-4: about 343 questions.**
+1. ~~No second check yet on 1926 weeks 1-30 and 1910 weeks 1-4~~ **Resolved:** all 343 questions checked; 47 fixed (see `retro-second-check.md`).
    - These were drafted before the independent check existed. When you extended the check to my own drafts (batch 4), I applied it to new batches only and did not go back.
    - Every later batch had a similar rate of citation and scope problems, so these weeks likely have some too. No later check found a wrong answer key, but these 343 questions haven't had that check.
    - **Recommendation:** run the same check on them before Phase 2 uses the data.

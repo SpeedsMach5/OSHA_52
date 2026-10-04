@@ -84,13 +84,13 @@
       {
         "question": "A worker fills a spray bottle from a labeled drum and the bottle will be used across several shifts by others. Under 1910.1200(f)(6), the bottle must be labeled with either the full shipped-label information or:",
         "options": [
-          "The product identifier plus words, pictures, symbols, or a combination that give at least general information about the hazards",
+          "The product identifier plus words, pictures, symbols, or a combination that give at least general information about the hazards and, together with the other information immediately available under the HazCom program, give employees specific information on the physical and health hazards",
           "Only the date it was filled",
           "Only the worker's initials",
           "Nothing, because it is a secondary container"
         ],
         "correctAnswer": 0,
-        "explanation": "Workplace containers must carry either the shipped-label information in (f)(1)(i)-(v), or the product identifier plus words, pictures, symbols, or a combination giving at least general hazard information (1910.1200(f)(6)(i); 1910.1200(f)(6)(ii)). The portable-container exemption (1910.1200(f)(8)) applies only to immediate use by the employee who transferred the chemical. Workplace example: the bottle is marked \"Degreaser DX - Flammable, Skin Irritant\" with pictograms.",
+        "explanation": "Workplace containers must carry either the shipped-label information in (f)(1)(i)-(v), or the product identifier plus words, pictures, symbols, or a combination giving at least general hazard information that, together with the other information immediately available under the program, gives employees specific information on the physical and health hazards (1910.1200(f)(6)(i); 1910.1200(f)(6)(ii)). The portable-container exemption (1910.1200(f)(8)) applies only to immediate use by the employee who transferred the chemical. Workplace example: the bottle is marked \"Degreaser DX - Flammable, Skin Irritant\" with pictograms.",
         "citation": "1910.1200(f)(6)(ii)"
       },
       {
@@ -386,8 +386,8 @@
           "Only a supply of disposable masks"
         ],
         "correctAnswer": 2,
-        "explanation": "The employer must develop and implement a written respiratory protection program with worksite-specific procedures, administered by a suitably trained program administrator (1910.134(c)). The administrator must be qualified by training or experience matching the program's complexity (1910.134(c)(3)). Workplace example: the EHS coordinator, trained in respirator programs, maintains the plant's written program.",
-        "citation": "1910.134(c)"
+        "explanation": "The employer must develop and implement a written respiratory protection program with worksite-specific procedures, administered by a suitably trained program administrator (1910.134(c)(1)). The administrator must be qualified by training or experience matching the program's complexity (1910.134(c)(3)). Workplace example: the EHS coordinator, trained in respirator programs, maintains the plant's written program.",
+        "citation": "1910.134(c)(1) and (c)(3)"
       },
       {
         "question": "An employee asks to wear a filtering facepiece where a respirator is not required. If the employer allows it, what does 1910.134(c)(2)(i) require?",
@@ -579,7 +579,7 @@
           "The operator has been involved in an accident or near-miss incident"
         ],
         "correctAnswer": 3,
-        "explanation": "Refresher training is required when the operator is observed driving unsafely, is involved in an accident or near miss, gets an evaluation showing unsafe operation, is assigned a different type of truck, or when a workplace condition changes in a way that could affect safe operation (1910.178(l)(4)(ii)(A)-(E)); an accident or near miss is 1910.178(l)(4)(ii)(B). Workplace example: after a racking strike, the operator gets refresher training before driving again.",
+        "explanation": "Refresher training is required when the operator is observed driving unsafely, is involved in an accident or near miss, gets an evaluation showing unsafe operation, is assigned a different type of truck, or when a workplace condition changes in a way that could affect safe operation (1910.178(l)(4)(ii)(A)-(E)); an accident or near miss is 1910.178(l)(4)(ii)(B). Workplace example: after a racking strike, the operator is scheduled for refresher training in the relevant topics (many employers also keep the operator off the truck until it is done, as a company practice; the standard sets no deadline).",
         "citation": "1910.178(l)(4)(ii)(B)"
       },
       {
@@ -663,7 +663,7 @@
           "Using propane-powered trucks indoors"
         ],
         "correctAnswer": 2,
-        "explanation": "No person may stand or pass under the elevated portion of any truck, whether loaded or empty (1910.178(m)(2)). Workplace example: a picker waits for the operator to lower the forks before walking past the raised mast.",
+        "explanation": "No person may stand or pass under the elevated portion of any truck, whether loaded or empty (1910.178(m)(2)). Workplace example: a picker waits for the operator to lower the forks before walking under the raised load area.",
         "citation": "1910.178(m)(2)"
       }
     ]

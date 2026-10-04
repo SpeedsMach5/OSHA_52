@@ -92,7 +92,7 @@
       {
         "question": "Under 1977.12(b)(2), when is an employee who refuses an assigned task protected from discipline?",
         "options": [
-          "When, with no reasonable alternative, the employee refuses in good faith because a reasonable person would see a real danger of death or serious injury and there is no time to correct it through regular OSHA channels",
+          "When, with no reasonable alternative, the employee refuses in good faith because a reasonable person would see a real danger of death or serious injury, there is no time to correct it through regular OSHA channels, and, where possible, the employee has asked the employer to correct it and been unable to obtain a correction",
           "Any time the employee feels uncomfortable",
           "When the employee prefers a different task",
           "Only after OSHA has issued a citation"
@@ -405,7 +405,7 @@
         ],
         "correctAnswer": 3,
         "explanation": "Protective equipment must be provided and used wherever chemical hazards (among others) can cause injury through absorption or physical contact (1926.95(a)), and must be of safe design for the work performed (1926.95(c)(1)). Job-site scenario: chemical-resistant gloves rated for the admixture, chosen from its SDS, rather than cotton or leather.",
-        "citation": "1926.95(a)"
+        "citation": "1926.95(a) and (c)(1)"
       },
       {
         "question": "Under Table D-2 in 1926.52, what is the permissible daily exposure duration at 95 dBA (slow response)?",
@@ -464,7 +464,7 @@
           "Shade 14"
         ],
         "correctAnswer": 2,
-        "explanation": "Table E-1 lists shade 10 for shielded metal-arc welding with 1/16- to 5/32-inch electrodes. Denser shades may be used to suit the individual (1926.102(c)(1)). Job-site scenario: a welder running 1/8-inch 7018 rod uses at least a shade 10 lens.",
+        "explanation": "Table E-1 lists shade 10 for shielded metal-arc welding with 1/16- to 5/32-inch electrodes. Denser shades may be used to suit the individual (1926.102(c)(1)). Job-site scenario: a welder running 1/8-inch 7018 rod would use shade 10 per the Table E-1 guide, or a denser shade if needed.",
         "citation": "1926.102(c)(1)"
       },
       {
@@ -520,12 +520,12 @@
         "options": [
           "Anyone who can see the load",
           "The rigger and foreman together",
-          "Only one person at a time, although anyone who sees a safety problem may give a stop or emergency stop signal",
+          "Only one person at a time, except that anyone who becomes aware of a safety problem must give a stop or emergency stop signal",
           "Whoever the operator chooses for each pick"
         ],
         "correctAnswer": 2,
         "explanation": "Only one person may give signals to a crane/derrick at a time (1926.1419(h)). Anyone who becomes aware of a safety problem must alert the operator or signal person with a stop or emergency stop signal (1926.1419(j)). Job-site scenario: the designated signal person directs the pick, but a connector who sees a snag can call \"all stop.\"",
-        "citation": "1926.1419(h)"
+        "citation": "1926.1419(h) and (j)"
       },
       {
         "question": "Under 1926.201(a), signaling by flaggers, including the warning garments flaggers wear, must conform to:",
@@ -548,7 +548,7 @@
           "Notify OSHA"
         ],
         "correctAnswer": 0,
-        "explanation": "The estimated location of utilities (sewer, telephone, fuel, electric, water, etc.) must be determined before opening an excavation (1926.651(b)(1)). Utility companies or owners must be contacted and asked to establish locations before digging starts (1926.651(b)(2)). Job-site scenario: call in the locate request and wait for marks before the excavator breaks ground.",
+        "explanation": "The estimated location of utilities (sewer, telephone, fuel, electric, water, etc.) must be determined before opening an excavation (1926.651(b)(1)). Utility companies or owners must be contacted and asked to establish locations before digging starts (1926.651(b)(2)). Job-site scenario: call in the locate request and wait for marks; if the utility cannot respond within 24 hours (unless state or local law allows longer), proceed with caution using detection equipment or other acceptable means (1926.651(b)(2)).",
         "citation": "1926.651(b)(1)"
       },
       {
@@ -597,7 +597,7 @@
         ],
         "correctAnswer": 0,
         "explanation": "Caution signs warn against potential hazards or caution against unsafe practices (1926.200(c)(1)) and have yellow as the predominating color (1926.200(c)(2)). Job-site scenario: \"CAUTION - Watch Your Step\" at a ramp transition.",
-        "citation": "1926.200(c)(1)"
+        "citation": "1926.200(c)(1) and (c)(2)"
       },
       {
         "question": "Under 1926.200(h)(1), accident prevention tags are:",
@@ -849,8 +849,8 @@
           "Periodically, in accordance with NFPA No. 10A-1970, with defective equipment replaced immediately"
         ],
         "correctAnswer": 3,
-        "explanation": "Portable extinguishers must be inspected periodically and maintained in accordance with NFPA 10A-1970 (1926.150(c)(1)(viii)). All firefighting equipment must be kept in operating condition, and defective equipment replaced immediately (1926.150(a)(4)). The monthly interval in the original question is a 1910.157(e)(2) general-industry rule, not 1926 text. Job-site scenario: the safety lead checks extinguisher gauges and tags on a set schedule and swaps any discharged unit right away.",
-        "citation": "1926.150(c)(1)(viii)"
+        "explanation": "Portable extinguishers must be inspected periodically and maintained in accordance with NFPA 10A-1970 (1926.150(c)(1)(viii)). All firefighting equipment must be kept in operating condition, and defective equipment replaced immediately (1926.150(a)(4)). A monthly visual inspection interval comes from the general-industry rule 1910.157(e)(2); it is not 1926 text. Job-site scenario: the safety lead checks extinguisher gauges and tags on a set schedule and swaps any discharged unit right away.",
+        "citation": "1926.150(c)(1)(viii) and (a)(4)"
       },
       {
         "question": "What is the maximum travel distance from any point of the protected area to the nearest fire extinguisher under 1926.150(c)(1)(i)?",
@@ -910,7 +910,7 @@
         ],
         "correctAnswer": 0,
         "explanation": "Heaters used near combustible tarpaulins, canvas, or similar coverings must be at least 10 feet from them (1926.154(b)(4)). Heaters in use must be set horizontally level unless manufacturer markings permit otherwise (1926.154(c)). Clearance to other combustibles follows Table F-4 (1926.154(b)(1)). Job-site scenario: a propane heater inside a tarped enclosure is set level and kept 10 feet from the tarps.",
-        "citation": "1926.154(b)(4)"
+        "citation": "1926.154(b)(4) and (c)"
       },
       {
         "question": "What does 1926.150(e) require for fire alarms on a construction site?",
@@ -922,7 +922,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "An alarm system must be established so employees on site and the local fire department can be alerted (1926.150(e)(1)). The alarm code and reporting instructions must be conspicuously posted at phones and employee entrances (1926.150(e)(2)). Job-site scenario: an air horn plus a posted \"dial 911, give gate address\" placard at each entrance.",
-        "citation": "1926.150(e)(1)"
+        "citation": "1926.150(e)(1) and (e)(2)"
       },
       {
         "question": "What does 1926.34 require for exits in an occupied building under construction?",
@@ -934,7 +934,7 @@
         ],
         "correctAnswer": 2,
         "explanation": "Exits must provide free and unobstructed egress from all parts of the building at all times when it is occupied (1926.34(a)), and means of egress must be kept free of obstructions (1926.34(c)). Job-site scenario: drywall pallets are not staged in the stair corridor.",
-        "citation": "1926.34(a)"
+        "citation": "1926.34(a) and (c)"
       },
       {
         "question": "How must combustible scrap and debris be handled under 1926.25(b)?",
@@ -1035,14 +1035,14 @@
       {
         "question": "How must compressed gas cylinders be kept under 1926.350(a)?",
         "options": [
-          "Secured upright, with oxygen in storage separated from fuel-gas cylinders by at least 20 feet or by a 5-foot-high noncombustible barrier with at least a half-hour fire rating",
+          "Secured upright (except briefly while being hoisted or carried), with oxygen in storage separated from fuel-gas cylinders by at least 20 feet or by a 5-foot-high noncombustible barrier with at least a half-hour fire rating",
           "Lying down",
           "In any position",
           "Oxygen and acetylene chained together side by side in storage"
         ],
         "correctAnswer": 0,
         "explanation": "Cylinders must be secured upright at all times except briefly while hoisted or carried (1926.350(a)(9)). Oxygen in storage must be separated from fuel gas or combustibles by at least 20 feet or by a noncombustible barrier at least 5 feet high with at least a half-hour fire-resistance rating (1926.350(a)(10)). Job-site scenario: oxygen and acetylene cages placed 20+ feet apart.",
-        "citation": "1926.350(a)(10)"
+        "citation": "1926.350(a)(9) and (a)(10)"
       },
       {
         "question": "Inside a building under construction, material may not be stored within ___ of any hoistway or inside floor opening (1926.250(b)(1)).",
@@ -1175,7 +1175,7 @@
         ],
         "correctAnswer": 0,
         "explanation": "Employers may not issue or permit the use of unsafe hand tools (1926.301(a)), and wooden handles must be kept free of splinters or cracks and tight in the tool (1926.301(d)). Noncompliant tools must be tagged or physically removed (1926.20(b)(3)). Job-site scenario: tag the hammer \"Do Not Use\" and take it out of the gang box.",
-        "citation": "1926.301(a)"
+        "citation": "1926.301(a) and (d)"
       },
       {
         "question": "Who may operate a powder-actuated tool under 1926.302(e)(1)?",
@@ -1370,7 +1370,7 @@
           "On level ground only"
         ],
         "correctAnswer": 1,
-        "explanation": "Whenever equipment is parked, the parking brake must be set. Equipment parked on an incline must also have its wheels chocked (1926.600(a)(3)(ii)). Blades and buckets are lowered when not in use (1926.600(a)(3)(i)). Job-site scenario: a backhoe parked on the ramp is chocked with the brake set and bucket grounded.",
+        "explanation": "Whenever equipment is parked, the parking brake must be set. Equipment parked on an incline must also have its wheels chocked (1926.600(a)(3)(ii)). Blades and buckets must be fully lowered or blocked when not in use (1926.600(a)(3)(i)). Job-site scenario: a backhoe parked on the ramp is chocked with the brake set and bucket grounded.",
         "citation": "1926.600(a)(3)(ii)"
       },
       {
@@ -1516,7 +1516,7 @@
           "Nothing specific"
         ],
         "correctAnswer": 2,
-        "explanation": "Before a scaffold is moved, each employee on it must be made aware of the move (1926.452(w)(10)). Employees may ride only if all conditions in 1926.452(w)(6) are met: surface within 3 degrees of level, height-to-base 2:1 or less during movement (unless designed otherwise), outriggers on both sides if used, powered speed no more than 1 ft/s, and no one beyond the wheels. Job-site scenario: the painter on the platform is told before the tower is rolled.",
+        "explanation": "Before a scaffold is moved, each employee on it must be made aware of the move (1926.452(w)(10)). Employees may ride only if all conditions in 1926.452(w)(6) are met: surface within 3 degrees of level, height-to-base 2:1 or less during movement (unless designed otherwise), outriggers on both sides if used, powered propulsion applied directly to the wheels at no more than 1 ft/s, and no one on any part extending beyond the wheels, casters, or other supports. Job-site scenario: the painter on the platform is told before the tower is rolled.",
         "citation": "1926.452(w)(10)"
       },
       {
@@ -1690,7 +1690,7 @@
         "citation": "1926.502(d)(16)(iii)"
       },
       {
-        "question": "Under 1926.502(d)(15), anchorages for personal fall arrest equipment must be independent of platform supports and either support at least ___ per employee attached, or be designed by a qualified person with a safety factor of at least two.",
+        "question": "Under 1926.502(d)(15), anchorages for personal fall arrest equipment must be independent of platform supports and either support at least ___ per employee attached, or be designed, installed, and used under the supervision of a qualified person as part of a complete system with a safety factor of at least two.",
         "options": [
           "2,000 pounds",
           "3,000 pounds",
@@ -1707,11 +1707,11 @@
           "Any material may be used",
           "They are only temporary and need no marking",
           "Supervisor approval only",
-          "They must support at least twice the weight imposed on them, be secured against displacement, and be color coded or marked \"HOLE\" or \"COVER\""
+          "Covers (other than those in roadways and vehicle aisles) must support at least twice the weight imposed on them, be secured against displacement, and be color coded or marked \"HOLE\" or \"COVER\""
         ],
         "correctAnswer": 3,
-        "explanation": "Covers must support at least twice the weight of employees, equipment, and materials that may be imposed on them (1926.502(i)(2)), be secured against accidental displacement (1926.502(i)(3)), and be color coded or marked \"HOLE\" or \"COVER\" (1926.502(i)(4)). Job-site scenario: a plywood cover over a slab penetration is screwed down and spray-painted \"HOLE.\"",
-        "citation": "1926.502(i)(4)"
+        "explanation": "Covers other than roadway and vehicular-aisle covers (which must support twice the maximum axle load, 1926.502(i)(1)) must support at least twice the weight of employees, equipment, and materials that may be imposed on them (1926.502(i)(2)), be secured against accidental displacement (1926.502(i)(3)), and be color coded or marked \"HOLE\" or \"COVER\" (1926.502(i)(4)). Job-site scenario: a plywood cover over a slab penetration is screwed down and spray-painted \"HOLE.\"",
+        "citation": "1926.502(i)(2)-(4)"
       },
       {
         "question": "Under 1926.502(b)(1), what is the required top-edge height of a guardrail system's top rail?",
@@ -1974,10 +1974,10 @@
           "Toeboards on every scaffold at all heights",
           "Only hard hats for workers below",
           "Nothing if the scaffold is under 20 feet",
-          "Either barricade the area below and keep employees out, or erect a toeboard along platform edges more than 10 feet above lower levels"
+          "One of the listed measures, such as barricading the area below and keeping employees out, or a toeboard along platform edges more than 10 feet above lower levels (other options include guardrails with openings small enough to stop falling objects, or a canopy, debris net, or catch platform)"
         ],
         "correctAnswer": 3,
-        "explanation": "Where objects could fall and strike employees below, either barricade the area below and keep employees out (1926.451(h)(2)(i)), or install a toeboard along platform edges more than 10 feet above lower levels (1926.451(h)(2)(ii)). Toeboards must be at least 3.5 inches high and withstand 50 pounds (1926.451(h)(4)). Job-site scenario: masons 14 feet up get toeboards because the sidewalk below stays open.",
+        "explanation": "Where objects could fall and strike employees below, either barricade the area below and keep employees out (1926.451(h)(2)(i)), or install a toeboard along platform edges more than 10 feet above lower levels (1926.451(h)(2)(ii)). Other listed measures include paneling or screening where materials are piled above the toeboard (1926.451(h)(2)(iii)), a guardrail system with openings small enough to prevent passage of falling objects (1926.451(h)(2)(iv)), or a canopy, debris net, or catch platform (1926.451(h)(2)(v)). Toeboards must be at least 3.5 inches high and withstand 50 pounds (1926.451(h)(4)). Job-site scenario: masons 14 feet up get toeboards because the sidewalk below stays open.",
         "citation": "1926.451(h)(2)"
       },
       {
@@ -2099,7 +2099,7 @@
           "Three stories"
         ],
         "correctAnswer": 2,
-        "explanation": "Connectors must be protected from fall hazards of more than two stories or 30 feet above a lower level, whichever is less (1926.760(b)(1)). At heights over 15 and up to 30 feet, they must be provided with a personal fall arrest, positioning, or restraint system and wear the equipment needed to tie off (1926.760(b)(3)). Job-site scenario: on a building with 12-foot stories, a connector at 25 feet (above two stories) must be protected.",
+        "explanation": "Connectors must be protected from fall hazards of more than two stories or 30 feet above a lower level, whichever is less (1926.760(b)(1)). At heights over 15 and up to 30 feet, they must be provided with a personal fall arrest, positioning, or restraint system and wear the equipment needed to tie off, or be provided with other fall protection meeting (a)(1) (1926.760(b)(3)). Job-site scenario: on a building with 12-foot stories, a connector at 25 feet (above two stories) must be protected.",
         "citation": "1926.760(b)(1)"
       },
       {
@@ -2147,7 +2147,7 @@
           "Never"
         ],
         "correctAnswer": 2,
-        "explanation": "Where the employer elects alternate means and methods under the listed paragraphs because of site-specific conditions, a site-specific erection plan must be developed by a qualified person and be available at the work site (1926.752(e)). Job-site scenario: a curved roof requiring an alternative to standard column stability needs a plan from a qualified person.",
+        "explanation": "Where the employer elects alternate means and methods under the listed paragraphs because of site-specific conditions, a site-specific erection plan must be developed by a qualified person and be available at the work site (1926.752(e)). Job-site scenario: the erector wants to deactivate hook safety latches while placing purlins, so a qualified person writes a site-specific erection plan providing equivalent protection (1926.753(c)(5)(ii)).",
         "citation": "1926.752(e)"
       },
       {
@@ -2257,7 +2257,7 @@
           "Only receptacles on generators"
         ],
         "correctAnswer": 0,
-        "explanation": "The employer must use either GFCIs or an assured equipment grounding conductor program (1926.404(b)(1)(i)). Under the GFCI option, all 120-volt, single-phase, 15- and 20-amp receptacles not part of the permanent wiring and in use by employees need GFCIs. Small listed generators are exempt (1926.404(b)(1)(ii)). Job-site scenario: every temporary-power outlet on the spider box is GFCI-protected.",
+        "explanation": "The employer must use either GFCIs or an assured equipment grounding conductor program (1926.404(b)(1)(i)). Under the GFCI option, all 120-volt, single-phase, 15- and 20-amp receptacles not part of the permanent wiring and in use by employees need GFCIs. Receptacles on two-wire, single-phase portable or vehicle-mounted generators rated 5 kW or less, with conductors insulated from the frame and other grounded surfaces, are exempt (1926.404(b)(1)(ii)). Job-site scenario: every temporary-power outlet on the spider box is GFCI-protected.",
         "citation": "1926.404(b)(1)(ii)"
       },
       {
@@ -2330,7 +2330,7 @@
         ],
         "correctAnswer": 2,
         "explanation": "Flexible cords and cables must be protected from damage, avoiding sharp corners and projections (1926.405(a)(2)(ii)(I)). Extension cords may not be stapled, hung from nails, or suspended by wire (1926.416(e)(2)), and worn or frayed cords may not be used (1926.416(e)(1)). Job-site scenario: cords crossing a doorway are run through a cord protector, not nailed to the frame.",
-        "citation": "1926.405(a)(2)(ii)(I)"
+        "citation": "1926.405(a)(2)(ii)(I) and 1926.416(e)(2)"
       },
       {
         "question": "A 120/208-volt panel (150 volts or less to ground) has exposed live parts on one side and no live or grounded parts on the other. What is the minimum working clearance in front of it under Table K-1 of 1926.403(i)(1)(i)?",
@@ -2413,7 +2413,7 @@
           "They must be painted red"
         ],
         "correctAnswer": 2,
-        "explanation": "Controls that are to be deactivated during work on energized or deenergized equipment or circuits must be tagged (1926.417(a)). Job-site scenario: the motor starter switched off for conduit work gets a tag before the crew starts. (The full lockout program, including who removes devices, is 1910.147 and is covered in 1910 Week 2.)",
+        "explanation": "Controls that are to be deactivated during work on energized or deenergized equipment or circuits must be tagged (1926.417(a)). Job-site scenario: the motor starter switched off for conduit work gets a tag before the crew starts. (1910.147 is the general-industry lockout standard; it does not cover construction work (1910.147(a)(1)(ii)(A)) and is covered in 1910 Week 2.)",
         "citation": "1926.417(a)"
       },
       {
@@ -2741,7 +2741,7 @@
           "At least 18 inches above the top of the vertical side"
         ],
         "correctAnswer": 3,
-        "explanation": "Excavations 20 feet or less deep with vertically sided lower portions must be shielded or supported to at least 18 inches above the top of the vertical side, with a maximum allowable slope of 1:1 above (1926 Subpart P Appendix B (B-1.2)). Job-site scenario: a trench box in the bottom of a benched cut sticks up 18 inches past the vertical wall.",
+        "explanation": "Excavations 20 feet or less deep with vertically sided lower portions must be shielded or supported to at least 18 inches above the top of the vertical side, with a maximum allowable slope of 1:1 above (1926 Subpart P Appendix B (B-1.2)). Job-site scenario: a trench box at the bottom of a 1:1 sloped cut extends at least 18 inches above the vertical wall.",
         "citation": "1926 Subpart P Appendix B (B-1.2)"
       },
       {
@@ -2894,11 +2894,11 @@
           "20.5%"
         ],
         "correctAnswer": 2,
-        "explanation": "An oxygen-deficient atmosphere contains less than 19.5% oxygen by volume. A hazardous atmosphere includes oxygen below 19.5% or above 23.5% (1926.1202 (definitions)). Job-site scenario: the storm drain reads 19.0% oxygen, so entry cannot proceed until it is ventilated and retested.",
+        "explanation": "An oxygen-deficient atmosphere contains less than 19.5% oxygen by volume. A hazardous atmosphere includes oxygen below 19.5% or above 23.5% (1926.1202 (definitions)). Job-site scenario: the storm drain reads 19.0% oxygen, so it is oxygen-deficient and entry may not proceed under normal acceptable entry conditions until it is ventilated and retested.",
         "citation": "1926.1202 (definitions)"
       },
       {
-        "question": "After entry into a permit space is authorized, how must entry conditions be monitored under 1926.1204(e)(1)(ii)?",
+        "question": "When isolation of a permit space is infeasible because it is large or part of a continuous system such as a sewer, how must entry conditions be monitored after entry is authorized under 1926.1204(e)(1)(ii)?",
         "options": [
           "Only before entry",
           "Continuously in the areas where entrants work, except that periodic monitoring may be used for a hazard if continuous monitoring equipment is not commercially available",
@@ -2906,7 +2906,7 @@
           "Daily"
         ],
         "correctAnswer": 1,
-        "explanation": "Once entry is authorized, entry conditions must be monitored continuously where authorized entrants are working. Periodic monitoring is allowed only for a hazard where continuous monitoring equipment is not commercially available (1926.1204(e)(1)(ii), (e)(2)). Job-site scenario: a 4-gas meter stays running with the entrant during welding inside the tank.",
+        "explanation": "When isolation is infeasible because the space is large or part of a continuous system, entry conditions must be continuously monitored where authorized entrants are working once entry is authorized, except that periodic monitoring under (e)(2) may be used for a hazard if continuous monitoring equipment for it is not commercially available (1926.1204(e)(1)(ii)). Under the general rule, periodic monitoring is also allowed if the employer shows it is frequent enough to keep the hazard at safe levels (1926.1204(e)(2)). Job-site scenario: a 4-gas meter stays running with the entrant working in a long sewer line.",
         "citation": "1926.1204(e)(1)(ii)"
       },
       {
@@ -2931,7 +2931,7 @@
         ],
         "correctAnswer": 3,
         "explanation": "The attendant must continuously keep an accurate count of authorized entrants (1926.1209(c)) and remain outside the permit space during entry operations until relieved by another attendant (1926.1209(d)), among other duties. Job-site scenario: at the manhole, the attendant keeps the entrant log and never climbs in.",
-        "citation": "1926.1209(d)"
+        "citation": "1926.1209(c) and (d)"
       },
       {
         "question": "Under 1926.1211(c)(2), what must be available to retrieve personnel from vertical permit spaces more than 5 feet deep?",
@@ -2990,7 +2990,7 @@
           "Only at the start of entry"
         ],
         "correctAnswer": 0,
-        "explanation": "The attendant must communicate with authorized entrants as necessary to assess their status and to alert them of the need to evacuate (1926.1209(e)). The employer must provide the communications equipment needed (1926.1204(c)(3)). Job-site scenario: radio contact between attendant and entrant in a long tunnel.",
+        "explanation": "The attendant must communicate with authorized entrants as necessary to assess their status and to alert them of the need to evacuate (1926.1209(e)). The employer must provide the communications equipment needed (1926.1204(d)(3)). Job-site scenario: radio contact between attendant and entrant in a long tunnel.",
         "citation": "1926.1209(e)"
       },
       {
@@ -3233,11 +3233,11 @@
         "options": [
           "Nothing; ground conditions are the operator's problem",
           "Only the soil bearing value in writing",
-          "The location of hazards beneath the set-up area (such as voids, tanks, or utilities) identified in documents it possesses",
+          "The location of hazards beneath the set-up area (such as voids, tanks, or utilities) identified in documents it possesses or otherwise known to it",
           "Only verbal approval to set up"
         ],
         "correctAnswer": 2,
-        "explanation": "The controlling entity must ensure the ground preparations needed to meet 1926.1402(b) are provided (1926.1402(c)(1)). It must also tell the equipment user and operator where hazards beneath the set-up area are (voids, tanks, utilities) if they appear in documents it has, such as site drawings, as-builts, and soil analyses (1926.1402(c)(2)). Job-site scenario: the GC flags an abandoned septic tank on the as-builts before the crane mats go down.",
+        "explanation": "The controlling entity must ensure the ground preparations needed to meet 1926.1402(b) are provided (1926.1402(c)(1)). It must also tell the equipment user and operator where hazards beneath the set-up area are (voids, tanks, utilities) if they appear in documents it has (such as site drawings, as-builts, and soil analyses) or are otherwise known to it (1926.1402(c)(2)). Job-site scenario: the GC flags an abandoned septic tank on the as-builts before the crane mats go down.",
         "citation": "1926.1402(c)(2)"
       },
       {
@@ -3249,7 +3249,7 @@
           "They must be fully extended or, if manufacturer procedures permit, deployed as specified in the load chart"
         ],
         "correctAnswer": 3,
-        "explanation": "Outriggers or stabilizers must be either fully extended or, if manufacturer procedures permit, deployed as specified in the load chart (1926.1404(q)(1)). They must be set to remove the equipment weight from the wheels, except for locomotive cranes (1926.1404(q)(2)). Job-site scenario: the operator sets outriggers to the load chart's mid-extension configuration only because the manufacturer allows it.",
+        "explanation": "Outriggers or stabilizers must be either fully extended or, if manufacturer procedures permit, deployed as specified in the load chart (1926.1404(q)(1)). Outriggers (not stabilizers) must be set to remove the equipment weight from the wheels, except for locomotive cranes (1926.1404(q)(2)). Job-site scenario: the operator sets outriggers to the load chart's mid-extension configuration only because the manufacturer allows it.",
         "citation": "1926.1404(q)(1)"
       },
       {
@@ -3298,7 +3298,7 @@
         ],
         "correctAnswer": 3,
         "explanation": "The employer must comply with all applicable manufacturer prohibitions and with either the manufacturer's A/D procedures (1926.1403(a)) or employer procedures, used only if the employer can show they meet 1926.1406 (1926.1403(b)). Job-site scenario: the crew follows the manufacturer's boom-pinning sequence for the lattice boom.",
-        "citation": "1926.1403(a)"
+        "citation": "1926.1403(a)-(b)"
       },
       {
         "question": "Under 1926.1404(a)(1), who must direct crane assembly/disassembly?",
@@ -3392,14 +3392,14 @@
       {
         "question": "Under 1926.1431(a) and (b)(1), may employees ride on a load or hook?",
         "options": [
-          "No; hoisting employees with equipment is prohibited unless conventional means are more hazardous or not possible, and then employees must be in a personnel platform meeting 1926.1431(e)",
+          "No; hoisting employees with equipment is prohibited unless conventional means are more hazardous or not possible, and then employees generally must be in a personnel platform meeting 1926.1431(e) (limited exceptions are listed in (b)(2))",
           "Yes, one worker",
           "Yes, two workers with harnesses",
           "Yes, as needed"
         ],
         "correctAnswer": 0,
-        "explanation": "Using equipment to hoist employees is prohibited unless the employer shows that conventional means (personnel hoist, ladder, stairway, aerial lift, scaffold, etc.) would be more hazardous or are not possible (1926.1431(a)). When employees are hoisted, they must be in a personnel platform meeting 1926.1431(e) (1926.1431(b)(1)). Job-site scenario: no one rides the beam or the headache ball.",
-        "citation": "1926.1431(b)(1)"
+        "explanation": "Using equipment to hoist employees is prohibited unless the employer shows that conventional means (personnel hoist, ladder, stairway, aerial lift, scaffold, etc.) would be more hazardous or are not possible (1926.1431(a)). When employees are hoisted, they must be in a personnel platform meeting 1926.1431(e) (1926.1431(b)(1)). Limited exceptions where no platform is required: drill shafts up to 8 feet in diameter, pile driving, marine personnel transfer devices, and storage-tank, shaft, and chimney operations (1926.1431(b)(2)). Job-site scenario: no one rides the beam or the headache ball.",
+        "citation": "1926.1431(a) and (b)(1)"
       },
       {
         "question": "When must a tag or restraint line be used under 1926.1417(w)?",
@@ -3423,7 +3423,7 @@
         ],
         "correctAnswer": 2,
         "explanation": "Equipment must not be operated beyond its rated capacity (1926.1417(o)(1)). The procedures, including rated capacities (load charts), must be readily available in the cab at all times (1926.1417(c)(1)). Job-site scenario: the operator checks the in-cab chart for the 10-ton pick at the planned radius.",
-        "citation": "1926.1417(o)(1)"
+        "citation": "1926.1417(o)(1) and (c)(1)"
       },
       {
         "question": "Under 1926.1417(o)(3)(i), how may the load weight be determined?",
@@ -3459,7 +3459,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "Equipment with a repair or adjustment that relates to safe operation must be inspected by a qualified person (1926.1412(b)(1)). The inspection must include functional testing of the repaired parts and affected components (1926.1412(b)(1)(iii)), and the equipment may not be used until it shows the repair meets the criteria (1926.1412(b)(4)). Job-site scenario: after the anti-two-block switch is replaced, a qualified person tests it before the next lift.",
-        "citation": "1926.1412(b)(1)"
+        "citation": "1926.1412(b)(1) and (b)(4)"
       },
       {
         "question": "Under 1926.1417(t), how far may the load or boom be lowered?",
@@ -3619,7 +3619,7 @@
         ],
         "correctAnswer": 3,
         "explanation": "Shoring sills must be sound, rigid, and able to carry the maximum intended load (1926.703(b)(5)). Base plates, shore heads, extension devices, and adjustment screws must be in firm contact with the foundation and form, and secured when necessary (1926.703(b)(6)). Job-site scenario: shores are set on timber sills over compacted subgrade, not frozen ground.",
-        "citation": "1926.703(b)(5)"
+        "citation": "1926.703(b)(5)-(6)"
       },
       {
         "question": "Under 1926.703(b)(10), when must reshoring be erected?",
@@ -3717,7 +3717,7 @@
           "It must be wrapped with tape"
         ],
         "correctAnswer": 0,
-        "explanation": "All protruding reinforcing steel onto and into which employees could fall must be guarded to eliminate the hazard of impalement (1926.701(b)). Job-site scenario: vertical dowels next to the footing excavation get impalement-rated covers. Plain mushroom caps are not necessarily impalement protection.",
+        "explanation": "All protruding reinforcing steel onto and into which employees could fall must be guarded to eliminate the hazard of impalement (1926.701(b)). Job-site scenario: vertical dowels next to the footing excavation get impalement-rated covers.",
         "citation": "1926.701(b)"
       },
       {
@@ -3730,7 +3730,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "A limited access zone must be established before wall construction starts (1926.706(a)(1)). It must equal the wall height plus 4 feet and run the entire length (1926.706(a)(2)), on the unscaffolded side (1926.706(a)(3)), with entry limited to the employees building the wall (1926.706(a)(4)). Job-site scenario: for a 12-foot CMU wall, a 16-foot zone is taped off.",
-        "citation": "1926.706(a)(2)"
+        "citation": "1926.706(a)(1)-(3)"
       },
       {
         "question": "What does 1926.701(c) require during post-tensioning?",
@@ -3742,7 +3742,7 @@
         ],
         "correctAnswer": 2,
         "explanation": "No employee except those essential to post-tensioning may be behind the jack during tensioning (1926.701(c)(1)), and signs and barriers must limit access to the area (1926.701(c)(2)). Job-site scenario: the tendon stressing area on the parking deck is barricaded and posted.",
-        "citation": "1926.701(c)(1)"
+        "citation": "1926.701(c)(1)-(2)"
       },
       {
         "question": "Under 1926.703(d)(1), how must reinforcing steel for walls, piers, and columns be handled?",
@@ -3790,7 +3790,7 @@
         ],
         "correctAnswer": 2,
         "explanation": "Lifting inserts in tilt-up members must support at least 2 times the maximum intended load (1926.704(b)), inserts in other precast members at least 4 times (1926.704(c)), and lifting hardware at least 5 times (1926.704(d)). Job-site scenario: the precast erector checks insert and hardware ratings against the panel weight.",
-        "citation": "1926.704(b)"
+        "citation": "1926.704(b)-(d)"
       },
       {
         "question": "Under 1926.704(e), who may be under precast concrete members being lifted or tilted into position?",
@@ -3814,7 +3814,7 @@
         ],
         "correctAnswer": 0,
         "explanation": "No employee may ride concrete buckets (1926.701(d)) or work under concrete buckets while they are being elevated or lowered into position (1926.701(e)(1)). Buckets should be routed to expose as few employees as possible (1926.701(e)(2)). Job-site scenario: the bucket route is planned away from the rebar crew.",
-        "citation": "1926.701(d)"
+        "citation": "1926.701(d) and (e)(1)"
       },
       {
         "question": "Under 1926.701(f), what must an employee wear to apply a cement, sand, and water mixture through a pneumatic hose?",
@@ -3969,11 +3969,11 @@
         "options": [
           "Only ventilation",
           "Nothing beyond a buddy",
-          "A means to quickly remove the welder in an emergency (lifelines attached so the body cannot jam in the opening), and an attendant with a pre-planned rescue procedure stationed outside",
+          "A means to quickly remove the welder in an emergency (if safety belts and lifelines are used, attached so the body cannot jam in the opening), and an attendant with a pre-planned rescue procedure stationed outside to observe the welder at all times",
           "Standard rules only"
         ],
         "correctAnswer": 2,
-        "explanation": "Where a welder enters a confined space through a manhole or other small opening, there must be a means of quickly removing them in an emergency. Lifelines must be attached so the body cannot jam in the opening, and an attendant with a pre-planned rescue procedure must be stationed outside (1926.353(b)(3)). Job-site scenario: a wristlet-and-tripod setup and an attendant are in place before the welder enters.",
+        "explanation": "Where a welder enters a confined space through a manhole or other small opening, there must be a means of quickly removing them in an emergency. If safety belts and lifelines are used, they must be attached so the body cannot jam in the opening, and an attendant with a pre-planned rescue procedure must be stationed outside (1926.353(b)(3)). Job-site scenario: a wristlet-and-tripod setup and an attendant are in place before the welder enters.",
         "citation": "1926.353(b)(3)"
       },
       {
@@ -4050,7 +4050,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "Cylinders hoisted must be on a cradle, slingboard, or pallet, never by magnets or choker slings (1926.350(a)(2)). On powered vehicles they must be secured vertically (1926.350(a)(4)). Unless on a special carrier, regulators must be removed and caps put on before moving (1926.350(a)(6)). Job-site scenario: oxygen and acetylene go up to the deck in a cylinder cage, not choked with a sling.",
-        "citation": "1926.350(a)(2)"
+        "citation": "1926.350(a)(2) and (a)(4), (a)(6)"
       },
       {
         "question": "Under 1926.351(d)(1), what must be done when electrode holders are left unattended?",
@@ -4098,7 +4098,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "Fuel gas and oxygen hoses must be easily distinguishable (by color or surface feel) and not interchangeable (1926.350(f)(1)). Couplings must be a type that cannot be unlocked by a straight pull without rotary motion (1926.350(f)(5)). Flashback arrestors are good practice but are not named in 1926.350. Job-site scenario: a hose that will not pass the pull test is replaced.",
-        "citation": "1926.350(f)(1)"
+        "citation": "1926.350(f)(1) and (f)(5)"
       },
       {
         "question": "During inert-gas metal-arc welding, how far must chlorinated solvents be kept from the exposed arc under 1926.353(d)(1)(i), unless shielded?",
@@ -4281,7 +4281,7 @@
           "Nothing; it is optional"
         ],
         "correctAnswer": 1,
-        "explanation": "Under 1926.59, construction hazard communication requirements are identical to 29 CFR 1910.1200. The written program must include a list of hazardous chemicals known to be present, using a product identifier referenced on the appropriate SDS. The list may cover the whole workplace or individual work areas (1910.1200(e)(1)(i)). Quantities and locations are not required by HazCom. Job-site scenario: the site list names each product as it appears on its SDS.",
+        "explanation": "Under 1926.59, construction hazard communication requirements are identical to 29 CFR 1910.1200. The written program must include a list of hazardous chemicals known to be present, using a product identifier referenced on the appropriate SDS. The list may cover the whole workplace or individual work areas (1910.1200(e)(1)(i)). 1910.1200(e)(1)(i) does not require quantities or storage locations on the list. Job-site scenario: the site list names each product as it appears on its SDS.",
         "citation": "1910.1200(e)(1)(i) (via 1926.59)"
       },
       {

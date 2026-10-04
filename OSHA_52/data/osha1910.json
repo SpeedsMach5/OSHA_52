@@ -1011,7 +1011,7 @@
           "90 days"
         ],
         "correctAnswer": 2,
-        "explanation": "The employer must report all point-of-operation injuries to operators or other employees within 30 days of the occurrence, to OSHA or to the State agency administering an approved plan (1910.217(g)(1)). This is in addition to Part 1904 recording and reporting. Workplace example: a finger laceration at a press die is reported under 1910.217(g) within 30 days.",
+        "explanation": "The employer must report all point-of-operation injuries to operators or other employees within 30 days of the occurrence, to the Director of the OSHA Directorate of Standards and Guidance (or electronically), or to the State agency administering an approved plan (1910.217(g)(1)). Workplace example: a finger laceration at a press die is reported under 1910.217(g) within 30 days.",
         "citation": "1910.217(g)(1)"
       },
       {
@@ -1169,7 +1169,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "Each employee must face the ladder when climbing up or down it (1910.23(b)(11)) and use at least one hand to grasp it (1910.23(b)(12)), and must not carry any load that could cause loss of balance (1910.23(b)(13)). Workplace example: tools go up in a bucket on a hand line, not in the climber's hands.",
-        "citation": "1910.23(b)(12)"
+        "citation": "1910.23(b)(11)-(12)"
       },
       {
         "question": "Under 1910.23(c)(8), which parts of a stepladder may not be used as steps?",
@@ -1295,7 +1295,7 @@
           "A guardrail system, safety net system, travel restraint system, or personal fall arrest system"
         ],
         "correctAnswer": 3,
-        "explanation": "When work is performed less than 6 feet from the roof edge, each employee must be protected by a guardrail system, safety net system, travel restraint system, or personal fall arrest system (1910.28(b)(13)(i)). Designated areas are allowed only from 6 feet out, for infrequent and temporary work. Workplace example: a tech servicing a rooftop unit 4 feet from the edge ties off to a travel restraint anchor.",
+        "explanation": "When work is performed less than 6 feet from the roof edge, each employee must be protected by a guardrail system, safety net system, travel restraint system, or personal fall arrest system (1910.28(b)(13)(i)). Designated areas are not permitted closer than 6 feet. From 6 to under 15 feet they are allowed only for work that is both infrequent and temporary (1910.28(b)(13)(ii)); at 15 feet or more they are allowed generally (1910.28(b)(13)(iii)(A)). Workplace example: a tech servicing a rooftop unit 4 feet from the edge ties off to a travel restraint anchor.",
         "citation": "1910.28(b)(13)(i)"
       },
       {
@@ -1343,7 +1343,7 @@
           "300 pounds"
         ],
         "correctAnswer": 2,
-        "explanation": "Guardrail systems must withstand, without failure, at least 200 pounds applied downward or outward within 2 inches of the top edge at any point along the top rail (1910.29(b)(3)). Under that load, the top rail must not deflect below 39 inches (1910.29(b)(4)). Workplace example: a chain-only \"guardrail\" that sags under a 200-pound push does not comply.",
+        "explanation": "Guardrail systems must withstand, without failure, at least 200 pounds applied downward or outward within 2 inches of the top edge at any point along the top rail (1910.29(b)(3)). When the 200-pound load is applied downward, the top rail must not deflect below 39 inches (1910.29(b)(4)). Workplace example: a chain-only \"guardrail\" that deflects below 39 inches under a 200-pound downward load does not comply.",
         "citation": "1910.29(b)(3)"
       },
       {
@@ -1416,7 +1416,7 @@
         ],
         "correctAnswer": 1,
         "explanation": "Before any employee is exposed to a fall hazard, the employer must train each employee who uses personal fall protection systems (1910.30(a)(1)), and each employee must be trained by a qualified person (1910.30(a)(2)). Workplace example: a new rooftop HVAC tech is trained by the company's qualified fall protection trainer before their first roof job.",
-        "citation": "1910.30(a)(1)"
+        "citation": "1910.30(a)(1)-(2)"
       }
     ]
   },
@@ -2173,6 +2173,729 @@
         "correctAnswer": 1,
         "explanation": "A fire prevention plan must include a list of major fire hazards with handling and storage procedures, ignition sources and their control, and needed fire protection equipment; procedures to control accumulations of flammable and combustible waste; procedures for maintaining safeguards on heat-producing equipment; and the names or job titles of employees responsible for ignition-source equipment and for fuel source hazards (1910.39(c)(1)-(5)). Workplace example: the plan sets a daily schedule for emptying oily-rag cans in the paint shop.",
         "citation": "1910.39(c)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 13,
+    "title": "Portable Fire Extinguishers",
+    "duration": 45,
+    "topics": [
+      "Mounting, access, and approved extinguishers",
+      "Prohibited agents",
+      "Travel distances by fire class",
+      "Monthly visual inspection and annual maintenance",
+      "Six-year maintenance and hydrostatic testing",
+      "Replacement protection during service",
+      "Annual employee education"
+    ],
+    "resources": [
+      {
+        "title": "Portable Fire Extinguishers Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.157",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.157 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.157",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.157",
+        "type": "standard",
+        "description": "Current official text of the portable fire extinguishers standard"
+      },
+      {
+        "title": "Fire Safety Topic Page",
+        "url": "https://www.osha.gov/fire-safety",
+        "type": "guide",
+        "description": "OSHA overview and guidance on workplace fire safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.157(c)(1), how must the employer mount, locate, and identify portable fire extinguishers?",
+        "options": [
+          "In a locked cabinet near the office",
+          "Only at building exits",
+          "So they are readily accessible to employees without exposing employees to possible injury",
+          "Anywhere, as long as there is one per floor"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must provide portable fire extinguishers and mount, locate, and identify them so they are readily accessible to employees without exposing them to possible injury (1910.157(c)(1)). Workplace example: an extinguisher behind stacked pallets is moved to a marked, clear wall bracket.",
+        "citation": "1910.157(c)(1)"
+      },
+      {
+        "question": "Which extinguishing agents does 1910.157(c)(3) prohibit in the workplace?",
+        "options": [
+          "Dry chemical and carbon dioxide",
+          "Water and foam",
+          "Halon 1211 and Halon 1301",
+          "Carbon tetrachloride and chlorobromomethane"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer may not provide or make available portable fire extinguishers that use carbon tetrachloride or chlorobromomethane extinguishing agents (1910.157(c)(3)). Workplace example: an old carbon tetrachloride unit found in a storeroom is removed from the workplace.",
+        "citation": "1910.157(c)(3)"
+      },
+      {
+        "question": "Under 1910.157(c)(4), in what condition and where must portable fire extinguishers be kept?",
+        "options": [
+          "Fully charged and operable, and kept in their designated places at all times except during use",
+          "Partially charged, wherever last used",
+          "Empty until a fire occurs",
+          "In the maintenance shop when not needed"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Portable fire extinguishers must be maintained fully charged and operable and kept in their designated places at all times except during use (1910.157(c)(4)). Workplace example: an extinguisher used on a small trash fire is replaced right away, not left empty on its hook.",
+        "citation": "1910.157(c)(4)"
+      },
+      {
+        "question": "Under 1910.157(d)(2), what is the maximum travel distance from an employee to an extinguisher for Class A fires?",
+        "options": [
+          "50 feet",
+          "75 feet",
+          "100 feet",
+          "150 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Extinguishers for Class A fires must be distributed so the travel distance for employees to any extinguisher is 75 feet or less (1910.157(d)(2)). Workplace example: in a 300-foot warehouse aisle, extinguishers are spaced so no one is more than 75 feet from one.",
+        "citation": "1910.157(d)(2)"
+      },
+      {
+        "question": "Under 1910.157(d)(4), what is the maximum travel distance from a Class B hazard area to an extinguisher?",
+        "options": [
+          "25 feet",
+          "50 feet",
+          "75 feet",
+          "100 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Extinguishers for Class B fires must be distributed so the travel distance from the Class B hazard area to any extinguisher is 50 feet or less (1910.157(d)(4)). Workplace example: a Class B extinguisher is mounted within 50 feet of the solvent dip tank.",
+        "citation": "1910.157(d)(4)"
+      },
+      {
+        "question": "Under 1910.157(d)(5), how are extinguishers for Class C hazards distributed?",
+        "options": [
+          "One per electrical panel",
+          "Within 25 feet of every outlet",
+          "Only in server rooms",
+          "On the basis of the appropriate pattern for the existing Class A or Class B hazards"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Portable fire extinguishers for Class C hazards must be distributed on the basis of the appropriate pattern for the existing Class A or Class B hazards (1910.157(d)(5)). Workplace example: the extinguishers near the motor control center follow the Class A or B spacing already used in that area.",
+        "citation": "1910.157(d)(5)"
+      },
+      {
+        "question": "How often must portable extinguishers be visually inspected under 1910.157(e)(2)?",
+        "options": [
+          "Monthly",
+          "Weekly",
+          "Quarterly",
+          "Annually"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Portable extinguishers, or hose used in their place under (d)(3), must be visually inspected monthly (1910.157(e)(2)). Workplace example: on the first workday of each month, a designated employee checks each unit's gauge, pin, and seal.",
+        "citation": "1910.157(e)(2)"
+      },
+      {
+        "question": "What does 1910.157(e)(3) require for the annual maintenance check?",
+        "options": [
+          "Nothing needs to be recorded",
+          "The employer must record the annual maintenance date and keep the record for one year after the last entry or the life of the shell, whichever is less",
+          "The record must be kept for 30 years",
+          "Stored pressure extinguishers need an internal exam every year"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Portable extinguishers must get an annual maintenance check. Stored pressure extinguishers do not require an internal examination. The employer must record the annual maintenance date and keep the record for one year after the last entry or the life of the shell, whichever is less (1910.157(e)(3)). Workplace example: the service company dates the tag, and the tag stays on the unit as the record.",
+        "citation": "1910.157(e)(3)"
+      },
+      {
+        "question": "Under 1910.157(e)(4), stored pressure dry chemical extinguishers that require a 12-year hydrostatic test must be emptied and given maintenance every:",
+        "options": [
+          "3 years",
+          "5 years",
+          "6 years",
+          "10 years"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Stored pressure dry chemical extinguishers that require a 12-year hydrostatic test must be emptied and given the applicable maintenance every 6 years. Non-refillable disposable units are exempt, and the 6-year clock restarts after recharging or hydrostatic testing (1910.157(e)(4)). Workplace example: an ABC unit last recharged in 2020 is due for its 6-year teardown in 2026.",
+        "citation": "1910.157(e)(4)"
+      },
+      {
+        "question": "Per Table L-1 in 1910.157(f)(2), how often must carbon dioxide extinguishers be hydrostatically tested?",
+        "options": [
+          "Every 6 years",
+          "Every 10 years",
+          "Every 12 years",
+          "Every 5 years"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Table L-1 lists carbon dioxide extinguishers at a 5-year hydrostatic test interval (1910.157(f)(2) Table L-1). 1910.157(f)(10) also requires carbon dioxide extinguishers to be tested every 5 years at 5/3 of the stamped service pressure. Workplace example: CO2 units in the electrical room are sent out for hydrostatic testing on a 5-year cycle.",
+        "citation": "1910.157(f)(2) Table L-1"
+      },
+      {
+        "question": "What does 1910.157(e)(5) require when extinguishers are removed from service for maintenance or recharging?",
+        "options": [
+          "Alternate equivalent protection must be provided",
+          "Nothing; the area can go without for up to a week",
+          "Work in the area must stop",
+          "Only a sign must be posted"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When portable fire extinguishers are removed from service for maintenance and recharging, the employer must provide alternate equivalent protection (1910.157(e)(5)). Workplace example: the service vendor leaves loaner units on the hooks while the plant's extinguishers are being recharged.",
+        "citation": "1910.157(e)(5)"
+      },
+      {
+        "question": "Under 1910.157(g)(1)-(2), when the employer provides extinguishers for employee use, when must the educational program be given?",
+        "options": [
+          "Only once, at hire",
+          "Upon initial employment and at least annually thereafter",
+          "Every three years",
+          "Only to the fire brigade"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Where extinguishers are provided for employee use, the employer must provide an educational program on the general principles of extinguisher use and the hazards of incipient-stage firefighting (1910.157(g)(1)), upon initial employment and at least annually thereafter (1910.157(g)(2)). Workplace example: new hires get the extinguisher briefing in orientation, and all employees get a refresher each year.",
+        "citation": "1910.157(g)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 14,
+    "title": "Permit-Required Confined Spaces",
+    "duration": 60,
+    "topics": [
+      "What makes a space a confined space",
+      "Evaluating the workplace and posting signs",
+      "Written permit space program",
+      "Atmospheric testing order",
+      "Entry permits: signing, cancelling, and retaining",
+      "Training triggers and certification",
+      "Attendant duties",
+      "Retrieval systems"
+    ],
+    "resources": [
+      {
+        "title": "Permit-Required Confined Spaces Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.146 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.146",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.146",
+        "type": "standard",
+        "description": "Current official text of the permit-required confined spaces standard"
+      },
+      {
+        "title": "Confined Spaces Topic Page",
+        "url": "https://www.osha.gov/confined-spaces",
+        "type": "guide",
+        "description": "OSHA overview and guidance on confined spaces"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under the definitions in 1910.146(b), which set of conditions makes a space a \"confined space\"?",
+        "options": [
+          "Any space with a hazardous atmosphere",
+          "Any space below grade",
+          "Large enough and configured for an employee to bodily enter and work, limited or restricted means of entry or exit, and not designed for continuous employee occupancy",
+          "Any space smaller than 100 square feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A confined space is large enough and configured so an employee can bodily enter and perform work, has limited or restricted means of entry or exit, and is not designed for continuous employee occupancy (1910.146(b)). A permit-required confined space is a confined space that also has one or more listed hazards. Workplace example: a product storage hopper meets all three conditions.",
+        "citation": "1910.146(b)"
+      },
+      {
+        "question": "What is the employer's first duty under 1910.146(c)(1)?",
+        "options": [
+          "Buy a gas meter",
+          "Train every employee as an entrant",
+          "Hire a rescue service",
+          "Evaluate the workplace to determine whether any spaces are permit-required confined spaces"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must evaluate the workplace to determine whether any spaces are permit-required confined spaces (1910.146(c)(1)). Workplace example: the plant surveys its tanks, pits, and vaults and lists which are permit spaces.",
+        "citation": "1910.146(c)(1)"
+      },
+      {
+        "question": "How does 1910.146(c)(2) require employers to inform exposed employees of permit spaces?",
+        "options": [
+          "By posting danger signs or by any other equally effective means; a sign reading \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" would satisfy it",
+          "Only in the annual safety meeting",
+          "Only in the written program",
+          "By email to supervisors"
+        ],
+        "correctAnswer": 0,
+        "explanation": "If the workplace has permit spaces, the employer must inform exposed employees of their existence, location, and danger by posting danger signs or other equally effective means. \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" or similar language satisfies the sign requirement (1910.146(c)(2)). Workplace example: the sign is stenciled on each tank manway.",
+        "citation": "1910.146(c)(2)"
+      },
+      {
+        "question": "Under 1910.146(c)(4), what must the employer do if it decides its employees will enter permit spaces?",
+        "options": [
+          "Nothing beyond issuing a meter",
+          "Develop and implement a written permit space program that complies with 1910.146 and is available to employees and their representatives",
+          "Rely on the contractor's program",
+          "Get verbal approval from the plant manager each time"
+        ],
+        "correctAnswer": 1,
+        "explanation": "If employees will enter permit spaces, the employer must develop and implement a written permit space program complying with 1910.146, available for inspection by employees and their authorized representatives (1910.146(c)(4)). If employees will not enter, the employer must take effective measures to prevent entry (1910.146(c)(3)). Workplace example: the maintenance department's written program covers every tank it enters.",
+        "citation": "1910.146(c)(4)"
+      },
+      {
+        "question": "In what order does 1910.146(d)(5)(iii) require testing for atmospheric hazards?",
+        "options": [
+          "Toxic gases, then oxygen, then combustibles",
+          "Combustibles, then oxygen, then toxics",
+          "Oxygen first, then combustible gases and vapors, then toxic gases and vapors",
+          "Any order"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When testing for atmospheric hazards, test first for oxygen, then combustible gases and vapors, then toxic gases and vapors (1910.146(d)(5)(iii)). Workplace example: the entry supervisor reads O2, then LEL, then H2S and CO from the meter at the manway.",
+        "citation": "1910.146(d)(5)(iii)"
+      },
+      {
+        "question": "Under 1910.146(e)(2), who must sign the entry permit before entry begins?",
+        "options": [
+          "The attendant",
+          "Any authorized entrant",
+          "The plant safety director only",
+          "The entry supervisor identified on the permit"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Before entry begins, the entry supervisor identified on the permit must sign it to authorize entry (1910.146(e)(2)). The completed permit must be made available to entrants, such as by posting at the entry portal (1910.146(e)(3)). Workplace example: the supervisor signs the permit and clips it at the manway before anyone goes in.",
+        "citation": "1910.146(e)(2)"
+      },
+      {
+        "question": "Under 1910.146(e)(5), when must the entry supervisor terminate entry and cancel the permit?",
+        "options": [
+          "When the entry operations covered by the permit are completed, or when a condition not allowed under the permit arises in or near the space",
+          "Only at the end of the week",
+          "Only if someone is injured",
+          "Only when the attendant leaves"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The entry supervisor must terminate entry and cancel the permit when the covered entry operations are completed, or when a condition not allowed under the permit arises in or near the space (1910.146(e)(5)(i)-(ii)). Workplace example: when the blower trips, entrants are called out and the permit is cancelled.",
+        "citation": "1910.146(e)(5)"
+      },
+      {
+        "question": "How long must cancelled entry permits be kept under 1910.146(e)(6)?",
+        "options": [
+          "30 days",
+          "At least 1 year",
+          "3 years",
+          "30 years"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each cancelled entry permit must be retained for at least 1 year to support the program review required within 1 year after each entry (1910.146(d)(14)), and any problems during the entry must be noted on the permit (1910.146(e)(6)). Workplace example: cancelled permits are filed by month in the maintenance office and reviewed within a year of each entry.",
+        "citation": "1910.146(e)(6)"
+      },
+      {
+        "question": "Under 1910.146(g)(2), when must confined space training be provided to each affected employee?",
+        "options": [
+          "Only once every three years",
+          "Only after an incident",
+          "Before the employee is first assigned duties, before a change in assigned duties, when operations change in a way that presents an untrained hazard, and when deviations or inadequacies in knowledge are suspected",
+          "Only to entry supervisors"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Training must be given before the employee is first assigned duties, before a change in assigned duties, whenever a change in operations presents a hazard the employee has not been trained on, and whenever the employer has reason to believe there are deviations from procedures or inadequacies in knowledge (1910.146(g)(2)(i)-(iv)). Workplace example: a mechanic moving from attendant to entrant duties is trained before the new role.",
+        "citation": "1910.146(g)(2)"
+      },
+      {
+        "question": "What must the training certification under 1910.146(g)(4) contain?",
+        "options": [
+          "Only the course title",
+          "The employee's test score and medical status",
+          "Only the trainer's certificate number",
+          "Each employee's name, the signatures or initials of the trainers, and the dates of training"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must certify that the required training has been done. The certification must contain each employee's name, the signatures or initials of the trainers, and the dates of training, and be available to employees and their representatives (1910.146(g)(4)). Workplace example: the training roster has each entrant's name, the trainer's initials, and the date.",
+        "citation": "1910.146(g)(4)"
+      },
+      {
+        "question": "Under 1910.146(i)(4), where must the attendant be during entry operations?",
+        "options": [
+          "Outside the permit space until relieved by another attendant",
+          "Inside the space with the entrants",
+          "In the control room",
+          "Wherever needed to help with the work"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The attendant must remain outside the permit space during entry operations until relieved by another attendant (1910.146(i)(4)), and may perform no duties that would interfere with monitoring and protecting the entrants (1910.146(i)(10)). Workplace example: the attendant stays at the manway with the radio and entry log for the whole entry.",
+        "citation": "1910.146(i)(4)"
+      },
+      {
+        "question": "Under 1910.146(k)(3)(ii), what must be available to retrieve personnel from vertical permit spaces more than 5 feet deep?",
+        "options": [
+          "A ladder only",
+          "A mechanical device",
+          "A second entrant",
+          "Nothing if rescue is on call"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The other end of the retrieval line must be attached to a mechanical device or fixed point outside the space so rescue can begin as soon as it is needed, and a mechanical device must be available for vertical permit spaces more than 5 feet deep (1910.146(k)(3)(ii)). Workplace example: a tripod and winch are set up over a 10-foot-deep sump before entry.",
+        "citation": "1910.146(k)(3)(ii)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 15,
+    "title": "Bloodborne Pathogens",
+    "duration": 60,
+    "topics": [
+      "Written Exposure Control Plan and annual review",
+      "Universal precautions",
+      "Hand washing and sharps handling",
+      "Eating and drinking restrictions",
+      "Hepatitis B vaccination and declination",
+      "Warning labels and red containers",
+      "Training schedule",
+      "Record retention"
+    ],
+    "resources": [
+      {
+        "title": "Bloodborne Pathogens Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1030",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.1030 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.1030",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.1030",
+        "type": "standard",
+        "description": "Current official text of the bloodborne pathogens standard"
+      },
+      {
+        "title": "Bloodborne Pathogens Topic Page",
+        "url": "https://www.osha.gov/bloodborne-pathogens",
+        "type": "guide",
+        "description": "OSHA overview and guidance on bloodborne pathogens"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.1030(c)(1)(i), what must an employer with employees who have occupational exposure establish?",
+        "options": [
+          "A verbal policy",
+          "Only a first aid kit",
+          "A written Exposure Control Plan designed to eliminate or minimize employee exposure",
+          "A contract with a hospital"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each employer with employees who have occupational exposure must establish a written Exposure Control Plan designed to eliminate or minimize exposure (1910.1030(c)(1)(i)). Workplace example: a plant whose designated first aid responders may contact blood keeps a written plan.",
+        "citation": "1910.1030(c)(1)(i)"
+      },
+      {
+        "question": "How often must the Exposure Control Plan be reviewed and updated under 1910.1030(c)(1)(iv)?",
+        "options": [
+          "Every five years",
+          "Only after an exposure incident",
+          "Never, once written",
+          "At least annually, and whenever necessary to reflect new or modified tasks, procedures, or positions with occupational exposure"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The plan must be reviewed and updated at least annually and whenever necessary to reflect new or modified tasks and procedures affecting exposure, or new or revised positions with occupational exposure (1910.1030(c)(1)(iv)). Workplace example: adding a new first aid team at the second shop triggers a plan update before the annual review.",
+        "citation": "1910.1030(c)(1)(iv)"
+      },
+      {
+        "question": "What does 1910.1030(d)(1) require when it is difficult to tell body fluid types apart?",
+        "options": [
+          "Observe universal precautions, and consider all body fluids potentially infectious materials",
+          "Treat only visible blood as infectious",
+          "Wait for lab results before cleanup",
+          "Treat the fluid as non-infectious"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Universal precautions must be observed to prevent contact with blood or other potentially infectious materials. Where differentiating body fluid types is difficult or impossible, all body fluids must be considered potentially infectious materials (1910.1030(d)(1)). Workplace example: a responder treats a mixed fluid spill as infectious.",
+        "citation": "1910.1030(d)(1)"
+      },
+      {
+        "question": "Under 1910.1030(d)(2)(v), when must employees wash their hands?",
+        "options": [
+          "At the end of the shift",
+          "Immediately or as soon as feasible after removing gloves or other personal protective equipment",
+          "Only if blood is visible on the hands",
+          "Before putting on gloves only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employers must ensure employees wash their hands immediately or as soon as feasible after removing gloves or other PPE (1910.1030(d)(2)(v)). Workplace example: after bandaging a coworker's cut, the responder removes gloves and washes right away.",
+        "citation": "1910.1030(d)(2)(v)"
+      },
+      {
+        "question": "What does 1910.1030(d)(2)(vii) say about contaminated needles and sharps?",
+        "options": [
+          "They may be recapped by hand whenever convenient",
+          "They may be broken before disposal to save space",
+          "They may not be bent, recapped, or removed except as allowed in (A) and (B), and shearing or breaking them is prohibited",
+          "They may be thrown in regular trash if capped"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Contaminated needles and other sharps may not be bent, recapped, or removed except as noted in (d)(2)(vii)(A) and (B), and shearing or breaking contaminated needles is prohibited (1910.1030(d)(2)(vii)). Under (A), bending, recapping, or removal is allowed only when no alternative is feasible or a specific medical or dental procedure requires it. Workplace example: the plant nurse drops used needles straight into a sharps container without recapping.",
+        "citation": "1910.1030(d)(2)(vii)"
+      },
+      {
+        "question": "Under 1910.1030(d)(2)(ix), which activities are prohibited in work areas where occupational exposure is reasonably likely?",
+        "options": [
+          "Wearing gloves",
+          "Using sharps containers",
+          "Washing hands",
+          "Eating, drinking, smoking, applying cosmetics or lip balm, and handling contact lenses"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Eating, drinking, smoking, applying cosmetics or lip balm, and handling contact lenses are prohibited in work areas where there is a reasonable likelihood of occupational exposure (1910.1030(d)(2)(ix)). Workplace example: no coffee cups in the first aid room.",
+        "citation": "1910.1030(d)(2)(ix)"
+      },
+      {
+        "question": "Under 1910.1030(f)(2)(i), when must hepatitis B vaccination be made available to employees with occupational exposure?",
+        "options": [
+          "After they receive the required training and within 10 working days of initial assignment (unless an exception applies)",
+          "After their first exposure incident only",
+          "Within 90 days of hire",
+          "Only if they request it in writing"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hepatitis B vaccination must be made available after the employee receives the required training and within 10 working days of initial assignment, unless the employee already completed the series, antibody testing shows immunity, or the vaccine is contraindicated (1910.1030(f)(2)(i)). Workplace example: a newly designated first aid responder is offered the series within 10 working days.",
+        "citation": "1910.1030(f)(2)(i)"
+      },
+      {
+        "question": "An employee declines the hepatitis B vaccination. What does 1910.1030(f)(2)(iv) require?",
+        "options": [
+          "Nothing",
+          "The employee must sign the declination statement in Appendix A",
+          "The employee must be removed from the job",
+          "The employer must vaccinate anyway"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employees who decline hepatitis B vaccination must sign the statement in Appendix A (1910.1030(f)(2)(iv)). If the employee later decides to accept while still covered, the vaccination must be made available then (1910.1030(f)(2)(iii)). Workplace example: the signed declination is filed, and the offer stays open.",
+        "citation": "1910.1030(f)(2)(iv)"
+      },
+      {
+        "question": "Under 1910.1030(g)(1)(i), what color must biohazard warning labels be, and what may substitute for labels?",
+        "options": [
+          "Yellow; any bag",
+          "Green; clear bags",
+          "Fluorescent orange or orange-red (or predominantly so) with contrasting lettering and symbols; red bags or red containers may substitute",
+          "Blue; any closed container"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Labels must be fluorescent orange or orange-red, or predominantly so, with lettering and symbols in a contrasting color (1910.1030(g)(1)(i)(C)). Red bags or red containers may be substituted for labels (1910.1030(g)(1)(i)(E)). Workplace example: bloody gauze from first aid goes in a red bag.",
+        "citation": "1910.1030(g)(1)(i)(C)"
+      },
+      {
+        "question": "When must bloodborne pathogens training be provided under 1910.1030(g)(2)?",
+        "options": [
+          "Once every three years",
+          "Only after an exposure incident",
+          "Only to supervisors",
+          "At no cost, during working hours, at initial assignment to tasks with possible exposure, and at least annually thereafter (within one year of the previous training)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Training must be provided at no cost to the employee and during working hours (1910.1030(g)(2)(i)), at the time of initial assignment to tasks with possible occupational exposure, and at least annually thereafter (1910.1030(g)(2)(ii)). Annual training must be within one year of the previous training (1910.1030(g)(2)(iv)). Workplace example: first aid responders' refresher is scheduled each spring, on the clock.",
+        "citation": "1910.1030(g)(2)(ii)"
+      },
+      {
+        "question": "How long must medical records for employees with occupational exposure be kept under 1910.1030(h)(1)(iv)?",
+        "options": [
+          "For at least the duration of employment plus 30 years",
+          "3 years",
+          "5 years",
+          "Until the employee leaves"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Medical records required by 1910.1030(h) must be kept for at least the duration of employment plus 30 years, in accordance with 1910.1020 (1910.1030(h)(1)(iv)). Training records are kept 3 years from the date of training (1910.1030(h)(2)(ii)). Workplace example: a responder's vaccination record stays on file for 30 years after they leave.",
+        "citation": "1910.1030(h)(1)(iv)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 16,
+    "title": "Injury and Illness Recordkeeping and Reporting",
+    "duration": 60,
+    "topics": [
+      "What must be recorded",
+      "Work-relatedness",
+      "General recording criteria",
+      "Medical treatment vs. first aid",
+      "Counting days away",
+      "Recording deadlines",
+      "Privacy concern cases",
+      "Certifying the annual summary",
+      "Record retention",
+      "24-hour reports and electronic submission"
+    ],
+    "resources": [
+      {
+        "title": "General Recording Criteria",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1904/1904.7",
+        "type": "standard",
+        "description": "When a work-related injury or illness must be recorded"
+      },
+      {
+        "title": "Reporting Severe Injuries to OSHA",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1904/1904.39",
+        "type": "standard",
+        "description": "Fatality and severe injury reporting"
+      },
+      {
+        "title": "eCFR: 29 CFR Part 1904",
+        "url": "https://www.ecfr.gov/current/title-29/part-1904",
+        "type": "standard",
+        "description": "Current official text of the recordkeeping regulation"
+      },
+      {
+        "title": "Recordkeeping Topic Page",
+        "url": "https://www.osha.gov/recordkeeping",
+        "type": "guide",
+        "description": "OSHA recordkeeping forms and guidance"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1904.4(a), which conditions must all be met for a fatality, injury, or illness to be recorded?",
+        "options": [
+          "It caused at least one lost workday",
+          "It is work-related, is a new case, and meets one or more of the general recording criteria (or the specific-case criteria)",
+          "The employee filed a workers' compensation claim",
+          "A physician saw the employee"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employers required to keep records must record each fatality, injury, and illness that is work-related, is a new case, and meets one or more of the general recording criteria in 1904.7 or the specific-case criteria in 1904.8-1904.12 (1904.4(a)). Workplace example: a new forklift-related sprain that needed prescription medication meets all three.",
+        "citation": "1904.4(a)"
+      },
+      {
+        "question": "Under 1904.5(a), when must an injury or illness be considered work-related?",
+        "options": [
+          "Only if it happened during scheduled work hours",
+          "Only if a supervisor witnessed it",
+          "If an event or exposure in the work environment caused or contributed to it, or significantly aggravated a pre-existing injury or illness",
+          "Only if the employee was following procedures"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An injury or illness is work-related if an event or exposure in the work environment caused or contributed to it or significantly aggravated a pre-existing condition. Work-relatedness is presumed for events or exposures in the work environment unless a 1904.5(b)(2) exception applies (1904.5(a)). Workplace example: a lifting strain on the dock is presumed work-related.",
+        "citation": "1904.5(a)"
+      },
+      {
+        "question": "Which outcome makes a work-related case recordable under the general recording criteria in 1904.7(b)(1)?",
+        "options": [
+          "First aid only",
+          "A visit to the nurse for observation only",
+          "A report of discomfort with no treatment",
+          "Medical treatment beyond first aid"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A work-related injury or illness must be recorded if it results in death, days away from work, restricted work or transfer, medical treatment beyond first aid, loss of consciousness, or a significant injury or illness diagnosed by a physician or other licensed health care professional (1904.7(b)(1)(i)-(vi)). Workplace example: a cut closed with sutures is recordable; one cleaned and bandaged is not.",
+        "citation": "1904.7(b)(1)"
+      },
+      {
+        "question": "Under 1904.7(b)(5)(ii)(D), which wound treatment is medical treatment (and so recordable) rather than first aid?",
+        "options": [
+          "Sutures or staples",
+          "Butterfly bandages",
+          "Steri-Strips",
+          "Gauze pads"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Wound coverings such as bandages, gauze pads, butterfly bandages, and Steri-Strips are first aid. Other wound-closing devices such as sutures and staples are medical treatment (1904.7(b)(5)(ii)(D)). Workplace example: a laceration closed with three stitches at urgent care is recorded.",
+        "citation": "1904.7(b)(5)(ii)(D)"
+      },
+      {
+        "question": "When counting days away from work under 1904.7(b)(3)(iv), how are weekends and holidays treated?",
+        "options": [
+          "They are not counted",
+          "All calendar days the employee was unable to work are counted, including weekends, holidays, and other days off",
+          "Only scheduled workdays are counted",
+          "Only weekdays are counted"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Count the number of calendar days the employee was unable to work because of the injury or illness, whether or not they were scheduled to work. Weekends, holidays, vacation days, and other days off are included (1904.7(b)(3)(iv)). Counting starts the day after the injury (1904.7(b)(3)(i)). Workplace example: an employee hurt Thursday and off through the next Tuesday has 5 days away.",
+        "citation": "1904.7(b)(3)(iv)"
+      },
+      {
+        "question": "Under 1904.7(b)(3)(vii), at what point may the employer stop counting days away from work?",
+        "options": [
+          "30 calendar days",
+          "90 calendar days",
+          "180 calendar days",
+          "There is no cap"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer may cap the total days away at 180 calendar days (1904.7(b)(3)(vii)). Workplace example: an employee off for 210 days after surgery is entered as 180 days away.",
+        "citation": "1904.7(b)(3)(vii)"
+      },
+      {
+        "question": "Under 1904.29(b)(3), how quickly must a recordable case be entered on the OSHA 300 Log and 301 Incident Report?",
+        "options": [
+          "Within 24 hours",
+          "Within 30 days",
+          "By the end of the year",
+          "Within 7 calendar days of receiving information that it occurred"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Each recordable injury or illness must be entered on the OSHA 300 Log and 301 Incident Report within seven calendar days of receiving information that it occurred (1904.29(b)(3)). Workplace example: a recordable case reported Monday must be logged by the following Monday.",
+        "citation": "1904.29(b)(3)"
+      },
+      {
+        "question": "Which of these must be treated as a privacy concern case under 1904.29(b)(7)?",
+        "options": [
+          "A needlestick injury from a sharp contaminated with another person's blood or other potentially infectious material",
+          "A broken arm from a fall",
+          "A back strain from lifting",
+          "A burn from a hot pipe"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Privacy concern cases include injuries to an intimate body part or the reproductive system, sexual assault, mental illnesses, HIV infection, hepatitis, or tuberculosis, needlesticks and cuts from sharps contaminated with another person's blood or OPIM, and other illnesses if the employee asks (1904.29(b)(7)(i)-(vi)). For these, enter \"privacy case\" instead of the name (1904.29(b)(6)). Workplace example: the plant nurse's contaminated needlestick is logged as \"privacy case.\"",
+        "citation": "1904.29(b)(7)"
+      },
+      {
+        "question": "Under 1904.32(b)(4), which of these may NOT certify the annual summary as the \"company executive\"?",
+        "options": [
+          "An officer of the corporation",
+          "The clerk who maintains the OSHA 300 Log",
+          "The highest ranking company official working at the establishment",
+          "The immediate supervisor of the highest ranking official at the establishment"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The certifying company executive must be an owner (sole proprietorship or partnership only), an officer of the corporation, the highest ranking company official at the establishment, or that official's immediate supervisor (1904.32(b)(4)). The executive must certify that they examined the log and reasonably believe the summary is correct and complete (1904.32(b)(3)). Workplace example: the plant manager signs the 300-A, not the HR clerk who prepared it.",
+        "citation": "1904.32(b)(4)"
+      },
+      {
+        "question": "How long must the OSHA 300 Log, privacy case list, annual summary, and 301 forms be kept under 1904.33(a)?",
+        "options": [
+          "1 year",
+          "3 years",
+          "5 years following the end of the calendar year the records cover",
+          "30 years"
+        ],
+        "correctAnswer": 2,
+        "explanation": "These records must be saved for five years following the end of the calendar year they cover (1904.33(a)). Stored 300 Logs must be updated during that period for newly discovered cases and classification changes (1904.33(b)(1)). Workplace example: the 2026 log is kept through the end of 2031.",
+        "citation": "1904.33(a)"
+      },
+      {
+        "question": "Under 1904.39(a)(2), within what time must an employer report a work-related in-patient hospitalization, amputation, or loss of an eye to OSHA?",
+        "options": [
+          "8 hours",
+          "24 hours",
+          "72 hours",
+          "7 days"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In-patient hospitalization of one or more employees, an amputation, or loss of an eye from a work-related incident must be reported to OSHA within 24 hours (1904.39(a)(2)). Fatalities must be reported within 8 hours (1904.39(a)(1)). Workplace example: a press operator's fingertip amputation at 2 p.m. Tuesday must be reported by 2 p.m. Wednesday.",
+        "citation": "1904.39(a)(2)"
+      },
+      {
+        "question": "Under 1904.41(c), by what date must establishments required to submit records electronically submit them?",
+        "options": [
+          "March 2 of the year after the calendar year covered by the forms",
+          "January 31",
+          "February 1",
+          "April 30"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Establishments required to submit under 1904.41(a)(1) or (2) must submit by March 2 of the year after the calendar year covered (for example, March 2, 2024 for 2023 forms) (1904.41(c)). An establishment with 250 or more employees that must keep records submits 300-A information annually (1904.41(a)(1)(ii)). Workplace example: a 300-employee plant uploads its 300-A data by March 2.",
+        "citation": "1904.41(c)"
       }
     ]
   }

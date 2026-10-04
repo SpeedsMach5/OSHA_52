@@ -1,0 +1,22 @@
+Source: eCFR, 29 CFR 1926.604 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.604
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.604
+Retrieved: 2026-10-04
+
+§ 1926.604 Site clearing.
+
+(a) General requirements. (1) Employees engaged in site clearing shall be protected from hazards of irritant and toxic plants and suitably instructed in the first aid treatment available.
+
+(2) All equipment used in site clearing operations shall be equipped with rollover guards meeting the requirements of this subpart. In addition, rider-operated equipment shall be equipped with an overhead and rear canopy guard meeting the following requirements:
+
+(i) The overhead covering on this canopy structure shall be of not less than
+
+1/8-inch steel plate or
+
+1/4-inch woven wire mesh with openings no greater than 1 inch, or equivalent.
+
+(ii) The opening in the rear of the canopy structure shall be covered with not less than
+
+1/4-inch woven wire mesh with openings no greater than 1 inch.
+
+(b) Specific requirements. [Reserved]

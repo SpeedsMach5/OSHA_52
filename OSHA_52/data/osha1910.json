@@ -50,8 +50,8 @@
         "options": [
           "By CAS number only",
           "By a product identifier that is referenced on the appropriate safety data sheet",
-          "By supplier invoice number",
-          "By the storage room number"
+          "By the supplier's purchase order and invoice number, cross-referenced to the receiving log",
+          "By the storage room number and shelf location, with chemical names kept on a separate inventory sheet"
         ],
         "correctAnswer": 1,
         "explanation": "The list must use a product identifier that is referenced on the appropriate SDS. It may cover the workplace as a whole or individual work areas (1910.1200(e)(1)(i)). Workplace example: the maintenance shop list shows \"Brake Cleaner XR-5\", matching the name on its SDS.",
@@ -60,10 +60,10 @@
       {
         "question": "Under 1910.1200(e)(1)(ii), the written program must describe how employees will be informed about which hazards?",
         "options": [
-          "Only hazards in shipping",
-          "Only hazards listed on Form 300",
+          "The hazards of chemicals while they are in sealed shipping containers on the receiving dock, as listed on the bill of lading",
+          "The hazards recorded on the prior year's OSHA 300 log and in the latest insurance loss-control survey",
           "The hazards of non-routine tasks and of chemicals in unlabeled pipes in their work areas",
-          "Only hazards of chemicals stored off site"
+          "The hazards of chemicals stored at off-site warehouses that employees never enter, as reported by the property owner"
         ],
         "correctAnswer": 2,
         "explanation": "The program must include the methods used to inform employees of the hazards of non-routine tasks (for example, cleaning reactor vessels) and of chemicals in unlabeled pipes in their work areas (1910.1200(e)(1)(ii)). Workplace example: before a tank cleanout, the crew gets a briefing on the residues and the needed PPE.",
@@ -96,10 +96,10 @@
       {
         "question": "When is a portable container exempt from labeling under 1910.1200(f)(8)?",
         "options": [
-          "When it holds less than 1 gallon",
+          "When it holds less than one gallon, is filled from a labeled container by a shift supervisor, and is then handed to the crew for use during the rest of that work shift",
           "When chemicals are transferred into it from a labeled container and it is intended only for the immediate use of the employee who performs the transfer",
           "When it is used only on day shift",
-          "When the chemical is non-flammable"
+          "When the chemical is non-flammable and the employee fills the container at the start of the shift for any member of that work crew to use throughout the rest of the day"
         ],
         "correctAnswer": 1,
         "explanation": "The employer is not required to label portable containers filled from labeled containers when they are intended only for the immediate use of the employee who performs the transfer (1910.1200(f)(8)). Workplace example: a mechanic pours solvent into a cup, uses it right away, and empties it before leaving the bench.",
@@ -108,8 +108,8 @@
       {
         "question": "What does 1910.1200(f)(9) say about labels on incoming containers?",
         "options": [
-          "Labels may be removed once the chemical is logged",
-          "Labels must be replaced with the company's own design",
+          "Labels may be removed once the chemical is logged into the plant inventory system, provided its SDS is filed in the work-area binder by the end of that week",
+          "Labels on incoming containers must be replaced with the company's own in-house label design within 30 days of receipt, and the supplier's original label discarded",
           "The employer may not remove or deface existing labels on incoming containers unless the container is immediately marked with the required information",
           "Labels are optional after 30 days"
         ],
@@ -133,7 +133,7 @@
         "question": "How must SDSs be maintained under 1910.1200(g)(8)?",
         "options": [
           "Readily accessible to employees in their work areas during each work shift, with electronic access permitted only if there are no barriers to immediate access",
-          "Locked in the safety manager's office",
+          "Kept in a locked binder in the plant safety manager's office, with a copy provided to any employee who submits a written request within 15 working days of receiving that request",
           "Mailed to employees upon hire only",
           "Kept only at corporate headquarters"
         ],
@@ -147,7 +147,7 @@
           "Only once every three years",
           "At the time of their initial assignment and whenever a new chemical hazard they have not been trained on is introduced into their work area",
           "Only when they request it",
-          "Only after a chemical exposure incident"
+          "Within 30 days after initial assignment, then every three years, and again after any chemical exposure incident that results in a recordable injury"
         ],
         "correctAnswer": 1,
         "explanation": "Effective information and training must be given at the time of initial assignment and whenever a new chemical hazard the employees have not previously been trained about is introduced into their work area (1910.1200(h)(1)). Workplace example: the line adds an isocyanate-based adhesive, so operators are trained on it before first use.",
@@ -237,8 +237,8 @@
         "options": [
           "The date of purchase",
           "The identity of the employee applying the device",
-          "The machine's serial number",
-          "The supervisor's phone number only"
+          "The machine's serial number and the energy source the device is isolating",
+          "The name of the supervisor who authorized the shutdown and the date it began"
         ],
         "correctAnswer": 1,
         "explanation": "Lockout and tagout devices must indicate the identity of the employee applying them (1910.147(c)(5)(ii)(D)). Workplace example: each maintenance technician's lock has a photo ID tag.",
@@ -248,9 +248,9 @@
         "question": "Under 1910.147(c)(8), who may perform lockout or tagout?",
         "options": [
           "Any affected employee",
-          "The production supervisor on behalf of the crew",
+          "The production supervisor, acting on behalf of all of the affected employees on the crew during the shutdown",
           "Only the authorized employees who are performing the servicing or maintenance",
-          "Any employee who has watched the procedure"
+          "Any employee who has watched the procedure being performed at least once by an authorized employee"
         ],
         "correctAnswer": 2,
         "explanation": "Lockout or tagout may be performed only by the authorized employees who are performing the servicing or maintenance (1910.147(c)(8)). Workplace example: the mechanic clearing a conveyor jam applies their own lock rather than asking the line operator to do it.",
@@ -259,8 +259,8 @@
       {
         "question": "Under 1910.147(c)(9), when must affected employees be notified about the application and removal of lockout or tagout devices?",
         "options": [
-          "Only at the end of the shift",
-          "Only if the machine will be down more than 1 hour",
+          "At the end of the shift, through an entry in the maintenance log that operators review at shift change",
+          "Only if the machine will be down for more than 1 hour, by posting a notice at the time clock",
           "Notification is optional",
           "Before the controls are applied and after they are removed"
         ],
@@ -283,10 +283,10 @@
       {
         "question": "Under 1910.147(d)(6), what must the authorized employee do before starting work on locked-out equipment?",
         "options": [
-          "Remove the lock briefly to test the machine",
+          "Remove the lock briefly and bump the start button to test the machine, then reapply the lock and begin work",
           "Verify that isolation and deenergization of the machine or equipment have been accomplished",
-          "Ask the operator whether the power is off",
-          "Start work immediately"
+          "Ask the machine operator to confirm the power is off, then sign the lockout log before removing any guards",
+          "Start work immediately, since placing the lock on the disconnect is itself the verification the standard requires"
         ],
         "correctAnswer": 1,
         "explanation": "Before starting work on locked or tagged-out equipment, the authorized employee must verify that isolation and deenergization have been accomplished (1910.147(d)(6)). Workplace example: after locking the disconnect, the technician presses the start button (and tests for voltage where appropriate) to confirm nothing operates, then returns the controls to off.",
@@ -307,7 +307,7 @@
       {
         "question": "Which activity is excluded from 1910.147 under 1910.147(a)(2)(iii)(A)?",
         "options": [
-          "Servicing a hard-wired conveyor",
+          "Servicing a hard-wired overhead conveyor after the line operator stops it at the local control station and hangs a 'Do Not Operate' tag on the start button",
           "Changing a press die",
           "Clearing a jam on an energized line",
           "Work on cord-and-plug connected equipment when it is unplugged and the plug is under the exclusive control of the employee doing the servicing"
@@ -320,8 +320,8 @@
         "question": "What must the employer's LOTO training certification contain under 1910.147(c)(7)(iv)?",
         "options": [
           "Each employee's name and the dates of training",
-          "Only the trainer's signature",
-          "The employee's Social Security number",
+          "The trainer's name and the date the written energy control program was last revised",
+          "The employee's Social Security number and the trainer's signature",
           "Test scores only"
         ],
         "correctAnswer": 0,
@@ -368,7 +368,7 @@
       {
         "question": "Under 1910.134(a)(1), what is the primary objective in controlling occupational diseases caused by breathing contaminated air?",
         "options": [
-          "Issuing respirators to every employee",
+          "Issuing NIOSH-approved respirators to every exposed employee and fit testing each one before their first work assignment",
           "Preventing atmospheric contamination, as far as feasible, through accepted engineering control measures",
           "Limiting shifts to 4 hours",
           "Using dust masks for all tasks"
@@ -392,9 +392,9 @@
       {
         "question": "An employee asks to wear a filtering facepiece where a respirator is not required. If the employer allows it, what does 1910.134(c)(2)(i) require?",
         "options": [
-          "Nothing",
-          "A full fit test and medical evaluation in every case",
-          "The employee must sign a liability waiver",
+          "Nothing beyond a verbal reminder at hire, because filtering facepieces used voluntarily fall outside the respiratory protection standard",
+          "A full medical evaluation, an annual quantitative fit test, and enrollment of the employee in the written respiratory protection program in every case",
+          "The employee must sign a liability waiver releasing the employer, and the employer must keep that signed waiver on file for at least 30 years",
           "The employer must first determine the use will not itself create a hazard, and must give the employee the Appendix D information"
         ],
         "correctAnswer": 3,
@@ -405,8 +405,8 @@
         "question": "Under 1910.134(e)(1), when must an employee receive a medical evaluation?",
         "options": [
           "Before being fit tested or required to use the respirator in the workplace",
-          "Within 90 days after starting respirator use",
-          "Only if they report breathing trouble",
+          "Within 90 days after starting respirator use, as part of the annual physical given to all employees",
+          "Only if they report breathing trouble or other symptoms after their first fit test",
           "Every five years"
         ],
         "correctAnswer": 0,
@@ -418,8 +418,8 @@
         "options": [
           "Only once, at hire",
           "Prior to initial use, whenever a different facepiece (size, style, model, or make) is used, and at least annually thereafter",
-          "Every two years",
-          "Only when a supervisor notices leakage"
+          "Prior to initial use and every two years thereafter, with an extra fit test only when a different brand of cartridge or filter is installed",
+          "Only when a supervisor notices leakage, with the fit test done at hire otherwise remaining valid for as long as that model is worn"
         ],
         "correctAnswer": 1,
         "explanation": "Fit testing is required before initial use, whenever a different facepiece (size, style, model, or make) is used, and at least annually thereafter (1910.134(f)(2)). Workplace example: when purchasing switches half-mask brands, every wearer is re-fit tested on the new model.",
@@ -440,9 +440,9 @@
       {
         "question": "Under 1910.134(g)(1)(iii), how often must employees perform a user seal check on a tight-fitting respirator?",
         "options": [
-          "Once per shift",
+          "Once per shift at the start of the shift, with no further check needed if the respirator is removed and put back on later",
           "Once per week",
-          "Only during the annual fit test",
+          "Only during the annual fit test, under the fit tester's supervision",
           "Each time they put on the respirator"
         ],
         "correctAnswer": 3,
@@ -453,9 +453,9 @@
         "question": "An air-purifying respirator is used for organic vapors and has no NIOSH-certified end-of-service-life indicator. Under 1910.134(d)(3)(iii)(B)(2), the employer must:",
         "options": [
           "Implement a cartridge change schedule based on objective information or data, and describe its basis in the written program",
-          "Change cartridges when the wearer smells the vapor",
+          "Change cartridges when the wearer first smells or tastes the vapor inside the facepiece, and log each change-out in the written program",
           "Change cartridges once a year",
-          "Never change cartridges until they are visibly damaged"
+          "Never change cartridges until they are visibly damaged or breathing resistance becomes noticeable, and note each change in the written program"
         ],
         "correctAnswer": 0,
         "explanation": "Without an appropriate ESLI, the employer must implement a canister/cartridge change schedule based on objective information or data so cartridges are changed before the end of their service life, and must describe the data and basis in the written program (1910.134(d)(3)(iii)(B)(2)). Workplace example: the program sets an every-4-hours change-out based on the manufacturer's service-life model.",
@@ -464,7 +464,7 @@
       {
         "question": "Under 1910.134(h)(3)(i)(A), how often must respirators used in routine situations be inspected?",
         "options": [
-          "Monthly",
+          "At least monthly, and whenever the cartridges are replaced",
           "Before each use and during cleaning",
           "Annually",
           "Only when damaged"
@@ -477,7 +477,7 @@
         "question": "For all IDLH atmospheres, what does 1910.134(g)(3)(i) require?",
         "options": [
           "No special procedures",
-          "A supervisor present inside the space",
+          "A supervisor stationed inside the IDLH atmosphere alongside the entrants, equipped with an escape-only respirator",
           "One employee or, when needed, more than one employee located outside the IDLH atmosphere",
           "Air-purifying respirators only"
         ],
@@ -538,7 +538,7 @@
         "question": "Under 1910.178(l)(1)(ii), when must an operator complete the required training?",
         "options": [
           "Before the employer permits them to operate a powered industrial truck, except for training purposes",
-          "Within 30 days of starting to operate",
+          "Within 30 days of their first production assignment, with a state-issued forklift license accepted in place of the evaluation",
           "Within the first year",
           "Only if they have had an accident"
         ],
@@ -573,8 +573,8 @@
       {
         "question": "Which event requires refresher training under 1910.178(l)(4)(ii)?",
         "options": [
-          "The operator's birthday",
-          "A new supervisor is hired",
+          "A new shift supervisor is assigned to the area where the operator drives the truck",
+          "The operator reaches one year since initial training with no unsafe driving observed",
           "The truck is repainted",
           "The operator has been involved in an accident or near-miss incident"
         ],
@@ -599,8 +599,8 @@
         "options": [
           "Whenever the engine is off",
           "When the operator is 25 feet or more away from the truck while it stays in view, or whenever the operator leaves it and it is not in view",
-          "When the operator is more than 5 feet away",
-          "Only when the operator leaves the building"
+          "When the operator dismounts and stands within 25 feet of the truck with it still in clear view, even after lowering the forks and setting the brakes",
+          "Only when the operator leaves the building or loading dock area, so walking 100 feet across the dock with the truck still in view does not count"
         ],
         "correctAnswer": 1,
         "explanation": "A truck is unattended when the operator is 25 feet or more away from it while it remains in view, or whenever the operator leaves it and it is not in view (1910.178(m)(5)(ii)). Workplace example: walking 30 feet to read a pick ticket makes the truck unattended.",
@@ -609,8 +609,8 @@
       {
         "question": "Under 1910.178(m)(5)(i), what must be done when a powered industrial truck is left unattended?",
         "options": [
-          "Leave the forks raised for the next load",
-          "Just set the parking brake",
+          "Leave the forks raised for the next load, neutralize the controls, and set the parking brake, keeping the engine running while the driver is out on a short errand",
+          "Set the parking brake and neutralize the controls, leaving the engine idling and the forks raised at the next pick height so the next driver can resume work",
           "Fully lower the load-engaging means, neutralize the controls, shut off the power, and set the brakes, plus block the wheels if parked on an incline",
           "Leave it running so it is ready"
         ],
@@ -621,9 +621,9 @@
       {
         "question": "The load being carried blocks the driver's forward view. What does 1910.178(n)(4) require?",
         "options": [
-          "Drive forward slowly and lean out",
+          "Drive forward slowly and lean out to the side to see past the load",
           "Have a coworker ride on the forks to spot",
-          "Raise the load higher to see underneath",
+          "Raise the load higher so the driver can see underneath it while traveling",
           "Travel with the load trailing (in reverse)"
         ],
         "correctAnswer": 3,
@@ -645,10 +645,10 @@
       {
         "question": "Under 1910.178(q)(7), how often must industrial trucks be examined before being placed in service?",
         "options": [
-          "Weekly",
+          "At least once each week, or after every shift where trucks are used around the clock",
           "At least daily, or after each shift where trucks are used around the clock",
-          "Monthly",
-          "Only at the annual service"
+          "Monthly by a qualified mechanic, with drivers doing a walk-around only when a defect is suspected",
+          "Only at the annual service, plus after any repair performed by the outside dealer's technician"
         ],
         "correctAnswer": 1,
         "explanation": "Trucks must be examined before being placed in service, at least daily. Trucks used around the clock must be examined after each shift. Defects must be reported and corrected immediately (1910.178(q)(7)). Workplace example: each shift's first driver completes the pre-use checklist before driving.",
@@ -658,7 +658,7 @@
         "question": "What does 1910.178(m)(2) prohibit?",
         "options": [
           "Carrying loads over 1,000 pounds",
-          "Driving faster than 5 mph",
+          "Driving a loaded truck faster than 5 mph inside a building or faster than 10 mph in outdoor storage yards",
           "Any person standing or passing under the elevated portion of any truck, whether loaded or empty",
           "Using propane-powered trucks indoors"
         ],
@@ -718,9 +718,9 @@
         "question": "Which of these does 1910.212(a)(1) list as an example of a guarding method?",
         "options": [
           "Two-hand tripping devices",
-          "Warning signs alone",
+          "Warning signs posted at the operator station",
           "Operator experience",
-          "Reduced machine speed"
+          "Reduced machine speed during setup and jogging"
         ],
         "correctAnswer": 0,
         "explanation": "Examples of guarding methods given in 1910.212(a)(1) are barrier guards, two-hand tripping devices, and electronic safety devices (1910.212(a)(1)). Workplace example: a press brake set up so it cycles only when both palm buttons are pressed.",
@@ -729,10 +729,10 @@
       {
         "question": "Under 1910.212(a)(2), where must machine guards be affixed?",
         "options": [
-          "Anywhere near the machine",
+          "Anywhere near the machine, such as on a portable stand that the operator can move aside during setup or operation",
           "To the machine where possible, and secured elsewhere if attaching to the machine is not possible",
           "Only to the floor",
-          "Guards may be hand-held"
+          "Guards may be hand-held by the operator or leaned against the frame, as long as they cover the danger zone"
         ],
         "correctAnswer": 1,
         "explanation": "Guards must be affixed to the machine where possible and secured elsewhere if attachment is not possible, and the guard itself must not create an accident hazard (1910.212(a)(2)). Workplace example: a bolted-on belt guard rather than a loose sheet of plywood leaning against the frame.",
@@ -741,10 +741,10 @@
       {
         "question": "How does 1910.212(a)(3)(i) define the \"point of operation\"?",
         "options": [
-          "The machine's on/off switch",
+          "The machine's on/off switch and emergency stop, where the operator controls the cycle",
           "The machine's motor housing",
           "The area on a machine where work is actually performed on the material being processed",
-          "The operator's workstation"
+          "The operator's workstation, including the controls and the floor area where the operator stands"
         ],
         "correctAnswer": 2,
         "explanation": "The point of operation is the area on a machine where work is actually performed upon the material being processed (1910.212(a)(3)(i)). Workplace example: the die area of a punch press, or the blade contact zone of a band saw.",
@@ -754,7 +754,7 @@
         "question": "Where no specific standard applies, how must a point-of-operation guarding device be designed under 1910.212(a)(3)(ii)?",
         "options": [
           "To slow the machine when a hand is near",
-          "To sound an alarm when the danger zone is entered",
+          "To sound an alarm and flash a warning light whenever the operator's hand enters the danger zone during the cycle",
           "To be removable for faster setup",
           "To prevent the operator from having any part of their body in the danger zone during the operating cycle"
         ],
@@ -766,7 +766,7 @@
         "question": "An operator uses tongs to place parts in a die. Under 1910.212(a)(3)(iii), these special hand tools:",
         "options": [
           "May only supplement other required guarding, not replace it",
-          "Replace the need for a point-of-operation guard",
+          "Replace the need for a point-of-operation guard, provided they keep hands out of the die",
           "Are prohibited",
           "Are required on every machine"
         ],
@@ -802,9 +802,9 @@
         "question": "Under 1910.212(a)(5), fan blades must be guarded when their periphery is less than how far above the floor or working level?",
         "options": [
           "5 feet",
-          "6 feet",
+          "6 feet 6 inches",
           "7 feet",
-          "8 feet"
+          "8 feet 6 inches"
         ],
         "correctAnswer": 2,
         "explanation": "When the periphery of fan blades is less than 7 feet above the floor or working level, the blades must be guarded (1910.212(a)(5)). Workplace example: a pedestal fan on a shop floor needs a blade guard; a ceiling fan 9 feet up does not under this paragraph.",
@@ -825,9 +825,9 @@
       {
         "question": "What does 1910.212(b) require of machines designed for a fixed location?",
         "options": [
-          "They must be on wheels",
+          "They must be mounted on lockable casters so they can be moved for cleaning",
           "They must be securely anchored to prevent walking or moving",
-          "They must be bolted only if over 1 ton",
+          "They must be bolted to the floor only if they weigh more than 1 ton",
           "Nothing"
         ],
         "correctAnswer": 1,
@@ -921,10 +921,10 @@
       {
         "question": "What must the user do immediately before mounting an abrasive wheel under 1910.215(d)(1)?",
         "options": [
-          "Nothing if the wheel is new",
+          "Nothing if the wheel is new and still in its sealed carton, since the manufacturer has already ring-tested and speed-rated it at the factory before shipping",
           "Closely inspect and sound the wheel (ring test), and check that spindle speed does not exceed the wheel's maximum marked operating speed",
           "Soak the wheel in water",
-          "Run the wheel at double speed for one minute"
+          "Confirm the speed marked on the wheel is at least 75 percent of the spindle speed, then tighten the flange nut and run the wheel for one full minute"
         ],
         "correctAnswer": 1,
         "explanation": "Immediately before mounting, wheels must be closely inspected and sounded by the user (ring test) to make sure they are undamaged, and the machine's spindle speed must be checked so it does not exceed the wheel's maximum operating speed (1910.215(d)(1)). Workplace example: a dull \"thud\" instead of a clear ring means a cracked vitrified wheel is set aside.",
@@ -958,8 +958,8 @@
         "question": "When must sprocket wheels and chains be enclosed under 1910.219(f)(3)?",
         "options": [
           "Unless they are more than 7 feet above the floor or platform",
-          "Only when over 10 feet up",
-          "Only on new machines",
+          "Only when they are less than 5 feet above the floor or working platform",
+          "Only on machines built or installed after the 1971 adoption of the standard",
           "Never, if painted yellow"
         ],
         "correctAnswer": 0,
@@ -1005,10 +1005,10 @@
       {
         "question": "Within how many days must an employer report a point-of-operation injury on a mechanical power press under 1910.217(g)(1)?",
         "options": [
-          "8 hours",
-          "7 days",
+          "8 hours by telephone",
+          "14 calendar days",
           "30 days",
-          "90 days"
+          "90 calendar days"
         ],
         "correctAnswer": 2,
         "explanation": "The employer must report all point-of-operation injuries to operators or other employees within 30 days of the occurrence, to the Director of the OSHA Directorate of Standards and Guidance (or electronically), or to the State agency administering an approved plan (1910.217(g)(1)). Workplace example: a finger laceration at a press die is reported under 1910.217(g) within 30 days.",
@@ -1017,9 +1017,9 @@
       {
         "question": "When must the employer train and instruct a power press operator under 1910.217(f)(2)?",
         "options": [
-          "Within 30 days of hire",
+          "Within 30 days of hire, while working under an experienced operator's supervision",
           "Before the operator starts work on any operation covered by the section",
-          "Only after an injury",
+          "Only after an injury or near miss at the press, as part of the incident investigation",
           "Annually only"
         ],
         "correctAnswer": 1,
@@ -1081,7 +1081,7 @@
           "Painted lines",
           "Anti-slip mats",
           "Sharp or protruding objects, loose boards, corrosion, leaks, spills, snow, and ice",
-          "Floor drains"
+          "Floor drains, trench grates, and expansion joints that sit flush with the surrounding floor surface"
         ],
         "correctAnswer": 2,
         "explanation": "The employer must ensure walking-working surfaces are free of hazards such as sharp or protruding objects, loose boards, corrosion, leaks, spills, snow, and ice (1910.22(a)(3)). Workplace example: a hydraulic leak under a press is cleaned up and the source repaired, not just covered with cardboard.",
@@ -1092,7 +1092,7 @@
         "options": [
           "Continue use with caution",
           "Post a sign only",
-          "Repair it within 30 days",
+          "It must be repaired within 30 days, and employees may keep using it in the meantime if a warning sign is posted beside the plate",
           "The hazard must be guarded to prevent employees from using the surface until it is corrected or repaired"
         ],
         "correctAnswer": 3,
@@ -1114,7 +1114,7 @@
       {
         "question": "Under 1910.23(b)(2), ladder rungs, steps, and cleats generally must be spaced how far apart, measured between centerlines?",
         "options": [
-          "6 to 10 inches",
+          "6 to 10 inches on center",
           "10 to 14 inches",
           "12 to 18 inches",
           "14 to 20 inches"
@@ -1138,9 +1138,9 @@
       {
         "question": "How often must ladders be inspected under 1910.23(b)(9)?",
         "options": [
-          "Monthly",
-          "Annually",
-          "Only when a defect is reported",
+          "Monthly, by the maintenance supervisor, with the results recorded on a ladder tag",
+          "Annually, by a qualified person, as part of the facility's yearly safety audit",
+          "Periodically by a competent person, and after any occurrence that could damage the ladder",
           "Before initial use in each work shift, and more often as necessary"
         ],
         "correctAnswer": 3,
@@ -1162,9 +1162,9 @@
       {
         "question": "Which is required of each employee climbing up or down a ladder under 1910.23(b)?",
         "options": [
-          "Facing away from the ladder",
+          "Facing away from the ladder when descending, with hands on the side rails behind",
           "Facing the ladder and using at least one hand to grasp it",
-          "Carrying tools in both hands",
+          "Carrying tools in both hands so the body stays centered between the rails",
           "Sliding down the rails"
         ],
         "correctAnswer": 1,
@@ -1175,7 +1175,7 @@
         "question": "Under 1910.23(c)(8), which parts of a stepladder may not be used as steps?",
         "options": [
           "The bottom step",
-          "Any step below the spreader",
+          "The bottom step and the step just below the spreader",
           "The cap (if equipped) and the top step",
           "The middle steps"
         ],
@@ -1187,7 +1187,7 @@
         "question": "A portable ladder is used to reach a roof. Under 1910.23(c)(11), how far must the side rails extend above the upper landing surface?",
         "options": [
           "1 foot",
-          "2 feet",
+          "2 feet 6 inches",
           "3 feet",
           "4 feet"
         ],
@@ -1198,9 +1198,9 @@
       {
         "question": "Under 1910.25(c)(1), standard stairs must be installed at what angle from the horizontal?",
         "options": [
-          "15 to 30 degrees",
+          "Between 20 and 45 degrees",
           "30 to 50 degrees",
-          "50 to 70 degrees",
+          "Between 50 and 70 degrees",
           "70 to 90 degrees"
         ],
         "correctAnswer": 1,
@@ -1289,8 +1289,8 @@
       {
         "question": "An employee works 4 feet from the edge of a low-slope roof. Under 1910.28(b)(13)(i), which protection is acceptable?",
         "options": [
-          "A designated area",
-          "A work rule only",
+          "A designated area, if the work there is both infrequent and temporary and the area is clearly marked with warning lines",
+          "A safety monitor stationed on the roof who warns the employee whenever they come within 2 feet of the edge",
           "No protection is needed",
           "A guardrail system, safety net system, travel restraint system, or personal fall arrest system"
         ],
@@ -1328,7 +1328,7 @@
           "36 inches, plus or minus 3 inches",
           "39 inches minimum",
           "42 inches, plus or minus 3 inches",
-          "48 inches minimum"
+          "48 inches, plus or minus 3 inches, above the surface"
         ],
         "correctAnswer": 2,
         "explanation": "The top edge height of top rails must be 42 inches, plus or minus 3 inches, above the walking-working surface. It may exceed 45 inches if all other criteria are met (1910.29(b)(1)). Workplace example: a new platform guardrail measured at 37 inches is too low.",
@@ -1338,9 +1338,9 @@
         "question": "Under 1910.29(b)(3), a guardrail system must withstand, without failure, a force of at least how much applied within 2 inches of the top edge?",
         "options": [
           "100 pounds",
-          "150 pounds",
+          "150 pounds outward",
           "200 pounds",
-          "300 pounds"
+          "300 pounds downward"
         ],
         "correctAnswer": 2,
         "explanation": "Guardrail systems must withstand, without failure, at least 200 pounds applied downward or outward within 2 inches of the top edge at any point along the top rail (1910.29(b)(3)). When the 200-pound load is applied downward, the top rail must not deflect below 39 inches (1910.29(b)(4)). Workplace example: a chain-only \"guardrail\" that deflects below 39 inches under a 200-pound downward load does not comply.",
@@ -1349,8 +1349,8 @@
       {
         "question": "Under 1910.140(c)(13)(i), an anchorage for personal fall protection equipment that is not designed by a qualified person must be capable of supporting at least:",
         "options": [
-          "1,800 pounds per employee",
-          "3,000 pounds per employee",
+          "1,800 pounds for each employee attached to it",
+          "3,000 pounds per employee using a self-retracting lifeline",
           "5,000 pounds for each employee attached",
           "10,000 pounds total"
         ],
@@ -1364,7 +1364,7 @@
           "2 feet",
           "4 feet",
           "6 feet, or contact a lower level",
-          "10 feet"
+          "12 feet, or twice the length of the lanyard in use"
         ],
         "correctAnswer": 2,
         "explanation": "Personal fall arrest systems must be rigged so the employee cannot free fall more than 6 feet or contact a lower level, unless the manufacturer designed and tested the system for a longer free fall with a maximum arresting force of 1,800 pounds (1910.140(d)(2)(ii)). Workplace example: a 6-foot lanyard anchored at foot level could allow nearly 12 feet of free fall, so the anchor must be raised.",
@@ -1385,8 +1385,8 @@
       {
         "question": "Under 1910.140(c)(18), when must personal fall protection systems be inspected?",
         "options": [
-          "Annually by the manufacturer",
-          "Monthly",
+          "At least annually by a competent person, with the inspection date recorded on a tag attached to each harness",
+          "Once a month by the safety coordinator, with each harness and lanyard checked against the manufacturer's checklist",
           "Only after a fall",
           "Before initial use during each workshift, with defective components removed from service"
         ],
@@ -1400,7 +1400,7 @@
           "The employer must provide for prompt rescue of each employee",
           "Calling OSHA first",
           "Waiting for the fire department only",
-          "Nothing beyond first aid"
+          "Each employee must perform self-rescue, so the employer only has to supply suspension trauma relief straps"
         ],
         "correctAnswer": 0,
         "explanation": "The employer must provide for prompt rescue of each employee in the event of a fall (1910.140(c)(21)). Workplace example: a rescue plan with a ladder or lift staged nearby before anyone works suspended in a harness.",
@@ -1409,9 +1409,9 @@
       {
         "question": "Under 1910.30(a), when and by whom must employees who use personal fall protection systems be trained?",
         "options": [
-          "Within 90 days, by any coworker",
+          "Within 90 days of hire, by any coworker who has worked at heights for at least a year",
           "Before any exposure to a fall hazard, by a qualified person",
-          "After their first year, by the manufacturer",
+          "Within their first 30 days of roof work, by the harness manufacturer's representative",
           "Only if they request it"
         ],
         "correctAnswer": 1,
@@ -1477,7 +1477,7 @@
         "question": "Under 1910.303(e)(1), electric equipment may not be used unless it is marked with:",
         "options": [
           "The installation date only",
-          "The electrician's license number",
+          "The installing electrician's name and license number, the date it was installed, and the panel and circuit number that feed the equipment",
           "A color code for the building",
           "The manufacturer's name, trademark, or other identifying marking, plus voltage, current, wattage, or other ratings as necessary"
         ],
@@ -1489,8 +1489,8 @@
         "question": "Under 1910.303(f)(2), how must each service, feeder, and branch circuit be identified at its disconnecting means or overcurrent device?",
         "options": [
           "It must be legibly marked to indicate its purpose, unless located and arranged so the purpose is evident",
-          "Only by circuit number on the drawings",
-          "By color-coded tape only",
+          "By circuit number on the electrical drawings, with the panel schedule kept in the maintenance office instead of at the panel",
+          "By color-coded tape on each breaker, with the color key posted in the plant engineering office rather than at the panel",
           "No marking is required"
         ],
         "correctAnswer": 0,
@@ -1500,9 +1500,9 @@
       {
         "question": "Under 1910.303(f)(4), disconnecting means required by Subpart S must be:",
         "options": [
-          "Located outdoors",
+          "Located outdoors, within sight of the utility service entrance",
           "Capable of being locked in the open position",
-          "Operated only by the utility",
+          "Capable of being locked in the closed position to prevent accidental shutoff",
           "Painted red"
         ],
         "correctAnswer": 1,
@@ -1585,9 +1585,9 @@
         "question": "Under 1910.305(g)(1)(iv), which is a prohibited use of flexible cords, unless specifically permitted in (g)(1)(ii)?",
         "options": [
           "As a substitute for the fixed wiring of a structure",
-          "Connecting portable lamps",
+          "Connecting portable lamps or appliances through an attachment plug and approved receptacle",
           "Connecting appliances to allow frequent interchange",
-          "Wiring cranes and hoists"
+          "Wiring cranes and hoists, and connecting the moving parts of overhead equipment"
         ],
         "correctAnswer": 0,
         "explanation": "Unless specifically permitted, flexible cords and cables may not be used as a substitute for fixed wiring, run through holes in walls, ceilings, or floors, run through doorways or windows, attached to building surfaces, concealed behind walls, ceilings, or floors, or installed in raceways (1910.305(g)(1)(iv)). Workplace example: an extension cord stapled along the wall to power a permanent workstation is not allowed.",
@@ -1596,9 +1596,9 @@
       {
         "question": "How must flexible cords be connected to devices and fittings under 1910.305(g)(2)(iii)?",
         "options": [
-          "With tape wrapped around the joint",
+          "With the conductors wrapped tightly around the terminal screws and taped, and no clamp gripping the cord jacket inside the plug",
           "So strain relief keeps pull from being transmitted directly to joints or terminal screws",
-          "With a knot tied inside the plug",
+          "So the conductors are soldered to the terminal screws, making the soldered joint strong enough to carry any pull applied to the cord",
           "Any way that conducts current"
         ],
         "correctAnswer": 1,
@@ -1665,8 +1665,8 @@
         "question": "Under 1910.333(b)(2)(iii)(A), what must be placed on each disconnecting means used to deenergize circuits and equipment for work?",
         "options": [
           "A sign only",
-          "Tape over the handle",
-          "A verbal warning",
+          "A strip of tape over the breaker handle, marked with the worker's name and the date",
+          "A verbal warning to the operator and a note in the shift log that the circuit is off",
           "A lock and a tag (except as provided in (b)(2)(iii)(C) and (E))"
         ],
         "correctAnswer": 3,
@@ -1677,7 +1677,7 @@
         "question": "Under 1910.333(b)(2)(ii)(B), which may NOT be used as the sole means of deenergizing circuits or equipment?",
         "options": [
           "Control circuit devices such as push buttons, selector switches, and interlocks",
-          "A circuit breaker",
+          "A circuit breaker opened and locked in the open position, with a tag identifying the employee doing the work",
           "A disconnect switch",
           "Removing fuses"
         ],
@@ -1688,10 +1688,10 @@
       {
         "question": "Under 1910.333(b)(2)(iv)(B), how must the deenergized condition be verified before work?",
         "options": [
-          "By looking at the breaker position",
+          "An authorized employee must visually confirm that the breaker handle is in the off position and that the lock is applied to it",
           "A qualified person must use test equipment to verify that the circuit elements and equipment parts are deenergized",
           "By asking the operator",
-          "By touching the conductor with the back of the hand"
+          "By touching the conductor briefly with the back of the hand, which keeps the fingers from closing around it if it is live"
         ],
         "correctAnswer": 1,
         "explanation": "A qualified person must use test equipment to test the circuit elements and electrical parts that employees will be exposed to, and verify they are deenergized (1910.333(b)(2)(iv)(B)). Workplace example: after lockout, the electrician tests all three phases with a meter verified on a known live source.",
@@ -1712,10 +1712,10 @@
       {
         "question": "An unqualified person is working in an elevated position near a 13.8-kV overhead line. Under 1910.333(c)(3)(i)(A)(1), how close may they and the longest conductive object they may contact come to the line?",
         "options": [
-          "No closer than 4 feet",
+          "No closer than 4 feet below 50 kV",
           "No closer than 6 feet",
           "No closer than 10 feet",
-          "No closer than 20 feet"
+          "No closer than 20 feet from the line"
         ],
         "correctAnswer": 2,
         "explanation": "For voltages to ground of 50 kV or below, an unqualified person working in an elevated position, and the longest conductive object they may contact, may not come closer than 10 feet to any unguarded, energized overhead line (1910.333(c)(3)(i)(A)(1)). Workplace example: a painter on a lift keeps the roller pole at least 10 feet from the service drop.",
@@ -1760,9 +1760,9 @@
       {
         "question": "A breaker trips on a machine circuit. What does 1910.334(b)(2) require?",
         "options": [
-          "Reset it immediately and keep resetting until it holds",
-          "Replace it with a larger breaker",
-          "Bypass it with a jumper",
+          "The operator may reset it once right away; if it trips again, it may be reset up to two more times before a maintenance electrician must examine the circuit",
+          "Replace it with a larger breaker sized for the motor's starting current so the circuit stops tripping, then restore power right away to resume production",
+          "Install a jumper across the breaker terminals so the machine can finish the production run, and have maintenance look for the cause of the trip at the end of the shift",
           "Do not manually reenergize until it is determined that the equipment and circuit can be safely energized; repetitive manual reclosing is prohibited"
         ],
         "correctAnswer": 3,
@@ -1774,7 +1774,7 @@
         "options": [
           "Nonconductive head protection",
           "A bump cap",
-          "A metal hard hat",
+          "A metal hard hat rated for impact and penetration",
           "No head protection is needed"
         ],
         "correctAnswer": 0,
@@ -1852,9 +1852,9 @@
       {
         "question": "Under 1910.132(d)(2), how must the employer verify that the hazard assessment was performed?",
         "options": [
-          "A verbal statement to employees",
+          "A verbal statement from the safety manager at the next all-hands meeting that each work area has been walked through and the hazards and required PPE for each task reviewed with the crew",
           "A photo of the work area",
-          "An entry in the OSHA 300 Log",
+          "An entry on the OSHA 300 Log for each department, listing the hazards found in each work area, the PPE selected for each task, and the name of the supervisor who walked through the area",
           "A written certification identifying the workplace evaluated, the person certifying, the date(s) of the assessment, and that the document is a certification of hazard assessment"
         ],
         "correctAnswer": 3,
@@ -1888,10 +1888,10 @@
       {
         "question": "Under 1910.132(f)(2), what must each affected employee do before being allowed to perform work requiring PPE?",
         "options": [
-          "Sign a waiver",
+          "Sign a statement acknowledging that they received the PPE and accept responsibility for any injury from not using it",
           "Buy their own PPE",
           "Demonstrate an understanding of the training and the ability to use PPE properly",
-          "Watch a video only"
+          "Watch the manufacturer's PPE video during orientation, then begin work in the area the same day"
         ],
         "correctAnswer": 2,
         "explanation": "Each affected employee must demonstrate an understanding of the training and the ability to use PPE properly before being allowed to perform work requiring PPE (1910.132(f)(2)). Workplace example: the trainer watches each new employee put on and adjust a face shield and chemical gloves before they start at the plating line.",
@@ -1900,9 +1900,9 @@
       {
         "question": "Which situation does 1910.132(f)(3) list as requiring PPE retraining?",
         "options": [
-          "The employee's birthday",
-          "A new supervisor is hired",
-          "The PPE is repainted",
+          "Each employee's hiring anniversary, as an annual refresher on the same PPE they already use correctly",
+          "A new supervisor takes over the department, though the PPE, hazards, and employees' skills are all unchanged",
+          "The PPE is restocked from a new shipment of the identical model and size the employees already use",
           "Changes in the types of PPE to be used make previous training obsolete"
         ],
         "correctAnswer": 3,
@@ -1915,7 +1915,7 @@
           "Non-specialty safety-toe footwear that the employer permits to be worn off the job site",
           "Chemical-resistant gloves",
           "Face shields",
-          "Replacement for PPE worn out in normal use"
+          "Replacement for PPE that wore out in normal use, such as welding gloves with burned-through palms"
         ],
         "correctAnswer": 0,
         "explanation": "The employer is not required to pay for non-specialty safety-toe protective footwear and non-specialty prescription safety eyewear, provided the employer permits them to be worn off the job site (1910.132(h)(2)). Other required PPE is provided at no cost (1910.132(h)(1)), including replacements unless lost or intentionally damaged (1910.132(h)(5)). Workplace example: the plant pays for welding gloves and face shields, but standard steel-toe boots may be the employee's cost.",
@@ -1927,7 +1927,7 @@
           "Tinted lenses",
           "Side protection; detachable clip-on or slide-on side shields meeting the section are acceptable",
           "Prescription lenses",
-          "Anti-fog coating only"
+          "Front impact protection only; side shields are needed only when the worker also wears prescription glasses"
         ],
         "correctAnswer": 1,
         "explanation": "Each affected employee must use eye protection that provides side protection when there is a hazard from flying objects. Detachable side protectors such as clip-on or slide-on side shields are acceptable (1910.133(a)(2)). Workplace example: a machinist at a lathe throwing chips wears safety glasses with side shields.",
@@ -1937,9 +1937,9 @@
         "question": "Per the filter lens table in 1910.133(a)(5), what is the minimum protective shade for shielded metal arc welding with 5-8/32-inch electrodes at 160-250 amps?",
         "options": [
           "Shade 7",
-          "Shade 8",
+          "Shade 8 minimum",
           "Shade 10",
-          "Shade 11"
+          "Shade 12 minimum"
         ],
         "correctAnswer": 2,
         "explanation": "The table lists a minimum protective shade of 10 for shielded metal arc welding with electrode size 5-8 (in 1/32 in.) and arc current 160-250 amps (1910.133(a)(5)). Workplace example: a welder running 3/16-inch (6/32) rod at 200 amps uses at least a shade 10 lens.",
@@ -1975,7 +1975,7 @@
           "The lowest price",
           "An evaluation of the hand protection's performance characteristics relative to the tasks, conditions present, duration of use, and the hazards and potential hazards identified",
           "The color the employee prefers",
-          "What other plants use"
+          "The glove listed in section 8 of the safety data sheet for the main solvent handled, issued in one style and size to every worker for every task in the department whatever the duration of use"
         ],
         "correctAnswer": 1,
         "explanation": "Selection must be based on an evaluation of the performance characteristics of the hand protection relative to the tasks, conditions present, duration of use, and the hazards and potential hazards identified (1910.138(b)). Hand protection is required for hazards such as skin absorption, severe cuts, punctures, chemical and thermal burns (1910.138(a)). Workplace example: for an 8-hour solvent-wiping task, gloves are chosen by breakthrough time, not just \"chemical resistant\" on the box.",
@@ -2033,10 +2033,10 @@
       {
         "question": "Under 1910.36(b)(1), how many exit routes must generally be available in a workplace?",
         "options": [
-          "At least one",
+          "At least one, with a second route added whenever more than 25 employees work on the same floor of the building",
           "At least three",
           "At least two, located as far apart as practical, except where 1910.36(b)(3) permits a single route",
-          "One per 50 employees"
+          "One exit route for every 50 employees on a shift, rounded up, with a single route allowed for smaller crews"
         ],
         "correctAnswer": 2,
         "explanation": "At least two exit routes must be available to permit prompt evacuation, located as far away as practical from each other so one remains usable if the other is blocked, except as allowed in 1910.36(b)(3) (1910.36(b)(1)). Workplace example: the fabrication shop has exits at opposite ends of the building.",
@@ -2045,7 +2045,7 @@
       {
         "question": "Under 1910.36(d)(1), how must employees be able to open an exit route door from the inside?",
         "options": [
-          "With a key kept at the front desk",
+          "With a key kept in a break-glass box mounted beside each exit door",
           "Only during business hours",
           "With a keypad code",
           "At all times, without keys, tools, or special knowledge"
@@ -2070,9 +2070,9 @@
         "question": "Under 1910.36(g)(1), what is the minimum ceiling height of an exit route?",
         "options": [
           "6 feet 8 inches",
-          "7 feet",
+          "7 feet above finished floor",
           "7 feet 6 inches",
-          "8 feet"
+          "8 feet in production areas"
         ],
         "correctAnswer": 2,
         "explanation": "The ceiling of an exit route must be at least 7 feet 6 inches high, and no projection from the ceiling may reach lower than 6 feet 8 inches from the floor (1910.36(g)(1)). Workplace example: a new duct run is kept above 6 feet 8 inches in the exit corridor.",
@@ -2093,8 +2093,8 @@
       {
         "question": "Which does 1910.37(a)(3) prohibit?",
         "options": [
-          "Lighting in exit routes",
-          "Signs that read \"Exit\"",
+          "Lighting the exit route so an employee with normal vision can see along it, with fixtures mounted on the corridor walls and ceiling along its length",
+          "Marking each exit with a sign reading \"Exit\" in letters at least 6 inches high, illuminated by a reliable light source of at least 5 foot-candles",
           "Fire doors on exits",
           "Placing materials or equipment in the exit route, even temporarily, or routing the exit access through a room that can be locked"
         ],
@@ -2107,8 +2107,8 @@
         "options": [
           "\"Not an Exit\" or similar, or with a sign showing its actual use (e.g., \"Closet\")",
           "It needs no marking",
-          "With a red light",
-          "With an arrow pointing toward it"
+          "With a red light mounted above the door frame so it can be seen from the far end of the corridor",
+          "With an illuminated \"Exit\" sign and an arrow, so employees can use it when the main exit is blocked"
         ],
         "correctAnswer": 0,
         "explanation": "Each doorway or passage along an exit access that could be mistaken for an exit must be marked \"Not an Exit\" or similar, or identified by a sign indicating its actual use, such as closet (1910.37(b)(5)). Workplace example: the storage room door beside the exit corridor gets a \"Storage - Not an Exit\" sign.",
@@ -2119,7 +2119,7 @@
         "options": [
           "At least 4 inches high with 1/2-inch strokes",
           "At least 6 inches high with principal strokes at least 3/4 inch wide",
-          "At least 8 inches high",
+          "At least 8 inches high with principal strokes at least 1 inch wide, readable from 100 feet",
           "Any legible size"
         ],
         "correctAnswer": 1,
@@ -2154,7 +2154,7 @@
         "question": "Under 1910.38(f), when must an employer review the emergency action plan with each covered employee?",
         "options": [
           "When the plan is developed or the employee is first assigned to a job, when the employee's responsibilities under the plan change, and when the plan is changed",
-          "Only once a year",
+          "Within 90 days after the plan is developed or the employee is hired, then once each year at the annual safety meeting, with a short refresher after every evacuation drill",
           "Only after an emergency",
           "Only when OSHA requests it"
         ],
@@ -2167,7 +2167,7 @@
         "options": [
           "The company's annual revenue",
           "Procedures to control accumulations of flammable and combustible waste materials",
-          "A floor plan of parking spaces",
+          "Procedures to account for all employees after an emergency evacuation, including a head count at each assembly point",
           "The names of all customers"
         ],
         "correctAnswer": 1,
@@ -2226,7 +2226,7 @@
       {
         "question": "Which extinguishing agents does 1910.157(c)(3) prohibit in the workplace?",
         "options": [
-          "Dry chemical and carbon dioxide",
+          "Carbon dioxide and Halon 1211 in rooms with energized electrical equipment",
           "Water and foam",
           "Halon 1211 and Halon 1301",
           "Carbon tetrachloride and chlorobromomethane"
@@ -2239,9 +2239,9 @@
         "question": "Under 1910.157(c)(4), in what condition and where must portable fire extinguishers be kept?",
         "options": [
           "Fully charged and operable, and kept in their designated places at all times except during use",
-          "Partially charged, wherever last used",
+          "At least half charged, as shown by the gauge, and left at the spot where they were last used until recharged",
           "Empty until a fire occurs",
-          "In the maintenance shop when not needed"
+          "Stored in the maintenance shop between monthly inspections, and brought out only when hot work is under way"
         ],
         "correctAnswer": 0,
         "explanation": "Portable fire extinguishers must be maintained fully charged and operable and kept in their designated places at all times except during use (1910.157(c)(4)). Workplace example: an extinguisher used on a small trash fire is replaced right away, not left empty on its hook.",
@@ -2346,9 +2346,9 @@
       {
         "question": "Under 1910.157(g)(1)-(2), when the employer provides extinguishers for employee use, when must the educational program be given?",
         "options": [
-          "Only once, at hire",
+          "Upon initial employment only, with a refresher when extinguishers are replaced",
           "Upon initial employment and at least annually thereafter",
-          "Every three years",
+          "Upon initial employment and at least every three years thereafter",
           "Only to the fire brigade"
         ],
         "correctAnswer": 1,
@@ -2396,10 +2396,10 @@
       {
         "question": "Under the definitions in 1910.146(b), which set of conditions makes a space a \"confined space\"?",
         "options": [
-          "Any space with a hazardous atmosphere",
+          "Large enough for an employee to bodily enter and work, designed for continuous employee occupancy, and containing or having the potential to contain a hazardous atmosphere or engulfment hazard",
           "Any space below grade",
           "Large enough and configured for an employee to bodily enter and work, limited or restricted means of entry or exit, and not designed for continuous employee occupancy",
-          "Any space smaller than 100 square feet"
+          "Any space with a single entry point and less than 100 square feet of floor area that an employee can reach into with arms and tools, even if it is too small for the employee to bodily enter"
         ],
         "correctAnswer": 2,
         "explanation": "A confined space is large enough and configured so an employee can bodily enter and perform work, has limited or restricted means of entry or exit, and is not designed for continuous employee occupancy (1910.146(b)). A permit-required confined space is a confined space that also has one or more listed hazards. Workplace example: a product storage hopper meets all three conditions.",
@@ -2421,9 +2421,9 @@
         "question": "How does 1910.146(c)(2) require employers to inform exposed employees of permit spaces?",
         "options": [
           "By posting danger signs or by any other equally effective means; a sign reading \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" would satisfy it",
-          "Only in the annual safety meeting",
-          "Only in the written program",
-          "By email to supervisors"
+          "By posting signs reading \"CAUTION--CONFINED SPACE\" at each entrance; the word DANGER is reserved for spaces where testing has measured an atmospheric hazard above the PEL",
+          "By training only the authorized entrants, attendants, and entry supervisors on space locations, since employees who never enter need not be told the spaces exist",
+          "By posting signs only at permit spaces entered at least once a year, while rarely entered spaces are covered by a note in the written program kept in the safety office"
         ],
         "correctAnswer": 0,
         "explanation": "If the workplace has permit spaces, the employer must inform exposed employees of their existence, location, and danger by posting danger signs or other equally effective means. \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" or similar language satisfies the sign requirement (1910.146(c)(2)). Workplace example: the sign is stenciled on each tank manway.",
@@ -2434,8 +2434,8 @@
         "options": [
           "Nothing beyond issuing a meter",
           "Develop and implement a written permit space program that complies with 1910.146 and is available to employees and their representatives",
-          "Rely on the contractor's program",
-          "Get verbal approval from the plant manager each time"
+          "Rely on a pre-entry checklist kept at each space and the entry supervisor's experience, so a written permit space program is needed only after an entry incident occurs",
+          "Get verbal approval from the plant manager before each entry and have the attendant log who entered and when, in place of a written permit space program"
         ],
         "correctAnswer": 1,
         "explanation": "If employees will enter permit spaces, the employer must develop and implement a written permit space program complying with 1910.146, available for inspection by employees and their authorized representatives (1910.146(c)(4)). If employees will not enter, the employer must take effective measures to prevent entry (1910.146(c)(3)). Workplace example: the maintenance department's written program covers every tank it enters.",
@@ -2444,8 +2444,8 @@
       {
         "question": "In what order does 1910.146(d)(5)(iii) require testing for atmospheric hazards?",
         "options": [
-          "Toxic gases, then oxygen, then combustibles",
-          "Combustibles, then oxygen, then toxics",
+          "Toxic gases and vapors first, then oxygen, then combustibles, since toxics such as H2S act fastest",
+          "Combustible gases and vapors first, then oxygen, then toxic gases and vapors, since fire or explosion is the most immediate danger",
           "Oxygen first, then combustible gases and vapors, then toxic gases and vapors",
           "Any order"
         ],
@@ -2456,7 +2456,7 @@
       {
         "question": "Under 1910.146(e)(2), who must sign the entry permit before entry begins?",
         "options": [
-          "The attendant",
+          "The attendant assigned to the space, after the entrants are ready",
           "Any authorized entrant",
           "The plant safety director only",
           "The entry supervisor identified on the permit"
@@ -2492,7 +2492,7 @@
       {
         "question": "Under 1910.146(g)(2), when must confined space training be provided to each affected employee?",
         "options": [
-          "Only once every three years",
+          "Before the employee is first assigned duties and then annually through a classroom refresher course; no new training is needed when duties or operations change if the employee has already entered permit spaces at least once before",
           "Only after an incident",
           "Before the employee is first assigned duties, before a change in assigned duties, when operations change in a way that presents an untrained hazard, and when deviations or inadequacies in knowledge are suspected",
           "Only to entry supervisors"
@@ -2505,7 +2505,7 @@
         "question": "What must the training certification under 1910.146(g)(4) contain?",
         "options": [
           "Only the course title",
-          "The employee's test score and medical status",
+          "Each employee's name, the employee's score on the written test, and the date the next refresher training is due",
           "Only the trainer's certificate number",
           "Each employee's name, the signatures or initials of the trainers, and the dates of training"
         ],
@@ -2517,9 +2517,9 @@
         "question": "Under 1910.146(i)(4), where must the attendant be during entry operations?",
         "options": [
           "Outside the permit space until relieved by another attendant",
-          "Inside the space with the entrants",
+          "Inside the permit space near the portal, where the entrants can be seen and heard",
           "In the control room",
-          "Wherever needed to help with the work"
+          "Wherever needed to help the entrants, including inside the space for short tasks"
         ],
         "correctAnswer": 0,
         "explanation": "The attendant must remain outside the permit space during entry operations until relieved by another attendant (1910.146(i)(4)), and may perform no duties that would interfere with monitoring and protecting the entrants (1910.146(i)(10)). Workplace example: the attendant stays at the manway with the radio and entry log for the whole entry.",
@@ -2578,7 +2578,7 @@
       {
         "question": "Under 1910.1030(c)(1)(i), what must an employer with employees who have occupational exposure establish?",
         "options": [
-          "A verbal policy",
+          "A verbal exposure control procedure reviewed with each employee at hire, with a written plan due after the first exposure incident",
           "Only a first aid kit",
           "A written Exposure Control Plan designed to eliminate or minimize employee exposure",
           "A contract with a hospital"
@@ -2590,7 +2590,7 @@
       {
         "question": "How often must the Exposure Control Plan be reviewed and updated under 1910.1030(c)(1)(iv)?",
         "options": [
-          "Every five years",
+          "Every three years, or sooner when the workers' compensation carrier or local health department identifies new tasks with occupational exposure",
           "Only after an exposure incident",
           "Never, once written",
           "At least annually, and whenever necessary to reflect new or modified tasks, procedures, or positions with occupational exposure"
@@ -2616,8 +2616,8 @@
         "options": [
           "At the end of the shift",
           "Immediately or as soon as feasible after removing gloves or other personal protective equipment",
-          "Only if blood is visible on the hands",
-          "Before putting on gloves only"
+          "Only if blood is visible on the hands after glove removal; otherwise hand sanitizer at the end of the task is enough",
+          "Before putting on gloves and at the end of the shift, since wearing gloves keeps the hands from being contaminated during the task"
         ],
         "correctAnswer": 1,
         "explanation": "Employers must ensure employees wash their hands immediately or as soon as feasible after removing gloves or other PPE (1910.1030(d)(2)(v)). Workplace example: after bandaging a coworker's cut, the responder removes gloves and washes right away.",
@@ -2638,9 +2638,9 @@
       {
         "question": "Under 1910.1030(d)(2)(ix), which activities are prohibited in work areas where occupational exposure is reasonably likely?",
         "options": [
-          "Wearing gloves",
-          "Using sharps containers",
-          "Washing hands",
+          "Wearing disposable gloves when hand contact with blood or other potentially infectious materials can be reasonably anticipated",
+          "Eating, drinking, and smoking only; applying lip balm and handling contact lenses are allowed if hands are washed first",
+          "Washing hands with antiseptic hand cleaner and towelettes when running water is not available at the work site",
           "Eating, drinking, smoking, applying cosmetics or lip balm, and handling contact lenses"
         ],
         "correctAnswer": 3,
@@ -2651,8 +2651,8 @@
         "question": "Under 1910.1030(f)(2)(i), when must hepatitis B vaccination be made available to employees with occupational exposure?",
         "options": [
           "After they receive the required training and within 10 working days of initial assignment (unless an exception applies)",
-          "After their first exposure incident only",
-          "Within 90 days of hire",
+          "After their first exposure incident only, as part of the post-exposure evaluation rather than at initial assignment to the job",
+          "Within 90 days of initial assignment, after the employee completes a pre-vaccination antibody screening test at the employee's own expense",
           "Only if they request it in writing"
         ],
         "correctAnswer": 0,
@@ -2662,7 +2662,7 @@
       {
         "question": "An employee declines the hepatitis B vaccination. What does 1910.1030(f)(2)(iv) require?",
         "options": [
-          "Nothing",
+          "The employee signs a declination, and the offer of vaccination is then permanently closed",
           "The employee must sign the declination statement in Appendix A",
           "The employee must be removed from the job",
           "The employer must vaccinate anyway"
@@ -2674,10 +2674,10 @@
       {
         "question": "Under 1910.1030(g)(1)(i), what color must biohazard warning labels be, and what may substitute for labels?",
         "options": [
-          "Yellow; any bag",
+          "Fluorescent yellow with black lettering and the biohazard symbol; clear bags may substitute if the contents are listed on an attached tag or form",
           "Green; clear bags",
           "Fluorescent orange or orange-red (or predominantly so) with contrasting lettering and symbols; red bags or red containers may substitute",
-          "Blue; any closed container"
+          "Blue with white lettering and the biohazard symbol; any closed, leakproof container may substitute for a label if it is kept in a locked area"
         ],
         "correctAnswer": 2,
         "explanation": "Labels must be fluorescent orange or orange-red, or predominantly so, with lettering and symbols in a contrasting color (1910.1030(g)(1)(i)(C)). Red bags or red containers may be substituted for labels (1910.1030(g)(1)(i)(E)). Workplace example: bloody gauze from first aid goes in a red bag.",
@@ -2686,8 +2686,8 @@
       {
         "question": "When must bloodborne pathogens training be provided under 1910.1030(g)(2)?",
         "options": [
-          "Once every three years",
-          "Only after an exposure incident",
+          "At no cost, at initial assignment to tasks with possible exposure, and every three years thereafter; sessions may be held after working hours if employees are paid for the time",
+          "Within 90 days after initial assignment to tasks with possible exposure and every two years thereafter, with the training cost shared between the employer and each employee",
           "Only to supervisors",
           "At no cost, during working hours, at initial assignment to tasks with possible exposure, and at least annually thereafter (within one year of the previous training)"
         ],
@@ -2768,7 +2768,7 @@
       {
         "question": "Under 1904.5(a), when must an injury or illness be considered work-related?",
         "options": [
-          "Only if it happened during scheduled work hours",
+          "If an event or exposure in the work environment was the predominant cause; a pre-existing condition that is aggravated at work is excluded unless a physician confirms it",
           "Only if a supervisor witnessed it",
           "If an event or exposure in the work environment caused or contributed to it, or significantly aggravated a pre-existing injury or illness",
           "Only if the employee was following procedures"
@@ -2793,9 +2793,9 @@
         "question": "Under 1904.7(b)(5)(ii)(D), which wound treatment is medical treatment (and so recordable) rather than first aid?",
         "options": [
           "Sutures or staples",
-          "Butterfly bandages",
-          "Steri-Strips",
-          "Gauze pads"
+          "Butterfly bandages on a deep cut",
+          "Steri-Strips on a laceration",
+          "Gauze pads and an elastic wrap"
         ],
         "correctAnswer": 0,
         "explanation": "Wound coverings such as bandages, gauze pads, butterfly bandages, and Steri-Strips are first aid. Other wound-closing devices such as sutures and staples are medical treatment (1904.7(b)(5)(ii)(D)). Workplace example: a laceration closed with three stitches at urgent care is recorded.",
@@ -2816,8 +2816,8 @@
       {
         "question": "Under 1904.7(b)(3)(vii), at what point may the employer stop counting days away from work?",
         "options": [
-          "30 calendar days",
-          "90 calendar days",
+          "90 calendar days (one quarter)",
+          "365 calendar days (one year)",
           "180 calendar days",
           "There is no cap"
         ],
@@ -2841,8 +2841,8 @@
         "question": "Which of these must be treated as a privacy concern case under 1904.29(b)(7)?",
         "options": [
           "A needlestick injury from a sharp contaminated with another person's blood or other potentially infectious material",
-          "A broken arm from a fall",
-          "A back strain from lifting",
+          "A broken arm from a fall from a stepladder in the warehouse that required surgery, a hospital stay, and several weeks away from work",
+          "A back strain from lifting a patient that kept the employee off work for more than five days and required outpatient physical therapy",
           "A burn from a hot pipe"
         ],
         "correctAnswer": 0,
@@ -2865,7 +2865,7 @@
         "question": "How long must the OSHA 300 Log, privacy case list, annual summary, and 301 forms be kept under 1904.33(a)?",
         "options": [
           "1 year",
-          "3 years",
+          "3 years following the end of the calendar year the records cover, then they may be discarded",
           "5 years following the end of the calendar year the records cover",
           "30 years"
         ],
@@ -2878,7 +2878,7 @@
         "options": [
           "8 hours",
           "24 hours",
-          "72 hours",
+          "72 hours (3 days)",
           "7 days"
         ],
         "correctAnswer": 1,
@@ -2890,7 +2890,7 @@
         "options": [
           "March 2 of the year after the calendar year covered by the forms",
           "January 31",
-          "February 1",
+          "February 1 of the year after the calendar year covered, when 300-A posting begins",
           "April 30"
         ],
         "correctAnswer": 0,
@@ -2950,10 +2950,10 @@
       {
         "question": "Under 1910.95(b)(1), what must be used first when sound levels exceed Table G-16?",
         "options": [
-          "Earplugs for everyone",
+          "Personal protective equipment such as earplugs or earmuffs; administrative or engineering controls are added only if protectors fail to reduce levels within the table",
           "Shorter breaks only",
           "Feasible administrative or engineering controls; personal protective equipment is used if they fail to reduce levels within the table",
-          "Nothing until audiograms show loss"
+          "Nothing until an employee's annual audiogram shows a standard threshold shift, then hearing protectors and refitting for that employee only"
         ],
         "correctAnswer": 2,
         "explanation": "When employees are exposed above Table G-16, feasible administrative or engineering controls must be used. If they fail to reduce sound levels within the table, PPE must be provided and used (1910.95(b)(1)). Workplace example: an enclosure is built around the blower before relying on earmuffs.",
@@ -2976,7 +2976,7 @@
         "options": [
           "Each employee exposed at or above an 8-hour TWA of 85 decibels",
           "All employees in the plant",
-          "Only employees above 90 dBA",
+          "Each employee exposed at or above an 8-hour TWA of 90 decibels, the permissible exposure limit",
           "No one; results are confidential"
         ],
         "correctAnswer": 0,
@@ -2988,7 +2988,7 @@
         "options": [
           "Within 30 days",
           "Within 6 months",
-          "Within 1 year",
+          "Within 1 year of exposure",
           "Within 2 years"
         ],
         "correctAnswer": 1,
@@ -3011,8 +3011,8 @@
         "question": "Under 1910.95(g)(6), how often must a new audiogram be obtained for each employee exposed at or above an 8-hour TWA of 85 decibels?",
         "options": [
           "Every 5 years",
-          "Only when the employee asks",
-          "Every 3 years",
+          "Only when the employee reports hearing difficulty",
+          "At least every 3 years after the baseline audiogram",
           "At least annually after the baseline"
         ],
         "correctAnswer": 3,
@@ -3023,9 +3023,9 @@
         "question": "How does 1910.95(g)(10)(i) define a standard threshold shift?",
         "options": [
           "A change in hearing threshold relative to baseline averaging 10 dB or more at 2000, 3000, and 4000 Hz in either ear",
-          "Any change in hearing at any frequency",
-          "A 25 dB loss at 1000 Hz",
-          "A change of 5 dB at 500 Hz in both ears"
+          "Any change in hearing threshold relative to the baseline audiogram at any single test frequency from 500 to 6000 Hz in either ear",
+          "A hearing loss of 25 dB or more above audiometric zero at 1000 Hz alone, measured in the worse ear on the annual audiogram",
+          "A change in hearing threshold relative to the baseline audiogram averaging 25 dB or more at 500, 1000, and 2000 Hz in both ears"
         ],
         "correctAnswer": 0,
         "explanation": "A standard threshold shift is a change in hearing threshold relative to the baseline audiogram averaging 10 dB or more at 2000, 3000, and 4000 Hz in either ear (1910.95(g)(10)(i)). Workplace example: an employee's right ear shows an average 12 dB shift across those three frequencies, which is a standard threshold shift.",
@@ -3034,10 +3034,10 @@
       {
         "question": "If an annual audiogram shows a standard threshold shift, within how many days must the employee be informed in writing under 1910.95(g)(8)(i)?",
         "options": [
-          "7 days",
+          "7 working days",
           "21 days",
           "30 days",
-          "90 days"
+          "90 calendar days"
         ],
         "correctAnswer": 1,
         "explanation": "If comparison shows a standard threshold shift, the employee must be informed in writing within 21 days of the determination (1910.95(g)(8)(i)). A retest within 30 days may be used as the annual audiogram (1910.95(g)(7)(ii)). Workplace example: the program coordinator mails the notice within three weeks of the audiologist's review.",
@@ -3047,7 +3047,7 @@
         "question": "What does 1910.95(i) require for hearing protectors?",
         "options": [
           "Employees buy their own",
-          "One type is enough for everyone",
+          "They must be available at no cost only to employees exposed to an 8-hour TWA of 90 dB or greater, and the employer may issue a single type of protector if it is adequately rated for the noise",
           "They must be available at no cost to all employees exposed to an 8-hour TWA of 85 dB or greater, and employees must be able to choose from a variety of suitable protectors",
           "Only for employees above 100 dB"
         ],
@@ -3058,9 +3058,9 @@
       {
         "question": "Under 1910.95(k)(2), how often must hearing conservation training be repeated?",
         "options": [
-          "Every 3 years",
+          "Every three years, or sooner if an employee's annual audiogram shows a standard threshold shift",
           "Only at hire",
-          "Only after a threshold shift",
+          "Only after a threshold shift is found on the employee's annual audiogram",
           "Annually for each employee in the hearing conservation program"
         ],
         "correctAnswer": 3,
@@ -3073,7 +3073,7 @@
           "Exposure measurements for 2 years; audiometric records for the duration of the affected employee's employment",
           "Both for 30 years",
           "Both for 1 year",
-          "Exposure measurements for 5 years; audiograms for 2 years"
+          "Exposure measurements for the duration of employment plus 30 years; audiometric test records for 5 years after each test"
         ],
         "correctAnswer": 0,
         "explanation": "Noise exposure measurement records must be kept for 2 years (1910.95(m)(3)(i)). Audiometric test records must be kept for the duration of the affected employee's employment (1910.95(m)(3)(ii)). Workplace example: dosimetry files older than 2 years may be purged, but an active employee's audiograms stay on file.",
@@ -3134,8 +3134,8 @@
       {
         "question": "Under 1910.106(d)(3)(i), how much flammable liquid may be stored in a single storage cabinet?",
         "options": [
-          "25 gallons of any category",
-          "120 gallons of any category",
+          "Not more than 25 gallons of any category in one cabinet, with containers no larger than 5 gallons each",
+          "Not more than 120 gallons of Category 1, 2, or 3, nor more than 60 gallons of Category 4 in any one cabinet",
           "Not more than 60 gallons of Category 1, 2, or 3, nor more than 120 gallons of Category 4",
           "250 gallons"
         ],
@@ -3147,8 +3147,8 @@
         "question": "Under 1910.106(d)(3)(ii), what fire performance must a storage cabinet meet?",
         "options": [
           "None",
-          "Withstand a 2-hour fire",
-          "Be made of wood only",
+          "Limit internal temperature to not more than 500 °F during a 30-minute fire test on the standard curve",
+          "Withstand a 2-hour fire test with internal temperature held below 212 °F at the top shelf",
           "Limit internal temperature to not more than 325 °F during a 10-minute fire test"
         ],
         "correctAnswer": 3,
@@ -3159,9 +3159,9 @@
         "question": "What does 1910.106(d)(5)(i) prohibit?",
         "options": [
           "Storing flammable liquids, including stock for sale, so as to limit use of exits, stairways, or areas normally used for safe egress",
-          "Storing flammable liquids indoors at all",
+          "Storing more than 25 gallons of flammable liquids within 10 feet of exits; smaller amounts of stock for sale may be kept in stairways and egress areas",
           "Using safety cans",
-          "Using storage cabinets"
+          "Storing flammable liquids in approved storage cabinets in a storeroom, holding no more than 60 gallons of Category 1, 2, or 3 liquids per cabinet"
         ],
         "correctAnswer": 0,
         "explanation": "Flammable liquids, including stock for sale, may not be stored so as to limit use of exits, stairways, or areas normally used for safe egress (1910.106(d)(5)(i)). Workplace example: drums staged in the corridor to the fire exit are moved to the storage room.",
@@ -3194,9 +3194,9 @@
       {
         "question": "For a Category 1, 2, or 3 flammable liquid storage area inside a building but outside a storage room, where must a 12-B extinguisher be placed under 1910.106(d)(7)(i)(b)?",
         "options": [
-          "Within 5 feet",
-          "At least 50 feet away",
-          "Anywhere in the building",
+          "Mounted within 5 feet of the storage area so it can be reached immediately",
+          "At least 50 feet away so the user is not exposed to a fire at the storage area",
+          "Anywhere in the building, as long as travel distance to it does not exceed 75 feet",
           "Not less than 10 feet nor more than 25 feet from the storage area"
         ],
         "correctAnswer": 3,
@@ -3231,7 +3231,7 @@
         "question": "Under 1910.106(e)(2)(iv)(d), which method of transferring flammable liquids within a building is prohibited?",
         "options": [
           "Through a closed piping system",
-          "From safety cans",
+          "By a device drawing through the top of the container, such as a hand-operated drum pump",
           "By applying air pressure to the container or portable tank",
           "By gravity through an approved self-closing valve"
         ],
@@ -3243,8 +3243,8 @@
         "question": "Under 1910.106(e)(6)(ii), when may Category 1 or 2 flammable liquids (or Category 3 below 100 °F flashpoint) be dispensed into containers?",
         "options": [
           "At any time",
-          "Only outdoors",
-          "Only with a plastic funnel",
+          "Only outdoors, where vapors disperse and no bonding of the nozzle and container is needed",
+          "Only when the receiving container is plastic, so no static spark can jump between the nozzle and container",
           "Only when the nozzle and container are electrically interconnected"
         ],
         "correctAnswer": 3,
@@ -3255,7 +3255,7 @@
         "question": "Under 1910.106(e)(2)(iv)(a), how must Category 1 or 2 flammable liquids (or Category 3 below 100 °F flashpoint) be kept at the point of final use?",
         "options": [
           "In covered containers when not actually in use",
-          "In open pans for convenience",
+          "In open pans at the workstation, covered at the end of the day",
           "Only in glass",
           "In any container"
         ],
@@ -3312,10 +3312,10 @@
       {
         "question": "Under 1910.252(a)(1), what happens if the object cannot be moved, the fire hazards cannot be removed, and guards cannot confine the heat, sparks, and slag?",
         "options": [
-          "Weld anyway with a fire watch",
+          "Weld anyway with a fire watch and extinguisher posted",
           "Welding and cutting shall not be performed",
           "Weld only at night",
-          "Wet the area and proceed"
+          "Wet down the surrounding area and proceed with the cut"
         ],
         "correctAnswer": 1,
         "explanation": "If the object cannot be moved, movable fire hazards must be taken to a safe place (1910.252(a)(1)(i)). If hazards cannot all be removed, guards must confine heat, sparks, and slag (1910.252(a)(1)(ii)). If those requirements cannot be followed, welding and cutting shall not be performed (1910.252(a)(1)(iii)). Workplace example: a cut next to a fixed, unprotectable stock of baled cardboard is postponed until the stock is moved.",
@@ -3349,9 +3349,9 @@
         "question": "What does 1910.252(a)(2)(iv) require before cutting or welding is permitted?",
         "options": [
           "The area must be inspected by the individual responsible for authorizing cutting and welding, who designates precautions, preferably in the form of a written permit",
-          "Nothing beyond the welder's judgment",
-          "A permit from the fire department in all cases",
-          "Approval from OSHA"
+          "No prior inspection is needed; the welder judges the conditions at the work site, and the supervisor signs a hot work permit after the job documenting the precautions that were taken",
+          "A written hot work permit must be issued by the local fire marshal or the employer's insurance carrier after the welder inspects the area and lists the precautions to be followed",
+          "Written approval from the OSHA area office, requested 24 hours ahead, after a compliance officer inspects the area and lists the precautions to be followed"
         ],
         "correctAnswer": 0,
         "explanation": "Before cutting or welding is permitted, the area must be inspected by the individual responsible for authorizing cutting and welding. That person designates the precautions to follow in granting authorization, preferably in the form of a written permit (1910.252(a)(2)(iv)). The text prefers, but does not mandate, a written permit. A permit is mandatory near PSM-covered processes (1910.119(k), Week 20). Workplace example: the maintenance supervisor walks the area and signs the plant's hot work permit form.",
@@ -3360,7 +3360,7 @@
       {
         "question": "Under 1910.252(a)(2)(vi), in which situation is cutting or welding prohibited?",
         "options": [
-          "In a designated welding shop",
+          "In a management-designated welding area of noncombustible construction with no combustibles nearby",
           "In sprinklered buildings while the sprinkler protection is impaired",
           "On steel beams",
           "Outdoors"
@@ -3372,8 +3372,8 @@
       {
         "question": "Under 1910.252(a)(2)(vii), how far must combustibles be relocated from the work site where practicable?",
         "options": [
-          "10 feet",
-          "20 feet",
+          "At least 10 feet with a fire watch",
+          "At least 25 feet horizontally",
           "At least 35 feet",
           "50 feet"
         ],
@@ -3410,7 +3410,7 @@
         "options": [
           "500 cubic feet per minute per welder",
           "2,000 cubic feet per minute per welder",
-          "1,000 cubic feet per minute per welder",
+          "1,000 cubic feet per minute per welder at the breathing zone",
           "No ventilation is required"
         ],
         "correctAnswer": 1,
@@ -3434,8 +3434,8 @@
         "options": [
           "5 psig",
           "15 psig (30 psia)",
-          "50 psig",
-          "100 psig"
+          "50 psig at the torch inlet",
+          "100 psig in piped systems"
         ],
         "correctAnswer": 1,
         "explanation": "Acetylene may not be generated, piped (except in approved cylinder manifolds), or used at a pressure above 15 psig or 30 psia (1910.253(a)(2)). Workplace example: the acetylene regulator is never set above 15 psig.",
@@ -3446,8 +3446,8 @@
         "options": [
           "All welding machines except engine-driven machines",
           "None",
-          "Only machines over 600 volts",
-          "Only machines used outdoors"
+          "All welding machines except double-insulated or portable 120-volt machines",
+          "Only machines used outdoors or in wet locations such as wash bays"
         ],
         "correctAnswer": 0,
         "explanation": "The frame or case of the welding machine, except engine-driven machines, must be grounded under the conditions and methods in Subpart S (1910.254(c)(2)(i)). Workplace example: the shop's plug-in welder has an intact grounding conductor on its supply cord.",
@@ -3508,8 +3508,8 @@
       {
         "question": "What does 1910.119(c)(1) require regarding employee participation?",
         "options": [
-          "Nothing written",
-          "A union contract",
+          "An unwritten practice of consulting operators during PHAs, with no separate plan of action",
+          "A union contract clause on safety committees, which satisfies the requirement in place of a written plan of action",
           "A written plan of action for implementing employee participation",
           "An annual employee vote"
         ],
@@ -3533,9 +3533,9 @@
         "question": "Under 1910.119(e)(6), how often must the process hazard analysis be updated and revalidated?",
         "options": [
           "At least every five years after the initial PHA",
-          "Every year",
+          "At least every three years, in line with the compliance audit cycle",
           "Every ten years",
-          "Only after an incident"
+          "Only after an incident that results in a catastrophic release"
         ],
         "correctAnswer": 0,
         "explanation": "At least every five years after the initial PHA, it must be updated and revalidated by a team meeting (e)(4), to keep it consistent with the current process (1910.119(e)(6)). PHAs and revalidations must be retained for the life of the process (1910.119(e)(7)). Workplace example: the unit's 2021 HAZOP is revalidated by 2026.",
@@ -3546,7 +3546,7 @@
         "options": [
           "Every year",
           "At least every three years, and more often if necessary",
-          "Every five years",
+          "At least every five years, to match the process hazard analysis revalidation",
           "Only at hire"
         ],
         "correctAnswer": 1,
@@ -3556,7 +3556,7 @@
       {
         "question": "Under 1910.119(i), when must a pre-startup safety review be performed, and what must it confirm?",
         "options": [
-          "Only for brand-new plants, confirming paperwork is filed",
+          "Only for new facilities, since modified facilities are handled through management of change; it must confirm before startup that equipment passed vendor inspection, operating procedures are drafted, a PHA team is named, and operator training is completed within 30 days after highly hazardous chemicals are first introduced",
           "Monthly for all processes",
           "For new facilities and for modified facilities when the change requires a change in process safety information; it must confirm before highly hazardous chemicals are introduced that construction matches design, procedures are in place, PHA/MOC requirements are met, and employee training is complete",
           "Only after an incident"
@@ -3592,10 +3592,10 @@
       {
         "question": "Under 1910.119(m)(2), when must an incident investigation be initiated?",
         "options": [
-          "Within 30 days",
+          "Within 30 days following the incident, after plant management has reviewed the incident report",
           "As promptly as possible, but not later than 48 hours following the incident",
           "Within one week",
-          "At the next annual review"
+          "At the next annual PSM review, so trends across the year's incidents can be evaluated together"
         ],
         "correctAnswer": 1,
         "explanation": "An incident investigation must be initiated as promptly as possible, but not later than 48 hours after the incident (1910.119(m)(2)). This applies to each incident that resulted in, or could reasonably have resulted in, a catastrophic release (1910.119(m)(1)). Investigation reports must be kept for five years (1910.119(m)(7)). Workplace example: a near-miss flange leak on Friday night has an investigation team started by Sunday night.",
@@ -3604,10 +3604,10 @@
       {
         "question": "What does 1910.119(n) require for emergency planning?",
         "options": [
-          "Nothing beyond a phone list",
-          "Only an annual drill",
+          "A list of emergency phone numbers posted in the control room; small releases are handled under the plant's normal operating procedures",
+          "An annual evacuation drill for the covered unit, with small releases reported to the local fire department for handling",
           "An emergency action plan for the entire plant per 1910.38, including procedures for handling small releases",
-          "A plan only for the covered unit"
+          "An emergency action plan covering only the PSM-covered unit, including procedures for handling small releases of the covered chemical"
         ],
         "correctAnswer": 2,
         "explanation": "The employer must establish and implement an emergency action plan for the entire plant in accordance with 1910.38, including procedures for handling small releases (1910.119(n)). Workplace example: the plant EAP includes how operators isolate and report a small chlorine leak.",
@@ -3617,8 +3617,8 @@
         "question": "Under 1910.119(o), how often must compliance audits be certified, and which reports must be kept?",
         "options": [
           "Every year; all reports forever",
-          "Every five years; only the latest report",
-          "Only when OSHA asks",
+          "At least every five years, matching the PHA cycle; only the most recent audit report",
+          "Only when OSHA requests one, keeping the report until the next inspection",
           "At least every three years; the two most recent audit reports"
         ],
         "correctAnswer": 3,
@@ -3669,9 +3669,9 @@
         "question": "Under 1910.179(b)(5), where must the rated load of an overhead crane be marked?",
         "options": [
           "Plainly on each side of the crane, and on each hoist or its load block if there is more than one hoisting unit, legible from the ground or floor",
-          "Only in the operator's manual",
+          "On a capacity plate in the operator's cab and on the pendant control station, and in the operator's manual, so the operator can confirm the rating before each lift",
           "Only on the hook",
-          "Only in the maintenance office"
+          "On the main hoist's load block only, stenciled large enough to read from the operator's cab"
         ],
         "correctAnswer": 0,
         "explanation": "The rated load must be plainly marked on each side of the crane. If there is more than one hoisting unit, each hoist must have its rated load marked on it or its load block, legible from the ground or floor (1910.179(b)(5)). Workplace example: a two-hoist bridge crane shows \"10 TON\" on both girders and each hook block.",
@@ -3692,8 +3692,8 @@
       {
         "question": "Under 1910.179(j)(1)(ii), what are the intervals for \"frequent\" and \"periodic\" crane inspections?",
         "options": [
-          "Frequent: weekly; periodic: every 5 years",
-          "Both annually",
+          "Frequent: weekly to quarterly; periodic: every 12 to 24 months",
+          "Frequent: monthly to quarterly; periodic: every 2 years",
           "Frequent: daily to monthly; periodic: 1 to 12 months",
           "Frequent: hourly; periodic: monthly"
         ],
@@ -3718,7 +3718,7 @@
         "options": [
           "At least once a month, with a certification record of the date, the inspector's signature, and an identifier for the ropes inspected",
           "Annually, no record",
-          "Weekly, with a verbal report",
+          "At least once every 3 months, with a written record of the date, the inspector's name, and the condition of each rope, kept on file for one year",
           "Only when they look damaged"
         ],
         "correctAnswer": 0,
@@ -3728,9 +3728,9 @@
       {
         "question": "Under 1910.179(n)(3)(v), what is prohibited while an employee is on the load or hook?",
         "options": [
-          "Nothing if the operator is careful",
+          "Hoisting only; lowering is allowed with a signal person",
           "Any hoisting, lowering, or traveling",
-          "Only traveling",
+          "Traveling only; hoisting and lowering are allowed slowly",
           "Only lowering"
         ],
         "correctAnswer": 1,
@@ -3741,9 +3741,9 @@
         "question": "What does 1910.179(n)(3)(vi) require regarding people under suspended loads?",
         "options": [
           "Nothing",
-          "People may stand under loads if wearing hard hats",
+          "Workers may remain under a suspended load if they wear hard hats and the rigging was inspected that day",
           "The employer must require the operator to avoid carrying loads over people",
-          "Only loads over 1 ton are restricted"
+          "Loads over 1 ton may not pass over people unless a warning horn is sounded continuously"
         ],
         "correctAnswer": 2,
         "explanation": "The employer must require that the operator avoid carrying loads over people (1910.179(n)(3)(vi)). The warning signal must be sounded when the load or hook approaches near or over personnel (1910.179(n)(3)(xi)). Workplace example: the operator routes the die along the aisle and sounds the horn as it nears the assembly line.",
@@ -3765,9 +3765,9 @@
         "question": "Under 1910.184(c), which of these is a required safe sling practice?",
         "options": [
           "Keeping all employees clear of loads about to be lifted and of suspended loads",
-          "Shortening slings with knots when needed",
-          "Pulling a sling from under a resting load",
-          "Shock loading to seat the sling"
+          "Shortening slings with knots or bolts when no shorter sling of the needed capacity is on hand",
+          "Pulling a sling out from under a load resting on it once the hook is lowered and the slack is removed",
+          "Shock loading the sling briefly to seat it in the hook before the lift, then lifting slowly"
         ],
         "correctAnswer": 0,
         "explanation": "All employees must be kept clear of loads about to be lifted and of suspended loads (1910.184(c)(9)). Slings may not be shortened with knots or bolts (1910.184(c)(2)), shock loading is prohibited (1910.184(c)(11)), and a sling may not be pulled from under a load resting on it (1910.184(c)(12)). Workplace example: the rigger steps back before giving the hoist signal.",
@@ -3776,7 +3776,7 @@
       {
         "question": "Under 1910.184(d), when must slings and their fastenings be inspected?",
         "options": [
-          "Monthly by the supplier",
+          "Monthly, by the sling manufacturer or a qualified person, with a written record of each sling's condition and the next due date kept on file in the rigging loft",
           "Each day before being used, by a competent person designated by the employer, with additional inspections during use where service conditions warrant",
           "Annually",
           "Only after a lift fails"
@@ -3788,10 +3788,10 @@
       {
         "question": "How often must alloy steel chain slings get a thorough periodic inspection under 1910.184(e)(3)(i)?",
         "options": [
-          "Every 5 years",
+          "Every 5 years, with a proof test to 200 percent of rated capacity and the test date recorded on the sling's identification tag",
           "Only when new",
           "On a regular basis set by use and service conditions, but never at intervals greater than once every 12 months",
-          "Every 2 years"
+          "On a regular basis set by use and service conditions, but never at intervals greater than once every 24 months, with a monthly log"
         ],
         "correctAnswer": 2,
         "explanation": "In addition to the daily inspection, alloy steel chain slings must get a thorough periodic inspection at a frequency based on use, severity of service, nature of lifts, and experience, but at least once every 12 months (1910.184(e)(3)(i)). The employer must record the most recent month each chain sling was thoroughly inspected (1910.184(e)(3)(ii)). Workplace example: the chain sling log shows each sling's last thorough inspection month.",
@@ -3864,7 +3864,7 @@
         "options": [
           "Always, at every site",
           "In the absence of an infirmary, clinic, or hospital in near proximity to the workplace that is used to treat all injured employees",
-          "Only in facilities with over 100 employees",
+          "At every workplace with 25 or more employees on each shift, whether or not a hospital or clinic used to treat all injured employees is nearby",
           "Never; 911 is enough"
         ],
         "correctAnswer": 1,
@@ -3886,8 +3886,8 @@
       {
         "question": "Under 1910.141(a)(1), to which workplaces does the sanitation standard apply?",
         "options": [
-          "Only construction sites",
-          "Only offices",
+          "Temporary construction sites and mobile crews",
+          "Offices and retail stores only, not manufacturing plants",
           "Only food plants",
           "Permanent places of employment"
         ],
@@ -3899,8 +3899,8 @@
         "question": "Under 1910.141(b)(1)(v), which drinking water container is prohibited?",
         "options": [
           "Open containers such as barrels, pails, or tanks from which water must be dipped or poured, even if covered",
-          "A dispenser with a tap",
-          "A drinking fountain",
+          "A closed portable dispenser equipped with a tap, refilled daily from a potable water source and sanitized between each use",
+          "A sanitary drinking fountain with an angled jet and nozzle guard, supplied from the plant's potable water system",
           "Bottled water"
         ],
         "correctAnswer": 0,
@@ -3913,7 +3913,7 @@
           "Disposable cups",
           "A common drinking cup and other common utensils",
           "Water fountains",
-          "Reusable personal bottles"
+          "Reusable personal bottles filled at a sanitary drinking fountain"
         ],
         "correctAnswer": 1,
         "explanation": "A common drinking cup and other common utensils are prohibited (1910.141(b)(1)(vi)). Workplace example: the shared tin cup at the water cooler is removed and single-use cups are provided.",
@@ -3923,7 +3923,7 @@
         "question": "Under 1910.141(b)(2)(i), what is required for outlets for nonpotable water, such as industrial or firefighting water?",
         "options": [
           "Nothing",
-          "They must be painted blue only",
+          "They must be painted a distinct color such as purple at each outlet and along the piping, with no sign or wording needed, and the water may then be used for washing hands, rinsing cooking utensils, and laundering work clothes if it passes through an inline filter",
           "They must be posted or otherwise marked to clearly indicate the water is unsafe and not for drinking, washing of the person, cooking, washing food, utensils, food preparation or processing premises, or personal service rooms, or washing clothes",
           "They must be locked"
         ],
@@ -3936,8 +3936,8 @@
         "options": [
           "1",
           "2",
-          "3",
-          "4"
+          "3, one per 12 employees",
+          "4, one per 10 employees"
         ],
         "correctAnswer": 1,
         "explanation": "Table J-1 requires 1 water closet for 1 to 15 employees, 2 for 16 to 35, 3 for 36 to 55, 4 for 56 to 80, and 5 for 81 to 110, based on the number of employees of each sex for whom the facilities are provided (1910.141(c)(1)(i)). Workplace example: a shop with 30 women on site needs at least 2 water closets in the women's toilet room.",
@@ -3947,9 +3947,9 @@
         "question": "Under 1910.141(d)(2), what must each lavatory have?",
         "options": [
           "Hot and cold running water, or tepid running water, with hand soap or similar cleansing agents and individual hand towels or air blowers",
-          "Cold water only",
-          "Only hand sanitizer",
-          "A shared cloth towel"
+          "Cold running water only, with a shared bar of soap and a common roller cloth towel that is laundered and replaced at the start of each work shift",
+          "Hand sanitizer dispensers and disposable wipes in place of running water at each lavatory, where piping water to the restroom is not practical",
+          "Hot and cold running water, with hand soap and a shared cloth hand towel at each sink that is swapped for a clean one at the start of each shift"
         ],
         "correctAnswer": 0,
         "explanation": "Each lavatory must have hot and cold running water, or tepid running water (1910.141(d)(2)(ii)). Hand soap or similar cleansing agents must be provided (1910.141(d)(2)(iii)), along with individual hand towels or sections, air blowers, or clean individual sections of continuous toweling (1910.141(d)(2)(iv)). Workplace example: the restroom sink has tepid water, soap, and paper towels.",
@@ -3971,9 +3971,9 @@
         "question": "Under 1910.141(g)(2) and (g)(4), where may employees NOT eat, drink, or store food?",
         "options": [
           "In a designated break room",
-          "At their desks in clean offices",
+          "At workstations in clean office areas that have no toxic material exposure",
           "In a toilet room or in any area exposed to a toxic material",
-          "Outside on picnic tables"
+          "Outdoors at picnic tables located away from any process or toxic area"
         ],
         "correctAnswer": 2,
         "explanation": "No employee may consume food or beverages in a toilet room or in any area exposed to a toxic material (1910.141(g)(2)), and no food or beverages may be stored in toilet rooms or areas exposed to a toxic material (1910.141(g)(4)). Workplace example: the lunch fridge is moved out of the plating room into the clean break room.",
@@ -4035,8 +4035,8 @@
         "options": [
           "Only when reduced to less than 30 psi, and then only with effective chip guarding and personal protective equipment",
           "Never",
-          "At any pressure with safety glasses",
-          "Only above 90 psi"
+          "At any pressure up to the tool's rated working pressure, as long as the user wears safety glasses, a face shield, and hearing protection",
+          "Only above 90 psi, so chips are blown well clear of the operator, and then only with effective chip guarding and safety glasses"
         ],
         "correctAnswer": 0,
         "explanation": "Compressed air may not be used for cleaning except where reduced to less than 30 psi, and then only with effective chip guarding and PPE (1910.242(b)). Workplace example: the shop air nozzle at the lathe has a 30-psi limiting tip and chip shield, and the operator wears safety glasses.",
@@ -4045,7 +4045,7 @@
       {
         "question": "Under 1910.243(a)(1)(i), what guarding must portable power-driven circular saws with blades over 2 inches have?",
         "options": [
-          "An upper guard only",
+          "An upper guard covering the saw to the depth of the teeth, with the lower blade left exposed so the operator can see the cut line, plus a constant-pressure trigger switch",
           "Guards above and below the base plate or shoe, with the lower guard automatically and instantly returning to the covering position when withdrawn from the work",
           "No guard if used by trained workers",
           "A removable guard"
@@ -4070,7 +4070,7 @@
         "question": "Under 1910.243(a)(3), where must portable belt sanding machines be guarded?",
         "options": [
           "Nowhere",
-          "Only on the motor housing",
+          "On the motor housing and drive belt cover only, with the sanding belt itself left exposed so the operator can see the work surface and belt tracking",
           "Only at the dust bag",
           "At each nip point where the sanding belt runs onto a pulley, with the unused run of the belt guarded against accidental contact"
         ],
@@ -4082,8 +4082,8 @@
         "question": "Under 1910.243(b)(1), what must be installed on pneumatic equipment that could otherwise eject its tool?",
         "options": [
           "A tool retainer",
-          "A dust bag",
-          "A muffler",
+          "A pressure relief valve",
+          "An exhaust muffler",
           "Nothing"
         ],
         "correctAnswer": 0,
@@ -4118,7 +4118,7 @@
         "question": "Under 1910.243(d)(4)(ix)(a), how close to an unsupported edge may fasteners be driven directly into brick or concrete without a special guard or fixture?",
         "options": [
           "1 inch",
-          "6 inches",
+          "No closer than 6 inches (and no closer than 1 inch from an unsupported edge in steel), except that low-velocity tools may go to 4 inches in concrete or 1/2 inch in structural steel surfaces",
           "Any distance",
           "No closer than 3 inches (and no closer than 1/2 inch from an unsupported edge in steel), except that low-velocity tools may go to 2 inches in concrete or 1/4 inch in steel"
         ],
@@ -4130,7 +4130,7 @@
         "question": "Under 1910.243(d)(4)(iii)-(iv), when may an explosive-actuated tool be loaded?",
         "options": [
           "Only just before the intended firing time, and an unattended tool may not be left loaded",
-          "At the start of the shift",
+          "At the start of the shift, as long as the loaded tool is kept holstered and pointed at the floor",
           "Anytime, if pointed at the floor",
           "Only by the supervisor"
         ],
@@ -4141,10 +4141,10 @@
       {
         "question": "Under 1910.244(a)(2)(iii), what must be done after a jack raises a load?",
         "options": [
-          "Leave it on the jack",
+          "Leave it on the jack with the release valve tagged",
           "Crib, block, or otherwise secure the load at once",
           "Lower it halfway",
-          "Nothing until work is done"
+          "Nothing, as long as the jack's rated capacity exceeds the load"
         ],
         "correctAnswer": 1,
         "explanation": "After the load has been raised, it must be cribbed, blocked, or otherwise secured at once (1910.244(a)(2)(iii)). Workplace example: the press base is set on cribbing immediately after jacking, before anyone reaches under it.",
@@ -4153,10 +4153,10 @@
       {
         "question": "Under 1910.244(a)(2)(vi)(a), how often must a jack in constant or intermittent use at one location be thoroughly inspected?",
         "options": [
-          "Every 2 years",
+          "At least once every 2 years for jacks kept at one location, with jacks sent out for special work checked only when they return",
           "Annually",
           "At least once every 6 months",
-          "Only when it leaks"
+          "Only when it leaks or fails to hold"
         ],
         "correctAnswer": 2,
         "explanation": "Jacks must be inspected at intervals depending on service conditions, but no less often than once every 6 months for constant or intermittent use at one locality (1910.244(a)(2)(vi)(a)). Jacks sent out for special work are inspected when sent out and when returned (1910.244(a)(2)(vi)(b)). Workplace example: the maintenance shop's jacks carry a 6-month inspection tag.",
@@ -4206,9 +4206,9 @@
       {
         "question": "Under 1910.1000(a)(1), what does a \"C\" before a Table Z-1 limit mean?",
         "options": [
-          "A cancer warning",
-          "A 10-hour average",
-          "A recommended limit only",
+          "A carcinogen designation, meaning exposure must be reduced as low as feasible and the listed number is a guide rather than an enforceable limit",
+          "A 10-hour time-weighted average for extended shifts, which may be exceeded for short periods if the daily average stays below it",
+          "A recommended limit that may be exceeded briefly, as long as the 8-hour time-weighted average for the full work shift stays below it",
           "A ceiling value that must at no time be exceeded (assessed as a 15-minute TWA if instantaneous monitoring is not feasible)"
         ],
         "correctAnswer": 3,
@@ -4219,7 +4219,7 @@
         "question": "Under 1910.1000(a)(2), how is exposure to a Table Z-1 substance without a \"C\" compared to its limit?",
         "options": [
           "As an 8-hour time-weighted average in any 8-hour work shift of a 40-hour work week",
-          "As an instantaneous peak",
+          "As a 15-minute short-term average that may not be exceeded at any time during the working day",
           "As a weekly total",
           "As an annual average"
         ],
@@ -4268,8 +4268,8 @@
         "options": [
           "Construction work as defined in 1910.12(b), which is covered by 1926.1153",
           "Foundry work",
-          "Glass manufacturing",
-          "Hydraulic fracturing"
+          "Glass manufacturing, which is covered by its own industry-specific silica standard instead",
+          "Hydraulic fracturing operations in the oil and gas industry, which are covered by 1926.1153"
         ],
         "correctAnswer": 0,
         "explanation": "The general industry silica standard does not apply to construction work as defined in 29 CFR 1910.12(b); construction exposures are covered by 29 CFR 1926.1153 (1910.1053(a)(1)(i)). Workplace example: a plant's maintenance crew cutting concrete for a new building addition may fall under 1926.1153 instead.",
@@ -4302,9 +4302,9 @@
       {
         "question": "Under 1910.1053(e)(1), where must a regulated area be established?",
         "options": [
-          "Wherever silica is stored",
+          "Wherever an employee's exposure is, or can reasonably be expected to be, at or above the action level of 25 µg/m3",
           "Only at the action level",
-          "Only outdoors",
+          "Wherever crystalline silica sand or other silica-containing materials are stored, mixed, or bagged in the plant",
           "Wherever an employee's exposure is, or can reasonably be expected to be, in excess of the PEL"
         ],
         "correctAnswer": 3,
@@ -4315,8 +4315,8 @@
         "question": "What legend must the signs at regulated-area entrances bear under 1910.1053(j)(2)?",
         "options": [
           "\"DANGER / RESPIRABLE CRYSTALLINE SILICA / MAY CAUSE CANCER / CAUSES DAMAGE TO LUNGS / WEAR RESPIRATORY PROTECTION IN THIS AREA / AUTHORIZED PERSONNEL ONLY\"",
-          "\"Caution: Dust\"",
-          "\"Authorized Personnel Only\" only",
+          "\"CAUTION / CRYSTALLINE SILICA DUST HAZARD / MAY CAUSE SILICOSIS AND LUNG CANCER / RESPIRATORS AND PROTECTIVE CLOTHING REQUIRED IN THIS AREA / AUTHORIZED PERSONNEL ONLY\"",
+          "\"WARNING / SILICA DUST AREA / MAY CAUSE LUNG DISEASE AND SILICOSIS / RESPIRATORS REQUIRED BEYOND THIS POINT / NO EATING, DRINKING, OR SMOKING / AUTHORIZED PERSONNEL ONLY\"",
           "No signs are required"
         ],
         "correctAnswer": 0,
@@ -4326,9 +4326,9 @@
       {
         "question": "Under 1910.1053(i)(1)(i), which employees must be offered medical surveillance?",
         "options": [
-          "Everyone in the building",
+          "Everyone working in the building where silica is used, with a baseline chest X-ray at hire and repeat exams every five years",
           "Each employee who will be occupationally exposed at or above the action level for 30 or more days per year, at no cost",
-          "Only employees above the PEL for 30 days",
+          "Each employee who will be required to wear a respirator for 30 or more days per year under the silica standard, with exams paid by the employer",
           "Only employees who ask"
         ],
         "correctAnswer": 1,
@@ -4338,7 +4338,7 @@
       {
         "question": "How often must the written exposure control plan be reviewed under 1910.1053(f)(2)(ii)?",
         "options": [
-          "Every 5 years",
+          "Every 3 years, or sooner after a process or equipment change",
           "Only when OSHA asks",
           "At least annually, and updated as necessary",
           "Never"
@@ -4390,9 +4390,9 @@
       {
         "question": "Under 1910.120(c)(2), who must perform the preliminary evaluation of a hazardous waste site's characteristics, and when?",
         "options": [
-          "Any employee, after work starts",
-          "The site owner, annually",
-          "No evaluation is required",
+          "A competent employee of the cleanup contractor, within 30 days after work starts, with an update after each major change in site conditions",
+          "The site owner, using historical records only, with no site-specific evaluation required by the contractor after crews have made initial entry",
+          "No formal evaluation before entry; the crew supervisor evaluates the site during the first week of work once hazards become visible",
           "A qualified person, before site entry, with a more detailed evaluation by a qualified person immediately after initial entry"
         ],
         "correctAnswer": 3,
@@ -4405,7 +4405,7 @@
           "Employees exposed at or above PELs (or above published exposure levels where there is no PEL) for 30 days or more a year, employees who wear a respirator 30 days or more a year, and others listed in the paragraph",
           "Only supervisors",
           "Only employees who request it",
-          "Only HAZMAT team members"
+          "Employees exposed at or above PELs for 30 days or more a year, counting only days worked without a respirator, employees who wear a respirator for 60 days or more a year, and supervisors who enter the exclusion zone monthly"
         ],
         "correctAnswer": 0,
         "explanation": "The program must cover employees exposed or potentially exposed to hazardous substances or health hazards at or above the PELs or, where there is no PEL, above the published exposure levels, without regard to respirator use, for 30 days or more a year (1910.120(f)(2)(i)). It must also cover employees who wear a respirator for 30 days or more a year or as required by 1910.134 (1910.120(f)(2)(ii)), among others listed. Workplace example: a technician in respirators 40 days a year at a cleanup site is enrolled.",
@@ -4417,7 +4417,7 @@
           "Nothing more",
           "An additional 16 hours and two days of training, to total the 40 hours and three days in (e)(3)(i)",
           "A one-hour briefing",
-          "Retaking the whole 40 hours"
+          "Retaking the full 40 hours of off-site instruction plus three days of supervised field experience from the start"
         ],
         "correctAnswer": 1,
         "explanation": "Workers with 24 hours of training under (e)(3)(ii) or (e)(3)(iii) who become general site workers or must wear respirators need the additional 16 hours and two days of training necessary to total the training in (e)(3)(i) (1910.120(e)(3)(iv)). Workplace example: a surveyor with a 24-hour card is moved onto the excavation crew and completes 16 more hours and two field days.",
@@ -4426,8 +4426,8 @@
       {
         "question": "Under 1910.120(k)(2)(i), when must a decontamination procedure be developed and communicated?",
         "options": [
-          "After the first exposure",
-          "Within 30 days of start",
+          "After the first exposure is detected by air monitoring, so the procedure can be matched to the specific substances found",
+          "Within 30 days of the start of site work, once the initial air monitoring has shown which site areas have potential for exposure",
           "Before any employees or equipment may enter areas on site where potential exposure to hazardous substances exists",
           "Only if OSHA requests it"
         ],
@@ -4438,7 +4438,7 @@
       {
         "question": "Who monitors decontamination procedures for effectiveness under 1910.120(k)(2)(iv)?",
         "options": [
-          "Each worker for themselves",
+          "Each worker, by self-checking with wipe samples after decon, with the project manager reviewing results at project closeout to correct deficiencies",
           "The client",
           "No one",
           "The site safety and health supervisor; when procedures are found ineffective, appropriate steps must be taken to correct deficiencies"
@@ -4464,7 +4464,7 @@
         "options": [
           "Dust masks",
           "Positive pressure self-contained breathing apparatus, until the individual in charge determines through air monitoring that a lower level will not result in hazardous exposures",
-          "Half-mask cartridge respirators",
+          "Half-mask air-purifying respirators with organic vapor cartridges, until the individual in charge of the ICS determines through air monitoring that a lower level will not cause hazardous exposures",
           "None if outdoors"
         ],
         "correctAnswer": 1,
@@ -4474,8 +4474,8 @@
       {
         "question": "How must operations in hazardous areas be performed during an emergency response under 1910.120(q)(3)(v)-(vi)?",
         "options": [
-          "Alone, to limit exposure",
-          "Only by the incident commander",
+          "Alone, to limit the number of people exposed, with a single back-up responder stationed at the command post with a radio rather than rescue equipment",
+          "Only by the incident commander entering alone so no other responders are exposed, with the remaining crew waiting at the command post without equipment",
           "Using the buddy system in groups of two or more, with back-up personnel standing by with equipment ready to provide assistance or rescue",
           "With no backup needed"
         ],
@@ -4486,8 +4486,8 @@
       {
         "question": "Under 1910.120(q)(3)(vii), whom must the individual in charge of the ICS designate?",
         "options": [
-          "A spokesperson only",
-          "A photographer",
+          "A public information officer, knowledgeable in the operations being implemented, responsible for releasing information to the media and coordinating with outside agencies",
+          "A documentation officer, knowledgeable in incident reporting, responsible for photographing the scene and recording all response actions for the post-incident investigation report",
           "A lawyer",
           "A safety official, knowledgeable in the operations being implemented, responsible for identifying and evaluating hazards and directing the safety of operations"
         ],
@@ -4510,9 +4510,9 @@
       {
         "question": "Under 1910.120(q)(6)(iii), what training must hazardous materials technicians have?",
         "options": [
-          "8 hours",
+          "At least 8 hours of training or demonstrated competency equal to the first responder awareness level, plus competency in the listed areas, certified by the employer",
           "At least 24 hours of training equal to the first responder operations level, plus competency in the listed areas, certified by the employer",
-          "No formal training",
+          "No formal training, as long as the technician has at least one year of field experience plugging and patching releases and the employer keeps a written record",
           "4 hours"
         ],
         "correctAnswer": 1,
@@ -4575,7 +4575,7 @@
         "options": [
           "5 years",
           "10 years",
-          "1 year after termination",
+          "At least the duration of employment plus 10 years after termination",
           "At least the duration of employment plus 30 years"
         ],
         "correctAnswer": 3,
@@ -4597,7 +4597,7 @@
       {
         "question": "An employee who worked less than one year is leaving. Under 1910.1020(d)(1)(i)(C), what may the employer do with their medical records?",
         "options": [
-          "Must keep them 30 years regardless",
+          "Must keep them for the duration of employment plus 30 years, even if a copy is given to the employee",
           "Need not retain them beyond employment if they are provided to the employee upon termination",
           "Destroy them immediately",
           "Send them to OSHA"
@@ -4609,8 +4609,8 @@
       {
         "question": "Under 1910.1020(d)(1)(ii), how long must employee exposure records be preserved?",
         "options": [
-          "5 years",
-          "Duration of employment only",
+          "At least 10 years after the employee's last exposure",
+          "For the duration of employment plus 5 years, with listed exceptions",
           "At least 30 years (with listed exceptions)",
           "1 year"
         ],
@@ -4621,7 +4621,7 @@
       {
         "question": "Under 1910.1020(d)(1)(ii)(A), how long must background data for workplace monitoring (such as laboratory reports and worksheets) be kept?",
         "options": [
-          "30 years",
+          "For 30 years, the same as the sampling results, sampling plan, and analytical methods description, because lab reports and worksheets are part of each exposure record",
           "Forever",
           "5 years",
           "Only one year, as long as the sampling results, sampling plan, analytical methods description, and summary of other background data are kept for 30 years"
@@ -4634,9 +4634,9 @@
         "question": "Under 1910.1020(e)(1)(i), what must the employer do if it cannot provide requested access to a record within 15 working days?",
         "options": [
           "Within the 15 working days, tell the requester the reason for the delay and the earliest date the record can be made available",
-          "Nothing; there is no deadline",
-          "Deny the request",
-          "Wait for OSHA"
+          "No deadline applies; access must be provided in a reasonable time, and a delay need only be explained if the requester asks in writing",
+          "Deny the request until the records custodian returns, then provide access within 30 working days without any notice to the requester",
+          "Wait for OSHA to approve the release, since records not provided within 15 working days must be routed through the OSHA area office"
         ],
         "correctAnswer": 0,
         "explanation": "Access must be provided in a reasonable time, place, and manner. If the employer cannot reasonably provide access within fifteen working days, it must, within those fifteen working days, tell the requester the reason for the delay and the earliest date the record can be made available (1910.1020(e)(1)(i)). Workplace example: a former employee requests old air sampling results; HR responds within 15 working days with a date.",
@@ -4645,9 +4645,9 @@
       {
         "question": "When an employee requests a copy of a record, what does 1910.1020(e)(1)(iii) require?",
         "options": [
-          "The employee pays all costs",
+          "The employer may charge reasonable search and copying costs for the first copy, but must allow free on-site viewing of the original record during normal business hours",
           "The employer must either provide a copy without cost, make copying facilities available without cost, or loan the record for a reasonable time for copying",
-          "Only on-site viewing",
+          "Only on-site viewing of the record in the HR office under supervision, with paper copies released only after the employee signs a written confidentiality agreement",
           "Copies are never provided"
         ],
         "correctAnswer": 1,
@@ -4658,9 +4658,9 @@
         "question": "Under 1910.1020(g)(1), when must employers inform current employees about the records covered by the standard?",
         "options": [
           "Only on request",
-          "Every 5 years",
+          "Upon first entering employment, and again every 3 years at refresher training",
           "Upon first entering employment and at least annually thereafter",
-          "Only when they leave"
+          "Only when they leave, as part of the exit interview and final paperwork package"
         ],
         "correctAnswer": 2,
         "explanation": "Upon an employee's first entering employment, and at least annually thereafter, the employer must inform current covered employees of the existence, location, and availability of the records; the person responsible for maintaining and providing access; and each employee's access rights (1910.1020(g)(1)(i)-(iii)). Workplace example: the annual safety meeting includes a slide on where exposure and medical records are kept and how to request them.",

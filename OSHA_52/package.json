@@ -12,6 +12,8 @@
     "start": "npm run start -w api",
     "test": "npm test -w api",
     "migrate": "npm run migrate -w api",
-    "seed:admin": "npm run seed:admin -w api"
+    "seed:admin": "npm run seed:admin -w api",
+    "check:content": "node scripts/check-answer-length.js --quiet",
+    "build": "npm run check:content"
   }
 }

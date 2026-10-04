@@ -33,7 +33,9 @@ function createApp({ cfg, db, content }) {
   }));
 
   // ---------------------------------------------------------------- trainee auth
-  // Register: first-time trainees choose their name and set a 4-digit PIN.
+  // Register: first-time trainees choose their name and set a 4-digit PIN. The account stays pending until a
+  // reviewer/admin approves it, so no token is issued here.
+  const PENDING_MSG = 'Your account is waiting for approval.';
   app.post('/auth/trainee/register', loginLimiter, wrap(async (req, res) => {
     const { name, key } = A.normalizeName(req.body?.name);
     const pin = req.body?.pin;
@@ -45,7 +47,7 @@ function createApp({ cfg, db, content }) {
        ON CONFLICT (name_key) DO NOTHING RETURNING id, name, token_version`, [name, key, pinHash]);
     if (!rows[0]) throw new HttpError(409, 'name_taken', 'A trainee with this name already exists. Log in instead, or add a middle initial.');
     await audit('trainee', rows[0].id, 'trainee_registered', 'trainee', rows[0].id);
-    res.status(201).json({ token: traineeToken(rows[0]), trainee: { id: rows[0].id, name: rows[0].name } });
+    res.status(201).json({ pending: true, message: PENDING_MSG, trainee: { id: rows[0].id, name: rows[0].name } });
   }));
 
   // Guess budget for PINs, reset codes and staff passwords. Each check first claims one of max slots in a
@@ -75,6 +77,8 @@ function createApp({ cfg, db, content }) {
     const { rows } = await db.query('SELECT * FROM trainees WHERE name_key = $1', [key]);
     const t = rows[0];
     if (!t) throw new HttpError(401, 'invalid_credentials');
+    if (t.approval === 'pending') throw new HttpError(403, 'pending_approval', PENDING_MSG);
+    if (t.approval !== 'approved') throw new HttpError(401, 'invalid_credentials');
     if (!t.active) throw new HttpError(403, 'account_deactivated');
     if (t.locked_until && new Date(t.locked_until) > new Date()) {
       throw new HttpError(423, 'locked', 'Too many wrong attempts. Try again later or ask a reviewer to reset your PIN.', { retryAfter: t.locked_until });
@@ -213,9 +217,10 @@ function createApp({ cfg, db, content }) {
   app.get('/tracks', auth, anyone, (_req, res) => res.json({ tracks: content.listTracks(), passMark: cfg.passMark }));
 
   // ---------------------------------------------------------------- retake rules
-  // One attempt per week per calendar day (cfg.appTimezone). After a second fail on the same week, the week locks
-  // until a reviewer/admin unlocks it; fails are counted from the latest unlock, and an unlock allows one attempt
-  // that same day.
+  // One attempt per week per calendar day (cfg.appTimezone). Until a week is passed, a second fail locks it until a
+  // reviewer/admin unlocks it; fails are counted from the latest unlock, and an unlock allows one attempt that same
+  // day. Once passed, a week stays passed: later attempts are practice (kept in history, never lock the week, and
+  // don't change the pass status), and the fail count resets to zero.
   const MAX_FAILS_BEFORE_LOCK = 2;
   const LOCKED_WEEK_MSG = 'This week is locked after two failed attempts. Talk to your trainer to unlock it.';
   const DAILY_LIMIT_MSG = 'You can take this week\'s test once per day. Try again tomorrow.';
@@ -226,20 +231,23 @@ function createApp({ cfg, db, content }) {
       `WITH bounds AS (SELECT (date_trunc('day', now() AT TIME ZONE $3) AT TIME ZONE $3) AS day_start,
                               ((date_trunc('day', now() AT TIME ZONE $3) + interval '1 day') AT TIME ZONE $3) AS next_day),
             u AS (SELECT week, MAX(unlocked_at) AS at FROM week_unlocks WHERE trainee_id = $1 AND track = $2 GROUP BY week)
-       SELECT a.week, COUNT(*)::int AS attempts, MAX(a.score_pct)::float AS best_score, BOOL_OR(a.passed) AS passed,
+       SELECT a.week, COUNT(*)::int AS attempts, (MAX(a.score_pct) FILTER (WHERE NOT a.practice))::float AS best_score, BOOL_OR(a.passed) AS passed,
               MAX(a.submitted_at) AS last_attempt_at,
-              COUNT(*) FILTER (WHERE NOT a.passed)::int AS total_fails,
-              COUNT(*) FILTER (WHERE NOT a.passed AND (u.at IS NULL OR a.submitted_at > u.at))::int AS fails_since_unlock,
+              COUNT(*) FILTER (WHERE NOT a.passed AND NOT a.practice)::int AS total_fails,
+              COUNT(*) FILTER (WHERE NOT a.passed AND NOT a.practice AND (u.at IS NULL OR a.submitted_at > u.at))::int AS fails_since_unlock,
               COUNT(*) FILTER (WHERE a.submitted_at >= GREATEST(b.day_start, COALESCE(u.at, '-infinity'::timestamptz)))::int AS attempts_today,
               MAX(b.next_day) AS next_day
        FROM attempts a CROSS JOIN bounds b LEFT JOIN u ON u.week = a.week
        WHERE a.trainee_id = $1 AND a.track = $2 ${week !== undefined ? 'AND a.week = $4' : ''}
        GROUP BY a.week`, params);
-    return new Map(rows.map(r => [r.week, {
-      attempts: r.attempts, bestScore: r.best_score, passed: r.passed, lastAttemptAt: r.last_attempt_at, totalFails: r.total_fails,
-      locked: r.fails_since_unlock >= MAX_FAILS_BEFORE_LOCK,
-      availableAt: r.fails_since_unlock < MAX_FAILS_BEFORE_LOCK && r.attempts_today >= 1 ? r.next_day : null,
-    }]));
+    return new Map(rows.map(r => {
+      const locked = !r.passed && r.fails_since_unlock >= MAX_FAILS_BEFORE_LOCK;
+      return [r.week, {
+        attempts: r.attempts, bestScore: r.best_score, passed: r.passed, lastAttemptAt: r.last_attempt_at,
+        totalFails: r.passed ? 0 : r.total_fails, // a pass resets the fail count
+        locked, availableAt: !locked && r.attempts_today >= 1 ? r.next_day : null,
+      }];
+    }));
   }
   const emptyProgress = () => ({ attempts: 0, bestScore: null, passed: false, lastAttemptAt: null, totalFails: 0, locked: false, availableAt: null });
   function assertCanAttempt(stat) {
@@ -308,17 +316,20 @@ function createApp({ cfg, db, content }) {
     lay.q.forEach((qi, i) => { original[qi] = lay.o[i][answers[i]]; });
     const g = content.grade(track, week, original, cfg.passMark);
     let attempt;
+    let practice = false;
     try {
       attempt = await db.tx(async q => {
         await q.query('SELECT pg_advisory_xact_lock(52, $1)', [req.user.id]);
         if ((await q.query('SELECT 1 FROM attempts WHERE layout_id = $1', [lay.lid])).rows[0]) {
           throw new HttpError(409, 'already_submitted', 'This test was already submitted. Start a new attempt to retake it.');
         }
-        assertCanAttempt((await weekStats(q, req.user.id, track, week)).get(Number(week)));
+        const stat = (await weekStats(q, req.user.id, track, week)).get(Number(week));
+        assertCanAttempt(stat);
+        practice = !!stat?.passed;
         const { rows } = await q.query(
-          `INSERT INTO attempts (trainee_id, track, week, question_count, correct_count, score_pct, passed, pass_mark, content_version, layout_id, submitted_at)
-           VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10, clock_timestamp()) RETURNING id, submitted_at`,
-          [req.user.id, track, Number(week), g.total, g.correct, g.scorePct, g.passed, cfg.passMark, g.version, lay.lid]);
+          `INSERT INTO attempts (trainee_id, track, week, question_count, correct_count, score_pct, passed, pass_mark, content_version, layout_id, practice, submitted_at)
+           VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11, clock_timestamp()) RETURNING id, submitted_at`,
+          [req.user.id, track, Number(week), g.total, g.correct, g.scorePct, g.passed, cfg.passMark, g.version, lay.lid, practice]);
         for (const [i, qi] of lay.q.entries()) {
           const r = g.results[qi];
           await q.query(
@@ -333,7 +344,7 @@ function createApp({ cfg, db, content }) {
     }
     res.status(201).json({
       attemptId: attempt.id, submittedAt: attempt.submitted_at, track, week: Number(week),
-      correct: g.correct, total: g.total, scorePct: g.scorePct, passed: g.passed, passMark: cfg.passMark,
+      correct: g.correct, total: g.total, scorePct: g.scorePct, passed: g.passed, passMark: cfg.passMark, practice,
       results: lay.q.map((qi, i) => {
         const r = g.results[qi];
         return visibleResult({
@@ -351,9 +362,9 @@ function createApp({ cfg, db, content }) {
     let where = 'trainee_id = $1';
     if (req.query.track) { checkTrack(String(req.query.track)); params.push(String(req.query.track)); where += ` AND track = $${params.length}`; }
     const { rows } = await db.query(
-      `SELECT id, track, week, correct_count, question_count, score_pct::float AS score_pct, passed, submitted_at
+      `SELECT id, track, week, correct_count, question_count, score_pct::float AS score_pct, passed, practice, submitted_at
        FROM attempts WHERE ${where} ORDER BY submitted_at DESC, id DESC`, params);
-    res.json({ attempts: rows.map(r => ({ id: r.id, track: r.track, week: r.week, correct: r.correct_count, total: r.question_count, scorePct: r.score_pct, passed: r.passed, submittedAt: r.submitted_at })) });
+    res.json({ attempts: rows.map(r => ({ id: r.id, track: r.track, week: r.week, correct: r.correct_count, total: r.question_count, scorePct: r.score_pct, passed: r.passed, practice: r.practice, submittedAt: r.submitted_at })) });
   }));
 
   app.get('/me/attempts/:id', auth, A.requireRole('trainee'), wrap(async (req, res) => {
@@ -366,7 +377,7 @@ function createApp({ cfg, db, content }) {
     const contentChanged = a.content_version !== content.getWeek(a.track, a.week)?.version;
     res.json({
       id: a.id, track: a.track, week: a.week, correct: a.correct_count, total: a.question_count,
-      scorePct: Number(a.score_pct), passed: a.passed, passMark: Number(a.pass_mark), submittedAt: a.submitted_at,
+      scorePct: Number(a.score_pct), passed: a.passed, passMark: Number(a.pass_mark), practice: a.practice, submittedAt: a.submitted_at,
       contentChanged,
       // Shown in the order the trainee saw, with the same pass/fail rule as at submission. If the week's
       // test has been edited since, stored option indexes may no longer match the current text, so only
@@ -390,11 +401,12 @@ function createApp({ cfg, db, content }) {
 
   app.get('/staff/trainees', auth, staff, wrap(async (_req, res) => {
     const { rows } = await db.query(
-      `SELECT t.id, t.name, t.active, t.created_at, (t.pin_hash IS NULL) AS pin_reset_pending, t.reset_code_expires_at,
+      `SELECT t.id, t.name, t.active, t.approval, t.created_at, (t.pin_hash IS NULL) AS pin_reset_pending, t.reset_code_expires_at,
               (t.locked_until IS NOT NULL AND t.locked_until > now()) AS locked,
               COUNT(a.id)::int AS attempts, MAX(a.submitted_at) AS last_attempt_at
        FROM trainees t LEFT JOIN attempts a ON a.trainee_id = t.id
-       GROUP BY t.id ORDER BY t.name`);
+       WHERE t.approval <> 'rejected'
+       GROUP BY t.id ORDER BY (t.approval = 'pending') DESC, t.name`);
     // Weeks with 2 or more fails in total (flagged on the reviewer dashboard), and whether each is locked now.
     const { rows: flags } = await db.query(
       `SELECT a.trainee_id, a.track, a.week, COUNT(*)::int AS fails,
@@ -402,7 +414,9 @@ function createApp({ cfg, db, content }) {
        FROM attempts a
        LEFT JOIN (SELECT trainee_id, track, week, MAX(unlocked_at) AS at FROM week_unlocks GROUP BY trainee_id, track, week) u
          ON u.trainee_id = a.trainee_id AND u.track = a.track AND u.week = a.week
-       WHERE NOT a.passed GROUP BY a.trainee_id, a.track, a.week HAVING COUNT(*) >= $1
+       WHERE NOT a.passed AND NOT a.practice
+         AND NOT EXISTS (SELECT 1 FROM attempts p WHERE p.trainee_id = a.trainee_id AND p.track = a.track AND p.week = a.week AND p.passed)
+       GROUP BY a.trainee_id, a.track, a.week HAVING COUNT(*) >= $1
        ORDER BY a.track, a.week`, [MAX_FAILS_BEFORE_LOCK]);
     const flagged = new Map();
     for (const f of flags) {
@@ -410,10 +424,41 @@ function createApp({ cfg, db, content }) {
       flagged.get(f.trainee_id).push({ track: f.track, week: f.week, fails: f.fails, locked: f.fails_since_unlock >= MAX_FAILS_BEFORE_LOCK });
     }
     res.json({ trainees: rows.map(r => ({
-      id: r.id, name: r.name, active: r.active, createdAt: r.created_at, pinResetPending: r.pin_reset_pending, resetCodeExpiresAt: r.reset_code_expires_at,
+      id: r.id, name: r.name, active: r.active, approval: r.approval, createdAt: r.created_at, pinResetPending: r.pin_reset_pending, resetCodeExpiresAt: r.reset_code_expires_at,
       locked: r.locked, attempts: r.attempts, lastAttemptAt: r.last_attempt_at,
       flaggedWeeks: flagged.get(r.id) || [], flagged: flagged.has(r.id),
     })) });
+  }));
+
+  // Pending sign-ups (shown at the top of the reviewer dashboard), each with existing trainees whose names look similar.
+  app.get('/staff/signups', auth, staff, wrap(async (_req, res) => {
+    const { rows } = await db.query(`SELECT id, name, approval, created_at FROM trainees WHERE approval <> 'rejected' ORDER BY created_at`);
+    const pending = rows.filter(r => r.approval === 'pending');
+    res.json({ signups: pending.map(p => ({
+      id: p.id, name: p.name, createdAt: p.created_at,
+      similarTo: A.similarNames(p.name, rows.filter(o => o.id !== p.id)),
+    })) });
+  }));
+
+  app.post('/staff/trainees/:id/approve', auth, staff, wrap(async (req, res) => {
+    const { rows } = await db.query(
+      `UPDATE trainees SET approval = 'approved', approval_decided_by = $2, approval_decided_at = now()
+       WHERE id = $1 AND approval = 'pending' RETURNING id, name`, [idParam(req.params.id), req.user.id]);
+    if (!rows[0]) throw new HttpError(409, 'not_pending', 'This sign-up is not pending.');
+    await audit('staff', req.user.id, 'trainee_approved', 'trainee', rows[0].id);
+    res.json({ ok: true, trainee: rows[0] });
+  }));
+
+  // Reject: the account can never log in, and the name is released so the right person can sign up with it.
+  app.post('/staff/trainees/:id/reject', auth, staff, wrap(async (req, res) => {
+    const { rows } = await db.query(
+      `UPDATE trainees SET approval = 'rejected', approval_decided_by = $2, approval_decided_at = now(),
+              name_key = name_key || E'
+#rejected-' || id, token_version = token_version + 1
+       WHERE id = $1 AND approval = 'pending' RETURNING id, name`, [idParam(req.params.id), req.user.id]);
+    if (!rows[0]) throw new HttpError(409, 'not_pending', 'This sign-up is not pending.');
+    await audit('staff', req.user.id, 'trainee_rejected', 'trainee', rows[0].id, { name: rows[0].name });
+    res.json({ ok: true, trainee: rows[0] });
   }));
 
   // Unlock a week that locked after two fails. The fail count starts over and one attempt is allowed today.
@@ -422,7 +467,7 @@ function createApp({ cfg, db, content }) {
     const track = String(req.body?.track || '');
     const week = String(req.body?.week ?? '');
     checkWeek(track, week);
-    const { rows: t } = await db.query('SELECT id, name FROM trainees WHERE id = $1', [id]);
+    const { rows: t } = await db.query("SELECT id, name FROM trainees WHERE id = $1 AND approval <> 'rejected'", [id]);
     if (!t[0]) throw new HttpError(404, 'trainee_not_found');
     // Same per-trainee lock as submissions, so an unlock can't interleave with a submit in progress.
     await db.tx(async q => {
@@ -442,7 +487,7 @@ function createApp({ cfg, db, content }) {
       `UPDATE trainees SET pin_hash = NULL, pin_set_at = NULL, reset_code_hash = $2,
               reset_code_expires_at = now() + interval '${A.RESET_CODE_HOURS} hours',
               failed_logins = 0, locked_until = NULL, token_version = token_version + 1
-       WHERE id = $1 RETURNING id, name, reset_code_expires_at`, [idParam(req.params.id), await A.hashSecret(code)]);
+       WHERE id = $1 AND approval <> 'rejected' RETURNING id, name, reset_code_expires_at`, [idParam(req.params.id), await A.hashSecret(code)]);
     if (!rows[0]) throw new HttpError(404, 'trainee_not_found');
     await audit('staff', req.user.id, 'trainee_pin_reset', 'trainee', rows[0].id);
     res.json({ ok: true, trainee: { id: rows[0].id, name: rows[0].name }, code, expiresAt: rows[0].reset_code_expires_at });
@@ -450,14 +495,14 @@ function createApp({ cfg, db, content }) {
 
   // ---------------------------------------------------------------- admin
   app.post('/admin/trainees/:id/deactivate', auth, admin, wrap(async (req, res) => {
-    const { rows } = await db.query('UPDATE trainees SET active = FALSE, token_version = token_version + 1 WHERE id = $1 RETURNING id, name, active', [idParam(req.params.id)]);
+    const { rows } = await db.query(`UPDATE trainees SET active = FALSE, token_version = token_version + 1 WHERE id = $1 AND approval <> 'rejected' RETURNING id, name, active`, [idParam(req.params.id)]);
     if (!rows[0]) throw new HttpError(404, 'trainee_not_found');
     await audit('staff', req.user.id, 'trainee_deactivated', 'trainee', rows[0].id);
     res.json({ ok: true, trainee: rows[0] });
   }));
 
   app.post('/admin/trainees/:id/reactivate', auth, admin, wrap(async (req, res) => {
-    const { rows } = await db.query('UPDATE trainees SET active = TRUE WHERE id = $1 RETURNING id, name, active', [idParam(req.params.id)]);
+    const { rows } = await db.query(`UPDATE trainees SET active = TRUE WHERE id = $1 AND approval <> 'rejected' RETURNING id, name, active`, [idParam(req.params.id)]);
     if (!rows[0]) throw new HttpError(404, 'trainee_not_found');
     await audit('staff', req.user.id, 'trainee_reactivated', 'trainee', rows[0].id);
     res.json({ ok: true, trainee: rows[0] });

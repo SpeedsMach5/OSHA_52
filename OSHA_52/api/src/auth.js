@@ -25,6 +25,35 @@ const newResetCode = () => String(crypto.randomInt(0, 1_000_000)).padStart(6, '0
 const validEmail = e => typeof e === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.trim());
 const validPassword = p => typeof p === 'string' && p.length >= MIN_PASSWORD_LENGTH && p.length <= 200;
 
+// Names that may belong to the same person as `name` (for reviewing sign-ups). Compares lower-case words.
+function similarNames(name, others) {
+  const words = n => normalizeName(n).key.normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/-/g, ' ').replace(/[^a-z0-9 ]/g, '').split(' ').filter(Boolean);
+  const lev = (x, y) => {
+    const d = Array.from({ length: x.length + 1 }, (_, i) => [i]);
+    for (let j = 1; j <= y.length; j++) d[0][j] = j;
+    for (let i = 1; i <= x.length; i++) for (let j = 1; j <= y.length; j++) {
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (x[i - 1] === y[j - 1] ? 0 : 1));
+    }
+    return d[x.length][y.length];
+  };
+  const a = words(name);
+  const out = [];
+  for (const o of others) {
+    const b = words(o.name);
+    if (!a.length || !b.length) continue;
+    const [af, al, bf, bl] = [a[0], a[a.length - 1], b[0], b[b.length - 1]];
+    let reason = null;
+    if (a.join(' ') === b.join(' ')) reason = 'same name';
+    else if (af === bf && al === bl) reason = 'same first and last name';
+    else if (lev(a.join(' '), b.join(' ')) <= (Math.min(a.join(' ').length, b.join(' ').length) < 10 ? 1 : 2)) reason = 'spelling differs by 1-2 letters';
+    else if (a.length > 1 && b.length > 1 && af === bl && al === bf) reason = 'same names in reverse order';
+    else if (al === bl && af[0] === bf[0]) reason = 'same last name and first initial';
+    else if (al === bl && lev(af, bf) <= 2) reason = 'same last name, similar first name';
+    if (reason) out.push({ id: o.id, name: o.name, reason });
+  }
+  return out;
+}
+
 function signToken(cfg, payload, ttl) {
   return jwt.sign(payload, cfg.jwtSecret, { expiresIn: ttl, algorithm: 'HS256' });
 }
@@ -49,9 +78,9 @@ function authenticate(cfg, db) {
       let claims;
       try { claims = jwt.verify(m[1], cfg.jwtSecret, { algorithms: ['HS256'] }); } catch { throw new HttpError(401, 'invalid_token'); }
       if (claims.typ === 'trainee') {
-        const { rows } = await db.query('SELECT id, name, active, token_version FROM trainees WHERE id = $1', [claims.sub]);
+        const { rows } = await db.query('SELECT id, name, active, approval, token_version FROM trainees WHERE id = $1', [claims.sub]);
         const t = rows[0];
-        if (!t || t.token_version !== claims.ver) throw new HttpError(401, 'invalid_token');
+        if (!t || t.token_version !== claims.ver || t.approval !== 'approved') throw new HttpError(401, 'invalid_token');
         if (!t.active) throw new HttpError(403, 'account_deactivated');
         req.user = { type: 'trainee', id: t.id, name: t.name, role: 'trainee' };
       } else if (claims.typ === 'staff') {
@@ -81,7 +110,7 @@ function requireRole(...roles) {
 const allowPendingPasswordChange = (req, _res, next) => { req.allowPendingPasswordChange = true; next(); };
 
 module.exports = {
-  hashSecret, checkSecret, sha256, newToken, normalizeName, validPin, validResetCode, newResetCode, validEmail, validPassword,
+  hashSecret, checkSecret, sha256, newToken, normalizeName, similarNames, validPin, validResetCode, newResetCode, validEmail, validPassword,
   signToken, verifyToken, authenticate, requireRole, allowPendingPasswordChange, HttpError,
   TRAINEE_MAX_FAILS, STAFF_MAX_FAILS, LOCK_MINUTES, MIN_PASSWORD_LENGTH, RESET_CODE_HOURS, TEST_TOKEN_TTL,
 };

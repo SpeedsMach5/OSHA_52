@@ -12,7 +12,7 @@ Node/Express API on Railway, backed by the project's Railway Postgres. It serves
 | `ADMIN_INITIAL_PASSWORD` | Initial admin password. The admin must change it at first login. The seed never overwrites an existing account. |
 | `CORS_ORIGINS` | Comma-separated allowed browser origins. Set to the Cloudflare Pages domain once it exists. |
 | `APP_BASE_URL` | Frontend base URL, used to build reviewer invite links (`<APP_BASE_URL>/invite/<token>`) |
-| `APP_TIMEZONE` | IANA timezone for the one-attempt-per-day rule (default `America/New_York`) |
+| `APP_TIMEZONE` | IANA timezone for the one-attempt-per-day rule (default `America/Chicago`) |
 | Optional | `PASS_MARK` (80), `TRAINEE_TOKEN_TTL` (14d), `STAFF_TOKEN_TTL` (12h), `INVITE_TTL_HOURS` (168), `LOGIN_RATE_LIMIT_PER_MINUTE` (20) |
 
 ## Deploy

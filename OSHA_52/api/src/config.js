@@ -17,7 +17,7 @@ function loadConfig(env = process.env) {
     inviteTtlHours: env.INVITE_TTL_HOURS ? Number(env.INVITE_TTL_HOURS) : 168,
     trustProxy: env.TRUST_PROXY !== 'false',
     // "One attempt per week per day" uses calendar days in this timezone.
-    appTimezone: env.APP_TIMEZONE || 'America/New_York',
+    appTimezone: env.APP_TIMEZONE || 'America/Chicago',
     loginRateLimitPerMinute: env.LOGIN_RATE_LIMIT_PER_MINUTE ? Number(env.LOGIN_RATE_LIMIT_PER_MINUTE) : 20,
   };
   return cfg;

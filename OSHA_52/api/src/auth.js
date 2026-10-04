@@ -7,6 +7,8 @@ const TRAINEE_MAX_FAILS = 5;   // then locked for LOCK_MINUTES
 const STAFF_MAX_FAILS = 10;
 const LOCK_MINUTES = 15;
 const MIN_PASSWORD_LENGTH = 10;
+const RESET_CODE_HOURS = 24;   // trainee PIN reset code lifetime
+const TEST_TOKEN_TTL = '24h';  // a served (shuffled) test must be submitted within this time
 
 const hashSecret = s => bcrypt.hash(s, BCRYPT_ROUNDS);
 const checkSecret = (s, hash) => (hash ? bcrypt.compare(s, hash) : Promise.resolve(false));
@@ -18,11 +20,18 @@ function normalizeName(raw) {
   return { name, key: name.toLowerCase() };
 }
 const validPin = p => typeof p === 'string' && /^\d{4}$/.test(p);
+const validResetCode = c => typeof c === 'string' && /^\d{6}$/.test(c);
+const newResetCode = () => String(crypto.randomInt(0, 1_000_000)).padStart(6, '0');
 const validEmail = e => typeof e === 'string' && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.trim());
 const validPassword = p => typeof p === 'string' && p.length >= MIN_PASSWORD_LENGTH && p.length <= 200;
 
 function signToken(cfg, payload, ttl) {
   return jwt.sign(payload, cfg.jwtSecret, { expiresIn: ttl, algorithm: 'HS256' });
+}
+
+// Returns the claims, or null if the token is invalid or expired.
+function verifyToken(cfg, token) {
+  try { return jwt.verify(String(token || ''), cfg.jwtSecret, { algorithms: ['HS256'] }); } catch { return null; }
 }
 
 class HttpError extends Error {
@@ -72,7 +81,7 @@ function requireRole(...roles) {
 const allowPendingPasswordChange = (req, _res, next) => { req.allowPendingPasswordChange = true; next(); };
 
 module.exports = {
-  hashSecret, checkSecret, sha256, newToken, normalizeName, validPin, validEmail, validPassword,
-  signToken, authenticate, requireRole, allowPendingPasswordChange, HttpError,
-  TRAINEE_MAX_FAILS, STAFF_MAX_FAILS, LOCK_MINUTES, MIN_PASSWORD_LENGTH,
+  hashSecret, checkSecret, sha256, newToken, normalizeName, validPin, validResetCode, newResetCode, validEmail, validPassword,
+  signToken, verifyToken, authenticate, requireRole, allowPendingPasswordChange, HttpError,
+  TRAINEE_MAX_FAILS, STAFF_MAX_FAILS, LOCK_MINUTES, MIN_PASSWORD_LENGTH, RESET_CODE_HOURS, TEST_TOKEN_TTL,
 };

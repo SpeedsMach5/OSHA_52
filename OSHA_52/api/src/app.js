@@ -48,40 +48,85 @@ function createApp({ cfg, db, content }) {
     res.status(201).json({ token: traineeToken(rows[0]), trainee: { id: rows[0].id, name: rows[0].name } });
   }));
 
-  // Login: name + PIN. If the PIN was reset by a reviewer/admin (pin_hash NULL), the PIN entered here becomes the new PIN.
-  app.post('/auth/trainee/login', loginLimiter, wrap(async (req, res) => {
-    const { key } = A.normalizeName(req.body?.name);
-    const pin = req.body?.pin;
-    if (!key || !A.validPin(pin)) throw new HttpError(400, 'invalid_credentials_format');
+  // Guess budget for PINs, reset codes and staff passwords. Each check first claims one of max slots in a
+  // single statement, so parallel requests can't run more than max guesses before the lock applies.
+  // A correct guess frees the slots; the max-th wrong guess locks the account for LOCK_MINUTES.
+  const LOCKED_MSG = { trainees: 'Too many wrong attempts. Try again later or ask a reviewer to reset your PIN.', staff_users: 'Too many failed logins. Try again later.' };
+  async function claimGuess(table, id, max) {
+    const { rows } = await db.query(
+      `UPDATE ${table} SET failed_logins = failed_logins + 1
+       WHERE id = $1 AND (locked_until IS NULL OR locked_until <= now()) AND failed_logins < $2 RETURNING id`, [id, max]);
+    if (!rows[0]) throw new HttpError(423, 'locked', LOCKED_MSG[table]);
+  }
+  // extraOnLock: more SET clauses applied only when this wrong guess triggers the lock.
+  async function wrongGuess(table, id, max, auditAction, extraOnLock = '') {
+    const { rows } = await db.query(
+      `UPDATE ${table} SET
+         locked_until = CASE WHEN failed_logins >= $2 THEN now() + interval '${A.LOCK_MINUTES} minutes' ELSE locked_until END,
+         ${extraOnLock}
+         failed_logins = CASE WHEN failed_logins >= $2 THEN 0 ELSE failed_logins END
+       WHERE id = $1 RETURNING (failed_logins = 0 AND locked_until > now()) AS locked`, [id, max]);
+    if (rows[0]?.locked) await audit('system', null, auditAction, table === 'trainees' ? 'trainee' : 'staff', id);
+  }
+  const rightGuess = (table, id) => db.query(`UPDATE ${table} SET failed_logins = 0, locked_until = NULL WHERE id = $1`, [id]);
+
+  async function findTraineeForLogin(rawName) {
+    const { key } = A.normalizeName(rawName);
     const { rows } = await db.query('SELECT * FROM trainees WHERE name_key = $1', [key]);
     const t = rows[0];
     if (!t) throw new HttpError(401, 'invalid_credentials');
     if (!t.active) throw new HttpError(403, 'account_deactivated');
     if (t.locked_until && new Date(t.locked_until) > new Date()) {
-      throw new HttpError(423, 'locked', 'Too many wrong PINs. Try again later or ask a reviewer to reset your PIN.', { retryAfter: t.locked_until });
+      throw new HttpError(423, 'locked', 'Too many wrong attempts. Try again later or ask a reviewer to reset your PIN.', { retryAfter: t.locked_until });
     }
-    if (!t.pin_hash) {
-      const pinHash = await A.hashSecret(pin);
-      // pin_hash IS NULL guard: if two logins race after a reset, only one sets the PIN.
-      const { rows: set } = await db.query(
-        'UPDATE trainees SET pin_hash = $1, pin_set_at = now(), failed_logins = 0, locked_until = NULL WHERE id = $2 AND pin_hash IS NULL RETURNING *',
-        [pinHash, t.id]);
-      if (!set[0]) throw new HttpError(401, 'invalid_credentials');
-      await audit('trainee', t.id, 'trainee_pin_set_after_reset', 'trainee', t.id);
-      return res.json({ token: traineeToken(set[0]), trainee: { id: t.id, name: t.name }, pinSet: true });
-    }
+    return t;
+  }
+
+  // Login: name + PIN. After a PIN reset the trainee must use the reset code instead (POST /auth/trainee/reset-pin).
+  app.post('/auth/trainee/login', loginLimiter, wrap(async (req, res) => {
+    const pin = req.body?.pin;
+    if (!A.normalizeName(req.body?.name).key || !A.validPin(pin)) throw new HttpError(400, 'invalid_credentials_format');
+    const t = await findTraineeForLogin(req.body.name);
+    if (!t.pin_hash) throw new HttpError(409, 'pin_reset_required', 'Your PIN was reset. Enter the 6-digit code from your reviewer, then choose a new PIN.');
+    await claimGuess('trainees', t.id, A.TRAINEE_MAX_FAILS);
     if (!(await A.checkSecret(pin, t.pin_hash))) {
-      // Counted in one statement so parallel wrong guesses can't all read the same count.
-      const { rows: f } = await db.query(
-        `UPDATE trainees SET
-           locked_until = CASE WHEN failed_logins + 1 >= $2 THEN now() + interval '${A.LOCK_MINUTES} minutes' ELSE locked_until END,
-           failed_logins = CASE WHEN failed_logins + 1 >= $2 THEN 0 ELSE failed_logins + 1 END
-         WHERE id = $1 RETURNING failed_logins, locked_until`, [t.id, A.TRAINEE_MAX_FAILS]);
-      if (f[0]?.failed_logins === 0 && f[0].locked_until) await audit('system', null, 'trainee_locked', 'trainee', t.id);
+      await wrongGuess('trainees', t.id, A.TRAINEE_MAX_FAILS, 'trainee_locked');
       throw new HttpError(401, 'invalid_credentials');
     }
-    await db.query('UPDATE trainees SET failed_logins = 0, locked_until = NULL WHERE id = $1', [t.id]);
+    await rightGuess('trainees', t.id);
     res.json({ token: traineeToken(t), trainee: { id: t.id, name: t.name } });
+  }));
+
+  // Set a new PIN with the one-time 6-digit code a reviewer/admin gave the trainee in person.
+  app.post('/auth/trainee/reset-pin', loginLimiter, wrap(async (req, res) => {
+    const { code, pin } = req.body || {};
+    if (!A.normalizeName(req.body?.name).key || !A.validResetCode(code)) throw new HttpError(400, 'invalid_code_format', 'The reset code is 6 digits.');
+    if (!A.validPin(pin)) throw new HttpError(400, 'invalid_pin', 'PIN must be exactly 4 digits');
+    const t = await findTraineeForLogin(req.body.name);
+    if (!t.reset_code_hash) throw new HttpError(401, 'invalid_code');
+    if (new Date(t.reset_code_expires_at) <= new Date()) throw new HttpError(410, 'reset_code_expired', 'This code has expired. Ask a reviewer for a new one.');
+    await claimGuess('trainees', t.id, A.TRAINEE_MAX_FAILS);
+    if (!(await A.checkSecret(code, t.reset_code_hash))) {
+      // Locking on wrong codes also cancels the code, so each code allows at most TRAINEE_MAX_FAILS guesses.
+      await wrongGuess('trainees', t.id, A.TRAINEE_MAX_FAILS, 'trainee_locked',
+        'reset_code_hash = CASE WHEN failed_logins >= $2 THEN NULL ELSE reset_code_hash END, reset_code_expires_at = CASE WHEN failed_logins >= $2 THEN NULL ELSE reset_code_expires_at END,');
+      throw new HttpError(401, 'invalid_code');
+    }
+    // reset_code_hash guard: the code works once, even if two requests race.
+    const { rows } = await db.query(
+      `UPDATE trainees SET pin_hash = $1, pin_set_at = now(), reset_code_hash = NULL, reset_code_expires_at = NULL,
+              failed_logins = 0, locked_until = NULL
+       WHERE id = $2 AND reset_code_hash = $3 AND reset_code_expires_at > now() RETURNING *`, [await A.hashSecret(pin), t.id, t.reset_code_hash]);
+    if (!rows[0]) throw new HttpError(401, 'invalid_code');
+    await audit('trainee', t.id, 'trainee_pin_set_with_code', 'trainee', t.id);
+    res.json({ token: traineeToken(rows[0]), trainee: { id: t.id, name: t.name }, pinSet: true });
+  }));
+
+  // Logout: ends every session for this account (token_version), so a shared device is safe to hand over.
+  app.post('/auth/logout', auth, wrap(async (req, res) => {
+    const table = req.user.type === 'trainee' ? 'trainees' : 'staff_users';
+    await db.query(`UPDATE ${table} SET token_version = token_version + 1 WHERE id = $1`, [req.user.id]);
+    res.json({ ok: true });
   }));
 
   // ---------------------------------------------------------------- staff auth
@@ -93,16 +138,12 @@ function createApp({ cfg, db, content }) {
     const s = rows[0];
     if (!s || s.status !== 'active' || !s.password_hash) throw new HttpError(401, 'invalid_credentials');
     if (s.locked_until && new Date(s.locked_until) > new Date()) throw new HttpError(423, 'locked', 'Too many failed logins. Try again later.', { retryAfter: s.locked_until });
+    await claimGuess('staff_users', s.id, A.STAFF_MAX_FAILS);
     if (!(await A.checkSecret(password, s.password_hash))) {
-      const { rows: f } = await db.query(
-        `UPDATE staff_users SET
-           locked_until = CASE WHEN failed_logins + 1 >= $2 THEN now() + interval '${A.LOCK_MINUTES} minutes' ELSE locked_until END,
-           failed_logins = CASE WHEN failed_logins + 1 >= $2 THEN 0 ELSE failed_logins + 1 END
-         WHERE id = $1 RETURNING failed_logins, locked_until`, [s.id, A.STAFF_MAX_FAILS]);
-      if (f[0]?.failed_logins === 0 && f[0].locked_until) await audit('system', null, 'staff_locked', 'staff', s.id);
+      await wrongGuess('staff_users', s.id, A.STAFF_MAX_FAILS, 'staff_locked');
       throw new HttpError(401, 'invalid_credentials');
     }
-    await db.query('UPDATE staff_users SET failed_logins = 0, locked_until = NULL WHERE id = $1', [s.id]);
+    await rightGuess('staff_users', s.id);
     res.json({ token: staffToken(s), user: staffView(s) });
   }));
 
@@ -131,9 +172,10 @@ function createApp({ cfg, db, content }) {
     return inv;
   }
 
+  // kind: 'invite' (new reviewer) or 'password_reset' (admin-triggered reset for an active reviewer).
   app.get('/auth/invite/:token', loginLimiter, wrap(async (req, res) => {
     const inv = await findInvite(req.params.token);
-    res.json({ name: inv.name, email: inv.email, expiresAt: inv.expires_at });
+    res.json({ kind: inv.kind, name: inv.name, email: inv.email, expiresAt: inv.expires_at });
   }));
 
   app.post('/auth/invite/accept', loginLimiter, wrap(async (req, res) => {
@@ -147,13 +189,14 @@ function createApp({ cfg, db, content }) {
       const used = await q.query(
         'UPDATE invites SET used_at = now() WHERE id = $1 AND used_at IS NULL AND revoked_at IS NULL AND expires_at > now() RETURNING id', [inv.id]);
       if (!used.rows[0]) throw new HttpError(404, 'invite_invalid');
+      // An invite activates an invited reviewer; a password-reset link only works for an account that is still active.
       const { rows } = await q.query(
         `UPDATE staff_users SET password_hash = $1, status = 'active', must_change_password = FALSE, token_version = token_version + 1
-         WHERE id = $2 AND status = 'invited' RETURNING *`, [hash, inv.staff_user_id]);
+         WHERE id = $2 AND status = $3 RETURNING *`, [hash, inv.staff_user_id, inv.kind === 'password_reset' ? 'active' : 'invited']);
       if (!rows[0]) throw new HttpError(404, 'invite_invalid');
       return rows[0];
     });
-    await audit('staff', staff.id, 'invite_accepted', 'staff', staff.id);
+    await audit('staff', staff.id, inv.kind === 'password_reset' ? 'password_reset_completed' : 'invite_accepted', 'staff', staff.id);
     res.json({ token: staffToken(staff), user: staffView(staff) });
   }));
 
@@ -193,17 +236,37 @@ function createApp({ cfg, db, content }) {
     res.json(content.weekDetail(req.params.track, req.params.week));
   });
 
-  // Test questions WITHOUT correct answers, explanations, or citations.
-  app.get('/tracks/:track/weeks/:week/test', auth, anyone, (req, res) => {
-    checkWeek(req.params.track, req.params.week);
-    res.json({ ...content.publicTest(req.params.track, req.params.week), passMark: cfg.passMark });
+  // What a trainee sees per question after submitting. Pass: everything. Fail: which questions were
+  // missed and the citation for each, but not the correct option or the explanation.
+  const visibleResult = (r, passed) => (passed ? r : {
+    index: r.index, question: r.question, options: r.options, selectedIndex: r.selectedIndex, isCorrect: r.isCorrect,
+    ...(r.isCorrect ? {} : { citation: r.citation }),
   });
 
-  // Submit a test: graded on the server, every attempt kept. Trainees only.
+  // Test questions WITHOUT correct answers, explanations, or citations, in a fresh random question and
+  // option order every time. attemptToken carries that order (signed) and is required to submit, once.
+  app.get('/tracks/:track/weeks/:week/test', auth, anyone, (req, res) => {
+    const { track, week } = req.params;
+    checkWeek(track, week);
+    const layout = content.newLayout(track, week);
+    const test = content.publicTest(track, week, layout);
+    const attemptToken = req.user.type === 'trainee'
+      ? A.signToken(cfg, { typ: 'layout', sub: req.user.id, t: track, w: Number(week), v: test.version, lid: A.newToken(), q: layout.q, o: layout.o }, A.TEST_TOKEN_TTL)
+      : undefined;
+    res.json({ ...test, passMark: cfg.passMark, attemptToken });
+  });
+
+  // Submit a test: answers[i] is the chosen option's position as displayed for the i-th displayed question.
+  // Graded on the server against the answer key; every attempt kept. Trainees only.
   app.post('/tracks/:track/weeks/:week/attempts', auth, A.requireRole('trainee'), wrap(async (req, res) => {
     const { track, week } = req.params;
     checkWeek(track, week);
-    const test = content.publicTest(track, week);
+    const lay = A.verifyToken(cfg, req.body?.attemptToken);
+    if (!lay || lay.typ !== 'layout' || lay.sub !== req.user.id || lay.t !== track || lay.w !== Number(week)) {
+      throw new HttpError(400, 'invalid_attempt_token', 'This test session is not valid or has expired. Reload the test and try again.');
+    }
+    if (lay.v !== content.getWeek(track, week).version) throw new HttpError(409, 'test_changed', 'This test was updated. Reload the test and try again.');
+    const test = content.publicTest(track, week, lay);
     const answers = req.body?.answers;
     if (!Array.isArray(answers) || answers.length !== test.questions.length) {
       throw new HttpError(400, 'invalid_answers', `Expected an answer for each of the ${test.questions.length} questions`);
@@ -211,23 +274,40 @@ function createApp({ cfg, db, content }) {
     if (!answers.every((a, i) => Number.isInteger(a) && a >= 0 && a < test.questions[i].options.length)) {
       throw new HttpError(400, 'invalid_answers', 'Each answer must be the index of one of the options');
     }
-    const g = content.grade(track, week, answers, cfg.passMark);
-    const attempt = await db.tx(async q => {
-      const { rows } = await q.query(
-        `INSERT INTO attempts (trainee_id, track, week, question_count, correct_count, score_pct, passed, pass_mark, content_version)
-         VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9) RETURNING id, submitted_at`,
-        [req.user.id, track, Number(week), g.total, g.correct, g.scorePct, g.passed, cfg.passMark, g.version]);
-      for (const r of g.results) {
-        await q.query(
-          `INSERT INTO attempt_answers (attempt_id, question_index, question_key, selected_index, correct_index, is_correct)
-           VALUES ($1,$2,$3,$4,$5,$6)`, [rows[0].id, r.index, r.key, r.selectedIndex, r.correctIndex, r.isCorrect]);
-      }
-      return rows[0];
-    });
+    // Map displayed positions back to original question and option indexes, then grade.
+    const original = [];
+    lay.q.forEach((qi, i) => { original[qi] = lay.o[i][answers[i]]; });
+    const g = content.grade(track, week, original, cfg.passMark);
+    let attempt;
+    try {
+      attempt = await db.tx(async q => {
+        const { rows } = await q.query(
+          `INSERT INTO attempts (trainee_id, track, week, question_count, correct_count, score_pct, passed, pass_mark, content_version, layout_id)
+           VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10) RETURNING id, submitted_at`,
+          [req.user.id, track, Number(week), g.total, g.correct, g.scorePct, g.passed, cfg.passMark, g.version, lay.lid]);
+        for (const [i, qi] of lay.q.entries()) {
+          const r = g.results[qi];
+          await q.query(
+            `INSERT INTO attempt_answers (attempt_id, question_index, question_key, selected_index, correct_index, is_correct, display_position, option_order)
+             VALUES ($1,$2,$3,$4,$5,$6,$7,$8)`, [rows[0].id, r.index, r.key, r.selectedIndex, r.correctIndex, r.isCorrect, i, lay.o[i]]);
+        }
+        return rows[0];
+      });
+    } catch (err) {
+      if (err.code === '23505') throw new HttpError(409, 'already_submitted', 'This test was already submitted. Start a new attempt to retake it.');
+      throw err;
+    }
     res.status(201).json({
       attemptId: attempt.id, submittedAt: attempt.submitted_at, track, week: Number(week),
       correct: g.correct, total: g.total, scorePct: g.scorePct, passed: g.passed, passMark: cfg.passMark,
-      results: g.results.map(({ key, ...r }) => r),
+      results: lay.q.map((qi, i) => {
+        const r = g.results[qi];
+        return visibleResult({
+          index: i, question: r.question, options: lay.o[i].map(k => r.options[k]),
+          selectedIndex: answers[i], correctIndex: lay.o[i].indexOf(r.correctIndex), isCorrect: r.isCorrect,
+          explanation: r.explanation, citation: r.citation,
+        }, g.passed);
+      }),
     });
   }));
 
@@ -247,12 +327,26 @@ function createApp({ cfg, db, content }) {
     const { rows } = await db.query('SELECT * FROM attempts WHERE id = $1 AND trainee_id = $2', [id, req.user.id]);
     const a = rows[0];
     if (!a) throw new HttpError(404, 'attempt_not_found');
-    const { rows: ans } = await db.query('SELECT * FROM attempt_answers WHERE attempt_id = $1 ORDER BY question_index', [id]);
+    const { rows: ans } = await db.query(
+      'SELECT * FROM attempt_answers WHERE attempt_id = $1 ORDER BY COALESCE(display_position, question_index)', [id]);
+    const contentChanged = a.content_version !== content.getWeek(a.track, a.week)?.version;
     res.json({
       id: a.id, track: a.track, week: a.week, correct: a.correct_count, total: a.question_count,
       scorePct: Number(a.score_pct), passed: a.passed, passMark: Number(a.pass_mark), submittedAt: a.submitted_at,
-      contentChanged: a.content_version !== content.getWeek(a.track, a.week)?.version,
-      results: ans.map(r => ({ index: r.question_index, selectedIndex: r.selected_index, correctIndex: r.correct_index, isCorrect: r.is_correct, ...content.reviewQuestion(a.track, a.week, r.question_index) })),
+      contentChanged,
+      // Shown in the order the trainee saw, with the same pass/fail rule as at submission. If the week's
+      // test has been edited since, stored option indexes may no longer match the current text, so only
+      // the right/wrong result is shown (plus the current question text when it still exists).
+      results: ans.map((r, i) => {
+        const q = content.reviewQuestion(a.track, a.week, r.question_index);
+        if (contentChanged || !q) return { index: i, isCorrect: r.is_correct, question: q?.question ?? null, contentChanged: true };
+        const ord = r.option_order || q.options.map((_o, k) => k);
+        return visibleResult({
+          index: i, question: q.question, options: ord.map(k => q.options[k]),
+          selectedIndex: ord.indexOf(r.selected_index), correctIndex: ord.indexOf(r.correct_index), isCorrect: r.is_correct,
+          explanation: q.explanation, citation: q.citation,
+        }, a.passed);
+      }),
     });
   }));
 
@@ -262,22 +356,26 @@ function createApp({ cfg, db, content }) {
 
   app.get('/staff/trainees', auth, staff, wrap(async (_req, res) => {
     const { rows } = await db.query(
-      `SELECT t.id, t.name, t.active, t.created_at, (t.pin_hash IS NULL) AS pin_reset_pending,
+      `SELECT t.id, t.name, t.active, t.created_at, (t.pin_hash IS NULL) AS pin_reset_pending, t.reset_code_expires_at,
               (t.locked_until IS NOT NULL AND t.locked_until > now()) AS locked,
               COUNT(a.id)::int AS attempts, MAX(a.submitted_at) AS last_attempt_at
        FROM trainees t LEFT JOIN attempts a ON a.trainee_id = t.id
        GROUP BY t.id ORDER BY t.name`);
-    res.json({ trainees: rows.map(r => ({ id: r.id, name: r.name, active: r.active, createdAt: r.created_at, pinResetPending: r.pin_reset_pending, locked: r.locked, attempts: r.attempts, lastAttemptAt: r.last_attempt_at })) });
+    res.json({ trainees: rows.map(r => ({ id: r.id, name: r.name, active: r.active, createdAt: r.created_at, pinResetPending: r.pin_reset_pending, resetCodeExpiresAt: r.reset_code_expires_at, locked: r.locked, attempts: r.attempts, lastAttemptAt: r.last_attempt_at })) });
   }));
 
-  // Reset a trainee's PIN: clears it so the trainee sets a new one at next login; signs out existing sessions.
+  // Reset a trainee's PIN: the old PIN and sessions stop working now, and the reviewer/admin gets a one-time
+  // 6-digit code (shown once, expires in 24 h) to give the trainee in person. The trainee enters it and sets a new PIN.
   app.post('/staff/trainees/:id/reset-pin', auth, staff, wrap(async (req, res) => {
+    const code = A.newResetCode();
     const { rows } = await db.query(
-      `UPDATE trainees SET pin_hash = NULL, pin_set_at = NULL, failed_logins = 0, locked_until = NULL, token_version = token_version + 1
-       WHERE id = $1 RETURNING id, name`, [idParam(req.params.id)]);
+      `UPDATE trainees SET pin_hash = NULL, pin_set_at = NULL, reset_code_hash = $2,
+              reset_code_expires_at = now() + interval '${A.RESET_CODE_HOURS} hours',
+              failed_logins = 0, locked_until = NULL, token_version = token_version + 1
+       WHERE id = $1 RETURNING id, name, reset_code_expires_at`, [idParam(req.params.id), await A.hashSecret(code)]);
     if (!rows[0]) throw new HttpError(404, 'trainee_not_found');
     await audit('staff', req.user.id, 'trainee_pin_reset', 'trainee', rows[0].id);
-    res.json({ ok: true, trainee: rows[0] });
+    res.json({ ok: true, trainee: { id: rows[0].id, name: rows[0].name }, code, expiresAt: rows[0].reset_code_expires_at });
   }));
 
   // ---------------------------------------------------------------- admin
@@ -295,21 +393,25 @@ function createApp({ cfg, db, content }) {
     res.json({ ok: true, trainee: rows[0] });
   }));
 
-  async function issueInvite(q, staffUserId, createdBy) {
+  async function issueInvite(q, staffUserId, createdBy, kind = 'invite') {
     const token = A.newToken();
     const { rows } = await q.query(
-      `INSERT INTO invites (staff_user_id, token_hash, expires_at, created_by)
-       VALUES ($1, $2, now() + ($3 || ' hours')::interval, $4) RETURNING expires_at`,
-      [staffUserId, A.sha256(token), String(cfg.inviteTtlHours), createdBy]);
-    return { inviteUrl: `${cfg.appBaseUrl}/invite/${token}`, token, expiresAt: rows[0].expires_at };
+      `INSERT INTO invites (staff_user_id, token_hash, expires_at, created_by, kind)
+       VALUES ($1, $2, now() + ($3 || ' hours')::interval, $4, $5) RETURNING expires_at`,
+      [staffUserId, A.sha256(token), String(cfg.inviteTtlHours), createdBy, kind]);
+    const page = kind === 'password_reset' ? 'reset-password' : 'invite';
+    return { inviteUrl: `${cfg.appBaseUrl}/${page}/${token}`, token, expiresAt: rows[0].expires_at };
   }
 
   app.get('/admin/reviewers', auth, admin, wrap(async (_req, res) => {
     const { rows } = await db.query(
       `SELECT s.id, s.name, s.email, s.status, s.created_at,
-              (SELECT MAX(expires_at) FROM invites i WHERE i.staff_user_id = s.id AND i.used_at IS NULL AND i.revoked_at IS NULL) AS pending_invite_expires_at
-       FROM staff_users s WHERE s.role = 'reviewer' ORDER BY s.name`);
-    res.json({ reviewers: rows.map(r => ({ id: r.id, name: r.name, email: r.email, status: r.status, createdAt: r.created_at, pendingInviteExpiresAt: r.pending_invite_expires_at })) });
+              p.expires_at AS pending_link_expires_at, p.kind AS pending_link_kind
+       FROM staff_users s
+       LEFT JOIN LATERAL (SELECT expires_at, kind FROM invites i WHERE i.staff_user_id = s.id AND i.used_at IS NULL AND i.revoked_at IS NULL
+                          ORDER BY i.expires_at DESC LIMIT 1) p ON TRUE
+       WHERE s.role = 'reviewer' ORDER BY s.name`);
+    res.json({ reviewers: rows.map(r => ({ id: r.id, name: r.name, email: r.email, status: r.status, createdAt: r.created_at, pendingLinkExpiresAt: r.pending_link_expires_at, pendingLinkKind: r.pending_link_kind })) });
   }));
 
   // Invite a reviewer: returns a one-time link (shown once) for the admin to send.
@@ -357,6 +459,22 @@ function createApp({ cfg, db, content }) {
     });
     await audit('staff', req.user.id, 'reviewer_reinvited', 'staff', id);
     res.status(201).json({ reviewerId: id, inviteUrl: out.inviteUrl, inviteToken: out.token, expiresAt: out.expiresAt });
+  }));
+
+  // Password reset for an active reviewer: the old password and sessions stop working now, and the
+  // admin gets a one-time link (same rules as invites) for the reviewer to set a new password.
+  app.post('/admin/reviewers/:id/reset-password', auth, admin, wrap(async (req, res) => {
+    const id = idParam(req.params.id);
+    const out = await db.tx(async q => {
+      const r = (await q.query(`SELECT * FROM staff_users WHERE id = $1 AND role = 'reviewer'`, [id])).rows[0];
+      if (!r) throw new HttpError(404, 'reviewer_not_found');
+      if (r.status !== 'active') throw new HttpError(409, 'reviewer_not_active', 'Use re-invite for invited or revoked reviewers.');
+      await q.query(`UPDATE staff_users SET password_hash = NULL, failed_logins = 0, locked_until = NULL, token_version = token_version + 1 WHERE id = $1`, [id]);
+      await q.query('UPDATE invites SET revoked_at = now() WHERE staff_user_id = $1 AND used_at IS NULL AND revoked_at IS NULL', [id]);
+      return issueInvite(q, id, req.user.id, 'password_reset');
+    });
+    await audit('staff', req.user.id, 'reviewer_password_reset', 'staff', id);
+    res.status(201).json({ reviewerId: id, resetUrl: out.inviteUrl, resetToken: out.token, expiresAt: out.expiresAt });
   }));
 
   // ---------------------------------------------------------------- errors

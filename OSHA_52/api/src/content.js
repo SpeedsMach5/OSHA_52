@@ -10,6 +10,14 @@ const TRACKS = {
   1910: { file: 'osha1910.json', name: 'General Industry', standard: '29 CFR 1910' },
 };
 
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = crypto.randomInt(i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function loadContent(dir = DEFAULT_DIR) {
   const tracks = {};
   for (const [id, meta] of Object.entries(TRACKS)) {
@@ -52,13 +60,26 @@ function loadContent(dir = DEFAULT_DIR) {
     },
 
     // Test as served to trainees: no correct answers, explanations, or citations.
-    publicTest(t, n) {
+    // With a layout, questions and options appear in the layout's shuffled order.
+    publicTest(t, n, layout) {
       const w = tracks[t].weeks.get(Number(n));
       if (!w) return null;
+      const order = layout ? layout.q : w.test.map((_q, i) => i);
       return {
         track: t, week: w.week, title: w.title, version: w.version,
-        questions: w.test.map((q, i) => ({ index: i, question: q.question, options: q.options })),
+        questions: order.map((qi, i) => {
+          const q = w.test[qi];
+          return { index: i, question: q.question, options: layout ? layout.o[i].map(k => q.options[k]) : q.options };
+        }),
       };
+    },
+
+    // A fresh random order for one attempt: q = original question indexes in display order,
+    // o[i] = original option indexes in display order for the i-th displayed question.
+    newLayout(t, n) {
+      const w = tracks[t].weeks.get(Number(n));
+      const q = shuffle(w.test.map((_q, i) => i));
+      return { q, o: q.map(qi => shuffle(w.test[qi].options.map((_o, k) => k))) };
     },
 
     questionKey: (t, n, i) => `${t}-w${n}-q${i + 1}`,
@@ -80,10 +101,10 @@ function loadContent(dir = DEFAULT_DIR) {
       return { results, correct, total: results.length, scorePct, passed: scorePct >= passMark, version: w.version };
     },
 
-    // Full question detail (with key) for reviewing a stored attempt.
+    // Question detail for reviewing a stored attempt (the caller decides what a trainee may see).
     reviewQuestion(t, n, i) {
       const q = tracks[t].weeks.get(Number(n))?.test[i];
-      return q ? { question: q.question, options: q.options, explanation: q.explanation, citation: q.citation } : null;
+      return q ? { question: q.question, options: q.options, correctIndex: q.correctAnswer, explanation: q.explanation, citation: q.citation } : null;
     },
   };
 }

@@ -29,39 +29,45 @@ These settings are stored on the Railway service. Railway no longer accepts `rai
 
 ```
 npm install          # from OSHA_52/
-npm test             # 22 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
+npm test             # 28 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
 ```
 
 ## Endpoints
 
 **Auth**
-- `POST /auth/trainee/register` `{name, pin}`. First-time trainee chooses a 4-digit PIN.
-- `POST /auth/trainee/login` `{name, pin}`. After a PIN reset, the PIN entered here becomes the new PIN.
+- `POST /auth/trainee/register` `{name, pin}`: a first-time trainee chooses a 4-digit PIN.
+- `POST /auth/trainee/login` `{name, pin}`. After a PIN reset this returns 409 `pin_reset_required`.
+- `POST /auth/trainee/reset-pin` `{name, code, pin}`: the 6-digit one-time code from a reviewer, plus the new PIN.
 - `POST /auth/staff/login` `{email, password}` returns `mustChangePassword`.
-- `POST /auth/staff/change-password` `{currentPassword, newPassword}`. This is the only route available while a change is pending.
-- `GET /auth/invite/:token` and `POST /auth/invite/accept` `{token, password}`. One-time link, consumed on use.
+- `POST /auth/staff/change-password` `{currentPassword, newPassword}`: the only route allowed while a password change is pending.
+- `GET /auth/invite/:token` returns `{kind}`, which is `invite` or `password_reset`.
+- `POST /auth/invite/accept` `{token, password}`: a one-time link, consumed on use.
+- `POST /auth/logout`: ends the account's sessions on the server.
 - `GET /me`
 
 **Content** (any signed-in user)
 - `GET /tracks`
-- `GET /tracks/:track/weeks` (includes the trainee's progress)
+- `GET /tracks/:track/weeks` (with the trainee's progress)
 - `GET /tracks/:track/weeks/:week`
-- `GET /tracks/:track/weeks/:week/test` returns questions and options only. There are no answers, explanations, or citations.
+- `GET /tracks/:track/weeks/:week/test`: questions and options only, in a fresh random question and option order each time, plus `attemptToken`.
 
 **Attempts** (trainee)
-- `POST /tracks/:track/weeks/:week/attempts` `{answers: [optionIndex, ...]}`. Graded on the server; returns score, pass/fail, and the explanation and citation for each question.
-- `GET /me/attempts`
-- `GET /me/attempts/:id`
+- `POST /tracks/:track/weeks/:week/attempts` `{answers: [displayedOptionIndex, ...], attemptToken}`:
+  - Graded on the server. Each served test can be submitted once.
+  - Pass: every question shows the correct option, explanation and citation.
+  - Fail: shows which questions were missed and the citation for each, but not the correct option or explanation.
+- `GET /me/attempts` and `GET /me/attempts/:id`: the same pass/fail rule, in the order the trainee saw.
 
 **Staff** (reviewer, admin)
 - `GET /staff/trainees`
-- `POST /staff/trainees/:id/reset-pin`
+- `POST /staff/trainees/:id/reset-pin`: returns a 6-digit `code`, valid for 24 hours and shown once, to give to the trainee in person.
 
 **Admin**
 - `POST /admin/trainees/:id/deactivate` and `/reactivate`
 - `GET /admin/reviewers`
-- `POST /admin/reviewers/invite` `{name, email}` returns a one-time invite link
+- `POST /admin/reviewers/invite` `{name, email}`: returns a one-time invite link.
 - `POST /admin/reviewers/:id/revoke`
 - `POST /admin/reviewers/:id/reinvite`
+- `POST /admin/reviewers/:id/reset-password`: for an active reviewer. The old password and sessions stop working, and the admin gets a one-time reset link.
 
 Reviewer results, CSV export, and PDF records are Stage C.

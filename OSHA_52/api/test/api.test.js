@@ -3,6 +3,7 @@
 const { test, before, after } = require('node:test');
 const assert = require('node:assert/strict');
 const { PGlite } = require('@electric-sql/pglite');
+const jwt = require('jsonwebtoken');
 const { loadConfig, assertRuntimeConfig } = require('../src/config');
 const { loadContent } = require('../src/content');
 const { createApp } = require('../src/app');
@@ -30,10 +31,18 @@ async function call(method, path, { token, body, origin } = {}) {
   return { status: res.status, headers: res.headers, body: text ? JSON.parse(text) : null };
 }
 
-const answersFor = (track, week, nCorrect) => {
+// Fetches a (shuffled) test and builds answers in displayed order: the first nCorrect displayed questions right, the rest wrong.
+async function takeTest(token, track, week, nCorrect) {
+  const t = await call('GET', `/tracks/${track}/weeks/${week}/test`, { token });
+  const lay = jwt.decode(t.body.attemptToken);
   const w = content.getWeek(track, week);
-  return w.test.map((q, i) => (i < nCorrect ? q.correctAnswer : (q.correctAnswer + 1) % q.options.length));
-};
+  const answers = lay.q.map((qi, i) => {
+    const right = lay.o[i].indexOf(w.test[qi].correctAnswer);
+    return i < nCorrect ? right : (right + 1) % lay.o[i].length;
+  });
+  return { answers, attemptToken: t.body.attemptToken, test: t.body, lay };
+}
+const submit = (token, track, week, body) => call('POST', `/tracks/${track}/weeks/${week}/attempts`, { token, body });
 
 before(async () => {
   pg = new PGlite();
@@ -138,22 +147,48 @@ test('test endpoint never exposes answers, explanations, or citations', async ()
     const raw = JSON.stringify(r.body);
     assert.ok(!/"(correctAnswer|correctIndex|explanation|citation)"\s*:/.test(raw), `leaked fields in ${track} W${week}`);
     for (const q of r.body.questions) assert.deepEqual(Object.keys(q).sort(), ['index', 'options', 'question']);
+    // The attempt token only carries the shuffled order, never the answer key.
+    assert.deepEqual(Object.keys(jwt.decode(r.body.attemptToken)).sort(), ['exp', 'iat', 'lid', 'o', 'q', 'sub', 't', 'typ', 'v', 'w']);
   }
+});
+
+test('question and option order is shuffled on every attempt', async () => {
+  const a = await call('GET', '/tracks/1926/weeks/5/test', { token: trainee.token });
+  const b = await call('GET', '/tracks/1926/weeks/5/test', { token: trainee.token });
+  const sig = r => r.body.questions.map(q => q.question + '|' + q.options.join('|')).join('||');
+  assert.notEqual(sig(a), sig(b), 'two fetches give different orders');
+  const w = content.getWeek('1926', 5);
+  const sorted = qs => qs.map(q => q.question + '|' + [...q.options].sort().join('|')).sort();
+  assert.deepEqual(sorted(a.body.questions), sorted(w.test), 'same questions and options, only reordered');
 });
 
 test('server-side grading: pass at 80%, fail below, every attempt kept', async () => {
   const total = content.getWeek('1926', 3).test.length; // 10 questions
-  const fail = await call('POST', '/tracks/1926/weeks/3/attempts', { token: trainee.token, body: { answers: answersFor('1926', 3, 7) } });
+  const f = await takeTest(trainee.token, '1926', 3, 7);
+  const fail = await submit(trainee.token, '1926', 3, { answers: f.answers, attemptToken: f.attemptToken });
   assert.equal(fail.status, 201);
   assert.equal(fail.body.correct, 7);
   assert.equal(fail.body.scorePct, 70);
   assert.equal(fail.body.passed, false);
   assert.equal(fail.body.results.length, total);
-  assert.ok(fail.body.results.every(r => r.explanation && r.citation && Number.isInteger(r.correctIndex)));
+  // Fail: missed questions get their citation; no correct option or explanation anywhere.
+  assert.ok(fail.body.results.every(r => r.correctIndex === undefined && r.explanation === undefined));
+  assert.ok(fail.body.results.every(r => (r.isCorrect ? r.citation === undefined : !!r.citation)));
+  assert.equal(fail.body.results.filter(r => !r.isCorrect).length, 3);
+  assert.deepEqual(fail.body.results.map(r => r.question), f.test.questions.map(q => q.question), 'results in displayed order');
 
-  const pass = await call('POST', '/tracks/1926/weeks/3/attempts', { token: trainee.token, body: { answers: answersFor('1926', 3, 8) } });
+  const p = await takeTest(trainee.token, '1926', 3, 8);
+  const pass = await submit(trainee.token, '1926', 3, { answers: p.answers, attemptToken: p.attemptToken });
   assert.equal(pass.body.scorePct, 80);
   assert.equal(pass.body.passed, true);
+  // Pass: everything shown, in displayed positions.
+  const w3 = content.getWeek('1926', 3);
+  for (const r of pass.body.results) {
+    assert.ok(r.explanation && r.citation && Number.isInteger(r.correctIndex));
+    const orig = w3.test.find(q => q.question === r.question);
+    assert.equal(r.options[r.correctIndex], orig.options[orig.correctAnswer]);
+    assert.equal(r.isCorrect, r.selectedIndex === r.correctIndex);
+  }
 
   const hist = await call('GET', '/me/attempts?track=1926', { token: trainee.token });
   assert.equal(hist.body.attempts.length, 2);
@@ -163,17 +198,28 @@ test('server-side grading: pass at 80%, fail below, every attempt kept', async (
   const detail = await call('GET', `/me/attempts/${fail.body.attemptId}`, { token: trainee.token });
   assert.equal(detail.body.results.filter(r => r.isCorrect).length, 7);
   assert.equal(detail.body.contentChanged, false);
+  assert.ok(detail.body.results.every(r => r.correctIndex === undefined && r.explanation === undefined), 'failed attempt review hides answers');
+  assert.deepEqual(detail.body.results.map(r => r.options), fail.body.results.map(r => r.options), 'review keeps the order the trainee saw');
+  const passDetail = await call('GET', `/me/attempts/${pass.body.attemptId}`, { token: trainee.token });
+  assert.deepEqual(passDetail.body.results, pass.body.results, 'passed attempt review matches the submission result');
   const { rows } = await db.query('SELECT COUNT(*)::int AS n FROM attempt_answers WHERE attempt_id = $1', [fail.body.attemptId]);
   assert.equal(rows[0].n, total);
 });
 
 test('grading rejects incomplete or out-of-range answers; client cannot set the score', async () => {
   const n = content.getWeek('1910', 1).test.length;
-  assert.equal((await call('POST', '/tracks/1910/weeks/1/attempts', { token: trainee.token, body: { answers: [0, 1] } })).status, 400);
-  assert.equal((await call('POST', '/tracks/1910/weeks/1/attempts', { token: trainee.token, body: { answers: Array(n).fill(7) } })).status, 400);
-  const r = await call('POST', '/tracks/1910/weeks/1/attempts', { token: trainee.token, body: { answers: answersFor('1910', 1, 0), scorePct: 100, passed: true } });
+  const t = await takeTest(trainee.token, '1910', 1, 0);
+  assert.equal((await submit(trainee.token, '1910', 1, { answers: [0, 1], attemptToken: t.attemptToken })).status, 400);
+  assert.equal((await submit(trainee.token, '1910', 1, { answers: Array(n).fill(7), attemptToken: t.attemptToken })).status, 400);
+  assert.equal((await submit(trainee.token, '1910', 1, { answers: t.answers })).status, 400, 'attempt token required');
+  assert.equal((await submit(trainee.token, '1910', 1, { answers: t.answers, attemptToken: t.attemptToken + 'x' })).status, 400, 'tampered token rejected');
+  assert.equal((await submit(trainee.token, '1910', 2, { answers: t.answers, attemptToken: t.attemptToken })).status, 400, 'token is for another week');
+  const r = await submit(trainee.token, '1910', 1, { answers: t.answers, attemptToken: t.attemptToken, scorePct: 100, passed: true });
   assert.equal(r.body.passed, false);
   assert.equal(r.body.correct, 0);
+  const again = await submit(trainee.token, '1910', 1, { answers: t.answers, attemptToken: t.attemptToken });
+  assert.equal(again.status, 409, 'a served test can be submitted only once');
+  assert.equal(again.body.error, 'already_submitted');
 });
 
 let adminToken;
@@ -231,17 +277,31 @@ test('expired invite links are rejected', async () => {
   assert.equal((await call('POST', '/auth/invite/accept', { body: { token: re.body.inviteToken, password: 'larry-pass-1234' } })).status, 200);
 });
 
-test('reviewer resets a trainee PIN: old sessions end, trainee sets a new PIN at next login', async () => {
+test('reviewer resets a trainee PIN with a one-time code; trainee enters the code and sets a new PIN', async () => {
   const list = await call('GET', '/staff/trainees', { token: reviewerToken });
   const jo = list.body.trainees.find(t => t.name === 'Jo Smith');
   assert.equal(jo.attempts, 3);
   const r = await call('POST', `/staff/trainees/${jo.id}/reset-pin`, { token: reviewerToken });
   assert.equal(r.status, 200);
+  assert.match(r.body.code, /^\d{6}$/);
+  const hours = (new Date(r.body.expiresAt) - Date.now()) / 3600e3;
+  assert.ok(hours > 23.9 && hours <= 24, 'code expires in 24 hours');
+  const { rows: stored } = await db.query('SELECT reset_code_hash FROM trainees WHERE id = $1', [jo.id]);
+  assert.ok(stored[0].reset_code_hash.startsWith('$2') && !stored[0].reset_code_hash.includes(r.body.code), 'code stored hashed');
   assert.equal((await call('GET', '/tracks', { token: trainee.token })).status, 401, 'old trainee token invalidated');
+  const oldPin = await call('POST', '/auth/trainee/login', { body: { name: 'Jo Smith', pin: '4821' } });
+  assert.equal(oldPin.status, 409, 'old PIN no longer works; the trainee is sent to the code step');
+  assert.equal(oldPin.body.error, 'pin_reset_required');
+  assert.equal((await call('POST', '/auth/trainee/login', { body: { name: 'Jo Smith', pin: '7777' } })).status, 409, 'a new PIN cannot be set without the code');
+  const wrong = r.body.code === '000000' ? '111111' : '000000';
+  assert.equal((await call('POST', '/auth/trainee/reset-pin', { body: { name: 'Jo Smith', code: wrong, pin: '7777' } })).status, 401);
+  const set = await call('POST', '/auth/trainee/reset-pin', { body: { name: 'jo smith', code: r.body.code, pin: '7777' } });
+  assert.equal(set.status, 200);
+  assert.equal(set.body.pinSet, true);
+  assert.equal((await call('POST', '/auth/trainee/reset-pin', { body: { name: 'Jo Smith', code: r.body.code, pin: '1212' } })).status, 401, 'code works once');
+  assert.equal((await call('POST', '/auth/trainee/login', { body: { name: 'Jo Smith', pin: '4821' } })).status, 401, 'old PIN no longer works');
   const login = await call('POST', '/auth/trainee/login', { body: { name: 'Jo Smith', pin: '7777' } });
   assert.equal(login.status, 200);
-  assert.equal(login.body.pinSet, true);
-  assert.equal((await call('POST', '/auth/trainee/login', { body: { name: 'Jo Smith', pin: '4821' } })).status, 401, 'old PIN no longer works');
   trainee = login.body;
   const { rows } = await db.query(`SELECT COUNT(*)::int AS n FROM audit_log WHERE action = 'trainee_pin_reset'`);
   assert.equal(rows[0].n, 1);
@@ -273,4 +333,74 @@ test('invalid numeric configuration is rejected at startup', () => {
   assert.doesNotThrow(() => assertRuntimeConfig(loadConfig(ok)));
   assert.throws(() => assertRuntimeConfig(loadConfig({ ...ok, PASS_MARK: 'abc' })), /PASS_MARK/);
   assert.throws(() => assertRuntimeConfig(loadConfig({ ...ok, INVITE_TTL_HOURS: 'x' })), /INVITE_TTL_HOURS/);
+});
+
+test('expired PIN reset codes are rejected', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Exp Code', pin: '1234' } });
+  const id = (await call('GET', '/staff/trainees', { token: adminToken })).body.trainees.find(t => t.name === 'Exp Code').id;
+  const r = await call('POST', `/staff/trainees/${id}/reset-pin`, { token: adminToken });
+  await db.query(`UPDATE trainees SET reset_code_expires_at = now() - interval '1 minute' WHERE id = $1`, [id]);
+  const x = await call('POST', '/auth/trainee/reset-pin', { body: { name: 'Exp Code', code: r.body.code, pin: '5678' } });
+  assert.equal(x.status, 410);
+  assert.equal(x.body.error, 'reset_code_expired');
+});
+
+test('admin resets a reviewer password with a one-time link', async () => {
+  const inv = await call('POST', '/admin/reviewers/invite', { token: adminToken, body: { name: 'Pat Reviewer', email: 'pat@example.com' } });
+  const patId = inv.body.reviewerId;
+  assert.equal((await call('POST', `/admin/reviewers/${patId}/reset-password`, { token: adminToken })).status, 409, 'not for invited reviewers');
+  await call('POST', '/auth/invite/accept', { body: { token: inv.body.inviteToken, password: 'pat-first-pass-1' } });
+  const patToken = (await call('POST', '/auth/staff/login', { body: { email: 'pat@example.com', password: 'pat-first-pass-1' } })).body.token;
+  assert.equal((await call('POST', `/admin/reviewers/${patId}/reset-password`, { token: patToken })).status, 403, 'reviewers cannot trigger resets');
+  const rs = await call('POST', `/admin/reviewers/${patId}/reset-password`, { token: adminToken });
+  assert.equal(rs.status, 201);
+  assert.ok(rs.body.resetUrl.startsWith(`${ORIGIN}/reset-password/`));
+  assert.equal((await call('GET', '/staff/trainees', { token: patToken })).status, 401, 'sessions end at reset');
+  assert.equal((await call('POST', '/auth/staff/login', { body: { email: 'pat@example.com', password: 'pat-first-pass-1' } })).status, 401, 'old password stops working');
+  const listed = (await call('GET', '/admin/reviewers', { token: adminToken })).body.reviewers.find(r => r.id === patId);
+  assert.equal(listed.status, 'active');
+  assert.equal(listed.pendingLinkKind, 'password_reset');
+  const info = await call('GET', `/auth/invite/${rs.body.resetToken}`);
+  assert.equal(info.body.kind, 'password_reset');
+  const done = await call('POST', '/auth/invite/accept', { body: { token: rs.body.resetToken, password: 'pat-second-pass-2' } });
+  assert.equal(done.status, 200);
+  assert.equal((await call('POST', '/auth/invite/accept', { body: { token: rs.body.resetToken, password: 'pat-third-pass-3' } })).status, 404, 'link works once');
+  assert.equal((await call('POST', '/auth/staff/login', { body: { email: 'pat@example.com', password: 'pat-second-pass-2' } })).status, 200);
+  const rs2 = await call('POST', `/admin/reviewers/${patId}/reset-password`, { token: adminToken });
+  await call('POST', `/admin/reviewers/${patId}/revoke`, { token: adminToken });
+  assert.equal((await call('POST', '/auth/invite/accept', { body: { token: rs2.body.resetToken, password: 'pat-fourth-pass-4' } })).status, 404, 'revoke cancels a pending reset link');
+});
+
+test('logout ends the session on the server', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Shared Tablet', pin: '2468' } });
+  const a = (await call('POST', '/auth/trainee/login', { body: { name: 'Shared Tablet', pin: '2468' } })).body.token;
+  assert.equal((await call('POST', '/auth/logout', { token: a })).status, 200);
+  assert.equal((await call('GET', '/tracks', { token: a })).status, 401, 'token no longer works after logout');
+  const b = (await call('POST', '/auth/trainee/login', { body: { name: 'Shared Tablet', pin: '2468' } })).body.token;
+  assert.equal((await call('GET', '/tracks', { token: b })).status, 200);
+});
+
+test('parallel guesses cannot exceed the 5-guess budget; wrong codes cancel the reset code at lockout', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Code Burst', pin: '1234' } });
+  const id = (await call('GET', '/staff/trainees', { token: adminToken })).body.trainees.find(t => t.name === 'Code Burst').id;
+  const r = await call('POST', `/staff/trainees/${id}/reset-pin`, { token: adminToken });
+  const wrong = r.body.code === '000000' ? '111111' : '000000';
+  const results = await Promise.all(Array.from({ length: 9 }, () => call('POST', '/auth/trainee/reset-pin', { body: { name: 'Code Burst', code: wrong, pin: '5678' } })));
+  assert.ok(results.filter(x => x.status === 401).length <= 5, 'at most 5 codes actually checked');
+  const { rows } = await db.query('SELECT reset_code_hash, locked_until FROM trainees WHERE id = $1', [id]);
+  assert.equal(rows[0].reset_code_hash, null, 'code cancelled when the lock triggers');
+  assert.ok(rows[0].locked_until, 'account locked');
+  assert.equal((await call('POST', '/auth/trainee/reset-pin', { body: { name: 'Code Burst', code: r.body.code, pin: '5678' } })).status, 423);
+});
+
+test('attempt review after the week was edited shows only right/wrong', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Edit Later', pin: '1357' } });
+  const tok = (await call('POST', '/auth/trainee/login', { body: { name: 'Edit Later', pin: '1357' } })).body.token;
+  const t = await takeTest(tok, '1926', 7, 10);
+  const sub = await submit(tok, '1926', 7, { answers: t.answers, attemptToken: t.attemptToken });
+  await db.query(`UPDATE attempts SET content_version = 'older' WHERE id = $1`, [sub.body.attemptId]);
+  const d = await call('GET', `/me/attempts/${sub.body.attemptId}`, { token: tok });
+  assert.equal(d.status, 200);
+  assert.equal(d.body.contentChanged, true);
+  assert.ok(d.body.results.every(r => r.options === undefined && r.correctIndex === undefined && r.isCorrect === true));
 });

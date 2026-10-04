@@ -6,22 +6,24 @@ const SessionContext = createContext(null);
 // Shared phones and tablets: sign out automatically after this long with no taps, typing or scrolling.
 const IDLE_MINUTES = 30;
 
-export function SessionProvider({ children }) {
-  const [session, setState] = useState(getSession);
+// One provider per realm: 'trainee' (name + PIN) or 'staff' (reviewers and admins).
+export function SessionProvider({ realm, children }) {
+  const [session, setState] = useState(() => getSession(realm));
   const [notice, setNotice] = useState('');
   // Set by the test page while it has unsubmitted answers, so Log out can ask first.
   const unsavedWork = useRef(false);
 
-  const signIn = useCallback(s => { setSession(s); setState(s); setNotice(''); }, []);
-  const clear = useCallback(message => { unsavedWork.current = false; setSession(null); setState(null); setNotice(message || ''); }, []);
+  const signIn = useCallback(s => { setSession(realm, s); setState(s); setNotice(''); }, [realm]);
+  const update = useCallback(s => { setSession(realm, s); setState(s); }, [realm]);
+  const clear = useCallback(message => { unsavedWork.current = false; setSession(realm, null); setState(null); setNotice(message || ''); }, [realm]);
 
   // Log out ends every session for this account on the server, then clears this device.
   const logout = useCallback(async (message = 'You have logged out.') => {
-    try { await api('/auth/logout', { method: 'POST' }); } catch { /* already ended: clear locally anyway */ }
+    try { await api('/auth/logout', { method: 'POST', realm }); } catch { /* already ended: clear locally anyway */ }
     clear(message);
-  }, [clear]);
+  }, [clear, realm]);
 
-  useEffect(() => { setSessionEndedHandler(err => clear(err.message)); }, [clear]);
+  useEffect(() => { setSessionEndedHandler(realm, err => clear(err.message)); }, [clear, realm]);
 
   useEffect(() => {
     if (!session) return undefined;
@@ -37,7 +39,7 @@ export function SessionProvider({ children }) {
   }, [session, logout]);
 
   return (
-    <SessionContext.Provider value={{ session, signIn, logout, notice, setNotice, unsavedWork }}>
+    <SessionContext.Provider value={{ realm, session, signIn, update, logout, notice, setNotice, unsavedWork }}>
       {children}
     </SessionContext.Provider>
   );

@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const { rateLimit } = require('express-rate-limit');
 const A = require('./auth');
+const { registerStaffReports } = require('./staff-reports');
 
 const { HttpError } = A;
 const wrap = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
@@ -14,7 +15,8 @@ function createApp({ cfg, db, content }) {
   app.disable('x-powered-by');
   app.use(helmet());
   // CORS: only the configured frontend origin(s). Requests without an Origin header (curl, server-to-server) are unaffected.
-  app.use(cors({ origin: (origin, cb) => cb(null, !origin || cfg.corsOrigins.includes(origin)), maxAge: 600 }));
+  // Content-Disposition is exposed so the app can save CSV/PDF downloads under the server's file name.
+  app.use(cors({ origin: (origin, cb) => cb(null, !origin || cfg.corsOrigins.includes(origin)), maxAge: 600, exposedHeaders: ['Content-Disposition'] }));
   app.use(express.json({ limit: '50kb' }));
 
   const loginLimiter = rateLimit({ windowMs: 60_000, limit: cfg.loginRateLimitPerMinute, standardHeaders: 'draft-7', legacyHeaders: false, message: { error: 'too_many_requests' } });
@@ -406,7 +408,9 @@ function createApp({ cfg, db, content }) {
     const { rows } = await db.query(
       `SELECT t.id, t.name, t.active, t.approval, t.created_at, (t.pin_hash IS NULL) AS pin_reset_pending, t.reset_code_expires_at,
               (t.locked_until IS NOT NULL AND t.locked_until > now()) AS locked,
-              COUNT(a.id)::int AS attempts, MAX(a.submitted_at) AS last_attempt_at
+              COUNT(a.id)::int AS attempts, MAX(a.submitted_at) AS last_attempt_at,
+              COUNT(DISTINCT a.week) FILTER (WHERE a.passed AND a.track = '1926')::int AS passed_1926,
+              COUNT(DISTINCT a.week) FILTER (WHERE a.passed AND a.track = '1910')::int AS passed_1910
        FROM trainees t LEFT JOIN attempts a ON a.trainee_id = t.id
        WHERE t.approval <> 'rejected'
        GROUP BY t.id ORDER BY (t.approval = 'pending') DESC, t.name`);
@@ -428,7 +432,7 @@ function createApp({ cfg, db, content }) {
     }
     res.json({ trainees: rows.map(r => ({
       id: r.id, name: r.name, active: r.active, approval: r.approval, createdAt: r.created_at, pinResetPending: r.pin_reset_pending, resetCodeExpiresAt: r.reset_code_expires_at,
-      locked: r.locked, attempts: r.attempts, lastAttemptAt: r.last_attempt_at,
+      locked: r.locked, attempts: r.attempts, lastAttemptAt: r.last_attempt_at, weeksPassed: { 1926: r.passed_1926, 1910: r.passed_1910 },
       flaggedWeeks: flagged.get(r.id) || [], flagged: flagged.has(r.id),
     })) });
   }));
@@ -594,6 +598,9 @@ function createApp({ cfg, db, content }) {
     await audit('staff', req.user.id, 'reviewer_password_reset', 'staff', id);
     res.status(201).json({ reviewerId: id, resetUrl: out.inviteUrl, resetToken: out.token, expiresAt: out.expiresAt });
   }));
+
+  // ---------------------------------------------------------------- reviewer dashboard reports (Stage C)
+  registerStaffReports(app, { db, content, cfg, auth, staff, wrap, HttpError, idParam, weekStats, checkTrack, checkWeek });
 
   // ---------------------------------------------------------------- errors
   app.use((_req, _res, next) => next(new HttpError(404, 'not_found')));

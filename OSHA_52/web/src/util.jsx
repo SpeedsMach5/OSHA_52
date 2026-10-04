@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { api } from './api.js';
 
 // Loads one or more API paths; returns { data, error, loading, reload }.
-export function useApi(paths) {
+export function useApi(paths, realm) {
   const key = JSON.stringify(paths);
   const [state, setState] = useState({ data: null, error: null, loading: true });
   const latest = useRef(0); // only the newest request may update the page
@@ -11,12 +11,12 @@ export function useApi(paths) {
     setState(s => ({ ...s, loading: true, error: null }));
     try {
       const list = JSON.parse(key);
-      const results = await Promise.all(list.map(p => api(p)));
+      const results = await Promise.all(list.map(p => api(p, { realm })));
       if (id === latest.current) setState({ data: results, error: null, loading: false });
     } catch (error) {
       if (id === latest.current) setState({ data: null, error, loading: false });
     }
-  }, [key]);
+  }, [key, realm]);
   useEffect(() => { load(); }, [load]);
   return { ...state, reload: load };
 }

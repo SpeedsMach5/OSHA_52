@@ -524,3 +524,90 @@ test('after a pass, the week stays passed: later attempts are practice and never
   assert.equal(hist.length, 4);
   assert.equal(hist.filter(h => h.practice).length, 2);
 });
+
+test('reviewer reports: summary, filtered results, CSV, attempt detail, trainee detail, week stats, most missed, PDF', async () => {
+  await register('=Danger Dan', '9191');
+  const tok = (await call('POST', '/auth/trainee/login', { body: { name: '=Danger Dan', pin: '9191' } })).body.token;
+  const t = await takeTest(tok, '1926', 8, 3);
+  const sub = await submit(tok, '1926', 8, { answers: t.answers, attemptToken: t.attemptToken });
+  const dan = (await call('GET', '/staff/trainees', { token: adminToken })).body.trainees.find(x => x.name === '=Danger Dan');
+
+  const sum = await call('GET', '/staff/summary', { token: adminToken });
+  assert.equal(sum.status, 200);
+  assert.ok(sum.body.activeTrainees >= 1 && sum.body.attempts7d >= 1);
+
+  // Filters
+  const byWeek = await call('GET', '/staff/attempts?track=1926&week=8', { token: adminToken });
+  assert.ok(byWeek.body.attempts.some(a => a.id === sub.body.attemptId && a.traineeName === '=Danger Dan' && a.weekTitle));
+  assert.ok(byWeek.body.attempts.every(a => a.track === '1926' && a.week === 8));
+  const fails = await call('GET', `/staff/attempts?traineeId=${dan.id}&result=fail`, { token: adminToken });
+  assert.equal(fails.body.total, 1);
+  assert.equal((await call('GET', `/staff/attempts?traineeId=${dan.id}&result=pass`, { token: adminToken })).body.total, 0);
+  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Chicago' });
+  assert.equal((await call('GET', `/staff/attempts?traineeId=${dan.id}&from=${today}&to=${today}`, { token: adminToken })).body.total, 1);
+  assert.equal((await call('GET', `/staff/attempts?traineeId=${dan.id}&to=2000-01-01`, { token: adminToken })).body.total, 0);
+  assert.equal((await call('GET', '/staff/attempts?from=yesterday', { token: adminToken })).status, 400);
+  assert.equal((await call('GET', '/staff/attempts?week=3', { token: adminToken })).status, 400, 'week needs a track');
+
+  // CSV of a filtered view: header + one row, formula-like cells neutralized
+  const csvRes = await fetch(`${base}/staff/attempts.csv?traineeId=${dan.id}`, { headers: { authorization: `Bearer ${adminToken}` } });
+  assert.match(csvRes.headers.get('content-type'), /text\/csv/);
+  assert.match(csvRes.headers.get('content-disposition'), /attachment; filename="osha52-results-/);
+  const cross = await fetch(`${base}/staff/attempts.csv`, { headers: { authorization: `Bearer ${adminToken}`, origin: ORIGIN } });
+  assert.match(cross.headers.get('access-control-expose-headers') || '', /Content-Disposition/i, 'browser apps can read the download file name');
+  const csv = (await csvRes.text()).replace(/^﻿/, '').trim().split('\r\n');
+  assert.equal(csv.length, 2);
+  assert.match(csv[0], /^"Attempt ID","Trainee","Track","Week"/);
+  assert.ok(csv[1].includes(`"'=Danger Dan"`), 'formula cell neutralized');
+  assert.ok(csv[1].includes('"Fail"'));
+
+  // Staff see the full attempt, including correct answers and explanations
+  const det = await call('GET', `/staff/attempts/${sub.body.attemptId}`, { token: adminToken });
+  assert.equal(det.body.results.length, 10);
+  assert.ok(det.body.results.every(r => Number.isInteger(r.correctIndex) && r.explanation && r.citation));
+  assert.equal(det.body.results.filter(r => r.isCorrect).length, 3);
+
+  const td = await call('GET', `/staff/trainees/${dan.id}`, { token: adminToken });
+  assert.equal(td.body.trainee.name, '=Danger Dan');
+  assert.equal(td.body.tracks['1926'].length, 52);
+  assert.equal(td.body.tracks['1926'].find(w => w.week === 8).progress.attempts, 1);
+  assert.equal(td.body.attempts.length, 1);
+
+  const ws = await call('GET', '/staff/stats/weeks?track=1926', { token: adminToken });
+  const w8 = ws.body.weeks.find(w => w.week === 8);
+  assert.ok(w8.trainees >= 1 && w8.fails >= 1);
+  assert.equal((await call('GET', '/staff/stats/weeks', { token: adminToken })).status, 400);
+
+  const mm = await call('GET', '/staff/stats/missed?track=1926&week=8', { token: adminToken });
+  assert.equal(mm.body.questions.length, 7);
+  assert.ok(mm.body.questions.every(q => q.missed >= 1 && q.correctAnswer && q.citation && q.commonWrongAnswer));
+
+  const pdfRes = await fetch(`${base}/staff/trainees/${dan.id}/record.pdf`, { headers: { authorization: `Bearer ${adminToken}` } });
+  assert.equal(pdfRes.status, 200);
+  assert.equal(pdfRes.headers.get('content-type'), 'application/pdf');
+  const pdf = Buffer.from(await pdfRes.arrayBuffer());
+  assert.equal(pdf.subarray(0, 5).toString(), '%PDF-');
+  assert.ok(pdf.length > 2000);
+
+  // Trainees can't use any of it
+  for (const p of ['/staff/summary', '/staff/attempts', `/staff/attempts/${sub.body.attemptId}`, `/staff/trainees/${dan.id}`, '/staff/stats/missed', `/staff/trainees/${dan.id}/record.pdf`]) {
+    assert.equal((await call('GET', p, { token: tok })).status, 403, p);
+  }
+});
+
+test('report exports for each view; bad dates and paging values are rejected cleanly', async () => {
+  assert.equal((await call('GET', '/staff/attempts?from=2026-02-31', { token: adminToken })).status, 400, 'impossible date is a 400, not a 500');
+  assert.equal((await call('GET', '/staff/attempts?limit=1.5&offset=Infinity', { token: adminToken })).status, 200, 'odd paging falls back to defaults');
+  const get = async p => { const r = await fetch(base + p, { headers: { authorization: `Bearer ${adminToken}` } }); return { r, text: (await r.text()).replace(/^﻿/, '') }; };
+  const wk = await get('/staff/stats/weeks.csv?track=1926');
+  assert.equal(wk.r.status, 200);
+  const wkLines = wk.text.trim().split('\r\n');
+  assert.match(wkLines[0], /^"Track","Week","Week title","Trainees tested","Trainees passed"/);
+  assert.equal(wkLines.length, 53, 'header + 52 weeks');
+  assert.match(wk.r.headers.get('content-disposition'), /osha52-results-by-week-1926-/);
+  const mm = await get('/staff/stats/missed.csv?track=1926&week=8');
+  const mmLines = mm.text.trim().split('\r\n');
+  assert.match(mmLines[0], /^"Rank","Track","Week"/);
+  assert.ok(mmLines.length >= 2);
+  assert.equal((await get('/staff/stats/weeks.csv')).r.status, 400, 'by-week export needs a track');
+});

@@ -1,0 +1,8 @@
+Source: eCFR, 29 CFR 1926.23 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.23
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.23
+Retrieved: 2026-10-04
+
+§ 1926.23 First aid and medical attention.
+
+First aid services and provisions for medical care shall be made available by the employer for every employee covered by these regulations. Regulations prescribing specific requirements for first aid, medical attention, and emergency facilities are contained in subpart D of this part.

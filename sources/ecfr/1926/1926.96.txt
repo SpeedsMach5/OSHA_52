@@ -1,0 +1,10 @@
+Source: eCFR, 29 CFR 1926.96 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.96
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.96
+Retrieved: 2026-10-04
+
+§ 1926.96 Occupational foot protection.
+
+Safety-toe footwear for employees shall meet the requirements and specifications in American National Standard for Men's Safety-Toe Footwear, Z41.1-1967.
+
+[58 FR 35152, June 30, 1993]

@@ -1,0 +1,12 @@
+Source: eCFR, 29 CFR 1926.101 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.101
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.101
+Retrieved: 2026-10-04
+
+§ 1926.101 Hearing protection.
+
+(a) Wherever it is not feasible to reduce the noise levels or duration of exposures to those specified in Table D-2, Permissible Noise Exposures, in § 1926.52, ear protective devices shall be provided and used.
+
+(b) Ear protective devices inserted in the ear shall be fitted or determined individually by competent persons.
+
+(c) Plain cotton is not an acceptable protective device.

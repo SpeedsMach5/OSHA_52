@@ -1,0 +1,8 @@
+Source: eCFR, 29 CFR 1926.24 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.24
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.24
+Retrieved: 2026-10-04
+
+§ 1926.24 Fire protection and prevention.
+
+The employer shall be responsible for the development and maintenance of an effective fire protection and prevention program at the job site throughout all phases of the construction, repair, alteration, or demolition work. The employer shall ensure the availability of the fire protection and suppression equipment required by subpart F of this part.

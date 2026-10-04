@@ -1,0 +1,1584 @@
+[
+  {
+    "standard": "29 CFR 1926",
+    "week": 1,
+    "title": "Introduction to OSHA 1926 & Worker Rights",
+    "duration": 60,
+    "topics": [
+      "Contractor duty to provide safe working conditions",
+      "Reporting fatalities and severe injuries",
+      "Requesting an OSHA inspection",
+      "Injury and illness recordkeeping forms",
+      "Right to refuse dangerous work",
+      "Protection from retaliation",
+      "OSHA poster",
+      "Posting the annual summary"
+    ],
+    "resources": [
+      {
+        "title": "OSHA Construction Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926",
+        "type": "standard",
+        "description": "Complete OSHA 1926 Construction Standards reference"
+      },
+      {
+        "title": "Worker Rights and Protections",
+        "url": "https://www.osha.gov/workers",
+        "type": "guide",
+        "description": "Official OSHA worker rights and protections guide"
+      },
+      {
+        "title": "File a Complaint",
+        "url": "https://www.osha.gov/workers/file-complaint",
+        "type": "form",
+        "description": "Official hazard reporting procedures"
+      },
+      {
+        "title": "OSHA Recordkeeping",
+        "url": "https://www.osha.gov/recordkeeping",
+        "type": "guide",
+        "description": "Official recordkeeping requirements and forms"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.20(a)(1), a contractor or subcontractor may not require a laborer or mechanic to work in surroundings or under conditions that are:",
+        "options": [
+          "Unsanitary, hazardous, or dangerous to their health or safety",
+          "Outside normal daytime hours",
+          "More than 40 hours per week",
+          "Away from the main project site"
+        ],
+        "correctAnswer": 0,
+        "explanation": "No contractor or subcontractor may require a laborer or mechanic to work in surroundings or under working conditions that are unsanitary, hazardous, or dangerous to their health or safety (1926.20(a)(1)). Job-site scenario: a subcontractor cannot order a laborer into an unprotected, caving trench to keep the schedule.",
+        "citation": "1926.20(a)(1)"
+      },
+      {
+        "question": "How quickly must an employer report a work-related fatality to OSHA?",
+        "options": [
+          "Within 8 hours",
+          "Within 24 hours",
+          "Within 48 hours",
+          "Within 72 hours"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A work-related fatality must be reported to OSHA within eight hours after the death (1904.39(a)(1)). In-patient hospitalization, amputation, or loss of an eye must be reported within 24 hours (1904.39(a)(2)). Job-site scenario: a worker dies in a trench collapse at 6:00 a.m., so OSHA must be notified by 2:00 p.m.",
+        "citation": "1904.39(a)(1)"
+      },
+      {
+        "question": "Under 1903.11(a), who may request an OSHA inspection by giving notice of an alleged violation?",
+        "options": [
+          "Only the employer",
+          "Only a licensed safety professional",
+          "Any employee or representative of employees who believes a violation exists",
+          "Only the general contractor's superintendent"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Any employee or representative of employees who believes a violation of the Act exists in their workplace may request an inspection by notifying the Area Director or a Compliance Safety and Health Officer (1903.11(a)). Job-site scenario: a carpenter who sees missing guardrails on an upper deck can file the request themselves.",
+        "citation": "1903.11(a)"
+      },
+      {
+        "question": "Under 1904.29(a), which forms (or equivalent forms) must an employer that is required to keep injury records use for recordable injuries and illnesses?",
+        "options": [
+          "OSHA 300 only",
+          "OSHA 301 only",
+          "The workers' compensation first report only",
+          "OSHA 300, 300-A, and 301"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employers must use the OSHA 300 (Log), 300-A (Summary), and 301 (Incident Report) forms, or equivalents, for recordable injuries and illnesses (1904.29(a)). Each case must be entered within seven calendar days (1904.29(b)(3)). Job-site scenario: a laceration needing stitches is logged on the 300 and documented on a 301 within 7 days.",
+        "citation": "1904.29(a)"
+      },
+      {
+        "question": "Under 1977.12(b)(2), when is an employee who refuses an assigned task protected from discipline?",
+        "options": [
+          "When, with no reasonable alternative, the employee refuses in good faith because a reasonable person would see a real danger of death or serious injury and there is no time to correct it through regular OSHA channels",
+          "Any time the employee feels uncomfortable",
+          "When the employee prefers a different task",
+          "Only after OSHA has issued a citation"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A refusal is protected only when the employee, with no reasonable alternative, refuses in good faith; a reasonable person would conclude there is a real danger of death or serious injury; there is not enough time to remove the danger through regular enforcement channels; and, where possible, the employee has asked the employer to correct it (1977.12(b)(2)). Job-site scenario: a laborer told to enter a trench whose wall is visibly sloughing, after the foreman refuses to shore it, may refuse.",
+        "citation": "1977.12(b)(2)"
+      },
+      {
+        "question": "Under 1977.15(d)(1), within how many days after an alleged act of retaliation should an employee file a section 11(c) discrimination complaint?",
+        "options": [
+          "10 days",
+          "30 days",
+          "90 days",
+          "180 days"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Section 11(c)(2), as stated in 1977.15(d)(1), allows a retaliation complaint to be filed within 30 days after the violation occurs. This limit applies to retaliation complaints, not to hazard complaints asking for an inspection. Job-site scenario: an ironworker fired the day after calling OSHA about missing fall protection has 30 days to file.",
+        "citation": "1977.15(d)(1)"
+      },
+      {
+        "question": "Section 11(c)(1) of the OSH Act, quoted in 1903.11(d), prohibits an employer from:",
+        "options": [
+          "Paying employees who file safety complaints",
+          "Allowing OSHA on the job site",
+          "Discharging or discriminating against an employee for filing a complaint or exercising any right under the Act",
+          "Transferring employees between projects"
+        ],
+        "correctAnswer": 2,
+        "explanation": "No person may discharge or in any manner discriminate against an employee for filing a complaint, testifying, or exercising any right afforded by the Act (1903.11(d)). Reporting an injury is also protected (1904.36). Job-site scenario: a foreman cannot cut the hours of a laborer who reported a back injury.",
+        "citation": "1903.11(d)"
+      },
+      {
+        "question": "On a construction project, where must the OSHA notice (poster) required by 1903.2 be posted?",
+        "options": [
+          "At the company's headquarters only",
+          "In the site trailer's locked office",
+          "It may be emailed instead of posted",
+          "At the location to which employees report each day"
+        ],
+        "correctAnswer": 3,
+        "explanation": "For physically dispersed activities such as construction, the notice must be posted at the location to which employees report each day, in a conspicuous place, and must not be altered, defaced, or covered (1903.2(a)(1); 1903.2(b)). Job-site scenario: post it on the board at the gate where crews sign in each morning.",
+        "citation": "1903.2(b)"
+      },
+      {
+        "question": "A formal employee complaint requesting an inspection under 1903.11(a) must be:",
+        "options": [
+          "Put in writing, describe the grounds with reasonable particularity, and be signed",
+          "Accompanied by video evidence",
+          "Supported by at least two witnesses",
+          "Filed with the employer first"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The notice must be reduced to writing, set forth with reasonable particularity the grounds for the notice, and be signed by the employee or representative. On request, the complainant's name is withheld from the copy given to the employer (1903.11(a)). Job-site scenario: a written, signed complaint describing unguarded floor holes on Level 3 meets the requirement.",
+        "citation": "1903.11(a)"
+      },
+      {
+        "question": "How must employers share annual injury summary data with employees under 1904.32(b)(6)?",
+        "options": [
+          "Only upon written request",
+          "Post Form 300-A from February 1 to April 30",
+          "Email monthly updates",
+          "No sharing is required"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The annual summary must be posted no later than February 1 of the following year and kept posted until April 30 (1904.32(b)(6)). Job-site scenario: the certified 300-A goes up on the field office posting board by February 1 and stays until April 30.",
+        "citation": "1904.32(b)(6)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 2,
+    "title": "General Safety and Health Provisions",
+    "duration": 45,
+    "topics": [
+      "Accident prevention programs and competent-person inspections",
+      "Removing unsafe equipment from service",
+      "Qualified equipment operators",
+      "Hazard training under 1926.21",
+      "Housekeeping",
+      "First aid and medical services"
+    ],
+    "resources": [
+      {
+        "title": "General Safety Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.20",
+        "type": "standard",
+        "description": "General safety and health provisions standard"
+      },
+      {
+        "title": "First Aid Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.50",
+        "type": "standard",
+        "description": "Construction first aid requirements"
+      },
+      {
+        "title": "Safety Program Guidelines",
+        "url": "https://www.osha.gov/safety-management/getting-started",
+        "type": "guide",
+        "description": "Implementing safety program guidelines"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.20(b)(2), the employer's accident prevention program must provide for:",
+        "options": [
+          "Annual third-party audits",
+          "Weekly inspections by the owner's representative",
+          "Frequent and regular inspections of job sites, materials, and equipment by competent persons designated by the employer",
+          "Inspections only after an incident"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Programs must provide for frequent and regular inspections of job sites, materials, and equipment by competent persons the employer designates (1926.20(b)(2)). Job-site scenario: the superintendent assigns a competent person to walk the deck, the hoist, and the material laydown area every day.",
+        "citation": "1926.20(b)(2)"
+      },
+      {
+        "question": "Under 1926.32(f), a \"competent person\" is one who:",
+        "options": [
+          "Has worked at least 10 years in the trade",
+          "Holds an OSHA 30-hour card",
+          "Is a licensed professional engineer",
+          "Can identify existing and predictable hazards and has authorization to take prompt corrective measures to eliminate them"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A competent person can identify existing and predictable hazards in the surroundings or working conditions and has authorization to take prompt corrective measures to eliminate them (1926.32(f)). Job-site scenario: a foreman who can spot a failing trench box but cannot stop work is not a competent person.",
+        "citation": "1926.32(f)"
+      },
+      {
+        "question": "A scissor lift fails its pre-use check with a broken platform gate. Under 1926.20(b)(3), the employer must:",
+        "options": [
+          "Tag it as unsafe or lock its controls so it cannot be operated, or physically remove it from the work area",
+          "Let the crew use it carefully until the end of the shift",
+          "Report it at the next weekly meeting",
+          "Let the operator decide"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Machinery, tools, materials, or equipment that do not comply with Part 1926 are prohibited. They must be identified as unsafe by tagging or locking the controls to make them inoperable, or physically removed (1926.20(b)(3)). Job-site scenario: tag the lift \"Do Not Operate\" and lock out its controls until the gate is repaired.",
+        "citation": "1926.20(b)(3)"
+      },
+      {
+        "question": "Under 1926.20(b)(4), who may operate equipment and machinery on the job?",
+        "options": [
+          "Any employee over 18",
+          "Only employees qualified by training or experience",
+          "Anyone the foreman names",
+          "Anyone with a valid driver's license"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The employer may permit only employees qualified by training or experience to operate equipment and machinery (1926.20(b)(4)). Job-site scenario: a laborer with no skid-steer training cannot be told to \"just move the pallets\" with it.",
+        "citation": "1926.20(b)(4)"
+      },
+      {
+        "question": "What does 1926.21(b)(2) require every employer to do for each employee?",
+        "options": [
+          "Give each employee a printed copy of Part 1926",
+          "Hold one company-wide orientation per year",
+          "Instruct each employee in recognizing and avoiding unsafe conditions and in the regulations that apply to their work environment",
+          "Train supervisors only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must instruct each employee in the recognition and avoidance of unsafe conditions and the regulations applicable to their work environment (1926.21(b)(2)). Job-site scenario: a new drywall hanger is shown the site's floor-opening, scaffold, and electrical hazards before starting work.",
+        "citation": "1926.21(b)(2)"
+      },
+      {
+        "question": "On a land-clearing job with poison ivy and venomous snakes, what does 1926.21(b)(4) require for exposed employees?",
+        "options": [
+          "Nothing; plants and animals are not OSHA hazards",
+          "Only a first aid kit on site",
+          "A physician on site",
+          "Instruction on the potential hazards, how to avoid injury, and the first aid procedures to use if injured"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Where harmful plants or animals are present, exposed employees must be instructed on the potential hazards, how to avoid injury, and the first aid procedures to use if injured (1926.21(b)(4)). Job-site scenario: the brush-clearing crew is briefed on identifying poison ivy, snake avoidance, and what to do after a bite.",
+        "citation": "1926.21(b)(4)"
+      },
+      {
+        "question": "Under 1926.25(a), form and scrap lumber with protruding nails must be:",
+        "options": [
+          "Kept cleared from work areas, passageways, and stairs",
+          "Stacked at the end of each week",
+          "Burned on site daily",
+          "Left in place until framing is complete"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Form and scrap lumber with protruding nails, and all other debris, must be kept cleared from work areas, passageways, and stairs in and around buildings (1926.25(a)). Job-site scenario: stripped forms are de-nailed or removed from the stairwell before the next crew comes through.",
+        "citation": "1926.25(a)"
+      },
+      {
+        "question": "Under 1926.25(c), containers used for oily rags, flammable waste, or other hazardous wastes must be:",
+        "options": [
+          "Painted red",
+          "Equipped with covers",
+          "Emptied every hour",
+          "Kept inside the building"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Containers for garbage and other oily, flammable, or hazardous wastes (caustics, acids, harmful dusts, etc.) must be equipped with covers (1926.25(c)). Job-site scenario: the painters' oily rags go into a lidded metal can, not an open bucket.",
+        "citation": "1926.25(c)"
+      },
+      {
+        "question": "A remote pipeline job has no reasonably accessible clinic, hospital, or physician. What does 1926.50(c) require?",
+        "options": [
+          "An ambulance on standby at all times",
+          "A physician on site",
+          "A person with a valid first-aid certificate (or verifiable equivalent training) available at the worksite to render first aid",
+          "Nothing further"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Without a reasonably accessible infirmary, clinic, hospital, or physician, a person with a valid first-aid certificate (or equivalent training verifiable by documentation) must be available at the worksite (1926.50(c)). Job-site scenario: the foreman holds a current first-aid/CPR card and is on site whenever the crew works.",
+        "citation": "1926.50(c)"
+      },
+      {
+        "question": "How often must the employer check the contents of a job-site first aid kit under 1926.50(d)(2)?",
+        "options": [
+          "Only when the kit is opened",
+          "Monthly",
+          "Annually",
+          "Before it is sent out on each job and at least weekly on each job"
+        ],
+        "correctAnswer": 3,
+        "explanation": "First aid kit contents must be in a weatherproof container and checked by the employer before being sent out on each job and at least weekly on each job, so used items get replaced (1926.50(d)(2)). Job-site scenario: the Monday toolbox talk includes restocking the gang-box first aid kit.",
+        "citation": "1926.50(d)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 3,
+    "title": "Personal Protective Equipment",
+    "duration": 45,
+    "topics": [
+      "PPE selection and fit",
+      "Eye and face protection",
+      "Head protection",
+      "Hand protection based on hazard",
+      "Noise exposure limits and hearing protection",
+      "Employer payment for PPE"
+    ],
+    "resources": [
+      {
+        "title": "PPE Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.95",
+        "type": "standard",
+        "description": "PPE requirements for construction"
+      },
+      {
+        "title": "Eye and Face Protection",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.102",
+        "type": "standard",
+        "description": "Eye and face protection requirements"
+      },
+      {
+        "title": "Head Protection",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.100",
+        "type": "standard",
+        "description": "Head protection requirements"
+      },
+      {
+        "title": "PPE Assessment",
+        "url": "https://www.osha.gov/sites/default/files/publications/OSHA3151.pdf",
+        "type": "guide",
+        "description": "PPE assessment procedures guide"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.95(c), the employer must ensure that all PPE:",
+        "options": [
+          "Is selected to properly fit each affected employee",
+          "Matches the company color scheme",
+          "Is the lowest-cost option available",
+          "Is one-size-fits-all"
+        ],
+        "correctAnswer": 0,
+        "explanation": "All PPE must be of safe design and construction for the work and be selected to properly fit each affected employee (1926.95(c)(1); 1926.95(c)(2)). Job-site scenario: a smaller worker gets a harness and gloves in their size, not the crew's spare XL.",
+        "citation": "1926.95(c)(2)"
+      },
+      {
+        "question": "A laborer is cutting concrete block with a saw that throws chips. Under 1926.102(a)(2), their eye protection must:",
+        "options": [
+          "Be tinted",
+          "Provide side protection (clip-on or slide-on side shields are acceptable)",
+          "Be prescription",
+          "Be a face shield worn without glasses"
+        ],
+        "correctAnswer": 1,
+        "explanation": "When there is a hazard from flying objects, the employer must ensure eye protection with side protection is used. Detachable side protectors are acceptable (1926.102(a)(2)). Job-site scenario: safety glasses with side shields while cutting block. A face shield may be added, but 1926.102 does not specifically require it for this task.",
+        "citation": "1926.102(a)(2)"
+      },
+      {
+        "question": "When does 1926.100(a) require employees to wear protective helmets?",
+        "options": [
+          "Only supervisors must wear them",
+          "Only when working above 6 feet",
+          "Where there is a possible danger of head injury from impact, falling or flying objects, or electrical shock and burns",
+          "Only while a crane is operating"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Employees working where there is a possible danger of head injury from impact, falling or flying objects, or electrical shock and burns must wear protective helmets (1926.100(a)). Workers exposed to high-voltage shock need helmets that meet the electrical insulation specifications (1926.100(b)(2)). Job-site scenario: everyone below an active steel deck wears a hard hat.",
+        "citation": "1926.100(a)"
+      },
+      {
+        "question": "A worker will handle concrete admixtures that can burn skin. What governs the choice of gloves?",
+        "options": [
+          "Worker preference",
+          "The cheapest gloves available",
+          "Leather gloves are acceptable for every task",
+          "PPE must be provided and used wherever chemical or other hazards could injure the body through absorption or contact, and be of safe design for the work"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Protective equipment must be provided and used wherever chemical hazards (among others) can cause injury through absorption or physical contact (1926.95(a)), and must be of safe design for the work performed (1926.95(c)(1)). Job-site scenario: chemical-resistant gloves rated for the admixture, chosen from its SDS, rather than cotton or leather.",
+        "citation": "1926.95(a)"
+      },
+      {
+        "question": "Under Table D-2 in 1926.52, what is the permissible daily exposure duration at 95 dBA (slow response)?",
+        "options": [
+          "8 hours",
+          "4 hours",
+          "2 hours",
+          "1 hour"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Table D-2 allows 4 hours per day at 95 dBA (8 hours at 90 dBA). Above table values, feasible engineering or administrative controls are required first, then PPE (1926.52(b)), and a continuing hearing conservation program (1926.52(d)(1)). Job-site scenario: a jackhammer operator at 95 dBA without controls cannot exceed 4 hours.",
+        "citation": "1926.52(d)(1) Table D-2"
+      },
+      {
+        "question": "Which item may an employer choose not to pay for under 1926.95(d)(2)?",
+        "options": [
+          "Hard hats",
+          "Non-specialty safety-toe boots that the employer allows to be worn off the job site",
+          "Fall arrest harnesses",
+          "Replacement for a respirator that wore out in normal use"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employers are not required to pay for non-specialty safety-toe footwear or non-specialty prescription safety eyewear if those items may be worn off the job site (1926.95(d)(2)). Other required PPE is provided at no cost (1926.95(d)(1)), including replacements except when lost or intentionally damaged (1926.95(d)(5)). Job-site scenario: standard steel-toe boots may be at the worker's expense, but the harness may not.",
+        "citation": "1926.95(d)(2)"
+      },
+      {
+        "question": "An employee brings their own safety glasses to work. Under 1926.95(b), the employer is responsible for:",
+        "options": [
+          "Nothing; employee-owned PPE is the employee's responsibility",
+          "Reimbursing the full purchase price",
+          "Assuring its adequacy, including proper maintenance and sanitation",
+          "Replacing it with company PPE"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Where employees provide their own protective equipment, the employer must assure its adequacy, including proper maintenance and sanitation (1926.95(b)). Job-site scenario: the foreman confirms the personal glasses are Z87-marked and not scratched before allowing them.",
+        "citation": "1926.95(b)"
+      },
+      {
+        "question": "A carpenter wears prescription glasses while nailing. Under 1926.102(a)(3), they must wear:",
+        "options": [
+          "Regular prescription glasses only",
+          "Contact lenses only",
+          "No additional eye protection",
+          "Eye protection that incorporates the prescription, or that fits over the prescription lenses without disturbing either lens"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employees with prescription lenses who face eye hazards must wear eye protection that incorporates the prescription or that can be worn over the prescription lenses without disturbing the position of either (1926.102(a)(3)). Job-site scenario: over-the-glasses (OTG) safety goggles or prescription safety glasses.",
+        "citation": "1926.102(a)(3)"
+      },
+      {
+        "question": "Per Table E-1 in 1926.102(c)(1), what filter shade is listed as a guide for shielded metal-arc welding with 1/8-inch electrodes?",
+        "options": [
+          "Shade 3",
+          "Shade 5",
+          "Shade 10",
+          "Shade 14"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Table E-1 lists shade 10 for shielded metal-arc welding with 1/16- to 5/32-inch electrodes. Denser shades may be used to suit the individual (1926.102(c)(1)). Job-site scenario: a welder running 1/8-inch 7018 rod uses at least a shade 10 lens.",
+        "citation": "1926.102(c)(1)"
+      },
+      {
+        "question": "Which statement is consistent with 1926.101?",
+        "options": [
+          "Plain cotton in the ears is acceptable hearing protection",
+          "Ear protective devices inserted in the ear must be fitted or determined individually by competent persons",
+          "Hearing protection is required only above 115 dBA",
+          "Earplugs may be shared between workers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Insert-type ear protective devices must be fitted or determined individually by competent persons (1926.101(b)), and plain cotton is not acceptable (1926.101(c)). Job-site scenario: new hires are shown how to roll and seat foam plugs, and their fit is checked.",
+        "citation": "1926.101(b)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 4,
+    "title": "Construction Site Communication",
+    "duration": 45,
+    "topics": [
+      "Crane signal persons and signaling rules",
+      "Flaggers and the MUTCD",
+      "Locating underground utilities",
+      "Blasting signals",
+      "Exit marking",
+      "Danger signs, caution signs, and accident prevention tags"
+    ],
+    "resources": [
+      {
+        "title": "Safety Signs and Signals",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.200",
+        "type": "standard",
+        "description": "Accident prevention signs and tags standard"
+      },
+      {
+        "title": "Signal Person Qualifications",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1419",
+        "type": "standard",
+        "description": "Crane signal requirements"
+      },
+      {
+        "title": "Signaling (Flaggers)",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.201",
+        "type": "standard",
+        "description": "Flagger signaling must conform to Part 6 of the MUTCD"
+      }
+    ],
+    "test": [
+      {
+        "question": "During a steel beam lift with several workers nearby, who may give signals to the crane operator?",
+        "options": [
+          "Anyone who can see the load",
+          "The rigger and foreman together",
+          "Only one person at a time, although anyone who sees a safety problem may give a stop or emergency stop signal",
+          "Whoever the operator chooses for each pick"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Only one person may give signals to a crane/derrick at a time (1926.1419(h)). Anyone who becomes aware of a safety problem must alert the operator or signal person with a stop or emergency stop signal (1926.1419(j)). Job-site scenario: the designated signal person directs the pick, but a connector who sees a snag can call \"all stop.\"",
+        "citation": "1926.1419(h)"
+      },
+      {
+        "question": "Under 1926.201(a), signaling by flaggers, including the warning garments flaggers wear, must conform to:",
+        "options": [
+          "Company policy only",
+          "ANSI Z87.1",
+          "The local police department's preference",
+          "Part 6 of the Manual on Uniform Traffic Control Devices (MUTCD)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Flagger signaling, use of flaggers, and flaggers' warning garments must conform to Part 6 of the MUTCD (1926.201(a)). Traffic control devices must also conform to MUTCD Part 6 (1926.200(g)(2)). Job-site scenario: for night paving, the MUTCD Part 6 rules on flagger apparel and illumination apply.",
+        "citation": "1926.201(a)"
+      },
+      {
+        "question": "Before opening an excavation, what does 1926.651(b)(1) require?",
+        "options": [
+          "Determine the estimated location of underground utility installations that may reasonably be expected to be encountered",
+          "Start digging and watch for lines",
+          "Pothole every 10 feet",
+          "Notify OSHA"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The estimated location of utilities (sewer, telephone, fuel, electric, water, etc.) must be determined before opening an excavation (1926.651(b)(1)). Utility companies or owners must be contacted and asked to establish locations before digging starts (1926.651(b)(2)). Job-site scenario: call in the locate request and wait for marks before the excavator breaks ground.",
+        "citation": "1926.651(b)(1)"
+      },
+      {
+        "question": "Per Table U-1 in 1926.909, what is the warning signal before a blast?",
+        "options": [
+          "Three short horn blasts",
+          "A 1-minute series of long blasts 5 minutes before the blast signal",
+          "A single long blast 1 minute before",
+          "A radio announcement only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Table U-1: Warning signal is a 1-minute series of long blasts 5 minutes prior to the blast signal. Blast signal is a series of short blasts 1 minute prior to the shot. All clear is a prolonged blast after the blast area is inspected. The code must be posted, and employees must conform to it (1926.909(a)). Job-site scenario: the blaster sounds the long-blast series, waits 5 minutes, then gives the short-blast series.",
+        "citation": "1926.909(a) Table U-1"
+      },
+      {
+        "question": "How must exits be marked in a building under construction under 1926.34(b)?",
+        "options": [
+          "Posted evacuation maps on every floor",
+          "Illuminated signs in stairwells only",
+          "By a readily visible sign; access to exits must also be marked where the exit is not immediately visible",
+          "No marking is required during construction"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Exits must be marked by a readily visible sign, and access to exits must be marked where the exit or the way to reach it is not immediately visible (1926.34(b)). Job-site scenario: on an interior build-out with temporary partitions, add directional exit signs pointing to the stair.",
+        "citation": "1926.34(b)"
+      },
+      {
+        "question": "Under 1926.200(b)(1), danger signs may be used only where:",
+        "options": [
+          "A potential hazard might develop",
+          "Visitors are present",
+          "Work has finished for the day",
+          "An immediate hazard exists"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Danger signs are used only where an immediate hazard exists (1926.200(b)(1)) and have red as the predominating color for the upper panel (1926.200(b)(2)). Job-site scenario: \"DANGER - Energized Equipment\" at an open, live switchgear room.",
+        "citation": "1926.200(b)(1)"
+      },
+      {
+        "question": "Under 1926.200(c), caution signs have which predominating color, and what are they used for?",
+        "options": [
+          "Yellow, to warn against potential hazards or caution against unsafe practices",
+          "Red, for immediate hazards",
+          "Green, for safety instructions",
+          "Blue, for general information"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Caution signs warn against potential hazards or caution against unsafe practices (1926.200(c)(1)) and have yellow as the predominating color (1926.200(c)(2)). Job-site scenario: \"CAUTION - Watch Your Step\" at a ramp transition.",
+        "citation": "1926.200(c)(1)"
+      },
+      {
+        "question": "Under 1926.200(h)(1), accident prevention tags are:",
+        "options": [
+          "A permanent replacement for danger signs",
+          "A temporary means of warning of an existing hazard, such as defective tools or equipment",
+          "Only for electrical lockout",
+          "Optional decorations"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Accident prevention tags are a temporary means of warning employees of an existing hazard, such as defective tools or equipment. They may not substitute for accident prevention signs (1926.200(h)(1)). Job-site scenario: a \"DO NOT USE\" tag on a grinder with a cracked guard.",
+        "citation": "1926.200(h)(1)"
+      },
+      {
+        "question": "When crane signals are transmitted by radio, 1926.1420(c) requires that the operator receive them:",
+        "options": [
+          "Through a dashboard speaker",
+          "Through a handheld radio held to the ear",
+          "Through a hands-free system",
+          "By text message"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The operator's reception of signals must be hands-free (1926.1420(c)). The device must be tested on site before operations begin (1926.1420(a)). Job-site scenario: the operator wears a headset tied to a dedicated channel during a blind pick.",
+        "citation": "1926.1420(c)"
+      },
+      {
+        "question": "During a lift, radio contact between the operator and signal person drops out. Under 1926.1419(f), the operator must:",
+        "options": [
+          "Finish the lift from memory",
+          "Accept hand signals from anyone nearby",
+          "Speed up to finish quickly",
+          "Safely stop operations requiring signals until communication is re-established and a proper signal is given and understood"
+        ],
+        "correctAnswer": 3,
+        "explanation": "If the ability to transmit signals is interrupted, the operator must safely stop operations requiring signals until it is re-established and a proper signal is given and understood (1926.1419(f)). Job-site scenario: the radio battery dies mid-pick, so the operator holds the load until communication is restored.",
+        "citation": "1926.1419(f)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 5,
+    "title": "Site Planning and Setup",
+    "duration": 60,
+    "topics": [
+      "Material storage and floor load limits",
+      "Haul roads and access grades",
+      "Crane ground conditions",
+      "Temporary power and GFCI protection",
+      "Emergency medical planning",
+      "Sanitation, drinking water, and illumination",
+      "Emergency action plans"
+    ],
+    "resources": [
+      {
+        "title": "Site Safety Planning",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.20",
+        "type": "standard",
+        "description": "General safety and health provisions"
+      },
+      {
+        "title": "Sanitation Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.51",
+        "type": "standard",
+        "description": "Construction sanitation requirements"
+      },
+      {
+        "title": "Employee Emergency Action Plans",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.35",
+        "type": "standard",
+        "description": "Required elements of construction emergency action plans"
+      }
+    ],
+    "test": [
+      {
+        "question": "Steel will be staged on an elevated slab. What does 1926.250(a)(2) require?",
+        "options": [
+          "Stored weight must not exceed maximum safe load limits, and floor load limits must be conspicuously posted in pounds per square foot (with listed exceptions)",
+          "Storage only on the ground floor",
+          "An engineer's stamp on every bundle",
+          "Nothing if the slab is concrete"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Stored materials must not exceed maximum safe floor load limits (1926.250(a)(2)(i)), and those limits must be conspicuously posted in pounds per square foot in storage areas. Posting is not required for slab-on-grade or single-family and wood-framed multi-family residential structures (1926.250(a)(2)(ii)). Job-site scenario: confirm the slab rating with the engineer of record, post it, and stage the bundles accordingly.",
+        "citation": "1926.250(a)(2)"
+      },
+      {
+        "question": "Before haul trucks use a temporary haul road and ramp, 1926.602(a)(3)(i) requires that the access roadway or grade be:",
+        "options": [
+          "Paved",
+          "Constructed and maintained to safely accommodate the movement of the equipment and vehicles involved",
+          "One-way only",
+          "Fenced off from all workers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "No employer may move construction equipment or vehicles on an access roadway or grade unless it is constructed and maintained to safely accommodate that equipment (1926.602(a)(3)(i)). Job-site scenario: build up and grade the ramp out of the mass excavation before loaded trucks use it.",
+        "citation": "1926.602(a)(3)(i)"
+      },
+      {
+        "question": "Before a mobile crane is set up, 1926.1402(b) requires that ground conditions be:",
+        "options": [
+          "Level to the eye",
+          "Paved or concrete",
+          "Firm, drained, and graded enough (with supporting materials if needed) to meet the manufacturer's support and level specifications",
+          "Inspected by OSHA"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Equipment may not be assembled or used unless the ground is firm, drained (except marshes/wetlands), and graded enough, with supporting materials if needed, to meet the manufacturer's specifications for support and level (1926.1402(b)). Job-site scenario: crane mats over backfilled soil next to a new foundation wall.",
+        "citation": "1926.1402(b)"
+      },
+      {
+        "question": "Temporary power is being planned with 120-volt, 15/20-amp receptacles. What does 1926.404(b)(1) require to protect employees?",
+        "options": [
+          "Only a generator",
+          "Extension cords from the nearest building",
+          "Breaker panel locks only",
+          "Ground-fault circuit interrupters, or an assured equipment grounding conductor program"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must use either GFCIs or an assured equipment grounding conductor program (1926.404(b)(1)(i)). 120-volt, single-phase, 15- and 20-amp receptacles that are not part of the permanent wiring must have GFCIs if that option is used (1926.404(b)(1)(ii)). Job-site scenario: every temporary power spider box outlet is GFCI-protected.",
+        "citation": "1926.404(b)(1)(i)"
+      },
+      {
+        "question": "When must provisions be made for prompt medical attention in case of serious injury, per 1926.50(b)?",
+        "options": [
+          "Prior to commencement of the project",
+          "After the first injury occurs",
+          "Within 30 days of mobilization",
+          "Only when more than 50 workers are on site"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Provisions for prompt medical attention in case of serious injury must be made before the project starts (1926.50(b)). Emergency action plans required by a standard must include escape procedures, accounting for employees, and reporting means (1926.35(b)). Job-site scenario: identify the nearest trauma center and ambulance access route during mobilization.",
+        "citation": "1926.50(b)"
+      },
+      {
+        "question": "A site crew has 15 employees, a sanitary sewer is not available, and the crew is not mobile. What is the minimum number of toilet facilities under Table D-1 in 1926.51(c)(1)?",
+        "options": [
+          "None, if workers can drive somewhere",
+          "1",
+          "2",
+          "1 per 10 workers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Table D-1 requires 1 toilet for 20 or fewer employees (1926.51(c)(1)). Job sites without a sanitary sewer use privies, chemical, recirculating, or combustion toilets (1926.51(c)(3)). The mobile-crew exception (1926.51(c)(4)) does not apply here. Job-site scenario: one chemical toilet for the 15-person crew.",
+        "citation": "1926.51(c)(1)"
+      },
+      {
+        "question": "Which statement about drinking water matches 1926.51(a)?",
+        "options": [
+          "A common drinking cup is fine if rinsed",
+          "Any container with water in it is acceptable",
+          "Portable drinking-water containers must be able to be tightly closed and have a tap, and water may not be dipped from them",
+          "Employees must bring their own water"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portable containers used to dispense drinking water must be capable of being tightly closed and equipped with a tap, and water may not be dipped from them (1926.51(a)(2)). The common drinking cup is prohibited (1926.51(a)(4)). Job-site scenario: a lidded cooler with a spigot and single-use cups with a trash receptacle.",
+        "citation": "1926.51(a)(2)"
+      },
+      {
+        "question": "The site uses a cell phone system that does not automatically give 911 the caller's latitude and longitude. Under 1926.50(f)(2)(ii)(A), the employer must:",
+        "options": [
+          "Post nothing extra",
+          "Post the company's home office address",
+          "Post OSHA's phone number",
+          "Post the latitude and longitude of the worksite, or other location information that effectively communicates its location, in a conspicuous place"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Where the communication system does not automatically supply latitude/longitude to 911, the employer must conspicuously post the worksite's latitude and longitude or other effective location-identification information (1926.50(f)(2)(ii)(A)). Job-site scenario: GPS coordinates and the gate address are posted at the trailer phone and the site entrance.",
+        "citation": "1926.50(f)(2)(ii)(A)"
+      },
+      {
+        "question": "Per Table D-3 in 1926.56(a), what is the minimum illumination for concrete placement, excavation, and waste areas?",
+        "options": [
+          "3 foot-candles",
+          "5 foot-candles",
+          "10 foot-candles",
+          "30 foot-candles"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Table D-3 lists 3 foot-candles for general construction areas, concrete placement, excavation and waste areas, accessways, active storage areas, loading platforms, refueling, and field maintenance areas (1926.56(a)). Job-site scenario: light towers for a pre-dawn slab pour must deliver at least 3 foot-candles.",
+        "citation": "1926.56(a) Table D-3"
+      },
+      {
+        "question": "An employer with 8 employees has an emergency action plan required by an OSHA standard. Under 1926.35(e)(3), the plan:",
+        "options": [
+          "Must be filed with OSHA",
+          "May be communicated orally, and a written plan need not be kept",
+          "Is not required at all",
+          "Needs to be reviewed only once a year"
+        ],
+        "correctAnswer": 1,
+        "explanation": "For employers with 10 or fewer employees, the plan may be communicated orally and a written plan need not be kept (1926.35(e)(3)). Job-site scenario: a small roofing crew's foreman verbally covers the escape route, meeting point, and how to report a fire.",
+        "citation": "1926.35(e)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 6,
+    "title": "Fire Prevention and Protection",
+    "duration": 60,
+    "topics": [
+      "Portable fire extinguisher ratings, placement, and travel distance",
+      "Fire watch for hot work",
+      "Hot work precautions",
+      "Flammable liquid storage",
+      "Temporary heaters",
+      "Fire alarms, egress, and combustible debris"
+    ],
+    "resources": [
+      {
+        "title": "Fire Protection Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.150",
+        "type": "standard",
+        "description": "Construction fire protection requirements"
+      },
+      {
+        "title": "Fire Prevention Plan",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.24",
+        "type": "standard",
+        "description": "Fire protection and prevention program"
+      },
+      {
+        "title": "Hot Work Fire Prevention",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.352",
+        "type": "standard",
+        "description": "Fire prevention for welding, cutting, and heating"
+      }
+    ],
+    "test": [
+      {
+        "question": "More than 5 gallons of flammable liquid is being used on a jobsite. Under 1926.150(c)(1)(vi), what extinguisher must be provided within 50 feet?",
+        "options": [
+          "One rated 2A",
+          "Any water extinguisher",
+          "One rated not less than 10B",
+          "A Class D extinguisher"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A fire extinguisher rated at least 10B must be within 50 feet wherever more than 5 gallons of flammable or combustible liquids or 5 pounds of flammable gas are used. This does not apply to the integral fuel tanks of motor vehicles (1926.150(c)(1)(vi)). Job-site scenario: a 10B-rated (or higher) extinguisher at the fuel-can station for the gas-powered saws.",
+        "citation": "1926.150(c)(1)(vi)"
+      },
+      {
+        "question": "How must portable fire extinguishers be inspected and maintained under 1926.150?",
+        "options": [
+          "Daily by the fire marshal",
+          "Only after being discharged",
+          "Every five years",
+          "Periodically, in accordance with NFPA No. 10A-1970, with defective equipment replaced immediately"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Portable extinguishers must be inspected periodically and maintained in accordance with NFPA 10A-1970 (1926.150(c)(1)(viii)). All firefighting equipment must be kept in operating condition, and defective equipment replaced immediately (1926.150(a)(4)). The monthly interval in the original question is a 1910.157(e)(2) general-industry rule, not 1926 text. Job-site scenario: the safety lead checks extinguisher gauges and tags on a set schedule and swaps any discharged unit right away.",
+        "citation": "1926.150(c)(1)(viii)"
+      },
+      {
+        "question": "What is the maximum travel distance from any point of the protected area to the nearest fire extinguisher under 1926.150(c)(1)(i)?",
+        "options": [
+          "50 feet",
+          "75 feet",
+          "100 feet",
+          "150 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "One extinguisher rated at least 2A is required for each 3,000 square feet, and travel distance to the nearest extinguisher may not exceed 100 feet (1926.150(c)(1)(i)). Multistory buildings need at least one extinguisher on each floor, next to a stairway (1926.150(c)(1)(iv)). Job-site scenario: on a 200-foot-long floor plate, extinguishers at each stair core plus mid-floor.",
+        "citation": "1926.150(c)(1)(i)"
+      },
+      {
+        "question": "A welding job is one where normal fire prevention precautions are not sufficient. Under 1926.352(e), how long must the extra fire-watch personnel guard against fire?",
+        "options": [
+          "Only while welding is in progress",
+          "During the welding and for a sufficient period after completion to ensure no possibility of fire exists",
+          "Exactly 30 minutes after the work ends",
+          "Only if a hot work permit was issued"
+        ],
+        "correctAnswer": 1,
+        "explanation": "When normal precautions are not sufficient, additional personnel must guard against fire during the welding, cutting, or heating and for a sufficient period after completion to ensure no possibility of fire exists. They must be instructed on the anticipated hazards and firefighting equipment (1926.352(e)). 1926 sets no fixed number of minutes. The 30-minute figure is from the general-industry standard 1910.252(a)(2)(iii)(B). Job-site scenario: after welding clips near wood blocking, the fire watch stays until the area is cool and verified safe.",
+        "citation": "1926.352(e)"
+      },
+      {
+        "question": "A beam that must be welded cannot be moved, and nearby wood blocking cannot be removed. What does 1926.352(b) require?",
+        "options": [
+          "A written permit from the owner",
+          "Wetting the area down only",
+          "Positive means to confine heat, sparks, and slag and to protect the immovable fire hazards from them",
+          "No special precautions"
+        ],
+        "correctAnswer": 2,
+        "explanation": "If the object cannot be moved and the fire hazards cannot all be removed, positive means must be taken to confine heat, sparks, and slag and to protect the immovable fire hazards (1926.352(b)). Movable fire hazards must first be taken to a safe place (1926.352(a)). Job-site scenario: welding blankets over the blocking and a spark-containment curtain around the work.",
+        "citation": "1926.352(b)"
+      },
+      {
+        "question": "Under 1926.152(b)(1), what is the most flammable liquid that may be stored in a room outside an approved storage cabinet?",
+        "options": [
+          "5 gallons",
+          "10 gallons",
+          "25 gallons",
+          "60 gallons"
+        ],
+        "correctAnswer": 2,
+        "explanation": "No more than 25 gallons of flammable liquids may be stored in a room outside an approved storage cabinet (1926.152(b)(1)). Quantities over 25 gallons go in an acceptable or approved cabinet (1926.152(b)(2)). Job-site scenario: once the paint thinner exceeds 25 gallons, the excess goes into the flammable cabinet.",
+        "citation": "1926.152(b)(1)"
+      },
+      {
+        "question": "Which is required for temporary heaters under 1926.154?",
+        "options": [
+          "Heaters near tarps or canvas must be at least 10 feet from the coverings, and heaters in use must be set horizontally level unless the manufacturer's markings permit otherwise",
+          "Any clear area is acceptable",
+          "Only indoor ventilation",
+          "A water source next to the heater"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Heaters used near combustible tarpaulins, canvas, or similar coverings must be at least 10 feet from them (1926.154(b)(4)). Heaters in use must be set horizontally level unless manufacturer markings permit otherwise (1926.154(c)). Clearance to other combustibles follows Table F-4 (1926.154(b)(1)). Job-site scenario: a propane heater inside a tarped enclosure is set level and kept 10 feet from the tarps.",
+        "citation": "1926.154(b)(4)"
+      },
+      {
+        "question": "What does 1926.150(e) require for fire alarms on a construction site?",
+        "options": [
+          "Testing per the manufacturer only",
+          "An alarm system (e.g., telephone system or siren) to alert employees and the local fire department, with the alarm code and reporting instructions posted at phones and employee entrances",
+          "No alarm until the building is occupied",
+          "A sprinkler system in every building"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An alarm system must be established so employees on site and the local fire department can be alerted (1926.150(e)(1)). The alarm code and reporting instructions must be conspicuously posted at phones and employee entrances (1926.150(e)(2)). Job-site scenario: an air horn plus a posted \"dial 911, give gate address\" placard at each entrance.",
+        "citation": "1926.150(e)(1)"
+      },
+      {
+        "question": "What does 1926.34 require for exits in an occupied building under construction?",
+        "options": [
+          "Two exit paths on every floor at all times",
+          "Windows may serve as exits",
+          "Free and unobstructed egress from all parts of the building while it is occupied, kept clear of obstructions",
+          "Exits only on the ground floor"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Exits must provide free and unobstructed egress from all parts of the building at all times when it is occupied (1926.34(a)), and means of egress must be kept free of obstructions (1926.34(c)). Job-site scenario: drywall pallets are not staged in the stair corridor.",
+        "citation": "1926.34(a)"
+      },
+      {
+        "question": "How must combustible scrap and debris be handled under 1926.25(b)?",
+        "options": [
+          "Removed daily",
+          "Removed weekly",
+          "Removed only at the end of the project",
+          "Removed at regular intervals during construction, with safe means provided for removal"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Combustible scrap and debris must be removed at regular intervals during construction, and safe means must be provided for removal (1926.25(b)). Daily removal is good practice but is not the regulatory wording. Job-site scenario: framers fill the dumpster by chute at the end of each shift.",
+        "citation": "1926.25(b)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 7,
+    "title": "Material Handling and Storage",
+    "duration": 45,
+    "topics": [
+      "Stacking limits for lumber, brick, and block",
+      "Rigging and sling inspection",
+      "Segregating incompatible materials",
+      "Storage on scaffolds and near openings",
+      "Compressed gas cylinder storage",
+      "Posted floor loads and forklift capacity"
+    ],
+    "resources": [
+      {
+        "title": "Materials Handling Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.250",
+        "type": "standard",
+        "description": "General requirements for storage"
+      },
+      {
+        "title": "Rigging Equipment",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.251",
+        "type": "standard",
+        "description": "Rigging equipment for material handling"
+      },
+      {
+        "title": "Disposal of Waste Materials",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.252",
+        "type": "standard",
+        "description": "Chutes, debris drop areas, and waste removal"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.250(b)(8)(iv), lumber that will be handled manually may be stacked no higher than:",
+        "options": [
+          "8 feet",
+          "12 feet",
+          "16 feet",
+          "20 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lumber piles may not exceed 20 feet, and lumber to be handled manually may not be stacked more than 16 feet high (1926.250(b)(8)(iv)). Job-site scenario: a hand-loaded stack of 2x10s tops out at 16 feet.",
+        "citation": "1926.250(b)(8)(iv)"
+      },
+      {
+        "question": "When must rigging equipment for material handling be inspected under 1926.251(a)(1)?",
+        "options": [
+          "Annually",
+          "Prior to use on each shift, and as necessary during use",
+          "Weekly",
+          "Monthly"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Rigging equipment must be inspected before use on each shift and as necessary during use, and defective rigging removed from service (1926.251(a)(1)). Slings and fastenings must be inspected each day before use by a competent person (1926.251(a)(6)). Job-site scenario: the rigger checks wire rope slings for broken wires and kinks before the first steel pick of the shift.",
+        "citation": "1926.251(a)(1)"
+      },
+      {
+        "question": "How must materials that are not compatible with each other be stored under 1926.250(b)(3)?",
+        "options": [
+          "No separation is required",
+          "By size only",
+          "They must be segregated",
+          "By arrival date"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Noncompatible materials must be segregated in storage (1926.250(b)(3)). Job-site scenario: oxidizers and fuels are not stored in the same conex. Indoors, noncompatible materials that create a fire hazard need a 1-hour fire-resistant barrier (1926.151(d)(3)).",
+        "citation": "1926.250(b)(3)"
+      },
+      {
+        "question": "Under 1926.250(b)(5), how much material may be stored on a scaffold or runway?",
+        "options": [
+          "Anything that fits",
+          "Up to the rated capacity overnight",
+          "There are no restrictions",
+          "No more than the supplies needed for immediate operations"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Materials may not be stored on scaffolds or runways beyond the supplies needed for immediate operations (1926.250(b)(5)). Job-site scenario: masons stage only the brick and mortar for the current lift.",
+        "citation": "1926.250(b)(5)"
+      },
+      {
+        "question": "How must compressed gas cylinders be kept under 1926.350(a)?",
+        "options": [
+          "Secured upright, with oxygen in storage separated from fuel-gas cylinders by at least 20 feet or by a 5-foot-high noncombustible barrier with at least a half-hour fire rating",
+          "Lying down",
+          "In any position",
+          "Oxygen and acetylene chained together side by side in storage"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cylinders must be secured upright at all times except briefly while hoisted or carried (1926.350(a)(9)). Oxygen in storage must be separated from fuel gas or combustibles by at least 20 feet or by a noncombustible barrier at least 5 feet high with at least a half-hour fire-resistance rating (1926.350(a)(10)). Job-site scenario: oxygen and acetylene cages placed 20+ feet apart.",
+        "citation": "1926.350(a)(10)"
+      },
+      {
+        "question": "Inside a building under construction, material may not be stored within ___ of any hoistway or inside floor opening (1926.250(b)(1)).",
+        "options": [
+          "2 feet",
+          "4 feet",
+          "6 feet",
+          "10 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Material may not be placed within 6 feet of any hoistway or inside floor opening, or within 10 feet of an exterior wall that does not extend above the top of the stored material (1926.250(b)(1)). Job-site scenario: drywall carts are kept back from the open elevator shaft.",
+        "citation": "1926.250(b)(1)"
+      },
+      {
+        "question": "What is the maximum height of a brick stack under 1926.250(b)(6)?",
+        "options": [
+          "5 feet",
+          "7 feet",
+          "10 feet",
+          "12 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Brick stacks may not exceed 7 feet. When a loose brick stack reaches 4 feet, it must be tapered back 2 inches for every foot above the 4-foot level (1926.250(b)(6)). Job-site scenario: a loose stack at 5 feet is stepped back 2 inches from the 4-foot mark.",
+        "citation": "1926.250(b)(6)"
+      },
+      {
+        "question": "What must be conspicuously posted in storage areas on elevated floors under 1926.250(a)(2)(ii)?",
+        "options": [
+          "An inventory list",
+          "The delivery schedule",
+          "The supervisor's phone number",
+          "Maximum safe floor load limits in pounds per square foot"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employers must conspicuously post maximum safe floor load limits, in pounds per square foot, in all storage areas, except slab-on-grade and certain residential structures (1926.250(a)(2)(ii)). Job-site scenario: \"Max 50 psf\" signs on the second-floor deck.",
+        "citation": "1926.250(a)(2)(ii)"
+      },
+      {
+        "question": "Under 1926.250(b)(7), masonry blocks stacked higher than 6 feet must be:",
+        "options": [
+          "Tapered back one-half block per tier above the 6-foot level",
+          "Shrink-wrapped",
+          "Limited to 8 feet",
+          "Moved outside"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When masonry blocks are stacked higher than 6 feet, the stack must be tapered back one-half block per tier above the 6-foot level (1926.250(b)(7)). Job-site scenario: an 8-foot CMU stack steps back half a block on each tier above 6 feet.",
+        "citation": "1926.250(b)(7)"
+      },
+      {
+        "question": "Under 1926.602(c)(1)(i), what must be displayed on a forklift (lift truck)?",
+        "options": [
+          "The operator's license",
+          "Its rated capacity, clearly posted where the operator can see it, and not exceeded",
+          "An annual inspection sticker",
+          "Nothing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lift trucks must have their rated capacity clearly posted on the vehicle where the operator can see it, including alternate ratings for removable counterweights. These ratings may not be exceeded (1926.602(c)(1)(i)). Job-site scenario: the operator checks the data plate before lifting a pallet of block.",
+        "citation": "1926.602(c)(1)(i)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 8,
+    "title": "Hand and Power Tools",
+    "duration": 45,
+    "topics": [
+      "Keeping tools in safe condition",
+      "Pneumatic tool connections",
+      "Removing unsafe tools from service",
+      "Powder-actuated tool training",
+      "Guarding and PPE",
+      "Grounding and double insulation",
+      "Hand tool condition"
+    ],
+    "resources": [
+      {
+        "title": "Hand/Power Tools Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.300",
+        "type": "standard",
+        "description": "General requirements for tools"
+      },
+      {
+        "title": "Power-Operated Hand Tools",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.302",
+        "type": "standard",
+        "description": "Electric, pneumatic, fuel, hydraulic, and powder-actuated tools"
+      },
+      {
+        "title": "Hand Tools",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.301",
+        "type": "standard",
+        "description": "Condition requirements for hand tools"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.300(a), hand and power tools must be kept in a safe condition:",
+        "options": [
+          "Only if the employer owns them",
+          "Only if they are rented",
+          "Whether furnished by the employer or the employee",
+          "Only for power tools"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All hand and power tools and similar equipment, whether furnished by the employer or the employee, must be maintained in a safe condition (1926.300(a)). Job-site scenario: a worker's personal circular saw with a frayed cord is held to the same rule as company tools.",
+        "citation": "1926.300(a)"
+      },
+      {
+        "question": "What does 1926.302(b)(1) require for pneumatic tool connections?",
+        "options": [
+          "Taping the fitting",
+          "Any fitting",
+          "Hand-tightening",
+          "Securing the tool to the hose or whip by some positive means to prevent accidental disconnection"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Pneumatic power tools must be secured to the hose or whip by some positive means to prevent accidental disconnection (1926.302(b)(1)). Hoses over 1/2-inch inside diameter need a safety device at the supply source or branch line to reduce pressure if the hose fails (1926.302(b)(7)). Job-site scenario: a retaining clip on the nailer fitting and an excess-flow valve on the 3/4-inch compressor line.",
+        "citation": "1926.302(b)(1)"
+      },
+      {
+        "question": "A hammer with a cracked wooden handle is found on site. What is required?",
+        "options": [
+          "Remove it from use; employers may not issue or permit unsafe hand tools, and wooden handles must be free of splinters or cracks",
+          "Keep using it carefully",
+          "Wrap the crack with tape",
+          "User discretion"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employers may not issue or permit the use of unsafe hand tools (1926.301(a)), and wooden handles must be kept free of splinters or cracks and tight in the tool (1926.301(d)). Noncompliant tools must be tagged or physically removed (1926.20(b)(3)). Job-site scenario: tag the hammer \"Do Not Use\" and take it out of the gang box.",
+        "citation": "1926.301(a)"
+      },
+      {
+        "question": "Who may operate a powder-actuated tool under 1926.302(e)(1)?",
+        "options": [
+          "Anyone with a state license",
+          "Only employees trained in the operation of the particular tool in use",
+          "Anyone with five years of experience",
+          "Anyone; there is no requirement"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Only employees trained in the operation of the particular tool in use may operate a powder-actuated tool (1926.302(e)(1)). The tool must be tested each day before loading (1926.302(e)(2)). Manufacturer operator cards are common practice, but the regulation says \"trained.\" Job-site scenario: the electrician trained on the Hilti DX model uses that tool, not an unfamiliar brand.",
+        "citation": "1926.302(e)(1)"
+      },
+      {
+        "question": "When must power-operated tools that are designed to accommodate guards have them?",
+        "options": [
+          "Guards are optional",
+          "Only for new employees",
+          "Whenever the tool is in use",
+          "Only indoors"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Power-operated tools designed to accommodate guards must be equipped with those guards when in use (1926.300(b)(1)). Job-site scenario: the angle grinder's guard stays on while cutting rebar.",
+        "citation": "1926.300(b)(1)"
+      },
+      {
+        "question": "What PPE must be provided to employees using hand and power tools under 1926.300(c)?",
+        "options": [
+          "Gloves only",
+          "A hard hat only",
+          "None",
+          "The particular PPE needed to protect against falling, flying, abrasive, and splashing objects, or harmful dusts, fumes, mists, vapors, or gases"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employees exposed to falling, flying, abrasive, or splashing objects, or to harmful dusts, fumes, mists, vapors, or gases, must be given the particular PPE needed to protect them from the hazard (1926.300(c)). Job-site scenario: a concrete saw operator gets eye and face protection, hearing protection, and respiratory protection as the exposure requires.",
+        "citation": "1926.300(c)"
+      },
+      {
+        "question": "May a worker lower a drill from a scaffold by its electric cord?",
+        "options": [
+          "No; electric cords may not be used for hoisting or lowering tools",
+          "Yes, if the cord is heavy duty",
+          "Yes, if the drop is less than 10 feet",
+          "Yes, with supervisor approval"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Electric cords may not be used for hoisting or lowering tools (1926.302(a)(2)). The same applies to pneumatic hoses (1926.302(b)(6)). Job-site scenario: use a hand line and tool bucket instead.",
+        "citation": "1926.302(a)(2)"
+      },
+      {
+        "question": "Under 1926.302(a)(1), electric power-operated tools must be:",
+        "options": [
+          "Plugged into any outlet",
+          "Either of the approved double-insulated type or grounded in accordance with Subpart K",
+          "Grounding is optional",
+          "Tested annually only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Electric power-operated tools must be either of the approved double-insulated type or grounded in accordance with Subpart K (1926.302(a)(1)). Job-site scenario: a corded drill with a broken ground pin is taken out of service unless it is double-insulated.",
+        "citation": "1926.302(a)(1)"
+      },
+      {
+        "question": "What guarding does 1926.304(d) require on portable power-driven circular saws?",
+        "options": [
+          "An upper guard only",
+          "The lower guard may be pinned back for deep cuts",
+          "Guards above and below the base plate or shoe, with the lower guard automatically returning to the covering position",
+          "No guard is required on cordless saws"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portable circular saws must have guards above and below the base plate or shoe, and the lower guard must automatically and instantly return to the covering position when the tool is withdrawn (1926.304(d)). Job-site scenario: never wedge the lower guard open to rip plywood.",
+        "citation": "1926.304(d)"
+      },
+      {
+        "question": "Under 1926.301(c), impact tools such as drift pins, wedges, and chisels must be:",
+        "options": [
+          "Ground down whenever convenient",
+          "Mushroomed, for better grip",
+          "Inspected only by the manufacturer",
+          "Kept free of mushroomed heads"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Impact tools such as drift pins, wedges, and chisels must be kept free of mushroomed heads (1926.301(c)). Job-site scenario: a cold chisel with a flared striking face is dressed or replaced before use.",
+        "citation": "1926.301(c)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 9,
+    "title": "Heavy Equipment Operation",
+    "duration": 60,
+    "topics": [
+      "Shift inspections of vehicles",
+      "Backing and reverse alarms",
+      "Blocking and lowering for maintenance",
+      "Crane operator certification",
+      "Refueling",
+      "Parking",
+      "Equipment modifications",
+      "Power line clearance",
+      "Seat belts",
+      "When a signal person is needed"
+    ],
+    "resources": [
+      {
+        "title": "Equipment Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.600",
+        "type": "standard",
+        "description": "General equipment requirements"
+      },
+      {
+        "title": "Operator Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.21",
+        "type": "standard",
+        "description": "Safety training and education"
+      },
+      {
+        "title": "Motor Vehicles",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.601",
+        "type": "standard",
+        "description": "Brakes, alarms, and shift inspection of motor vehicles"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.601(b)(14), when must job-site motor vehicles be checked to make sure brakes, tires, horn, steering, seat belts, and safety devices are in safe operating condition?",
+        "options": [
+          "At the beginning of each shift, with defects corrected before the vehicle is placed in service",
+          "Weekly",
+          "Monthly",
+          "Only when the operator notices a problem"
+        ],
+        "correctAnswer": 0,
+        "explanation": "All vehicles in use must be checked at the beginning of each shift, and all defects corrected before the vehicle is placed in service (1926.601(b)(14)). Job-site scenario: the dump truck driver walks around and checks brakes, horn, and lights before the first load.",
+        "citation": "1926.601(b)(14)"
+      },
+      {
+        "question": "A loader with an obstructed rear view must back up. Under 1926.602(a)(9)(ii), what is required?",
+        "options": [
+          "Mirrors only",
+          "A reverse signal alarm distinguishable from the surrounding noise, or an employee who signals that it is safe",
+          "Sounding the horn once",
+          "The operator's judgment"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Earthmoving or compacting equipment with an obstructed rear view may not be used in reverse unless it has a working reverse signal alarm distinguishable from the surrounding noise, or an employee signals that it is safe (1926.602(a)(9)(ii)). Job-site scenario: in a congested yard, a spotter guides the loader in addition to the backup alarm.",
+        "citation": "1926.602(a)(9)(ii)"
+      },
+      {
+        "question": "A dozer blade will be serviced. What does 1926.600(a)(3)(i) require?",
+        "options": [
+          "Raise the blade for better access",
+          "Leave the engine running for hydraulics",
+          "Blades, buckets, and dump bodies must be fully lowered or blocked when being repaired or when not in use",
+          "Chock the tracks only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bulldozer and scraper blades, end-loader buckets, dump bodies, and similar equipment must be fully lowered or blocked when being repaired or not in use, with controls in neutral, motors stopped, and brakes set (1926.600(a)(3)(i)). Job-site scenario: the mechanic cribs the raised blade before reaching under it.",
+        "citation": "1926.600(a)(3)(i)"
+      },
+      {
+        "question": "Before an employee operates a crane covered by Subpart CC, what must the employer ensure under 1926.1427(a)?",
+        "options": [
+          "That the operator has a valid driver's license",
+          "That the operator has two years of experience",
+          "Only supervisor approval",
+          "That the operator is trained, certified/licensed, and evaluated in accordance with 1926.1427 (except for listed equipment)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must ensure each operator is trained, certified/licensed, and evaluated under 1926.1427 before operating Subpart CC equipment, except the equipment listed in 1926.1427(a)(2): derricks, sideboom cranes, and equipment rated 2,000 lb or less (1926.1427(a)). Job-site scenario: the mobile crane operator holds an accredited certification for that crane type and has been evaluated by the employer.",
+        "citation": "1926.1427(a)"
+      },
+      {
+        "question": "What does 1926.152(g)(10) require when equipment is being refueled?",
+        "options": [
+          "The motors of all equipment being fueled must be shut off during fueling",
+          "The engine may keep running",
+          "Refueling only at the end of the shift",
+          "Letting it cool for 30 minutes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The motors of all equipment being fueled must be shut off during the fueling operation (1926.152(g)(10)). There must be no smoking or open flames in fueling areas (1926.152(g)(8)). Letting hot parts cool is good practice but is not in this paragraph. Job-site scenario: the skid steer is shut down before the fuel nozzle goes in.",
+        "citation": "1926.152(g)(10)"
+      },
+      {
+        "question": "How must equipment be parked under 1926.600(a)(3)(ii)?",
+        "options": [
+          "Anywhere convenient",
+          "With the parking brake set, and on inclines with the wheels chocked and the parking brake set",
+          "Near the work area",
+          "On level ground only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Whenever equipment is parked, the parking brake must be set. Equipment parked on an incline must also have its wheels chocked (1926.600(a)(3)(ii)). Blades and buckets are lowered when not in use (1926.600(a)(3)(i)). Job-site scenario: a backhoe parked on the ramp is chocked with the brake set and bucket grounded.",
+        "citation": "1926.600(a)(3)(ii)"
+      },
+      {
+        "question": "A contractor wants to add fork extensions to a lift truck. What does 1926.602(c)(1)(ii) require?",
+        "options": [
+          "Supervisor approval",
+          "The operator's choice",
+          "The manufacturer's written approval for modifications that affect capacity or safe operation, with the capacity and instruction plates changed accordingly",
+          "An engineer's verbal OK"
+        ],
+        "correctAnswer": 2,
+        "explanation": "No modifications or additions that affect capacity or safe operation may be made without the manufacturer's written approval. Capacity, operation, and maintenance plates must be updated, and the original safety factor may not be reduced (1926.602(c)(1)(ii)). Job-site scenario: get the forklift maker's written approval and updated data plate before using extensions.",
+        "citation": "1926.602(c)(1)(ii)"
+      },
+      {
+        "question": "An excavator will work near a 7,200-volt overhead distribution line. What is the minimum clearance between the line and any part of the equipment or load under 1926.600(a)(6)(i)?",
+        "options": [
+          "4 feet",
+          "6 feet",
+          "10 feet",
+          "20 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For lines rated 50 kV or below, the minimum clearance is 10 feet (1926.600(a)(6)(i)). Any overhead wire is considered energized until the owner says otherwise and it is visibly grounded (1926.600(a)(6)(vi)). Cranes and derricks follow Subpart CC (1926.1408) instead. Job-site scenario: mark a 10-foot limit and use a dedicated observer where clearance is hard to judge (1926.600(a)(6)(iv)).",
+        "citation": "1926.600(a)(6)(i)"
+      },
+      {
+        "question": "Under 1926.602(a)(2), seat belts must be provided on earthmoving equipment except:",
+        "options": [
+          "On equipment designed only for stand-up operation, or equipment without ROPS or adequate canopy protection",
+          "On any equipment used on site only",
+          "On equipment under 10 tons",
+          "When the operator prefers not to wear one"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Seat belts are required on equipment covered by 1926.602(a), but are not required on equipment designed only for stand-up operation or on equipment without ROPS or adequate canopy protection (1926.602(a)(2)(i)-(iii)). Job-site scenario: the dozer has ROPS, so the operator belts in.",
+        "citation": "1926.602(a)(2)"
+      },
+      {
+        "question": "Under 1926.1419(a)(1), a signal person must be provided when:",
+        "options": [
+          "Never; the operator handles it",
+          "The point of operation (load travel or the area near or at load placement) is not in full view of the operator",
+          "Always, on every lift",
+          "Only when the operator requests one"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A signal person is required when the point of operation is not in full view of the operator (1926.1419(a)(1)). Signal persons are also required when the view in the direction of travel is obstructed, or when the operator or the person handling the load decides one is needed (1926.1419(a)(2)-(3)). Job-site scenario: the crane places a concrete bucket behind a wall the operator cannot see.",
+        "citation": "1926.1419(a)(1)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 10,
+    "title": "Mobile Scaffolding and Work Platforms",
+    "duration": 45,
+    "topics": [
+      "Platform width",
+      "Fall protection on scaffolds",
+      "Height-to-base ratio and restraint",
+      "Competent-person inspections",
+      "Moving and riding mobile scaffolds",
+      "Scaffold access",
+      "High winds",
+      "Outriggers and caster locks"
+    ],
+    "resources": [
+      {
+        "title": "Scaffold Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.451",
+        "type": "standard",
+        "description": "General scaffold requirements"
+      },
+      {
+        "title": "Mobile Scaffold Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.452",
+        "type": "standard",
+        "description": "Specific requirements for mobile scaffolds (paragraph (w))"
+      },
+      {
+        "title": "Scaffold Inspection Requirement",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.451#p-1926.451(f)(3)",
+        "type": "standard",
+        "description": "Competent-person inspection before each work shift"
+      }
+    ],
+    "test": [
+      {
+        "question": "What is the minimum width of a scaffold platform or walkway under 1926.451(b)(2), apart from the listed exceptions?",
+        "options": [
+          "12 inches",
+          "18 inches",
+          "24 inches",
+          "36 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each scaffold platform and walkway must be at least 18 inches wide, except as provided in 1926.451(b)(2)(i)-(ii) (1926.451(b)(2)). Job-site scenario: a bricklaying platform on a mobile scaffold uses at least 18 inches of planking.",
+        "citation": "1926.451(b)(2)"
+      },
+      {
+        "question": "When is fall protection required for an employee on a scaffold under 1926.451(g)(1)?",
+        "options": [
+          "Always, at any height",
+          "Above 6 feet",
+          "Only while the scaffold is being moved",
+          "When the employee is more than 10 feet above a lower level"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Each employee on a scaffold more than 10 feet above a lower level must be protected from falling to that lower level (1926.451(g)(1)). Job-site scenario: a 12-foot mobile tower for window installation needs guardrails (or a PFAS where (g)(1) calls for one).",
+        "citation": "1926.451(g)(1)"
+      },
+      {
+        "question": "A supported scaffold has a height-to-base width ratio (including outriggers) of more than 4:1. What does 1926.451(c)(1) require?",
+        "options": [
+          "It must be restrained from tipping by guying, tying, bracing, or equivalent means",
+          "Nothing, if the casters are locked",
+          "It may not be used at all",
+          "A second ladder must be added"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Supported scaffolds with a height-to-base width ratio over 4:1 (including outriggers) must be restrained from tipping by guying, tying, bracing, or equivalent means (1926.451(c)(1)). 4:1 is the point at which restraint is required, not an absolute maximum. Job-site scenario: a 20-foot tower on a 4-foot base (5:1) must be tied in or have outriggers added.",
+        "citation": "1926.451(c)(1)"
+      },
+      {
+        "question": "How often must scaffolds be inspected under 1926.451(f)(3)?",
+        "options": [
+          "Weekly",
+          "By a competent person before each work shift and after any occurrence that could affect structural integrity",
+          "Monthly",
+          "Only when moved"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Scaffolds and components must be inspected for visible defects by a competent person before each work shift and after any occurrence that could affect structural integrity (1926.451(f)(3)). Job-site scenario: the competent person checks the tower before drywall work starts and again after a forklift bumps it.",
+        "citation": "1926.451(f)(3)"
+      },
+      {
+        "question": "What does 1926.452(w)(10) require before a mobile scaffold is moved?",
+        "options": [
+          "Written supervisor approval",
+          "All materials must be removed",
+          "Each employee on the scaffold must be made aware of the move",
+          "Nothing specific"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Before a scaffold is moved, each employee on it must be made aware of the move (1926.452(w)(10)). Employees may ride only if all conditions in 1926.452(w)(6) are met: surface within 3 degrees of level, height-to-base 2:1 or less during movement (unless designed otherwise), outriggers on both sides if used, powered speed no more than 1 ft/s, and no one beyond the wheels. Job-site scenario: the painter on the platform is told before the tower is rolled.",
+        "citation": "1926.452(w)(10)"
+      },
+      {
+        "question": "For employees to ride a mobile scaffold while it is moved, 1926.452(w)(6)(i) requires the surface to be:",
+        "options": [
+          "Any solid surface",
+          "Concrete only",
+          "Indoors only",
+          "Within 3 degrees of level and free of pits, holes, and obstructions"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employees may not ride unless the surface is within 3 degrees of level and free of pits, holes, and obstructions, along with the other (w)(6) conditions (1926.452(w)(6)(i)). Supported scaffolds must bear on base plates and mud sills or another adequate firm foundation (1926.451(c)(2)). Job-site scenario: no riding across the sloped, rutted gravel apron.",
+        "citation": "1926.452(w)(6)(i)"
+      },
+      {
+        "question": "A mobile scaffold platform is 12 feet above the floor. How must workers reach it under 1926.451(e)(1)?",
+        "options": [
+          "By a ladder, stair tower, ramp, or other listed means, because the platform is more than 2 feet above the point of access; crossbraces may not be used",
+          "By climbing the crossbraces",
+          "By jumping up from a ladder",
+          "By any method"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When platforms are more than 2 feet above or below a point of access, portable, hook-on, or attachable ladders, stair towers, ramps, walkways, integral prefabricated access, or direct access from another surface must be used. Crossbraces may not be used as a means of access (1926.451(e)(1)). Job-site scenario: use the tower's built-in ladder frame, not the X-braces.",
+        "citation": "1926.451(e)(1)"
+      },
+      {
+        "question": "At what wind speed does 1926.451(f)(12) prohibit work on scaffolds?",
+        "options": [
+          "20 mph",
+          "No set speed; work is prohibited during storms or high winds unless a competent person decides it is safe and employees are protected by a personal fall arrest system or wind screens",
+          "30 mph",
+          "35 mph"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Work on or from scaffolds is prohibited during storms or high winds unless a competent person decides it is safe and employees are protected by a PFAS or wind screens. Wind screens may be used only if the scaffold is secured against the wind forces (1926.451(f)(12)). No numeric wind speed is set. Job-site scenario: the competent person stops facade work when gusts start rocking the tower.",
+        "citation": "1926.451(f)(12)"
+      },
+      {
+        "question": "Under 1926.452(w)(7), may a mobile scaffold platform extend outward beyond the base supports?",
+        "options": [
+          "Yes, always",
+          "Yes, if the height is under 3 times the base",
+          "No, unless outrigger frames or equivalent devices are used to ensure stability",
+          "Only indoors"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Platforms may not extend outward beyond the base supports of the scaffold unless outrigger frames or equivalent devices are used to ensure stability (1926.452(w)(7)). Job-site scenario: a cantilevered side bracket is not used on the tower without outriggers.",
+        "citation": "1926.452(w)(7)"
+      },
+      {
+        "question": "A mobile scaffold is being used in place, not moving. What does 1926.452(w)(2) require of its casters and wheels?",
+        "options": [
+          "They must be chocked with scrap lumber",
+          "Workers should stand near the wheels",
+          "Nothing",
+          "They must be locked with positive wheel and/or wheel-and-swivel locks, or equivalent means, to prevent movement"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Casters and wheels must be locked with positive wheel and/or wheel-and-swivel locks, or equivalent, to prevent movement while the scaffold is used in a stationary manner (1926.452(w)(2)). Scaffolds must support their own weight plus at least 4 times the maximum intended load (1926.451(a)(1)). Job-site scenario: lock all four casters before climbing up to set ductwork.",
+        "citation": "1926.452(w)(2)"
+      }
+    ]
+  }
+]

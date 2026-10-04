@@ -1,0 +1,671 @@
+[
+  {
+    "standard": "29 CFR 1910",
+    "week": 1,
+    "title": "Hazard Communication",
+    "duration": 60,
+    "topics": [
+      "Written hazard communication program",
+      "Chemical inventory list",
+      "Shipped-container label elements",
+      "Workplace and portable-container labeling",
+      "Safety data sheets and their sections",
+      "Employee information and training"
+    ],
+    "resources": [
+      {
+        "title": "Hazard Communication Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.1200 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.1200",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.1200",
+        "type": "standard",
+        "description": "Current official text of the Hazard Communication standard"
+      },
+      {
+        "title": "Hazard Communication Topic Page",
+        "url": "https://www.osha.gov/hazcom",
+        "type": "guide",
+        "description": "OSHA overview, guidance, and compliance assistance for HazCom"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.1200(e)(1), what must an employer develop, implement, and maintain at each workplace?",
+        "options": [
+          "A written hazard communication program describing how labels, safety data sheets, and employee information and training will be handled",
+          "A verbal briefing only",
+          "A list of employees who handle chemicals",
+          "A chemical purchase log"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employers must develop, implement, and maintain at each workplace a written hazard communication program that at least describes how the label, SDS, and information/training requirements will be met (1910.1200(e)(1)). Workplace example: a plant's HazCom binder explains its labeling system, where the SDSs are kept, and how new hires are trained.",
+        "citation": "1910.1200(e)(1)"
+      },
+      {
+        "question": "The written HazCom program must include a list of hazardous chemicals known to be present. Under 1910.1200(e)(1)(i), how are they identified on the list?",
+        "options": [
+          "By CAS number only",
+          "By a product identifier that is referenced on the appropriate safety data sheet",
+          "By supplier invoice number",
+          "By the storage room number"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The list must use a product identifier that is referenced on the appropriate SDS. It may cover the workplace as a whole or individual work areas (1910.1200(e)(1)(i)). Workplace example: the maintenance shop list shows \"Brake Cleaner XR-5\", matching the name on its SDS.",
+        "citation": "1910.1200(e)(1)(i)"
+      },
+      {
+        "question": "Under 1910.1200(e)(1)(ii), the written program must describe how employees will be informed about which hazards?",
+        "options": [
+          "Only hazards in shipping",
+          "Only hazards listed on Form 300",
+          "The hazards of non-routine tasks and of chemicals in unlabeled pipes in their work areas",
+          "Only hazards of chemicals stored off site"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The program must include the methods used to inform employees of the hazards of non-routine tasks (for example, cleaning reactor vessels) and of chemicals in unlabeled pipes in their work areas (1910.1200(e)(1)(ii)). Workplace example: before a tank cleanout, the crew gets a briefing on the residues and the needed PPE.",
+        "citation": "1910.1200(e)(1)(ii)"
+      },
+      {
+        "question": "Which item is NOT among the label elements that 1910.1200(f)(1) requires on shipped containers?",
+        "options": [
+          "Signal word",
+          "Pictogram(s)",
+          "Precautionary statement(s)",
+          "The employer's internal stock number"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Shipped containers must carry the product identifier, signal word, hazard statement(s), pictogram(s), precautionary statement(s), and the name, U.S. address, and U.S. phone number of the responsible party (1910.1200(f)(1)(i)-(vi)). An internal stock number is not required. Workplace example: a receiving clerk checks incoming drums for all six elements.",
+        "citation": "1910.1200(f)(1)"
+      },
+      {
+        "question": "A worker fills a spray bottle from a labeled drum and the bottle will be used across several shifts by others. Under 1910.1200(f)(6), the bottle must be labeled with either the full shipped-label information or:",
+        "options": [
+          "The product identifier plus words, pictures, symbols, or a combination that give at least general information about the hazards",
+          "Only the date it was filled",
+          "Only the worker's initials",
+          "Nothing, because it is a secondary container"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Workplace containers must carry either the shipped-label information in (f)(1)(i)-(v), or the product identifier plus words, pictures, symbols, or a combination giving at least general hazard information (1910.1200(f)(6)(i); 1910.1200(f)(6)(ii)). The portable-container exemption (1910.1200(f)(8)) applies only to immediate use by the employee who transferred the chemical. Workplace example: the bottle is marked \"Degreaser DX - Flammable, Skin Irritant\" with pictograms.",
+        "citation": "1910.1200(f)(6)(ii)"
+      },
+      {
+        "question": "When is a portable container exempt from labeling under 1910.1200(f)(8)?",
+        "options": [
+          "When it holds less than 1 gallon",
+          "When chemicals are transferred into it from a labeled container and it is intended only for the immediate use of the employee who performs the transfer",
+          "When it is used only on day shift",
+          "When the chemical is non-flammable"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The employer is not required to label portable containers filled from labeled containers when they are intended only for the immediate use of the employee who performs the transfer (1910.1200(f)(8)). Workplace example: a mechanic pours solvent into a cup, uses it right away, and empties it before leaving the bench.",
+        "citation": "1910.1200(f)(8)"
+      },
+      {
+        "question": "What does 1910.1200(f)(9) say about labels on incoming containers?",
+        "options": [
+          "Labels may be removed once the chemical is logged",
+          "Labels must be replaced with the company's own design",
+          "The employer may not remove or deface existing labels on incoming containers unless the container is immediately marked with the required information",
+          "Labels are optional after 30 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer may not remove or deface existing labels on incoming containers of hazardous chemicals unless the container is immediately marked with the required information (1910.1200(f)(9)). Workplace example: a torn label is replaced right away, not left blank until the next audit.",
+        "citation": "1910.1200(f)(9)"
+      },
+      {
+        "question": "In which numbered section of a safety data sheet is information on exposure controls and personal protection found, per 1910.1200(g)(2)?",
+        "options": [
+          "Section 2",
+          "Section 4",
+          "Section 8",
+          "Section 11"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Section 8 of an SDS is \"Exposure controls/personal protection\" (1910.1200(g)(2)(viii)). Section 2 is hazard identification, Section 4 first-aid measures, and Section 11 toxicological information. Workplace example: to choose gloves for a new solvent, the supervisor checks SDS Section 8.",
+        "citation": "1910.1200(g)(2)(viii)"
+      },
+      {
+        "question": "How must SDSs be maintained under 1910.1200(g)(8)?",
+        "options": [
+          "Readily accessible to employees in their work areas during each work shift, with electronic access permitted only if there are no barriers to immediate access",
+          "Locked in the safety manager's office",
+          "Mailed to employees upon hire only",
+          "Kept only at corporate headquarters"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must keep the required SDSs in the workplace and ensure they are readily accessible during each work shift to employees in their work areas. Electronic access is allowed as long as it creates no barriers to immediate access (1910.1200(g)(8)). Workplace example: a kiosk on the production floor with SDS software that works without a supervisor password.",
+        "citation": "1910.1200(g)(8)"
+      },
+      {
+        "question": "When must employees receive HazCom information and training under 1910.1200(h)(1)?",
+        "options": [
+          "Only once every three years",
+          "At the time of their initial assignment and whenever a new chemical hazard they have not been trained on is introduced into their work area",
+          "Only when they request it",
+          "Only after a chemical exposure incident"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Effective information and training must be given at the time of initial assignment and whenever a new chemical hazard the employees have not previously been trained about is introduced into their work area (1910.1200(h)(1)). Workplace example: the line adds an isocyanate-based adhesive, so operators are trained on it before first use.",
+        "citation": "1910.1200(h)(1)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 2,
+    "title": "Control of Hazardous Energy (Lockout/Tagout)",
+    "duration": 60,
+    "topics": [
+      "Energy control program elements",
+      "Annual periodic inspections",
+      "Lockout and tagout device requirements",
+      "Authorized vs. affected employees",
+      "Application sequence: stored energy and verification",
+      "Removing devices and the cord-and-plug exclusion",
+      "Training certification"
+    ],
+    "resources": [
+      {
+        "title": "Control of Hazardous Energy Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.147 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.147",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.147",
+        "type": "standard",
+        "description": "Current official text of the lockout/tagout standard"
+      },
+      {
+        "title": "Control of Hazardous Energy Topic Page",
+        "url": "https://www.osha.gov/control-hazardous-energy",
+        "type": "guide",
+        "description": "OSHA overview and guidance for lockout/tagout"
+      },
+      {
+        "title": "Lockout-Tagout eTool",
+        "url": "https://www.osha.gov/etools/lockout-tagout",
+        "type": "guide",
+        "description": "OSHA interactive lockout/tagout training program"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.147(c)(1), an employer's energy control program must consist of:",
+        "options": [
+          "Only padlocks and tags",
+          "A single posted procedure for the whole plant",
+          "Energy control procedures, employee training, and periodic inspections",
+          "Annual third-party audits only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The program must consist of energy control procedures, employee training, and periodic inspections, so that machines are isolated from energy sources and made inoperative before servicing or maintenance (1910.147(c)(1)). Workplace example: a plant's LOTO program has machine-specific procedures, training records, and annual inspection records.",
+        "citation": "1910.147(c)(1)"
+      },
+      {
+        "question": "How often must the employer conduct a periodic inspection of each energy control procedure under 1910.147(c)(6)(i)?",
+        "options": [
+          "Monthly",
+          "Every three years",
+          "Only after an injury",
+          "At least annually"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must conduct a periodic inspection of the energy control procedure at least annually to make sure the procedure and the standard's requirements are being followed (1910.147(c)(6)(i)). Workplace example: each January an authorized employee who is not using the procedure observes a press lockout and documents the inspection.",
+        "citation": "1910.147(c)(6)(i)"
+      },
+      {
+        "question": "Under 1910.147(c)(5)(ii)(C)(2), tagout device attachment means must have a minimum unlocking strength of no less than:",
+        "options": [
+          "10 pounds",
+          "25 pounds",
+          "50 pounds",
+          "100 pounds"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tagout attachment means must be non-reusable, attachable by hand, self-locking, and non-releasable, with a minimum unlocking strength of no less than 50 pounds. They must be at least equivalent to a one-piece, all-environment-tolerant nylon cable tie (1910.147(c)(5)(ii)(C)(2)). Workplace example: tags are attached with rated nylon ties, not string or wire twists.",
+        "citation": "1910.147(c)(5)(ii)(C)(2)"
+      },
+      {
+        "question": "Under 1910.147(c)(5)(ii)(D), what must lockout and tagout devices indicate?",
+        "options": [
+          "The date of purchase",
+          "The identity of the employee applying the device",
+          "The machine's serial number",
+          "The supervisor's phone number only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lockout and tagout devices must indicate the identity of the employee applying them (1910.147(c)(5)(ii)(D)). Workplace example: each maintenance technician's lock has a photo ID tag.",
+        "citation": "1910.147(c)(5)(ii)(D)"
+      },
+      {
+        "question": "Under 1910.147(c)(8), who may perform lockout or tagout?",
+        "options": [
+          "Any affected employee",
+          "The production supervisor on behalf of the crew",
+          "Only the authorized employees who are performing the servicing or maintenance",
+          "Any employee who has watched the procedure"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lockout or tagout may be performed only by the authorized employees who are performing the servicing or maintenance (1910.147(c)(8)). Workplace example: the mechanic clearing a conveyor jam applies their own lock rather than asking the line operator to do it.",
+        "citation": "1910.147(c)(8)"
+      },
+      {
+        "question": "Under 1910.147(c)(9), when must affected employees be notified about the application and removal of lockout or tagout devices?",
+        "options": [
+          "Only at the end of the shift",
+          "Only if the machine will be down more than 1 hour",
+          "Notification is optional",
+          "Before the controls are applied and after they are removed"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Affected employees must be notified by the employer or authorized employee of the application and removal of lockout/tagout devices, before the controls are applied and after they are removed (1910.147(c)(9)). Workplace example: the operator is told the packaging line is being locked out, and told again when it is ready to restart.",
+        "citation": "1910.147(c)(9)"
+      },
+      {
+        "question": "After lockout devices are applied, what does 1910.147(d)(5)(i) require for stored or residual energy?",
+        "options": [
+          "It must be relieved, disconnected, restrained, and otherwise rendered safe",
+          "Nothing; locking the disconnect is sufficient",
+          "It must be noted on the tag only",
+          "It must be checked at the next periodic inspection"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Following application of lockout or tagout devices, all potentially hazardous stored or residual energy must be relieved, disconnected, restrained, and otherwise rendered safe (1910.147(d)(5)(i)). Workplace example: after locking out a hydraulic press, the technician bleeds the accumulator and blocks the ram.",
+        "citation": "1910.147(d)(5)(i)"
+      },
+      {
+        "question": "Under 1910.147(d)(6), what must the authorized employee do before starting work on locked-out equipment?",
+        "options": [
+          "Remove the lock briefly to test the machine",
+          "Verify that isolation and deenergization of the machine or equipment have been accomplished",
+          "Ask the operator whether the power is off",
+          "Start work immediately"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Before starting work on locked or tagged-out equipment, the authorized employee must verify that isolation and deenergization have been accomplished (1910.147(d)(6)). Workplace example: after locking the disconnect, the technician presses the start button (and tests for voltage where appropriate) to confirm nothing operates, then returns the controls to off.",
+        "citation": "1910.147(d)(6)"
+      },
+      {
+        "question": "Under 1910.147(e)(3), who removes each lockout or tagout device?",
+        "options": [
+          "The supervisor at shift change",
+          "Any authorized employee",
+          "The employee who applied it; removal by others is allowed only under the employer's documented specific procedure when that employee is unavailable",
+          "The next shift's operator"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each device must be removed by the employee who applied it. If that employee is not available, the device may be removed under the direction of the employer only through specific documented procedures and training that provide equivalent safety (1910.147(e)(3)). Workplace example: when a technician goes home with their lock still on, the supervisor follows the written absent-employee removal procedure, which includes confirming the technician has left the facility.",
+        "citation": "1910.147(e)(3)"
+      },
+      {
+        "question": "Which activity is excluded from 1910.147 under 1910.147(a)(2)(iii)(A)?",
+        "options": [
+          "Servicing a hard-wired conveyor",
+          "Changing a press die",
+          "Clearing a jam on an energized line",
+          "Work on cord-and-plug connected equipment when it is unplugged and the plug is under the exclusive control of the employee doing the servicing"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Work on cord-and-plug connected electric equipment is excluded when unexpected energization is controlled by unplugging it and the plug is under the exclusive control of the employee performing the servicing (1910.147(a)(2)(iii)(A)). Workplace example: a technician unplugs a bench grinder and keeps the plug in view while changing the wheel.",
+        "citation": "1910.147(a)(2)(iii)(A)"
+      },
+      {
+        "question": "What must the employer's LOTO training certification contain under 1910.147(c)(7)(iv)?",
+        "options": [
+          "Each employee's name and the dates of training",
+          "Only the trainer's signature",
+          "The employee's Social Security number",
+          "Test scores only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must certify that employee training has been accomplished and is being kept up to date. The certification must contain each employee's name and the dates of training (1910.147(c)(7)(iv)). Workplace example: the training roster lists every authorized and affected employee with training dates.",
+        "citation": "1910.147(c)(7)(iv)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 3,
+    "title": "Respiratory Protection",
+    "duration": 60,
+    "topics": [
+      "Engineering controls first",
+      "Written program and program administrator",
+      "Voluntary respirator use",
+      "Medical evaluation and fit testing",
+      "Facepiece seal and user seal checks",
+      "Cartridge change schedules and inspection",
+      "IDLH procedures and annual retraining"
+    ],
+    "resources": [
+      {
+        "title": "Respiratory Protection Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.134 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.134",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.134",
+        "type": "standard",
+        "description": "Current official text of the respiratory protection standard"
+      },
+      {
+        "title": "Respiratory Protection Topic Page",
+        "url": "https://www.osha.gov/respiratory-protection",
+        "type": "guide",
+        "description": "OSHA overview and guidance for respiratory protection"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.134(a)(1), what is the primary objective in controlling occupational diseases caused by breathing contaminated air?",
+        "options": [
+          "Issuing respirators to every employee",
+          "Preventing atmospheric contamination, as far as feasible, through accepted engineering control measures",
+          "Limiting shifts to 4 hours",
+          "Using dust masks for all tasks"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The primary objective is to prevent atmospheric contamination, as far as feasible, through accepted engineering controls such as enclosure, ventilation, and substitution. Respirators are used when engineering controls are not feasible or while they are being installed (1910.134(a)(1)). Workplace example: install local exhaust on the grinding booth before relying on respirators.",
+        "citation": "1910.134(a)(1)"
+      },
+      {
+        "question": "Under 1910.134(c), when respirators are required, the employer must have:",
+        "options": [
+          "A verbal policy only",
+          "A program only if more than 50 employees wear respirators",
+          "A written respiratory protection program with worksite-specific procedures, administered by a suitably trained program administrator",
+          "Only a supply of disposable masks"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must develop and implement a written respiratory protection program with worksite-specific procedures, administered by a suitably trained program administrator (1910.134(c)). The administrator must be qualified by training or experience matching the program's complexity (1910.134(c)(3)). Workplace example: the EHS coordinator, trained in respirator programs, maintains the plant's written program.",
+        "citation": "1910.134(c)"
+      },
+      {
+        "question": "An employee asks to wear a filtering facepiece where a respirator is not required. If the employer allows it, what does 1910.134(c)(2)(i) require?",
+        "options": [
+          "Nothing",
+          "A full fit test and medical evaluation in every case",
+          "The employee must sign a liability waiver",
+          "The employer must first determine the use will not itself create a hazard, and must give the employee the Appendix D information"
+        ],
+        "correctAnswer": 3,
+        "explanation": "An employer may allow voluntary use if it determines the use will not itself create a hazard, and must provide the information in Appendix D to the user (1910.134(c)(2)(i)). Workplace example: a warehouse worker voluntarily wears an N95 during sweeping and is given the Appendix D handout.",
+        "citation": "1910.134(c)(2)(i)"
+      },
+      {
+        "question": "Under 1910.134(e)(1), when must an employee receive a medical evaluation?",
+        "options": [
+          "Before being fit tested or required to use the respirator in the workplace",
+          "Within 90 days after starting respirator use",
+          "Only if they report breathing trouble",
+          "Every five years"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must provide a medical evaluation to determine the employee's ability to use a respirator before the employee is fit tested or required to use the respirator in the workplace (1910.134(e)(1)). Workplace example: a new painter completes the medical questionnaire review before the first fit test.",
+        "citation": "1910.134(e)(1)"
+      },
+      {
+        "question": "Under 1910.134(f)(2), when must an employee using a tight-fitting facepiece respirator be fit tested?",
+        "options": [
+          "Only once, at hire",
+          "Prior to initial use, whenever a different facepiece (size, style, model, or make) is used, and at least annually thereafter",
+          "Every two years",
+          "Only when a supervisor notices leakage"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fit testing is required before initial use, whenever a different facepiece (size, style, model, or make) is used, and at least annually thereafter (1910.134(f)(2)). Workplace example: when purchasing switches half-mask brands, every wearer is re-fit tested on the new model.",
+        "citation": "1910.134(f)(2)"
+      },
+      {
+        "question": "Under 1910.134(g)(1)(i)(A), the employer may not permit a tight-fitting respirator to be worn by an employee who has:",
+        "options": [
+          "Prescription glasses",
+          "A hard hat",
+          "Facial hair that comes between the sealing surface of the facepiece and the face, or that interferes with valve function",
+          "Hearing protection"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tight-fitting respirators may not be worn by employees who have facial hair that comes between the sealing surface and the face or that interferes with valve function (1910.134(g)(1)(i)(A)). Glasses and other PPE must be worn so they do not interfere with the seal (1910.134(g)(1)(ii)). Workplace example: a worker with a full beard is moved to a loose-fitting PAPR hood instead.",
+        "citation": "1910.134(g)(1)(i)(A)"
+      },
+      {
+        "question": "Under 1910.134(g)(1)(iii), how often must employees perform a user seal check on a tight-fitting respirator?",
+        "options": [
+          "Once per shift",
+          "Once per week",
+          "Only during the annual fit test",
+          "Each time they put on the respirator"
+        ],
+        "correctAnswer": 3,
+        "explanation": "For all tight-fitting respirators, employees must perform a user seal check each time they put on the respirator, using Appendix B-1 or equally effective manufacturer procedures (1910.134(g)(1)(iii)). Workplace example: after lunch, the worker re-dons the half mask and does positive- and negative-pressure checks.",
+        "citation": "1910.134(g)(1)(iii)"
+      },
+      {
+        "question": "An air-purifying respirator is used for organic vapors and has no NIOSH-certified end-of-service-life indicator. Under 1910.134(d)(3)(iii)(B)(2), the employer must:",
+        "options": [
+          "Implement a cartridge change schedule based on objective information or data, and describe its basis in the written program",
+          "Change cartridges when the wearer smells the vapor",
+          "Change cartridges once a year",
+          "Never change cartridges until they are visibly damaged"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Without an appropriate ESLI, the employer must implement a canister/cartridge change schedule based on objective information or data so cartridges are changed before the end of their service life, and must describe the data and basis in the written program (1910.134(d)(3)(iii)(B)(2)). Workplace example: the program sets an every-4-hours change-out based on the manufacturer's service-life model.",
+        "citation": "1910.134(d)(3)(iii)(B)(2)"
+      },
+      {
+        "question": "Under 1910.134(h)(3)(i)(A), how often must respirators used in routine situations be inspected?",
+        "options": [
+          "Monthly",
+          "Before each use and during cleaning",
+          "Annually",
+          "Only when damaged"
+        ],
+        "correctAnswer": 1,
+        "explanation": "All respirators used in routine situations must be inspected before each use and during cleaning (1910.134(h)(3)(i)(A)). Workplace example: the sandblaster checks straps, valves, and the facepiece before putting the respirator on.",
+        "citation": "1910.134(h)(3)(i)(A)"
+      },
+      {
+        "question": "For all IDLH atmospheres, what does 1910.134(g)(3)(i) require?",
+        "options": [
+          "No special procedures",
+          "A supervisor present inside the space",
+          "One employee or, when needed, more than one employee located outside the IDLH atmosphere",
+          "Air-purifying respirators only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For all IDLH atmospheres, one or more employees must be located outside the IDLH atmosphere, among other requirements in 1910.134(g)(3) (1910.134(g)(3)(i)). Workplace example: during an entry on SCBA into an oxygen-deficient tank, a standby attendant stays outside in communication.",
+        "citation": "1910.134(g)(3)(i)"
+      },
+      {
+        "question": "Under 1910.134(k)(5), how often must respirator retraining be given?",
+        "options": [
+          "Every three years",
+          "Only at hire",
+          "Only after an exposure incident",
+          "Annually, and when workplace or respirator changes, or inadequate knowledge or use, make it necessary"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Retraining must be given annually and when changes in the workplace or respirator type make previous training obsolete, when an employee's knowledge or use shows inadequacies, or when any other situation makes it necessary (1910.134(k)(5)). Workplace example: annual refresher in March, plus extra training when the shop switches from half masks to PAPRs.",
+        "citation": "1910.134(k)(5)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 4,
+    "title": "Powered Industrial Trucks (Forklifts)",
+    "duration": 45,
+    "topics": [
+      "Operator training before operation",
+      "Training methods and certification",
+      "Performance evaluation and refresher training",
+      "Unattended trucks",
+      "Traveling with obstructed view and near rail tracks",
+      "Daily examination",
+      "Pedestrians under elevated loads"
+    ],
+    "resources": [
+      {
+        "title": "Powered Industrial Trucks Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.178",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.178 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.178",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.178",
+        "type": "standard",
+        "description": "Current official text of the powered industrial trucks standard"
+      },
+      {
+        "title": "Powered Industrial Trucks Topic Page",
+        "url": "https://www.osha.gov/powered-industrial-trucks",
+        "type": "guide",
+        "description": "OSHA overview and guidance for forklifts"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.178(l)(1)(ii), when must an operator complete the required training?",
+        "options": [
+          "Before the employer permits them to operate a powered industrial truck, except for training purposes",
+          "Within 30 days of starting to operate",
+          "Within the first year",
+          "Only if they have had an accident"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Before permitting an employee to operate a powered industrial truck (except for training purposes), the employer must ensure the operator has successfully completed the required training, except as permitted by (l)(5) (1910.178(l)(1)(ii)). Workplace example: a new hire waits until training and evaluation are finished before driving the reach truck alone.",
+        "citation": "1910.178(l)(1)(ii)"
+      },
+      {
+        "question": "Under 1910.178(l)(2)(ii), forklift operator training must consist of:",
+        "options": [
+          "A video only",
+          "A combination of formal instruction, practical training, and evaluation of the operator's performance in the workplace",
+          "A written test only",
+          "On-the-job experience only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Training must combine formal instruction (lecture, discussion, computer learning, video, written material), practical training (trainer demonstrations and trainee exercises), and evaluation of the operator's performance in the workplace (1910.178(l)(2)(ii)). Workplace example: classroom module, then supervised driving, then a hands-on evaluation in the warehouse aisles.",
+        "citation": "1910.178(l)(2)(ii)"
+      },
+      {
+        "question": "How often must each powered industrial truck operator's performance be evaluated under 1910.178(l)(4)(iii)?",
+        "options": [
+          "Every year",
+          "Every five years",
+          "At least once every three years",
+          "Only once, at hire"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An evaluation of each operator's performance must be conducted at least once every three years (1910.178(l)(4)(iii)). Workplace example: a driver certified in 2023 must be re-evaluated no later than 2026.",
+        "citation": "1910.178(l)(4)(iii)"
+      },
+      {
+        "question": "Which event requires refresher training under 1910.178(l)(4)(ii)?",
+        "options": [
+          "The operator's birthday",
+          "A new supervisor is hired",
+          "The truck is repainted",
+          "The operator has been involved in an accident or near-miss incident"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Refresher training is required when the operator is observed driving unsafely, is involved in an accident or near miss, gets an evaluation showing unsafe operation, is assigned a different type of truck, or when a workplace condition changes in a way that could affect safe operation (1910.178(l)(4)(ii)(A)-(E)); an accident or near miss is 1910.178(l)(4)(ii)(B). Workplace example: after a racking strike, the operator gets refresher training before driving again.",
+        "citation": "1910.178(l)(4)(ii)(B)"
+      },
+      {
+        "question": "What must the operator certification include under 1910.178(l)(6)?",
+        "options": [
+          "The operator's name, the date of training, the date of evaluation, and the identity of the person(s) performing the training or evaluation",
+          "Only the operator's signature",
+          "The truck's serial number only",
+          "The operator's driver's license number"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must certify each operator has been trained and evaluated. The certification must include the operator's name, the date of training, the date of evaluation, and the identity of the trainer or evaluator (1910.178(l)(6)). Workplace example: the certification form lists all four items for each driver.",
+        "citation": "1910.178(l)(6)"
+      },
+      {
+        "question": "Under 1910.178(m)(5)(ii), when is a powered industrial truck considered \"unattended\"?",
+        "options": [
+          "Whenever the engine is off",
+          "When the operator is 25 feet or more away from the truck while it stays in view, or whenever the operator leaves it and it is not in view",
+          "When the operator is more than 5 feet away",
+          "Only when the operator leaves the building"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A truck is unattended when the operator is 25 feet or more away from it while it remains in view, or whenever the operator leaves it and it is not in view (1910.178(m)(5)(ii)). Workplace example: walking 30 feet to read a pick ticket makes the truck unattended.",
+        "citation": "1910.178(m)(5)(ii)"
+      },
+      {
+        "question": "Under 1910.178(m)(5)(i), what must be done when a powered industrial truck is left unattended?",
+        "options": [
+          "Leave the forks raised for the next load",
+          "Just set the parking brake",
+          "Fully lower the load-engaging means, neutralize the controls, shut off the power, and set the brakes, plus block the wheels if parked on an incline",
+          "Leave it running so it is ready"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When left unattended, the load-engaging means must be fully lowered, controls neutralized, power shut off, and brakes set. Wheels must be blocked if the truck is parked on an incline (1910.178(m)(5)(i)). Workplace example: before the break, the driver lowers the forks to the floor, neutralizes, shuts off, and sets the brake.",
+        "citation": "1910.178(m)(5)(i)"
+      },
+      {
+        "question": "The load being carried blocks the driver's forward view. What does 1910.178(n)(4) require?",
+        "options": [
+          "Drive forward slowly and lean out",
+          "Have a coworker ride on the forks to spot",
+          "Raise the load higher to see underneath",
+          "Travel with the load trailing (in reverse)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The driver must slow down and sound the horn at cross aisles and other places where vision is obstructed. If the load blocks the forward view, the driver must travel with the load trailing (1910.178(n)(4)). Workplace example: a tall stack of empty totes is moved in reverse with the driver looking in the direction of travel.",
+        "citation": "1910.178(n)(4)"
+      },
+      {
+        "question": "Under 1910.178(n)(5), how close to the center of railroad tracks may a powered industrial truck be parked?",
+        "options": [
+          "No closer than 8 feet",
+          "No closer than 4 feet",
+          "No closer than 6 feet",
+          "Any distance, if the brake is set"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Railroad tracks must be crossed diagonally where possible, and parking closer than 8 feet from the center of railroad tracks is prohibited (1910.178(n)(5)). Workplace example: at the rail dock, trucks park behind the painted line 8 feet from the track center.",
+        "citation": "1910.178(n)(5)"
+      },
+      {
+        "question": "Under 1910.178(q)(7), how often must industrial trucks be examined before being placed in service?",
+        "options": [
+          "Weekly",
+          "At least daily, or after each shift where trucks are used around the clock",
+          "Monthly",
+          "Only at the annual service"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Trucks must be examined before being placed in service, at least daily. Trucks used around the clock must be examined after each shift. Defects must be reported and corrected immediately (1910.178(q)(7)). Workplace example: each shift's first driver completes the pre-use checklist before driving.",
+        "citation": "1910.178(q)(7)"
+      },
+      {
+        "question": "What does 1910.178(m)(2) prohibit?",
+        "options": [
+          "Carrying loads over 1,000 pounds",
+          "Driving faster than 5 mph",
+          "Any person standing or passing under the elevated portion of any truck, whether loaded or empty",
+          "Using propane-powered trucks indoors"
+        ],
+        "correctAnswer": 2,
+        "explanation": "No person may stand or pass under the elevated portion of any truck, whether loaded or empty (1910.178(m)(2)). Workplace example: a picker waits for the operator to lower the forks before walking past the raised mast.",
+        "citation": "1910.178(m)(2)"
+      }
+    ]
+  }
+]

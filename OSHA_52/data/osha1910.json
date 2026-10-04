@@ -1419,5 +1419,761 @@
         "citation": "1910.30(a)(1)"
       }
     ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 9,
+    "title": "Electrical: Design and Installation",
+    "duration": 60,
+    "topics": [
+      "Equipment free from recognized hazards and marked with ratings",
+      "Marking disconnects and lockable disconnecting means",
+      "Working space depth, width, and storage",
+      "Guarding live parts at 50 volts or more",
+      "GFCI for temporary wiring",
+      "Temporary wiring time limits",
+      "Flexible cord restrictions and strain relief"
+    ],
+    "resources": [
+      {
+        "title": "General Electrical Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.303",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.303 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.304",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.304",
+        "type": "standard",
+        "description": "Wiring design and protection, including GFCI and grounding"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.305",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.305",
+        "type": "standard",
+        "description": "Wiring methods, temporary wiring, and flexible cords"
+      },
+      {
+        "title": "Electrical Topic Page",
+        "url": "https://www.osha.gov/electrical",
+        "type": "guide",
+        "description": "OSHA overview and guidance for electrical safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "What does 1910.303(b)(1) require of electric equipment?",
+        "options": [
+          "It must be less than 10 years old",
+          "It must be inspected by the utility annually",
+          "It must be free from recognized hazards that are likely to cause death or serious physical harm to employees",
+          "It must be painted a safety color"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Electric equipment must be free from recognized hazards that are likely to cause death or serious physical harm to employees, with safety judged on listed considerations such as suitability, strength, insulation, and heating effects (1910.303(b)(1)). Workplace example: a panel with a cracked, arcing bus is a recognized hazard and must be taken out of use until repaired.",
+        "citation": "1910.303(b)(1)"
+      },
+      {
+        "question": "Under 1910.303(e)(1), electric equipment may not be used unless it is marked with:",
+        "options": [
+          "The installation date only",
+          "The electrician's license number",
+          "A color code for the building",
+          "The manufacturer's name, trademark, or other identifying marking, plus voltage, current, wattage, or other ratings as necessary"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Equipment must carry the manufacturer's name, trademark, or other descriptive marking, and other markings giving voltage, current, wattage, or other ratings as necessary (1910.303(e)(1)). Workplace example: a used motor with its nameplate ground off is not put into service.",
+        "citation": "1910.303(e)(1)"
+      },
+      {
+        "question": "Under 1910.303(f)(2), how must each service, feeder, and branch circuit be identified at its disconnecting means or overcurrent device?",
+        "options": [
+          "It must be legibly marked to indicate its purpose, unless located and arranged so the purpose is evident",
+          "Only by circuit number on the drawings",
+          "By color-coded tape only",
+          "No marking is required"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Each service, feeder, and branch circuit must be legibly marked at its disconnecting means or overcurrent device to indicate its purpose, unless its location and arrangement make the purpose evident (1910.303(f)(2)). The markings must withstand the environment (1910.303(f)(3)). Workplace example: the panel schedule lists \"Conveyor 3 motor\" rather than leaving breaker 17 blank.",
+        "citation": "1910.303(f)(2)"
+      },
+      {
+        "question": "Under 1910.303(f)(4), disconnecting means required by Subpart S must be:",
+        "options": [
+          "Located outdoors",
+          "Capable of being locked in the open position",
+          "Operated only by the utility",
+          "Painted red"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Disconnecting means required by this subpart must be capable of being locked in the open position (1910.303(f)(4)). Workplace example: a maintenance technician can apply a personal lock to the conveyor disconnect handle in the off position.",
+        "citation": "1910.303(f)(4)"
+      },
+      {
+        "question": "Under Table S-1 in 1910.303(g)(1)(i)(A), what is the minimum depth of clear working space in front of a 120/208-volt panel (150 volts or less to ground), Condition A?",
+        "options": [
+          "2 feet",
+          "3 feet",
+          "3.5 feet",
+          "4 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Table S-1 requires 3 feet (0.9 m) for 0-150 volts to ground under Conditions A, B, and C. For 151-600 volts, it requires 3, 3.5, or 4 feet depending on the condition (1910.303(g)(1)(i)(A)). Workplace example: pallets are kept at least 3 feet back from the face of the 208-volt lighting panel.",
+        "citation": "1910.303(g)(1)(i)(A)"
+      },
+      {
+        "question": "Under 1910.303(g)(1)(i)(B), how wide must the working space in front of electric equipment be?",
+        "options": [
+          "24 inches",
+          "Exactly 36 inches",
+          "Any width, if the space is lit",
+          "The width of the equipment or 30 inches, whichever is greater, and enough to open equipment doors at least 90 degrees"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The working space must be the width of the equipment or 30 inches, whichever is greater, and must permit at least a 90-degree opening of equipment doors or hinged panels (1910.303(g)(1)(i)(B)). Workplace example: a 20-inch-wide panel still needs a 30-inch-wide clear space in front of it.",
+        "citation": "1910.303(g)(1)(i)(B)"
+      },
+      {
+        "question": "What does 1910.303(g)(1)(ii) say about using the working space in front of electrical equipment?",
+        "options": [
+          "It may not be used for storage",
+          "It may be used for temporary storage",
+          "It may hold storage up to 4 feet high",
+          "It may be used for storage outside business hours"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Working space required by the standard may not be used for storage. When normally enclosed live parts are exposed in a passageway or open space, the working space must be suitably guarded (1910.303(g)(1)(ii)). Workplace example: cleaning carts are removed from in front of the electrical room switchboard.",
+        "citation": "1910.303(g)(1)(ii)"
+      },
+      {
+        "question": "Under 1910.303(g)(2)(i), live parts operating at what voltage or more must be guarded against accidental contact?",
+        "options": [
+          "24 volts",
+          "50 volts",
+          "120 volts",
+          "600 volts"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Live parts of electric equipment operating at 50 volts or more must be guarded against accidental contact by approved enclosures or other listed means, such as location in a room accessible only to qualified persons (1910.303(g)(2)(i)). Workplace example: a missing knockout cover on a 120-volt junction box must be replaced.",
+        "citation": "1910.303(g)(2)(i)"
+      },
+      {
+        "question": "Under 1910.304(b)(3)(ii)(A), during construction-like maintenance or remodeling activities, which receptacle outlets must have GFCI protection?",
+        "options": [
+          "Only those in bathrooms",
+          "Only 240-volt outlets",
+          "All 125-volt, single-phase, 15-, 20-, and 30-ampere receptacle outlets that are not part of the permanent wiring and are in use by personnel",
+          "None, if extension cords are inspected"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For temporary wiring used during construction-like activities, including certain maintenance, remodeling, or repair, all 125-volt, single-phase, 15-, 20-, and 30-ampere receptacle outlets that are not part of the permanent wiring and are in use by personnel must have GFCI protection (1910.304(b)(3)(ii)(A)). Workplace example: the temporary power cord set used to remodel the break room is plugged in through a GFCI.",
+        "citation": "1910.304(b)(3)(ii)(A)"
+      },
+      {
+        "question": "Under 1910.305(a)(2)(i)(B), temporary wiring for holiday decorative lighting may be used for no more than:",
+        "options": [
+          "30 days",
+          "60 days",
+          "90 days",
+          "180 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Temporary electrical power and lighting installations of 600 volts or less may be used for a period not to exceed 90 days for Christmas decorative lighting, carnivals, and similar purposes (1910.305(a)(2)(i)(B)). Workplace example: decorative lighting in the warehouse lobby comes down within 90 days.",
+        "citation": "1910.305(a)(2)(i)(B)"
+      },
+      {
+        "question": "Under 1910.305(g)(1)(iv), which is a prohibited use of flexible cords, unless specifically permitted in (g)(1)(ii)?",
+        "options": [
+          "As a substitute for the fixed wiring of a structure",
+          "Connecting portable lamps",
+          "Connecting appliances to allow frequent interchange",
+          "Wiring cranes and hoists"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Unless specifically permitted, flexible cords and cables may not be used as a substitute for fixed wiring, run through holes in walls, ceilings, or floors, run through doorways or windows, attached to building surfaces, concealed behind walls, ceilings, or floors, or installed in raceways (1910.305(g)(1)(iv)). Workplace example: an extension cord stapled along the wall to power a permanent workstation is not allowed.",
+        "citation": "1910.305(g)(1)(iv)"
+      },
+      {
+        "question": "How must flexible cords be connected to devices and fittings under 1910.305(g)(2)(iii)?",
+        "options": [
+          "With tape wrapped around the joint",
+          "So strain relief keeps pull from being transmitted directly to joints or terminal screws",
+          "With a knot tied inside the plug",
+          "Any way that conducts current"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Flexible cords and cables must be connected to devices and fittings so that strain relief prevents pull from being directly transmitted to joints or terminal screws (1910.305(g)(2)(iii)). Workplace example: a cord pulled out of its plug cap is reassembled with the cord clamp tightened on the jacket.",
+        "citation": "1910.305(g)(2)(iii)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 10,
+    "title": "Electrical: Safety-Related Work Practices",
+    "duration": 60,
+    "topics": [
+      "Deenergizing before work",
+      "Locks, tags, and control devices",
+      "Verifying the deenergized condition",
+      "Qualified persons and energized work",
+      "Overhead line distances and approach distances",
+      "Conductive apparel",
+      "Portable equipment inspection and circuit reclosing",
+      "Protective equipment and training"
+    ],
+    "resources": [
+      {
+        "title": "Selection and Use of Work Practices",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.333 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.332",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.332",
+        "type": "standard",
+        "description": "Electrical safety-related work practices training"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.335",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.335",
+        "type": "standard",
+        "description": "Safeguards for personnel protection"
+      },
+      {
+        "title": "Electrical Topic Page",
+        "url": "https://www.osha.gov/electrical",
+        "type": "guide",
+        "description": "OSHA overview and guidance for electrical safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.333(a)(1), when may live parts that an employee may be exposed to stay energized while the employee works on or near them?",
+        "options": [
+          "Whenever the job is short",
+          "Whenever the employee wears gloves",
+          "Only when the employer can show that deenergizing introduces additional or increased hazards or is infeasible because of equipment design or operational limits",
+          "Whenever a supervisor is present"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Live parts must be deenergized before an employee works on or near them, unless the employer can demonstrate that deenergizing introduces additional or increased hazards or is infeasible because of equipment design or operational limitations (1910.333(a)(1)). Workplace example: a lighting circuit is shut off before fixture replacement; convenience is not a reason to work it hot.",
+        "citation": "1910.333(a)(1)"
+      },
+      {
+        "question": "Under 1910.333(b)(2)(iii)(A), what must be placed on each disconnecting means used to deenergize circuits and equipment for work?",
+        "options": [
+          "A sign only",
+          "Tape over the handle",
+          "A verbal warning",
+          "A lock and a tag (except as provided in (b)(2)(iii)(C) and (E))"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A lock and a tag must be placed on each disconnecting means used to deenergize circuits and equipment to be worked on, except as provided in paragraphs (b)(2)(iii)(C) and (E) (1910.333(b)(2)(iii)(A)). Workplace example: the electrician hangs both a lock and a \"Do Not Operate\" tag on the MCC bucket.",
+        "citation": "1910.333(b)(2)(iii)(A)"
+      },
+      {
+        "question": "Under 1910.333(b)(2)(ii)(B), which may NOT be used as the sole means of deenergizing circuits or equipment?",
+        "options": [
+          "Control circuit devices such as push buttons, selector switches, and interlocks",
+          "A circuit breaker",
+          "A disconnect switch",
+          "Removing fuses"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Circuits and equipment to be worked on must be disconnected from all electric energy sources. Control circuit devices such as push buttons, selector switches, and interlocks may not be the sole means of deenergizing (1910.333(b)(2)(ii)(B)). Workplace example: pressing the machine's stop button is not deenergizing; the feeder disconnect is opened and locked.",
+        "citation": "1910.333(b)(2)(ii)(B)"
+      },
+      {
+        "question": "Under 1910.333(b)(2)(iv)(B), how must the deenergized condition be verified before work?",
+        "options": [
+          "By looking at the breaker position",
+          "A qualified person must use test equipment to verify that the circuit elements and equipment parts are deenergized",
+          "By asking the operator",
+          "By touching the conductor with the back of the hand"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A qualified person must use test equipment to test the circuit elements and electrical parts that employees will be exposed to, and verify they are deenergized (1910.333(b)(2)(iv)(B)). Workplace example: after lockout, the electrician tests all three phases with a meter verified on a known live source.",
+        "citation": "1910.333(b)(2)(iv)(B)"
+      },
+      {
+        "question": "Under 1910.333(c)(2), who may work on electric circuit parts or equipment that have not been deenergized under 1910.333(b)?",
+        "options": [
+          "Any trained employee",
+          "Only the maintenance supervisor",
+          "Only qualified persons",
+          "No one, under any circumstances"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Only qualified persons may work on electric circuit parts or equipment that have not been deenergized under paragraph (b). They must be capable of working safely on energized circuits and familiar with special precautionary techniques, PPE, insulating and shielding materials, and insulated tools (1910.333(c)(2)). Workplace example: a production operator does not open a live control cabinet to reset a relay.",
+        "citation": "1910.333(c)(2)"
+      },
+      {
+        "question": "An unqualified person is working in an elevated position near a 13.8-kV overhead line. Under 1910.333(c)(3)(i)(A)(1), how close may they and the longest conductive object they may contact come to the line?",
+        "options": [
+          "No closer than 4 feet",
+          "No closer than 6 feet",
+          "No closer than 10 feet",
+          "No closer than 20 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For voltages to ground of 50 kV or below, an unqualified person working in an elevated position, and the longest conductive object they may contact, may not come closer than 10 feet to any unguarded, energized overhead line (1910.333(c)(3)(i)(A)(1)). Workplace example: a painter on a lift keeps the roller pole at least 10 feet from the service drop.",
+        "citation": "1910.333(c)(3)(i)(A)(1)"
+      },
+      {
+        "question": "Per Table S-5 in 1910.333(c)(3)(ii), what is the minimum approach distance for a qualified person near a 480-volt (over 300 V, not over 750 V) exposed energized part, without insulation as described in the paragraph?",
+        "options": [
+          "1 ft 0 in",
+          "Avoid contact",
+          "2 ft 0 in",
+          "3 ft 0 in"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Table S-5 lists 1 ft 0 in for over 300 V, not over 750 V. For 300 V and less it says \"avoid contact\" (1910.333(c)(3)(ii)). Closer approach is allowed only if the person is insulated from the part, the part is insulated, or the person is insulated from other conductive objects (1910.333(c)(3)(ii)(A)-(C)). Workplace example: a qualified electrician near 480-volt overhead bus keeps 1 foot away unless wearing rated gloves.",
+        "citation": "1910.333(c)(3)(ii)"
+      },
+      {
+        "question": "Under 1910.333(c)(8), what applies to rings, watch bands, and metal key chains?",
+        "options": [
+          "They may always be worn",
+          "They may not be worn if they might contact exposed energized parts, unless rendered nonconductive by covering, wrapping, or other insulating means",
+          "They must be removed only above 600 volts",
+          "They must be taped to the arm"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Conductive jewelry and clothing (watch bands, bracelets, rings, key chains, necklaces, metalized aprons, conductive-thread cloth, metal headgear) may not be worn if they might contact exposed energized parts, unless they are rendered nonconductive (1910.333(c)(8)). Workplace example: the technician removes their wedding ring before working inside an energized panel.",
+        "citation": "1910.333(c)(8)"
+      },
+      {
+        "question": "Under 1910.334(a)(2)(i), when must portable cord- and plug-connected equipment and extension cords be visually inspected?",
+        "options": [
+          "Monthly",
+          "Annually",
+          "Before use on any shift",
+          "Only after damage is reported"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portable cord- and plug-connected equipment and extension cords must be visually inspected before use on any shift for external defects and evidence of internal damage. Cord-connected equipment and cords that stay connected and are not exposed to damage need not be inspected until relocated (1910.334(a)(2)(i)). Workplace example: the second-shift crew checks the drill cord for cuts and missing ground pins before use.",
+        "citation": "1910.334(a)(2)(i)"
+      },
+      {
+        "question": "A breaker trips on a machine circuit. What does 1910.334(b)(2) require?",
+        "options": [
+          "Reset it immediately and keep resetting until it holds",
+          "Replace it with a larger breaker",
+          "Bypass it with a jumper",
+          "Do not manually reenergize until it is determined that the equipment and circuit can be safely energized; repetitive manual reclosing is prohibited"
+        ],
+        "correctAnswer": 3,
+        "explanation": "After a protective device deenergizes a circuit, the circuit may not be manually reenergized until it is determined that the equipment and circuit can be safely energized. Repetitive manual reclosing of breakers or reenergizing through replaced fuses is prohibited (1910.334(b)(2)). If the design shows the trip was an overload rather than a fault, no examination is needed. Workplace example: the electrician checks the motor for a fault before resetting.",
+        "citation": "1910.334(b)(2)"
+      },
+      {
+        "question": "Under 1910.335(a)(1)(iv), what must employees wear where there is danger of head injury from electric shock or burns due to contact with exposed energized parts?",
+        "options": [
+          "Nonconductive head protection",
+          "A bump cap",
+          "A metal hard hat",
+          "No head protection is needed"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employees must wear nonconductive head protection wherever there is a danger of head injury from electric shock or burns due to contact with exposed energized parts (1910.335(a)(1)(iv)). Workplace example: an electrician working in a crowded switchgear room wears a Class E hard hat.",
+        "citation": "1910.335(a)(1)(iv)"
+      },
+      {
+        "question": "Under 1910.332(b)(3), a qualified person must at minimum be trained in:",
+        "options": [
+          "Only first aid",
+          "Distinguishing exposed live parts, determining their nominal voltage, and the clearance distances in 1910.333(c) for the voltages involved",
+          "Only lockout procedures",
+          "Only reading blueprints"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Qualified persons must at minimum be trained in the skills and techniques to distinguish exposed live parts from other parts of equipment, to determine the nominal voltage of exposed live parts, and in the clearance distances in 1910.333(c) and the corresponding voltages (1910.332(b)(3)). Workplace example: before being designated qualified, a maintenance tech completes training on identifying live parts, voltage testing, and Table S-5 distances.",
+        "citation": "1910.332(b)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 11,
+    "title": "PPE: Hazard Assessment, Eye/Face, Head, Foot, Hand",
+    "duration": 45,
+    "topics": [
+      "Workplace hazard assessment and written certification",
+      "Defective PPE",
+      "PPE training content, demonstration, and retraining",
+      "Employer payment exceptions",
+      "Eye protection side shields and welding shades",
+      "Head protection for electrical hazards",
+      "Foot protection",
+      "Hand protection selection"
+    ],
+    "resources": [
+      {
+        "title": "PPE General Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.132 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.133",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.133",
+        "type": "standard",
+        "description": "Eye and face protection"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.138",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.138",
+        "type": "standard",
+        "description": "Hand protection"
+      },
+      {
+        "title": "Personal Protective Equipment Topic Page",
+        "url": "https://www.osha.gov/personal-protective-equipment",
+        "type": "guide",
+        "description": "OSHA overview and guidance for PPE"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.132(d)(1), what must the employer do before selecting PPE?",
+        "options": [
+          "Buy the most expensive PPE available",
+          "Let each employee choose their own",
+          "Assess the workplace to determine if hazards are present, or likely to be present, that necessitate the use of PPE",
+          "Wait for an OSHA inspection"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must assess the workplace to determine whether hazards that require PPE are present or likely to be present. If they are, the employer must select PPE, communicate the selection to each affected employee, and select PPE that fits (1910.132(d)(1)). Workplace example: the safety coordinator walks the press line to identify flying-chip, noise, and pinch hazards before choosing PPE.",
+        "citation": "1910.132(d)(1)"
+      },
+      {
+        "question": "Under 1910.132(d)(2), how must the employer verify that the hazard assessment was performed?",
+        "options": [
+          "A verbal statement to employees",
+          "A photo of the work area",
+          "An entry in the OSHA 300 Log",
+          "A written certification identifying the workplace evaluated, the person certifying, the date(s) of the assessment, and that the document is a certification of hazard assessment"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must verify the hazard assessment through a written certification that identifies the workplace evaluated, the person certifying the evaluation, the date(s) of the assessment, and identifies the document as a certification of hazard assessment (1910.132(d)(2)). Workplace example: a signed, dated \"Certification of PPE Hazard Assessment - Machine Shop\" is on file.",
+        "citation": "1910.132(d)(2)"
+      },
+      {
+        "question": "What does 1910.132(e) say about defective or damaged PPE?",
+        "options": [
+          "It shall not be used",
+          "It may be used until a replacement arrives",
+          "It may be used for low-hazard tasks",
+          "It may be used if taped"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Defective or damaged personal protective equipment shall not be used (1910.132(e)). Workplace example: a face shield with a cracked window is discarded, not used for the rest of the shift.",
+        "citation": "1910.132(e)"
+      },
+      {
+        "question": "Which topic is NOT among the minimum PPE training items listed in 1910.132(f)(1)?",
+        "options": [
+          "When PPE is necessary",
+          "The purchase price of the PPE",
+          "How to properly don, doff, adjust, and wear PPE",
+          "The limitations of the PPE"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each employee required to use PPE must be trained to know at least when PPE is necessary, what PPE is necessary, how to properly don, doff, adjust, and wear it, its limitations, and its proper care, maintenance, useful life, and disposal (1910.132(f)(1)). Price is not a training item. Workplace example: new hires practice fitting goggles and learn when face shields are required.",
+        "citation": "1910.132(f)(1)"
+      },
+      {
+        "question": "Under 1910.132(f)(2), what must each affected employee do before being allowed to perform work requiring PPE?",
+        "options": [
+          "Sign a waiver",
+          "Buy their own PPE",
+          "Demonstrate an understanding of the training and the ability to use PPE properly",
+          "Watch a video only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each affected employee must demonstrate an understanding of the training and the ability to use PPE properly before being allowed to perform work requiring PPE (1910.132(f)(2)). Workplace example: the trainer watches each new employee put on and adjust a face shield and chemical gloves before they start at the plating line.",
+        "citation": "1910.132(f)(2)"
+      },
+      {
+        "question": "Which situation does 1910.132(f)(3) list as requiring PPE retraining?",
+        "options": [
+          "The employee's birthday",
+          "A new supervisor is hired",
+          "The PPE is repainted",
+          "Changes in the types of PPE to be used make previous training obsolete"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Retraining is required when the employer has reason to believe a trained employee lacks the required understanding or skill, including when workplace changes or changes in PPE types make previous training obsolete, or when inadequacies in the employee's knowledge or use show they have not retained it (1910.132(f)(3)(i)-(iii)). Workplace example: switching from cup goggles to indirect-vent goggles with different adjustment triggers retraining.",
+        "citation": "1910.132(f)(3)"
+      },
+      {
+        "question": "Under 1910.132(h)(2), which item is the employer NOT required to pay for?",
+        "options": [
+          "Non-specialty safety-toe footwear that the employer permits to be worn off the job site",
+          "Chemical-resistant gloves",
+          "Face shields",
+          "Replacement for PPE worn out in normal use"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer is not required to pay for non-specialty safety-toe protective footwear and non-specialty prescription safety eyewear, provided the employer permits them to be worn off the job site (1910.132(h)(2)). Other required PPE is provided at no cost (1910.132(h)(1)), including replacements unless lost or intentionally damaged (1910.132(h)(5)). Workplace example: the plant pays for welding gloves and face shields, but standard steel-toe boots may be the employee's cost.",
+        "citation": "1910.132(h)(2)"
+      },
+      {
+        "question": "Under 1910.133(a)(2), what must eye protection provide when there is a hazard from flying objects?",
+        "options": [
+          "Tinted lenses",
+          "Side protection; detachable clip-on or slide-on side shields meeting the section are acceptable",
+          "Prescription lenses",
+          "Anti-fog coating only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each affected employee must use eye protection that provides side protection when there is a hazard from flying objects. Detachable side protectors such as clip-on or slide-on side shields are acceptable (1910.133(a)(2)). Workplace example: a machinist at a lathe throwing chips wears safety glasses with side shields.",
+        "citation": "1910.133(a)(2)"
+      },
+      {
+        "question": "Per the filter lens table in 1910.133(a)(5), what is the minimum protective shade for shielded metal arc welding with 5-8/32-inch electrodes at 160-250 amps?",
+        "options": [
+          "Shade 7",
+          "Shade 8",
+          "Shade 10",
+          "Shade 11"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The table lists a minimum protective shade of 10 for shielded metal arc welding with electrode size 5-8 (in 1/32 in.) and arc current 160-250 amps (1910.133(a)(5)). Workplace example: a welder running 3/16-inch (6/32) rod at 200 amps uses at least a shade 10 lens.",
+        "citation": "1910.133(a)(5)"
+      },
+      {
+        "question": "Under 1910.135(a)(2), what kind of helmet is required for an employee working near exposed electrical conductors that could contact the head?",
+        "options": [
+          "Any bump cap",
+          "A metal helmet",
+          "No helmet is required",
+          "A protective helmet designed to reduce electrical shock hazard"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must ensure that a protective helmet designed to reduce electrical shock hazard is worn by each affected employee near exposed electrical conductors that could contact the head (1910.135(a)(2)). Helmets are also required where there is a potential for head injury from falling objects (1910.135(a)(1)). Workplace example: an electrician working below an overhead busway wears an electrically rated hard hat.",
+        "citation": "1910.135(a)(2)"
+      },
+      {
+        "question": "Under 1910.136(a), when must employees use protective footwear?",
+        "options": [
+          "Where there is a danger of foot injuries from falling or rolling objects or objects piercing the sole, or where footwear protects against a remaining electrical hazard",
+          "Only in cold weather",
+          "Only in office areas",
+          "Only when the employee requests it"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Protective footwear is required where there is a danger of foot injuries from falling or rolling objects or objects piercing the sole, or where protective footwear will protect the employee from an electrical hazard, such as static discharge or electric shock, that remains after other protective measures (1910.136(a)). Workplace example: warehouse workers moving drums on hand trucks wear safety-toe boots.",
+        "citation": "1910.136(a)"
+      },
+      {
+        "question": "Under 1910.138(b), on what must the employer base the selection of hand protection?",
+        "options": [
+          "The lowest price",
+          "An evaluation of the hand protection's performance characteristics relative to the tasks, conditions present, duration of use, and the hazards and potential hazards identified",
+          "The color the employee prefers",
+          "What other plants use"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Selection must be based on an evaluation of the performance characteristics of the hand protection relative to the tasks, conditions present, duration of use, and the hazards and potential hazards identified (1910.138(b)). Hand protection is required for hazards such as skin absorption, severe cuts, punctures, chemical and thermal burns (1910.138(a)). Workplace example: for an 8-hour solvent-wiping task, gloves are chosen by breakthrough time, not just \"chemical resistant\" on the box.",
+        "citation": "1910.138(b)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 12,
+    "title": "Exit Routes, Emergency Action and Fire Prevention Plans",
+    "duration": 45,
+    "topics": [
+      "Number of exit routes",
+      "Unlocked exit doors and door swing",
+      "Exit route height and width",
+      "Keeping exit routes unobstructed",
+      "Exit and \"Not an Exit\" signs",
+      "Emergency action plan elements, oral plans, and review",
+      "Fire prevention plan elements"
+    ],
+    "resources": [
+      {
+        "title": "Design and Construction of Exit Routes",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.36",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.36 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.37",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.37",
+        "type": "standard",
+        "description": "Maintenance, safeguards, and operational features for exit routes"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.38",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.38",
+        "type": "standard",
+        "description": "Emergency action plans"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.39",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.39",
+        "type": "standard",
+        "description": "Fire prevention plans"
+      },
+      {
+        "title": "Evacuation Plans and Procedures eTool",
+        "url": "https://www.osha.gov/etools/evacuation-plans-procedures",
+        "type": "tool",
+        "description": "OSHA interactive guide to emergency action plans and exit routes"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.36(b)(1), how many exit routes must generally be available in a workplace?",
+        "options": [
+          "At least one",
+          "At least three",
+          "At least two, located as far apart as practical, except where 1910.36(b)(3) permits a single route",
+          "One per 50 employees"
+        ],
+        "correctAnswer": 2,
+        "explanation": "At least two exit routes must be available to permit prompt evacuation, located as far away as practical from each other so one remains usable if the other is blocked, except as allowed in 1910.36(b)(3) (1910.36(b)(1)). Workplace example: the fabrication shop has exits at opposite ends of the building.",
+        "citation": "1910.36(b)(1)"
+      },
+      {
+        "question": "Under 1910.36(d)(1), how must employees be able to open an exit route door from the inside?",
+        "options": [
+          "With a key kept at the front desk",
+          "Only during business hours",
+          "With a keypad code",
+          "At all times, without keys, tools, or special knowledge"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employees must be able to open an exit route door from the inside at all times without keys, tools, or special knowledge. A panic bar that locks only from the outside is permitted on exit discharge doors (1910.36(d)(1)). Workplace example: the back dock door is fitted with panic hardware instead of a padlocked hasp.",
+        "citation": "1910.36(d)(1)"
+      },
+      {
+        "question": "Under 1910.36(e)(2), when must a door connecting a room to an exit route swing out in the direction of exit travel?",
+        "options": [
+          "When the room is designed to be occupied by more than 50 people or is a high hazard area",
+          "Always",
+          "Only in buildings over three stories",
+          "Never; doors should swing in"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The door must swing out in the direction of exit travel if the room is designed for more than 50 people or is a high hazard area, meaning its contents are likely to burn with extreme rapidity or explode (1910.36(e)(2)). Workplace example: the doors from the 80-person training room swing outward into the corridor.",
+        "citation": "1910.36(e)(2)"
+      },
+      {
+        "question": "Under 1910.36(g)(1), what is the minimum ceiling height of an exit route?",
+        "options": [
+          "6 feet 8 inches",
+          "7 feet",
+          "7 feet 6 inches",
+          "8 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The ceiling of an exit route must be at least 7 feet 6 inches high, and no projection from the ceiling may reach lower than 6 feet 8 inches from the floor (1910.36(g)(1)). Workplace example: a new duct run is kept above 6 feet 8 inches in the exit corridor.",
+        "citation": "1910.36(g)(1)"
+      },
+      {
+        "question": "Under 1910.36(g)(2), what is the minimum width of an exit access at all points?",
+        "options": [
+          "22 inches",
+          "28 inches",
+          "36 inches",
+          "44 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An exit access must be at least 28 inches wide at all points (1910.36(g)(2)). Objects projecting into the route may not reduce it below the minimum width (1910.36(g)(4)). Workplace example: racking along the aisle to the exit leaves at least 28 inches clear.",
+        "citation": "1910.36(g)(2)"
+      },
+      {
+        "question": "Which does 1910.37(a)(3) prohibit?",
+        "options": [
+          "Lighting in exit routes",
+          "Signs that read \"Exit\"",
+          "Fire doors on exits",
+          "Placing materials or equipment in the exit route, even temporarily, or routing the exit access through a room that can be locked"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Exit routes must be free and unobstructed. No materials or equipment may be placed in the exit route, permanently or temporarily, and the exit access may not go through a room that can be locked, such as a bathroom, or lead into a dead-end corridor (1910.37(a)(3)). Workplace example: a pallet of returns staged in the exit corridor \"for an hour\" is not allowed.",
+        "citation": "1910.37(a)(3)"
+      },
+      {
+        "question": "Under 1910.37(b)(5), how must a doorway along an exit access that could be mistaken for an exit be marked?",
+        "options": [
+          "\"Not an Exit\" or similar, or with a sign showing its actual use (e.g., \"Closet\")",
+          "It needs no marking",
+          "With a red light",
+          "With an arrow pointing toward it"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Each doorway or passage along an exit access that could be mistaken for an exit must be marked \"Not an Exit\" or similar, or identified by a sign indicating its actual use, such as closet (1910.37(b)(5)). Workplace example: the storage room door beside the exit corridor gets a \"Storage - Not an Exit\" sign.",
+        "citation": "1910.37(b)(5)"
+      },
+      {
+        "question": "Under 1910.37(b)(7), how large must the letters in the word \"Exit\" be on an exit sign?",
+        "options": [
+          "At least 4 inches high with 1/2-inch strokes",
+          "At least 6 inches high with principal strokes at least 3/4 inch wide",
+          "At least 8 inches high",
+          "Any legible size"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each exit sign must have the word \"Exit\" in plainly legible letters at least 6 inches high, with principal strokes at least 3/4 inch wide (1910.37(b)(7)). Signs must be illuminated to at least 5 foot-candles by a reliable source, or be self-luminous at the listed luminance (1910.37(b)(6)). Workplace example: a hand-lettered paper \"EXIT\" sign is replaced with a compliant illuminated sign.",
+        "citation": "1910.37(b)(7)"
+      },
+      {
+        "question": "Under 1910.38(b), when may an emergency action plan be communicated orally instead of in writing?",
+        "options": [
+          "Never",
+          "When the employer has 50 or fewer employees",
+          "When the employer has 10 or fewer employees",
+          "When the building has sprinklers"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An emergency action plan must be in writing, kept in the workplace, and available for review. An employer with 10 or fewer employees may communicate the plan orally (1910.38(b)). Workplace example: a 7-person machine shop reviews its plan verbally at hire.",
+        "citation": "1910.38(b)"
+      },
+      {
+        "question": "Which is NOT one of the minimum elements of an emergency action plan under 1910.38(c)?",
+        "options": [
+          "Procedures for reporting a fire or other emergency",
+          "Procedures to account for all employees after evacuation",
+          "The name or job title of every employee who can be contacted for more information",
+          "A list of the building's insurance carriers"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Minimum elements are: procedures for reporting a fire or other emergency; procedures for emergency evacuation, including type of evacuation and exit route assignments; procedures for employees who remain to operate critical operations; procedures to account for all employees after evacuation; procedures for employees performing rescue or medical duties; and the name or job title of contacts for more information (1910.38(c)). Insurance carriers are not an element. Workplace example: the plan names the EHS coordinator and sets the head-count point in the north lot.",
+        "citation": "1910.38(c)"
+      },
+      {
+        "question": "Under 1910.38(f), when must an employer review the emergency action plan with each covered employee?",
+        "options": [
+          "When the plan is developed or the employee is first assigned to a job, when the employee's responsibilities under the plan change, and when the plan is changed",
+          "Only once a year",
+          "Only after an emergency",
+          "Only when OSHA requests it"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The plan must be reviewed with each covered employee when the plan is developed or the employee is initially assigned to a job, when the employee's responsibilities under the plan change, and when the plan is changed (1910.38(f)(1)-(3)). Workplace example: an employee newly assigned as an evacuation warden gets a review of the warden duties.",
+        "citation": "1910.38(f)"
+      },
+      {
+        "question": "Which is a required element of a fire prevention plan under 1910.39(c)?",
+        "options": [
+          "The company's annual revenue",
+          "Procedures to control accumulations of flammable and combustible waste materials",
+          "A floor plan of parking spaces",
+          "The names of all customers"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A fire prevention plan must include a list of major fire hazards with handling and storage procedures, ignition sources and their control, and needed fire protection equipment; procedures to control accumulations of flammable and combustible waste; procedures for maintaining safeguards on heat-producing equipment; and the names or job titles of employees responsible for ignition-source equipment and for fuel source hazards (1910.39(c)(1)-(5)). Workplace example: the plan sets a daily schedule for emptying oily-rag cans in the paint shop.",
+        "citation": "1910.39(c)"
+      }
+    ]
   }
 ]

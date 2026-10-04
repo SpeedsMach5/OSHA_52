@@ -1,0 +1,12 @@
+Source: eCFR, 29 CFR 1910.138 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1910&section=1910.138
+Human-readable: https://www.ecfr.gov/current/title-29/section-1910.138
+Retrieved: 2026-10-04
+
+§ 1910.138 Hand protection.
+
+(a) General requirements. Employers shall select and require employees to use appropriate hand protection when employees' hands are exposed to hazards such as those from skin absorption of harmful substances; severe cuts or lacerations; severe abrasions; punctures; chemical burns; thermal burns; and harmful temperature extremes.
+
+(b) Selection. Employers shall base the selection of the appropriate hand protection on an evaluation of the performance characteristics of the hand protection relative to the task(s) to be performed, conditions present, duration of use, and the hazards and potential hazards identified.
+
+[59 FR 16362, Apr. 6, 1994; 59 FR 33911, July 1, 1994]

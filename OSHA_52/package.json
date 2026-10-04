@@ -1,0 +1,17 @@
+{
+  "name": "osha52",
+  "private": true,
+  "description": "OSHA 52 training app (API now; web frontend added in Stage B)",
+  "workspaces": [
+    "api"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "npm run start -w api",
+    "test": "npm test -w api",
+    "migrate": "npm run migrate -w api",
+    "seed:admin": "npm run seed:admin -w api"
+  }
+}

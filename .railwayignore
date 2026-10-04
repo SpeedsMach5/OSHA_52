@@ -1,0 +1,12 @@
+# Only OSHA_52/ (API + data) is deployed. Exclude legacy files and Phase 1 working material.
+# Patterns are anchored to the repo root so OSHA_52/api/src is not excluded.
+/src/
+/compiled/
+/public/
+/*.docx
+/context.md
+/.babelrc
+/OSHA_52/sources/
+/OSHA_52/reports/
+/OSHA_52/*.docx
+**/node_modules/

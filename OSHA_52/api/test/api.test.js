@@ -42,6 +42,7 @@ async function takeTest(token, track, week, nCorrect) {
   });
   return { answers, attemptToken: t.body.attemptToken, test: t.body, lay };
 }
+const backdate = (attemptId, days = 1) => db.query(`UPDATE attempts SET submitted_at = submitted_at - ($2 || ' days')::interval WHERE id = $1`, [attemptId, String(days)]);
 const submit = (token, track, week, body) => call('POST', `/tracks/${track}/weeks/${week}/attempts`, { token, body });
 
 before(async () => {
@@ -126,7 +127,7 @@ test('tracks and week list with progress', async () => {
   assert.equal(t.body.tracks.find(x => x.id === '1910').weekCount, 26);
   const w = await call('GET', '/tracks/1926/weeks', { token: trainee.token });
   assert.equal(w.body.weeks.length, 52);
-  assert.deepEqual(w.body.weeks[0].progress, { attempts: 0, bestScore: null, passed: false, lastAttemptAt: null });
+  assert.deepEqual(w.body.weeks[0].progress, { attempts: 0, bestScore: null, passed: false, lastAttemptAt: null, totalFails: 0, locked: false, availableAt: null });
   assert.equal((await call('GET', '/tracks/9999/weeks', { token: trainee.token })).status, 404);
   for (const bad of ['01', '1.0', '0x1', '0']) {
     assert.equal((await call('GET', `/tracks/1926/weeks/${bad}/test`, { token: trainee.token })).status, 404, `week "${bad}" rejected`);
@@ -177,6 +178,7 @@ test('server-side grading: pass at 80%, fail below, every attempt kept', async (
   assert.equal(fail.body.results.filter(r => !r.isCorrect).length, 3);
   assert.deepEqual(fail.body.results.map(r => r.question), f.test.questions.map(q => q.question), 'results in displayed order');
 
+  await backdate(fail.body.attemptId); // one attempt per week per day: move the fail to yesterday
   const p = await takeTest(trainee.token, '1926', 3, 8);
   const pass = await submit(trainee.token, '1926', 3, { answers: p.answers, attemptToken: p.attemptToken });
   assert.equal(pass.body.scorePct, 80);
@@ -193,7 +195,9 @@ test('server-side grading: pass at 80%, fail below, every attempt kept', async (
   const hist = await call('GET', '/me/attempts?track=1926', { token: trainee.token });
   assert.equal(hist.body.attempts.length, 2);
   const weeks = await call('GET', '/tracks/1926/weeks', { token: trainee.token });
-  assert.deepEqual({ ...weeks.body.weeks[2].progress, lastAttemptAt: null }, { attempts: 2, bestScore: 80, passed: true, lastAttemptAt: null });
+  const prog = weeks.body.weeks[2].progress;
+  assert.deepEqual({ ...prog, lastAttemptAt: null, availableAt: null }, { attempts: 2, bestScore: 80, passed: true, lastAttemptAt: null, totalFails: 1, locked: false, availableAt: null });
+  assert.ok(prog.availableAt, 'already attempted today, so the next attempt is tomorrow');
 
   const detail = await call('GET', `/me/attempts/${fail.body.attemptId}`, { token: trainee.token });
   assert.equal(detail.body.results.filter(r => r.isCorrect).length, 7);
@@ -403,4 +407,57 @@ test('attempt review after the week was edited shows only right/wrong', async ()
   assert.equal(d.status, 200);
   assert.equal(d.body.contentChanged, true);
   assert.ok(d.body.results.every(r => r.options === undefined && r.correctIndex === undefined && r.isCorrect === true));
+});
+
+test('retake rules: one attempt per week per day; a second fail locks the week until a reviewer unlocks it', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Retake Rita', pin: '8642' } });
+  const tok = (await call('POST', '/auth/trainee/login', { body: { name: 'Retake Rita', pin: '8642' } })).body.token;
+  const first = await takeTest(tok, '1910', 4, 0);
+  const f1 = await submit(tok, '1910', 4, { answers: first.answers, attemptToken: first.attemptToken });
+  assert.equal(f1.body.passed, false);
+  // Same day: blocked when fetching a new test and when submitting one fetched earlier.
+  const sameDay = await call('GET', '/tracks/1910/weeks/4/test', { token: tok });
+  assert.equal(sameDay.status, 429);
+  assert.equal(sameDay.body.error, 'daily_limit');
+  assert.ok(sameDay.body.availableAt);
+  const other = await call('GET', '/tracks/1910/weeks/5/test', { token: tok });
+  assert.equal(other.status, 200, 'the limit is per week');
+  await backdate(f1.body.attemptId);
+  const second = await takeTest(tok, '1910', 4, 0);
+  const f2 = await submit(tok, '1910', 4, { answers: second.answers, attemptToken: second.attemptToken });
+  assert.equal(f2.status, 201);
+  // Second fail: the week is locked, with the "talk to your trainer" message.
+  const locked = await call('GET', '/tracks/1910/weeks/4/test', { token: tok });
+  assert.equal(locked.status, 423);
+  assert.equal(locked.body.error, 'week_locked');
+  assert.match(locked.body.message, /talk to your trainer/i);
+  await backdate(f2.body.attemptId);
+  assert.equal((await call('GET', '/tracks/1910/weeks/4/test', { token: tok })).status, 423, 'stays locked on later days');
+  const wk = (await call('GET', '/tracks/1910/weeks', { token: tok })).body.weeks.find(w => w.week === 4);
+  assert.equal(wk.progress.locked, true);
+  // Reviewer dashboard data flags the trainee; trainees cannot unlock.
+  const rita = (await call('GET', '/staff/trainees', { token: adminToken })).body.trainees.find(t => t.name === 'Retake Rita');
+  assert.equal(rita.flagged, true);
+  assert.deepEqual(rita.flaggedWeeks, [{ track: '1910', week: 4, fails: 2, locked: true }]);
+  assert.equal((await call('POST', `/staff/trainees/${rita.id}/unlock-week`, { token: tok, body: { track: '1910', week: 4 } })).status, 403, 'trainees cannot unlock');
+  assert.equal((await call('POST', `/staff/trainees/${rita.id}/unlock-week`, { token: adminToken, body: { track: '1910', week: 5 } })).status, 409, 'week 5 is not locked');
+  assert.equal((await call('POST', `/staff/trainees/${rita.id}/unlock-week`, { token: adminToken, body: { track: '1910', week: 4 } })).status, 200);
+  // After unlock: one attempt allowed now; the fail count starts over (one more fail does not re-lock).
+  const third = await takeTest(tok, '1910', 4, 0);
+  assert.equal((await submit(tok, '1910', 4, { answers: third.answers, attemptToken: third.attemptToken })).status, 201);
+  assert.equal((await call('GET', '/tracks/1910/weeks/4/test', { token: tok })).status, 429, 'one attempt per day again after the unlock attempt');
+  const after = (await call('GET', '/staff/trainees', { token: adminToken })).body.trainees.find(t => t.name === 'Retake Rita');
+  assert.deepEqual(after.flaggedWeeks, [{ track: '1910', week: 4, fails: 3, locked: false }], 'still flagged (3 fails), no longer locked');
+});
+
+test('two tests fetched the same day cannot both be submitted', async () => {
+  await call('POST', '/auth/trainee/register', { body: { name: 'Double Dan', pin: '1111' } });
+  const tok = (await call('POST', '/auth/trainee/login', { body: { name: 'Double Dan', pin: '1111' } })).body.token;
+  const a = await takeTest(tok, '1926', 9, 10);
+  const b = await takeTest(tok, '1926', 9, 10);
+  const [ra, rb] = await Promise.all([
+    submit(tok, '1926', 9, { answers: a.answers, attemptToken: a.attemptToken }),
+    submit(tok, '1926', 9, { answers: b.answers, attemptToken: b.attemptToken }),
+  ]);
+  assert.deepEqual([ra.status, rb.status].sort(), [201, 429]);
 });

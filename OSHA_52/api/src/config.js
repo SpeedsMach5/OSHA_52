@@ -16,6 +16,8 @@ function loadConfig(env = process.env) {
     staffTokenTtl: env.STAFF_TOKEN_TTL || '12h',
     inviteTtlHours: env.INVITE_TTL_HOURS ? Number(env.INVITE_TTL_HOURS) : 168,
     trustProxy: env.TRUST_PROXY !== 'false',
+    // "One attempt per week per day" uses calendar days in this timezone.
+    appTimezone: env.APP_TIMEZONE || 'America/New_York',
     loginRateLimitPerMinute: env.LOGIN_RATE_LIMIT_PER_MINUTE ? Number(env.LOGIN_RATE_LIMIT_PER_MINUTE) : 20,
   };
   return cfg;
@@ -28,6 +30,7 @@ function assertRuntimeConfig(cfg) {
   if (!(cfg.passMark > 0 && cfg.passMark <= 100)) missing.push('PASS_MARK (number 1-100)');
   if (!(cfg.inviteTtlHours > 0)) missing.push('INVITE_TTL_HOURS (positive number)');
   if (!(cfg.loginRateLimitPerMinute > 0)) missing.push('LOGIN_RATE_LIMIT_PER_MINUTE (positive number)');
+  try { new Intl.DateTimeFormat('en-US', { timeZone: cfg.appTimezone }); } catch { missing.push('APP_TIMEZONE (IANA name, e.g. America/Chicago)'); }
   if (missing.length) throw new Error(`Missing or invalid configuration: ${missing.join(', ')}`);
 }
 

@@ -12,6 +12,7 @@ Node/Express API on Railway, backed by the project's Railway Postgres. It serves
 | `ADMIN_INITIAL_PASSWORD` | Initial admin password. The admin must change it at first login. The seed never overwrites an existing account. |
 | `CORS_ORIGINS` | Comma-separated allowed browser origins. Set to the Cloudflare Pages domain once it exists. |
 | `APP_BASE_URL` | Frontend base URL, used to build reviewer invite links (`<APP_BASE_URL>/invite/<token>`) |
+| `APP_TIMEZONE` | IANA timezone for the one-attempt-per-day rule (default `America/New_York`) |
 | Optional | `PASS_MARK` (80), `TRAINEE_TOKEN_TTL` (14d), `STAFF_TOKEN_TTL` (12h), `INVITE_TTL_HOURS` (168), `LOGIN_RATE_LIMIT_PER_MINUTE` (20) |
 
 ## Deploy
@@ -29,7 +30,7 @@ These settings are stored on the Railway service. Railway no longer accepts `rai
 
 ```
 npm install          # from OSHA_52/
-npm test             # 28 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
+npm test             # 30 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
 ```
 
 ## Endpoints
@@ -51,6 +52,8 @@ npm test             # 28 end-to-end tests on an in-process Postgres (PGlite); n
 - `GET /tracks/:track/weeks/:week`
 - `GET /tracks/:track/weeks/:week/test`: questions and options only, in a fresh random question and option order each time, plus `attemptToken`.
 
+**Retake rules**: one attempt per week per calendar day (`APP_TIMEZONE`). After a second fail on the same week, that week locks (423 `week_locked`, "Talk to your trainer") until a reviewer unlocks it. The daily limit returns 429 `daily_limit` with `availableAt`. Week progress includes `locked`, `availableAt`, and `totalFails`.
+
 **Attempts** (trainee)
 - `POST /tracks/:track/weeks/:week/attempts` `{answers: [displayedOptionIndex, ...], attemptToken}`:
   - Graded on the server. Each served test can be submitted once.
@@ -60,6 +63,8 @@ npm test             # 28 end-to-end tests on an in-process Postgres (PGlite); n
 
 **Staff** (reviewer, admin)
 - `GET /staff/trainees`
+- `GET /staff/trainees` includes `flagged` and `flaggedWeeks` (any week with 2+ fails).
+- `POST /staff/trainees/:id/unlock-week` `{track, week}`: unlocks a locked week. The fail count starts over, and one attempt is allowed today.
 - `POST /staff/trainees/:id/reset-pin`: returns a 6-digit `code`, valid for 24 hours and shown once, to give to the trainee in person.
 
 **Admin**

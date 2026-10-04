@@ -5270,159 +5270,160 @@
   {
     "standard": "29 CFR 1926",
     "week": 34,
-    "title": "Work in Compressed Air",
+    "title": "Aerial Lifts",
     "duration": 45,
     "topics": [
-      "Competent person on site",
-      "Physician examination before entry",
-      "Re-examination after absence or after 1 year",
-      "Medical lock",
-      "Identification badges",
-      "Communications",
-      "Instruction for first-time workers",
-      "Decompression tables",
-      "Fire watch for hot work under pressure"
+      "Field modifications",
+      "Daily control tests",
+      "Authorized operators",
+      "No belting off to adjacent structures",
+      "Standing on the basket floor",
+      "Body belts vs. personal fall arrest",
+      "Load limits",
+      "Brakes, outriggers, and wheel chocks",
+      "Moving with the boom elevated",
+      "Upper and lower controls"
     ],
     "resources": [
       {
-        "title": "Compressed Air Standards",
-        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.803",
+        "title": "Aerial Lifts Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.453",
         "type": "standard",
-        "description": "Work in compressed air environments (caissons, tunnels)"
+        "description": "Aerial lift requirements for construction"
       },
       {
-        "title": "Medical Attendance and Examination",
-        "url": "https://www.ecfr.gov/current/title-29/section-1926.803#p-1926.803(b)",
+        "title": "Boom Platform Requirements",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.453#p-1926.453(b)",
         "type": "standard",
-        "description": "Physician, examination, and medical lock requirements"
+        "description": "Specific requirements for extensible and articulating boom platforms"
       },
       {
-        "title": "Decompression",
-        "url": "https://www.ecfr.gov/current/title-29/section-1926.803#p-1926.803(f)",
+        "title": "Fall Protection Systems Criteria",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.502",
         "type": "standard",
-        "description": "Decompression requirements and tables"
+        "description": "Personal fall arrest and restraint criteria referenced by 1926.453"
       }
     ],
     "test": [
       {
-        "question": "Under 1926.803(a)(1), who must be present at all times during compressed air work?",
+        "question": "Under 1926.453(a)(2), when may an aerial lift be \"field modified\" for uses other than those intended by the manufacturer?",
         "options": [
-          "At least one competent person designated by and representing the employer, familiar with the subpart and responsible for full compliance",
-          "Only the shift foreman",
-          "An OSHA inspector",
-          "No one in particular"
-        ],
-        "correctAnswer": 0,
-        "explanation": "At least one competent person designated by and representing the employer, familiar with this subpart and responsible for full compliance, must be present at all times (1926.803(a)(1)). Job-site scenario: the caisson job always has its designated competent person on shift.",
-        "citation": "1926.803(a)(1)"
-      },
-      {
-        "question": "Under 1926.803(b)(2), when may an employee first enter a compressed air environment?",
-        "options": [
-          "Any time",
-          "Only after being examined by the physician and reported physically qualified for the work",
-          "After a safety briefing only",
-          "After one week on the job"
-        ],
-        "correctAnswer": 1,
-        "explanation": "No employee may enter a compressed air environment until examined by the physician and reported physically qualified (1926.803(b)(2)). Job-site scenario: new sandhogs get the physician's clearance before their first lock-in.",
-        "citation": "1926.803(b)(2)"
-      },
-      {
-        "question": "An employee has been absent for 10 days. Under 1926.803(b)(3), what is required before they return to compressed air work?",
-        "options": [
-          "Nothing",
-          "A written statement from the employee",
-          "Re-examination by the physician, with their physical condition reported",
-          "A supervisor's approval"
-        ],
-        "correctAnswer": 2,
-        "explanation": "An employee absent from work for 10 days, or absent due to sickness or injury, may not resume work until re-examined by the physician (1926.803(b)(3)). Job-site scenario: a worker back from a two-week absence sees the physician before going back under air.",
-        "citation": "1926.803(b)(3)"
-      },
-      {
-        "question": "Under 1926.803(b)(4), how often must employees working continuously in compressed air be re-examined?",
-        "options": [
-          "Every 5 years",
-          "Every 3 years",
-          "Only after an incident",
-          "At an interval designated by the physician, not to exceed 1 year"
-        ],
-        "correctAnswer": 3,
-        "explanation": "After continuous employment in compressed air for a period designated by the physician, not to exceed 1 year, the employee must be re-examined (1926.803(b)(4)). Job-site scenario: long-term tunnel crews have annual physicals at most a year apart.",
-        "citation": "1926.803(b)(4)"
-      },
-      {
-        "question": "When must a medical lock be maintained under 1926.803(b)(9)?",
-        "options": [
-          "Whenever air pressure in the working chamber is increased above normal atmosphere, in immediate working order",
-          "Only on request",
-          "Only above 50 psi",
+          "Only when the modification is certified in writing by the manufacturer or an equivalent entity (such as a nationally recognized testing laboratory) to conform with ANSI A92.2-1969 and the section and to be at least as safe as before",
+          "Whenever the operator thinks it is safe",
+          "With the superintendent's verbal approval",
           "Never"
         ],
         "correctAnswer": 0,
-        "explanation": "A medical lock must be established and maintained in immediate working order whenever air pressure in the working chamber is raised above normal atmosphere (1926.803(b)(9)). Job-site scenario: the medical lock is ready before the chamber is pressurized.",
-        "citation": "1926.803(b)(9)"
+        "explanation": "Aerial lifts may be field modified only if the modification is certified in writing by the manufacturer or an equivalent entity, such as a nationally recognized testing laboratory, as conforming to ANSI A92.2-1969 and the section and at least as safe as before (1926.453(a)(2)). Job-site scenario: a pipe rack welded onto a basket needs written certification before use.",
+        "citation": "1926.453(a)(2)"
       },
       {
-        "question": "What does 1926.803(b)(11) require be furnished to all compressed air workers?",
+        "question": "Under 1926.453(b)(2)(i), how often must lift controls on extensible and articulating boom platforms be tested?",
         "options": [
-          "A logbook",
-          "Identification badges indicating the wearer is a compressed air worker, with a permanent record of badges issued",
-          "A personal pressure gauge",
-          "Nothing"
+          "Weekly",
+          "Each day prior to use",
+          "Monthly",
+          "Annually"
         ],
         "correctAnswer": 1,
-        "explanation": "Identification badges must be furnished to all employees, showing the wearer is a compressed air worker, and a permanent record of all badges issued must be kept (1926.803(b)(11)). Job-site scenario: a collapsed worker found off site is identified as a compressed air worker from the badge, prompting decompression treatment.",
-        "citation": "1926.803(b)(11)"
+        "explanation": "Lift controls must be tested each day before use to determine that they are in safe working condition (1926.453(b)(2)(i)). Job-site scenario: the operator runs the platform and ground controls through their functions before the first lift of the day.",
+        "citation": "1926.453(b)(2)(i)"
       },
       {
-        "question": "Under 1926.803(c)(1), what communication must be maintained during compressed air work?",
+        "question": "Under 1926.453(b)(2)(ii), who may operate an aerial lift?",
         "options": [
-          "None",
-          "Text messages only",
-          "Effective and reliable means of communication, such as bells, whistles, or telephones, at all times between listed locations",
-          "Shouting only"
+          "Any employee",
+          "Anyone with a driver's license",
+          "Only authorized persons",
+          "Only the owner"
         ],
         "correctAnswer": 2,
-        "explanation": "Effective and reliable means of communication, such as bells, whistles, or telephones, must be maintained at all times between the listed locations, including the working chamber face and the compressor plant (1926.803(c)(1)). Job-site scenario: a phone links the lock tender, the face, and the compressor house.",
-        "citation": "1926.803(c)(1)"
+        "explanation": "Only authorized persons may operate an aerial lift (1926.453(b)(2)(ii)). Job-site scenario: the foreman keeps a list of employees authorized to run the boom lift.",
+        "citation": "1926.453(b)(2)(ii)"
       },
       {
-        "question": "Under 1926.803(e)(1), what must every employee going under air pressure for the first time receive?",
+        "question": "While working from an aerial lift, may an employee tie off to an adjacent pole, structure, or equipment under 1926.453(b)(2)(iii)?",
         "options": [
-          "Nothing",
-          "A day off afterward",
-          "A pay bonus",
-          "Instruction on how to avoid excessive discomfort"
+          "Yes, it is preferred",
+          "Yes, if the lift is stationary",
+          "Only to steel beams",
+          "No; belting off to an adjacent pole, structure, or equipment is not permitted"
         ],
         "correctAnswer": 3,
-        "explanation": "Every employee going under air pressure for the first time must be instructed on how to avoid excessive discomfort (1926.803(e)(1)). Job-site scenario: before the first lock-in, the new worker is shown how to equalize ear pressure.",
-        "citation": "1926.803(e)(1)"
+        "explanation": "Belting off to an adjacent pole, structure, or equipment while working from an aerial lift is not permitted (1926.453(b)(2)(iii)). The lanyard attaches to the boom or basket (1926.453(b)(2)(v)). Job-site scenario: the electrician clips to the basket anchor, not the building steel.",
+        "citation": "1926.453(b)(2)(iii)"
       },
       {
-        "question": "How must decompression be done under 1926.803(f)(1)?",
+        "question": "What does 1926.453(b)(2)(iv) require of employees in the basket?",
         "options": [
-          "In accordance with the Decompression Tables in Appendix A to Subpart S",
-          "However the worker feels comfortable",
-          "In 5 minutes or less",
-          "Only at the end of the week"
+          "They must stand firmly on the basket floor and may not sit or climb on the edge of the basket or use planks, ladders, or other devices for a work position",
+          "They may stand on the rails for reach",
+          "They may use a stepladder in the basket",
+          "They may sit on the edge if tied off"
         ],
         "correctAnswer": 0,
-        "explanation": "Decompression to normal condition must follow the Decompression Tables in Appendix A of the subpart (1926.803(f)(1)). Job-site scenario: the lock tender follows the table time for the working pressure and shift length.",
-        "citation": "1926.803(f)(1)"
+        "explanation": "Employees must always stand firmly on the basket floor and may not sit or climb on the edge of the basket or use planks, ladders, or other devices for a work position (1926.453(b)(2)(iv)). Job-site scenario: if the work is out of reach, reposition the boom instead of climbing the rail.",
+        "citation": "1926.453(b)(2)(iv)"
       },
       {
-        "question": "While welding or flame-cutting is done in compressed air, what does 1926.803(l)(2) require?",
+        "question": "1926.453(b)(2)(v) says a body belt and lanyard attached to the boom or basket must be worn. What does the note to that paragraph say about body belts?",
         "options": [
-          "Nothing extra",
-          "A firewatch with a fire hose or approved extinguisher standing by until the operation is completed",
-          "Only ventilation",
-          "Welding is never allowed"
+          "Body belts remain acceptable for fall arrest",
+          "Since January 1, 1998, body belts are not acceptable as part of a personal fall arrest system (1926.502(d)); body belts in tethering or restraint systems are acceptable under 1926.502(e)",
+          "Body belts are banned entirely",
+          "Body belts are required instead of harnesses"
         ],
         "correctAnswer": 1,
-        "explanation": "While welding or flame-cutting is done in compressed air, a firewatch with a fire hose or approved extinguisher must stand by until the operation is completed (1926.803(l)(2)). Firefighting equipment must be available at all times (1926.803(l)(1)). Job-site scenario: a firewatch with a charged hose stands by during cutting in the caisson.",
-        "citation": "1926.803(l)(2)"
+        "explanation": "The paragraph requires a body belt with a lanyard attached to the boom or basket (1926.453(b)(2)(v)). The note explains that, as of January 1, 1998, body belts are not acceptable as part of a personal fall arrest system under 1926.502(d), but a body belt in a tethering or restraint system is acceptable under 1926.502(e). Job-site scenario: in a boom lift, a short restraint lanyard prevents ejection; for fall arrest, a full-body harness is used.",
+        "citation": "1926.453(b)(2)(v)"
+      },
+      {
+        "question": "Under 1926.453(b)(2)(vi), what limits apply to the boom and basket?",
+        "options": [
+          "None",
+          "Two people maximum, always",
+          "Load limits specified by the manufacturer must not be exceeded",
+          "Only a weight posted by the supervisor"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Boom and basket load limits specified by the manufacturer must not be exceeded (1926.453(b)(2)(vi)). Job-site scenario: two workers plus a box of conduit are checked against the platform capacity decal.",
+        "citation": "1926.453(b)(2)(vi)"
+      },
+      {
+        "question": "What does 1926.453(b)(2)(vii) require when setting up an aerial lift?",
+        "options": [
+          "Nothing",
+          "Only chocks on flat ground",
+          "Outriggers on bare soil",
+          "Brakes set; outriggers, when used, positioned on pads or a solid surface; and wheel chocks installed on an incline when they can be safely installed"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The brakes must be set, outriggers (when used) positioned on pads or a solid surface, and wheel chocks installed before using an aerial lift on an incline, provided they can be safely installed (1926.453(b)(2)(vii)). Job-site scenario: outrigger pads go under each foot on the soft lot.",
+        "citation": "1926.453(b)(2)(vii)"
+      },
+      {
+        "question": "Under 1926.453(b)(2)(viii), may an aerial lift truck be moved with the boom elevated and workers in the basket?",
+        "options": [
+          "No, except equipment specifically designed for that type of operation",
+          "Yes, at walking speed",
+          "Yes, if a spotter walks alongside",
+          "Yes, on level ground"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An aerial lift truck may not be moved when the boom is elevated in a working position with workers in the basket, except equipment specifically designed for this operation under (a)(1) and (2) (1926.453(b)(2)(viii)). Before moving the lift for travel, the boom must be inspected to confirm it is properly cradled and outriggers are stowed, except for equipment designed for travel with an elevated boom (1926.453(b)(2)(xii)). Job-site scenario: the truck-mounted bucket comes down before repositioning.",
+        "citation": "1926.453(b)(2)(viii)"
+      },
+      {
+        "question": "Under 1926.453(b)(2)(ix), when may the lower (ground) controls of a boom platform be operated?",
+        "options": [
+          "Any time",
+          "Only with permission from the employee in the lift, except in an emergency",
+          "Only by the supervisor",
+          "Never"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Boom platforms designed as personnel carriers must have both upper and lower controls, and lower controls must be able to override the upper ones. Lower controls may not be operated unless permission has been obtained from the employee in the lift, except in an emergency (1926.453(b)(2)(ix)). Job-site scenario: the ground worker asks over the radio before touching the base controls.",
+        "citation": "1926.453(b)(2)(ix)"
       }
     ]
   },
@@ -6380,6 +6381,1619 @@
         "correctAnswer": 0,
         "explanation": "Employees may not be exposed to light intensities above 1 microwatt/cm2 for direct staring (1926.54(j)(1)), 1 milliwatt/cm2 for incidental observing (1926.54(j)(2)), or 2.5 watts/cm2 for diffused reflected light (1926.54(j)(3)). Job-site scenario: no one looks into the beam path of the alignment laser.",
         "citation": "1926.54(j)(1)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 41,
+    "title": "Stairways",
+    "duration": 45,
+    "topics": [
+      "When a stairway or ladder is required",
+      "Access for 25 or more employees",
+      "Keeping points of access clear",
+      "Stair angle and uniform risers",
+      "Temporary stair landings",
+      "Pan and skeleton stairs",
+      "Stairrails and handrails",
+      "Ladder and stairway training"
+    ],
+    "resources": [
+      {
+        "title": "Stairway and Ladder General Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1051",
+        "type": "standard",
+        "description": "When stairways or ladders are required"
+      },
+      {
+        "title": "Stairways",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1052",
+        "type": "standard",
+        "description": "Stairway construction and use requirements"
+      },
+      {
+        "title": "Stairway and Ladder Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1060",
+        "type": "standard",
+        "description": "Training requirements for Subpart X"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.1051(a), when must a stairway or ladder be provided?",
+        "options": [
+          "At any change in floor level",
+          "Only above 6 feet",
+          "At all personnel points of access with a break in elevation of 19 inches or more, where no ramp, runway, sloped embankment, or personnel hoist is provided",
+          "Only in buildings over two stories"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A stairway or ladder must be provided at all personnel points of access where there is a break in elevation of 19 inches or more and no ramp, runway, sloped embankment, or personnel hoist is provided (1926.1051(a)). Job-site scenario: a 24-inch step down from a slab edge to the footing needs a ladder or stair.",
+        "citation": "1926.1051(a)"
+      },
+      {
+        "question": "Under 1926.1051(a)(2), what is required when ladders are the only access for 25 or more employees, or serve two-way traffic?",
+        "options": [
+          "One standard ladder",
+          "A rope ladder",
+          "Nothing extra",
+          "A double-cleated ladder or two or more separate ladders"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A double-cleated ladder or two or more separate ladders must be provided when ladders are the only means of access or exit from a work area for 25 or more employees, or when a ladder serves simultaneous two-way traffic (1926.1051(a)(2)). Job-site scenario: a job-built double-cleat ladder serves the 30-person deck crew.",
+        "citation": "1926.1051(a)(2)"
+      },
+      {
+        "question": "A building has only one point of access between levels, and work will restrict it. What does 1926.1051(a)(3) require?",
+        "options": [
+          "Keep it clear; if work restricts free passage, provide and use a second point of access",
+          "Nothing; work around it",
+          "Close the level",
+          "Post a sign only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "With only one point of access between levels, it must be kept clear for free passage. When work or equipment restricts that passage, a second point of access must be provided and used (1926.1051(a)(3)). Job-site scenario: while the stair is being drywalled, a temporary ladder serves as the second access.",
+        "citation": "1926.1051(a)(3)"
+      },
+      {
+        "question": "Under 1926.1052(a)(2), at what angle from horizontal must stairs be installed?",
+        "options": [
+          "Between 20 and 40 degrees",
+          "Between 30 and 50 degrees",
+          "Between 45 and 60 degrees",
+          "Any angle"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Stairs must be installed between 30 and 50 degrees from horizontal (1926.1052(a)(2)). Job-site scenario: a job-built stair to a mezzanine is framed at about 37 degrees.",
+        "citation": "1926.1052(a)(2)"
+      },
+      {
+        "question": "Under 1926.1052(a)(3), how much may riser height or tread depth vary within a stairway system?",
+        "options": [
+          "Up to 1 inch",
+          "Up to 1/2 inch",
+          "No more than 1/4 inch",
+          "Any amount"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Riser height and tread depth must be uniform within each flight, including any foundation structure used as a tread, and variations may not exceed 1/4 inch in any stairway system (1926.1052(a)(3)). Job-site scenario: the bottom step onto an uneven slab is shimmed so it matches the others.",
+        "citation": "1926.1052(a)(3)"
+      },
+      {
+        "question": "Under 1926.1052(a)(1), what landings must temporary stairways (not part of the permanent structure) have?",
+        "options": [
+          "None",
+          "Landings every 20 feet",
+          "Only at the top",
+          "Landings at least 30 inches in the direction of travel and at least 22 inches wide at every 12 feet or less of vertical rise"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Stairways that will not be part of the permanent structure must have landings at least 30 inches in the direction of travel and at least 22 inches wide at every 12 feet or less of vertical rise (1926.1052(a)(1)). Job-site scenario: a temporary scaffold-stair to the roof has a landing every 12 feet.",
+        "citation": "1926.1052(a)(1)"
+      },
+      {
+        "question": "Under 1926.1052(b)(1), may workers walk on metal pan stairs before the pans are filled with concrete?",
+        "options": [
+          "No, except during stairway construction, unless the pans are temporarily filled with wood or other solid material at least to the top edge of each pan",
+          "Yes, always",
+          "Yes, if they wear boots",
+          "Only going down"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Except during stairway construction, foot traffic is prohibited on pan stairs whose treads or landings will be filled later, unless the pans are temporarily fitted with wood or other solid material at least to the top edge of each pan (1926.1052(b)(1)). Job-site scenario: plywood inserts go into the pans before trades use the stair.",
+        "citation": "1926.1052(b)(1)"
+      },
+      {
+        "question": "Under 1926.1052(c)(1), when must a stairway have at least one handrail and a stairrail system on each unprotected side?",
+        "options": [
+          "Only above 10 risers",
+          "When it has four or more risers or rises more than 30 inches, whichever is less",
+          "Only in occupied buildings",
+          "Never during construction"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Stairways with four or more risers, or rising more than 30 inches (whichever is less), must have at least one handrail and a stairrail system along each unprotected side or edge (1926.1052(c)(1)). Job-site scenario: a five-riser temporary stair to the trailer gets rails.",
+        "citation": "1926.1052(c)(1)"
+      },
+      {
+        "question": "Under 1926.1052(c)(6), what is the required height range for handrails?",
+        "options": [
+          "24 to 30 inches",
+          "42 inches plus or minus 3",
+          "Not less than 30 inches nor more than 37 inches from the handrail top to the tread surface (in line with the riser face)",
+          "Any height"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Handrails must be no more than 37 inches and no less than 30 inches from the upper surface of the handrail to the tread surface, measured in line with the face of the riser at the forward edge of the tread (1926.1052(c)(6)). Handrails and stairrail top rails must withstand 200 pounds (1926.1052(c)(5)). Job-site scenario: the handrail on the temporary stair is set at 34 inches.",
+        "citation": "1926.1052(c)(6)"
+      },
+      {
+        "question": "Under 1926.1060(a)(1), who must train employees using ladders and stairways?",
+        "options": [
+          "Anyone",
+          "The manufacturer only",
+          "No training is required",
+          "A competent person, covering fall hazards, fall protection procedures, proper construction and use of stairways and ladders, load capacities, and the Subpart X standards"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must ensure each employee using ladders and stairways is trained by a competent person, as applicable, in the nature of fall hazards, fall protection procedures, proper construction, use, placement, and care of stairways and ladders, ladder load capacities, and the Subpart X standards (1926.1060(a)(1)). Retraining is required as necessary (1926.1060(b)). Job-site scenario: new hires get stair and ladder training from the site competent person.",
+        "citation": "1926.1060(a)(1)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 42,
+    "title": "Working Over or Near Water and Safety Nets",
+    "duration": 45,
+    "topics": [
+      "Life jackets and buoyant work vests",
+      "Inspecting flotation devices",
+      "Ring buoys",
+      "Lifesaving skiffs",
+      "When 1926.105 applies",
+      "Testing nets before work",
+      "Net extension and drop distance",
+      "Net mesh and strength",
+      "Net attachments"
+    ],
+    "resources": [
+      {
+        "title": "Working Over or Near Water",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.106",
+        "type": "standard",
+        "description": "Flotation, ring buoys, and skiffs"
+      },
+      {
+        "title": "Safety Nets (Tank and Tower Erection)",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.105",
+        "type": "standard",
+        "description": "Safety net requirements that apply to tank and communication/broadcast tower erection"
+      },
+      {
+        "title": "eCFR: 29 CFR 1926.106",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.106",
+        "type": "standard",
+        "description": "Current official text"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.106(a), what must employees working over or near water, where the danger of drowning exists, be provided with?",
+        "options": [
+          "U.S. Coast Guard-approved life jackets or buoyant work vests",
+          "Nothing if they can swim",
+          "Any foam float",
+          "A rope only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employees working over or near water where the danger of drowning exists must be provided with U.S. Coast Guard-approved life jackets or buoyant work vests (1926.106(a)). Job-site scenario: the bridge-deck form crew wears USCG-approved work vests.",
+        "citation": "1926.106(a)"
+      },
+      {
+        "question": "Under 1926.106(b), when must buoyant work vests or life preservers be inspected?",
+        "options": [
+          "Monthly",
+          "Prior to and after each use, and defective units may not be used",
+          "Annually",
+          "Only when new"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Buoyant work vests or life preservers must be inspected before and after each use for defects that would alter their strength or buoyancy, and defective units may not be used (1926.106(b)). Job-site scenario: a vest with a torn shell is pulled from service.",
+        "citation": "1926.106(b)"
+      },
+      {
+        "question": "Under 1926.106(c), how much line must ring buoys have?",
+        "options": [
+          "At least 50 feet",
+          "At least 150 feet",
+          "At least 90 feet",
+          "Any length"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ring buoys with at least 90 feet of line must be provided and readily available for emergency rescue (1926.106(c)). Job-site scenario: each ring buoy on the pier has a 90-foot line coiled and ready.",
+        "citation": "1926.106(c)"
+      },
+      {
+        "question": "Under 1926.106(c), what is the maximum distance between ring buoys?",
+        "options": [
+          "50 feet",
+          "100 feet",
+          "200 feet",
+          "500 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The distance between ring buoys may not exceed 200 feet (1926.106(c)). Job-site scenario: on a 600-foot wharf repair, at least four ring buoys are spaced along the work area.",
+        "citation": "1926.106(c)"
+      },
+      {
+        "question": "Under 1926.106(d), what must be immediately available where employees work over or adjacent to water?",
+        "options": [
+          "At least one lifesaving skiff",
+          "A diver",
+          "A helicopter",
+          "A phone number only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "At least one lifesaving skiff must be immediately available at locations where employees work over or adjacent to water (1926.106(d)). Job-site scenario: a manned skiff stands by below the bridge deck.",
+        "citation": "1926.106(d)"
+      },
+      {
+        "question": "Under 1926.500(a)(2)(v), fall protection requirements for which work are provided in 1926.105?",
+        "options": [
+          "All construction fall protection",
+          "Fall protection for employees erecting tanks and communication and broadcast towers",
+          "Only bridges",
+          "Only scaffolds"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fall protection for employees erecting tanks and communication and broadcast towers is provided in 1926.105 (1926.500(a)(2)(v)), and 1926.502 does not apply to that erection work (1926.500(a)(3)(iv)). For other work covered by Subpart M, safety nets follow 1926.502(c) (Week 11). Job-site scenario: a crew erecting a water tank follows 1926.105 for nets.",
+        "citation": "1926.500(a)(2)(v)"
+      },
+      {
+        "question": "Under 1926.105(b), when net protection is required for tank or tower erection, when may operations start?",
+        "options": [
+          "Immediately",
+          "After lunch",
+          "Only after the net is in place and has been tested",
+          "Once the net is ordered"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Where safety net protection is required, operations may not begin until the net is in place and has been tested (1926.105(b)). Job-site scenario: the net under the tank shell is drop-tested before the ironworkers go up.",
+        "citation": "1926.105(b)"
+      },
+      {
+        "question": "Under 1926.105(c)(1), how must safety nets for tank and tower erection be hung?",
+        "options": [
+          "Anywhere below",
+          "Exactly 30 feet below",
+          "Only at ground level",
+          "Extending 8 feet beyond the edge of the work surface, as close under it as practical but never more than 25 feet below"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Nets must extend 8 feet beyond the edge of the work surface where employees are exposed and be installed as close under the work surface as practical, but never more than 25 feet below it, with enough clearance to prevent contact with surfaces below (1926.105(c)(1)). This differs from the general Subpart M limit of 30 feet in 1926.502(c)(1). Job-site scenario: the net is hung 15 feet below the tower work platform.",
+        "citation": "1926.105(c)(1)"
+      },
+      {
+        "question": "Under 1926.105(d), what are the requirements for net mesh and edge ropes?",
+        "options": [
+          "Mesh no larger than 6 by 6 inches, new nets certified for 17,500 foot-pounds minimum impact resistance with a proof-test label, and edge ropes of at least 5,000 pounds breaking strength",
+          "Any mesh size",
+          "Mesh up to 12 inches",
+          "Edge ropes of 1,000 pounds"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Net mesh may not exceed 6 by 6 inches. New nets must meet 17,500 foot-pounds minimum impact resistance, certified by the manufacturer, and bear a proof-test label. Edge ropes must have at least 5,000 pounds breaking strength (1926.105(d)). Job-site scenario: the net label is checked for the proof-test certification.",
+        "citation": "1926.105(d)"
+      },
+      {
+        "question": "Under 1926.105(e), what must be used to fasten safety nets to their supports?",
+        "options": [
+          "Rope knots",
+          "Forged steel safety hooks or shackles",
+          "Zip ties",
+          "Wire twists"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Forged steel safety hooks or shackles must be used to fasten the net to its supports (1926.105(e)). Connections between net panels must develop the full strength of the net (1926.105(f)). Job-site scenario: the rigger uses forged shackles at every support point.",
+        "citation": "1926.105(e)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 43,
+    "title": "Rollover Protective Structures and Overhead Protection",
+    "duration": 30,
+    "topics": [
+      "Equipment that needs ROPS",
+      "Performance standards by manufacture date",
+      "Remounting ROPS",
+      "ROPS labels",
+      "Agricultural and industrial tractor definitions",
+      "Overhead protection for tractors",
+      "Site clearing alternatives"
+    ],
+    "resources": [
+      {
+        "title": "ROPS Scope",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1000",
+        "type": "standard",
+        "description": "Which equipment must have rollover protective structures"
+      },
+      {
+        "title": "ROPS Performance Criteria",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1001",
+        "type": "standard",
+        "description": "Minimum performance criteria for ROPS"
+      },
+      {
+        "title": "Overhead Protection for Tractors",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1003",
+        "type": "standard",
+        "description": "Overhead protection for agricultural and industrial tractors"
+      }
+    ],
+    "test": [
+      {
+        "question": "Which equipment does Subpart W (1926.1000(a)) cover for rollover protective structures?",
+        "options": [
+          "Only cranes",
+          "Only pickup trucks",
+          "Rubber-tired self-propelled scrapers, rubber-tired front-end loaders and dozers, wheel-type agricultural and industrial tractors, crawler tractors, crawler-type loaders, and motor graders used in construction (plus compactors and skid steers manufactured after July 15, 2019)",
+          "Only forklifts"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Subpart W applies to rubber-tired self-propelled scrapers, rubber-tired front-end loaders, rubber-tired dozers, wheel-type agricultural and industrial tractors, crawler tractors, crawler-type loaders, and motor graders used in construction. It also applies to compactors and rubber-tired skid-steer equipment manufactured after July 15, 2019, and does not apply to sideboom pipelaying tractors (1926.1000(a)). Job-site scenario: the crawler dozer on the grading job must have ROPS.",
+        "citation": "1926.1000(a)"
+      },
+      {
+        "question": "Under 1926.1000(b), what ROPS standard applies to covered equipment (other than compactors and skid steers) manufactured before July 15, 2019?",
+        "options": [
+          "None",
+          "Only manufacturer judgment",
+          "ISO 3471:2008 only",
+          "ROPS meeting the minimum performance standards in 1926.1001(b) (and 1926.1002(b) for agricultural and industrial tractors)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Covered equipment (excluding compactors and rubber-tired skid steers) manufactured before July 15, 2019, must have ROPS meeting 1926.1001(b). Agricultural and industrial tractors must meet 1926.1002(b) (1926.1000(b)). Job-site scenario: an older loader's ROPS is checked against the SAE criteria referenced in 1926.1001(b).",
+        "citation": "1926.1000(b)"
+      },
+      {
+        "question": "Under 1926.1001(c), what must ROPS on the equipment listed in 1926.1001(a) (scrapers, loaders, dozers, crawler tractors and loaders, motor graders, compactors, and skid steers) manufactured on or after July 15, 2019, meet?",
+        "options": [
+          "The test and performance requirements of ISO 3471:2008",
+          "SAE J320a only",
+          "No standard",
+          "Local codes only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "For the equipment listed in 1926.1001(a) manufactured on or after July 15, 2019, ROPS must meet the test and performance requirements of ISO 3471:2008 (1926.1001(c)). Agricultural and industrial tractors are covered separately by 1926.1002(c). Job-site scenario: a new skid steer's ROPS label references ISO 3471.",
+        "citation": "1926.1001(c)"
+      },
+      {
+        "question": "Under 1926.1000(d), how must a removed ROPS be remounted?",
+        "options": [
+          "With any available bolts",
+          "With bolts or welding of equal or better quality than required for the original mounting",
+          "With temporary straps",
+          "It need not be remounted"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A ROPS removed for any reason must be remounted with bolts or welding of equal or better quality than required for the original mounting (1926.1000(d)). Job-site scenario: after a repair, the mechanic uses grade-matched bolts torqued to spec.",
+        "citation": "1926.1000(d)"
+      },
+      {
+        "question": "Which information must be permanently affixed to each ROPS under 1926.1000(e)?",
+        "options": [
+          "The operator's name",
+          "The purchase price",
+          "The manufacturer or fabricator's name and address, the ROPS model number (if any), and the machine make, model, or series it is designed to fit",
+          "The last inspection date"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each ROPS must have permanently affixed the manufacturer or fabricator's name and address, the ROPS model number (if any), and the machine make, model, or series number it is designed to fit (1926.1000(e)(1)-(3)). Job-site scenario: a ROPS swapped from another machine is checked to confirm the label matches this model.",
+        "citation": "1926.1000(e)"
+      },
+      {
+        "question": "Under 1926.1002(e)(1), what is an \"agricultural tractor\" for Subpart W?",
+        "options": [
+          "Any farm vehicle",
+          "Any crawler",
+          "A pickup truck",
+          "A wheel-type vehicle of more than 20 engine horsepower, used in construction, designed to furnish power to pull, propel, or drive implements"
+        ],
+        "correctAnswer": 3,
+        "explanation": "An agricultural tractor is a wheel-type vehicle of more than 20 engine horsepower, used in construction work, designed to furnish power to pull, propel, or drive implements (1926.1002(e)(1)). Job-site scenario: a farm-style tractor pulling a landscape rake on site is covered.",
+        "citation": "1926.1002(e)(1)"
+      },
+      {
+        "question": "What does 1926.1003(a) say overhead protection on agricultural and industrial tractors is meant to protect against?",
+        "options": [
+          "Injury from overhead objects such as flying or falling objects, and from the cover itself in an accidental upset",
+          "Only sun and rain",
+          "Only noise",
+          "Only dust"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Overhead protection is meant to minimize operator injury from overhead objects, such as flying or falling objects, and from the cover itself in the event of an accidental upset (1926.1003(a)). Job-site scenario: a tractor working under trees during clearing has a rated canopy.",
+        "citation": "1926.1003(a)"
+      },
+      {
+        "question": "For machines also covered by 1926.604 (site clearing), what overhead protection does 1926.1003(d) allow?",
+        "options": [
+          "Only the 1926.1003 type",
+          "Either the type in 1926.604 or the type in 1926.1003",
+          "None",
+          "Only a cab"
+        ],
+        "correctAnswer": 1,
+        "explanation": "For machines covered by 1926.604 (site clearing), the overhead protection may be either the type provided in 1926.604 or the type provided in 1926.1003 (1926.1003(d)). Week 32 covers the 1926.604 canopy specifications. Job-site scenario: a clearing tractor with the 1926.604 mesh canopy meets the requirement.",
+        "citation": "1926.1003(d)"
+      },
+      {
+        "question": "Under 1926.1000(f), when is a machine with ROPS deemed in compliance even if not built to 1926.1001?",
+        "options": [
+          "Never",
+          "If the owner says so",
+          "If it meets the ROPS requirements of the State of California, the U.S. Army Corps of Engineers, or the Bureau of Reclamation in effect on the date specified",
+          "If it is less than 5 years old"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A machine in use with ROPS is deemed in compliance if it meets the ROPS requirements of the State of California, the U.S. Army Corps of Engineers (EM-385-1-1, March 1967), or the Bureau of Reclamation, as in effect on the date specified in the paragraph (1926.1000(f)). Job-site scenario: an older federal-project dozer certified to the Corps requirement is accepted.",
+        "citation": "1926.1000(f)"
+      },
+      {
+        "question": "Under 1926.1002(e)(2), what is an \"industrial tractor\"?",
+        "options": [
+          "Any forklift",
+          "Any tracked machine",
+          "Only road graders",
+          "A wheel-type tractor of more than 20 engine horsepower (other than rubber-tired loaders and dozers in 1926.1001) used in operations such as landscaping, construction services, loading, digging, grounds keeping, and highway maintenance"
+        ],
+        "correctAnswer": 3,
+        "explanation": "An industrial tractor is a wheel-type tractor of more than 20 engine horsepower, other than the rubber-tired loaders and dozers in 1926.1001, used in operations such as landscaping, construction services, loading, digging, grounds keeping, and highway maintenance (1926.1002(e)(2)). Job-site scenario: a backhoe-loader tractor used for landscaping must have a qualifying ROPS.",
+        "citation": "1926.1002(e)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 44,
+    "title": "Material and Personnel Hoists",
+    "duration": 45,
+    "topics": [
+      "Posted capacities and warnings",
+      "Wire rope removal criteria",
+      "Prohibited equipment",
+      "No riders on material hoists",
+      "Hoistway entrance protection",
+      "Overhead protection",
+      "Tower design and anchoring",
+      "Personnel hoist door interlocks and stop switches"
+    ],
+    "resources": [
+      {
+        "title": "Hoists and Elevators",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.552",
+        "type": "standard",
+        "description": "Material hoists, personnel hoists, and elevators"
+      },
+      {
+        "title": "Personnel Hoist Requirements",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.552#p-1926.552(c)",
+        "type": "standard",
+        "description": "Personnel hoist towers, cars, doors, and ropes"
+      },
+      {
+        "title": "Crane, Derrick and Hoist Safety",
+        "url": "https://www.osha.gov/cranes-derricks",
+        "type": "guide",
+        "description": "OSHA overview of crane, derrick, and hoist safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.552(a)(2), what must be posted on hoist cars and platforms?",
+        "options": [
+          "Rated load capacities, recommended operating speeds, and special hazard warnings or instructions",
+          "Nothing",
+          "Only the owner's name",
+          "Only the inspection date"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Rated load capacities, recommended operating speeds, and special hazard warnings or instructions must be posted on cars and platforms (1926.552(a)(2)). Job-site scenario: the material hoist platform shows \"Capacity 3,000 lb - No Riders.\"",
+        "citation": "1926.552(a)(2)"
+      },
+      {
+        "question": "Under 1926.552(a)(3)(i), when must hoisting rope be removed from service for broken wires?",
+        "options": [
+          "One broken wire anywhere",
+          "Six randomly distributed broken wires in one rope lay, or three broken wires in one strand in one rope lay",
+          "Ten broken wires in one lay",
+          "Only when the rope parts"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Hoisting rope must be removed when there are six randomly distributed broken wires in one rope lay or three broken wires in one strand in one rope lay (1926.552(a)(3)(i)). Other removal criteria include heat or electrical damage and diameter reduction (1926.552(a)(3)(iii)-(iv)). Job-site scenario: the inspection finds three broken wires in one strand, so the rope is replaced.",
+        "citation": "1926.552(a)(3)(i)"
+      },
+      {
+        "question": "What does 1926.552(a)(6) prohibit on construction sites?",
+        "options": [
+          "All hoists",
+          "Elevators",
+          "Endless belt-type manlifts",
+          "Rack-and-pinion hoists"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The use of endless belt-type manlifts in construction is prohibited (1926.552(a)(6)). Live booms on hoists are also prohibited (1926.552(a)(5)). Job-site scenario: an old belt manlift in a renovated plant is not used by construction crews.",
+        "citation": "1926.552(a)(6)"
+      },
+      {
+        "question": "Under 1926.552(b)(1)(ii), who may ride on a material hoist?",
+        "options": [
+          "Anyone carrying materials",
+          "Only the operator",
+          "Supervisors only",
+          "No one, except for inspection and maintenance"
+        ],
+        "correctAnswer": 3,
+        "explanation": "No person may ride on material hoists except for inspection and maintenance (1926.552(b)(1)(ii)). Operating rules, including a \"No Riders Allowed\" notice, must be posted (1926.552(b)(1)(i)). Job-site scenario: laborers send drywall up the material hoist and take the personnel hoist themselves.",
+        "citation": "1926.552(b)(1)(ii)"
+      },
+      {
+        "question": "Under 1926.552(b)(2)(i), how must hoistway entrance bars be placed?",
+        "options": [
+          "At least 2x4 wood (or equivalent), 2 feet from the hoistway line, and 36 to 42 inches above the floor",
+          "At knee height",
+          "Flush with the hoistway at 30 inches",
+          "Optional"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hoistway entrances must be protected by substantial gates or bars painted with diagonal contrasting colors (1926.552(b)(2)). Bars must be at least 2- by 4-inch wood or equivalent, located 2 feet from the hoistway line, and 36 to 42 inches above the floor (1926.552(b)(2)(i)). Job-site scenario: striped bars across each landing stop workers from leaning into the hoistway.",
+        "citation": "1926.552(b)(2)(i)"
+      },
+      {
+        "question": "What overhead protective covering does 1926.552(b)(3) require on material hoist cages or platforms?",
+        "options": [
+          "None",
+          "2-inch planking, 3/4-inch plywood, or other solid material of equivalent strength",
+          "Wire mesh only",
+          "A tarp"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An overhead protective covering of 2-inch planking, 3/4-inch plywood, or other solid material of equivalent strength must be provided on top of every material hoist cage or platform (1926.552(b)(3)). The same applies to personnel hoists (1926.552(c)(7)). Job-site scenario: a plywood roof protects the hoist platform from falling debris.",
+        "citation": "1926.552(b)(3)"
+      },
+      {
+        "question": "Under 1926.552(b)(7), who must design material hoist towers?",
+        "options": [
+          "The hoist operator",
+          "The superintendent",
+          "A licensed professional engineer",
+          "No design is required"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All material hoist towers must be designed by a licensed professional engineer (1926.552(b)(7)). Car arresting devices must function in case of rope failure (1926.552(b)(6)). Job-site scenario: the tower erection drawings carry a PE stamp.",
+        "citation": "1926.552(b)(7)"
+      },
+      {
+        "question": "Under 1926.552(c)(3), how often must personnel hoist towers be anchored to the structure?",
+        "options": [
+          "Every 50 feet",
+          "Only at the top",
+          "Every 100 feet",
+          "At intervals not exceeding 25 feet, with a series of guys also installed"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Personnel hoist towers must be anchored to the structure at intervals not exceeding 25 feet, and a series of guys must also be installed. Where tie-ins are not practical, the tower must be anchored by guys of wire rope at least 1/2 inch in diameter (1926.552(c)(3)). Job-site scenario: tie-ins are installed every 20 feet as the hoist mast climbs.",
+        "citation": "1926.552(c)(3)"
+      },
+      {
+        "question": "What does 1926.552(c)(8) require for personnel hoist doors and gates?",
+        "options": [
+          "Electric contacts that prevent the hoist from moving when a door or gate is open",
+          "Padlocks",
+          "Rope ties",
+          "Nothing"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Doors or gates must have electric contacts that do not allow the hoist to move when a door or gate is open (1926.552(c)(8)). Job-site scenario: the hoist will not travel until the car gate closes and makes contact.",
+        "citation": "1926.552(c)(8)"
+      },
+      {
+        "question": "Under 1926.552(c)(13), what must be provided in a personnel hoist car?",
+        "options": [
+          "A phone only",
+          "An emergency stop switch marked \"Stop\"",
+          "A first aid kit only",
+          "A fire extinguisher only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An emergency stop switch must be provided in the car and marked \"Stop\" (1926.552(c)(13)). Normal and final terminal stopping devices are also required (1926.552(c)(12)). Job-site scenario: the operator shows new riders where the red Stop switch is.",
+        "citation": "1926.552(c)(13)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 45,
+    "title": "Steel Erection: Controlled Decking Zones and Perimeter Protection",
+    "duration": 45,
+    "topics": [
+      "Perimeter safety cables",
+      "Where a CDZ may be used",
+      "Leading-edge protection in a CDZ",
+      "CDZ access and boundaries",
+      "CDZ training",
+      "Unsecured decking limits",
+      "Safety deck attachments",
+      "Fall protection equipment criteria",
+      "Custody of fall protection"
+    ],
+    "resources": [
+      {
+        "title": "Steel Erection Fall Protection",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.760",
+        "type": "standard",
+        "description": "Steel erection fall protection, including CDZs"
+      },
+      {
+        "title": "Controlled Decking Zone",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.760#p-1926.760(c)",
+        "type": "standard",
+        "description": "CDZ requirements"
+      },
+      {
+        "title": "Steel Erection Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.761",
+        "type": "standard",
+        "description": "Training required for steel erection, including CDZ work"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.760(a)(2), when must perimeter safety cables be installed on multi-story structures?",
+        "options": [
+          "At project completion",
+          "Only on the top floor",
+          "At the final interior and exterior perimeters of the floors as soon as the metal decking has been installed",
+          "Only if requested"
+        ],
+        "correctAnswer": 2,
+        "explanation": "On multi-story structures, perimeter safety cables must be installed at the final interior and exterior perimeters of the floors as soon as the metal decking has been installed (1926.760(a)(2)). They must meet the guardrail criteria in 1926.502 (1926.760(d)(3)). Job-site scenario: cables go up around the third-floor deck right after it is laid.",
+        "citation": "1926.760(a)(2)"
+      },
+      {
+        "question": "Under 1926.760(c), where may a controlled decking zone (CDZ) be established?",
+        "options": [
+          "At any height",
+          "Only below 15 feet",
+          "Only on the roof",
+          "Over 15 and up to 30 feet above a lower level, where metal decking is initially being installed and forms the leading edge"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A CDZ may be established in the area over 15 and up to 30 feet above a lower level where metal decking is initially being installed and forms the leading edge of a work area (1926.760(c)). Job-site scenario: decking at 24 feet uses a CDZ; at 35 feet it may not.",
+        "citation": "1926.760(c)"
+      },
+      {
+        "question": "Under 1926.760(c)(1), from what fall hazards must each employee at the leading edge in a CDZ be protected?",
+        "options": [
+          "Falls of more than two stories or 30 feet, whichever is less",
+          "Any fall over 6 feet",
+          "Falls over 15 feet",
+          "None"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Each employee working at the leading edge in a CDZ must be protected from fall hazards of more than two stories or 30 feet, whichever is less (1926.760(c)(1)). Job-site scenario: in a building with 12-foot floors, a decker at 26 feet (over two stories) must be protected.",
+        "citation": "1926.760(c)(1)"
+      },
+      {
+        "question": "Under 1926.760(c)(2)-(3), who may enter a CDZ, and how large may it be?",
+        "options": [
+          "Anyone; no limit",
+          "Only employees doing leading-edge work; boundaries clearly marked (control lines or equivalent) and no more than 90 feet wide and 90 feet deep from any leading edge",
+          "Any trade; 200 feet square",
+          "Only supervisors; no size limit"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Access to a CDZ is limited to employees doing leading-edge work (1926.760(c)(2)). Its boundaries must be designated and clearly marked with control lines or equivalent, and it may be no more than 90 feet wide and 90 feet deep from any leading edge (1926.760(c)(3)). Job-site scenario: control lines mark a 60 by 80 foot CDZ and the plumbers stay out.",
+        "citation": "1926.760(c)(2)-(3)"
+      },
+      {
+        "question": "Under 1926.760(c)(4), what must each employee working in a CDZ have completed?",
+        "options": [
+          "Nothing",
+          "A first aid course",
+          "CDZ training in accordance with 1926.761",
+          "A crane operator certification"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each employee working in a CDZ must have completed CDZ training per 1926.761 (1926.760(c)(4)). Training must be given by a qualified person (1926.761(a)). Job-site scenario: only deckers with documented CDZ training are allowed past the control line.",
+        "citation": "1926.760(c)(4)"
+      },
+      {
+        "question": "Under 1926.760(c)(5), how much unsecured decking may be in a CDZ?",
+        "options": [
+          "No limit",
+          "No more than 10,000 square feet",
+          "No more than one bundle",
+          "No more than 3,000 square feet"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Unsecured decking in a CDZ may not exceed 3,000 square feet (1926.760(c)(5)). Job-site scenario: the crew secures sheets as they go so loose decking stays under 3,000 square feet.",
+        "citation": "1926.760(c)(5)"
+      },
+      {
+        "question": "Under 1926.760(c)(6)-(7), how must safety deck attachments be made in a CDZ?",
+        "options": [
+          "From the leading edge back to the control line, with at least two attachments per metal decking panel; final deck attachments and shear connectors may not be installed in the CDZ",
+          "Anywhere, in any order",
+          "One attachment per panel is enough",
+          "Only final welds are made in the CDZ"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Safety deck attachments must be made from the leading edge back to the control line, with at least two attachments for each panel (1926.760(c)(6)). Final deck attachments and shear connector installation may not be performed in the CDZ (1926.760(c)(7)). Job-site scenario: deckers tack each sheet twice; the stud welder waits until the area is outside the CDZ.",
+        "citation": "1926.760(c)(6)-(7)"
+      },
+      {
+        "question": "What criteria must perimeter safety cables meet under 1926.760(d)(3)?",
+        "options": [
+          "None",
+          "The criteria for guardrail systems in 1926.502",
+          "Only the manufacturer's",
+          "Only a 1/4-inch minimum diameter"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Perimeter safety cables must meet the criteria for guardrail systems in 1926.502 (1926.760(d)(3)), including top-edge height and 200-pound strength. Job-site scenario: perimeter cable is tensioned and checked for height and deflection like a guardrail.",
+        "citation": "1926.760(d)(3)"
+      },
+      {
+        "question": "Under 1926.760(d)(2), what may be used in a steel erection fall restraint system?",
+        "options": [
+          "Only body harnesses",
+          "Rope tied around the waist",
+          "Either body belts or body harnesses, with fall arrest system components conforming to 1926.502",
+          "Nothing; restraint is not allowed"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fall arrest system components must be used in fall restraint systems and conform to 1926.502. Either body belts or body harnesses may be used in fall restraint systems (1926.760(d)(2)). Job-site scenario: a connector working near an edge uses a short restraint lanyard that keeps them from reaching it.",
+        "citation": "1926.760(d)(2)"
+      },
+      {
+        "question": "When may the steel erector's fall protection be left for other trades under 1926.760(e)?",
+        "options": [
+          "Always",
+          "Never",
+          "If the erector feels it is safe",
+          "Only if the controlling contractor (or its authorized representative) has directed the erector to leave it, and has inspected and accepted control and responsibility for it before other trades work in the area"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Fall protection provided by the steel erector may remain for other trades only if the controlling contractor or its authorized representative has directed the erector to leave it in place (1926.760(e)(1)) and has inspected and accepted control and responsibility for it before authorizing others to work in the area (1926.760(e)(2)). Job-site scenario: the GC signs a turnover form for the perimeter cables before the curtain-wall crew starts.",
+        "citation": "1926.760(e)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 46,
+    "title": "Fall Protection Training",
+    "duration": 30,
+    "topics": [
+      "Who must be trained",
+      "Required training topics",
+      "Written certification records",
+      "Keeping the latest certification",
+      "When retraining is required",
+      "Scaffold and steel erection training cross-references"
+    ],
+    "resources": [
+      {
+        "title": "Fall Protection Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.503",
+        "type": "standard",
+        "description": "Training requirements for Subpart M"
+      },
+      {
+        "title": "Certification of Training",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.503#p-1926.503(b)",
+        "type": "standard",
+        "description": "Written certification record requirements"
+      },
+      {
+        "title": "Fall Protection Topic Page",
+        "url": "https://www.osha.gov/fall-protection",
+        "type": "guide",
+        "description": "OSHA fall protection overview and training resources"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.503(a)(1), which employees must receive fall protection training?",
+        "options": [
+          "Each employee who might be exposed to fall hazards",
+          "Only those working above 30 feet",
+          "Only supervisors",
+          "Only new hires"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must provide a training program for each employee who might be exposed to fall hazards, enabling them to recognize fall hazards and the procedures to minimize them (1926.503(a)(1)). Job-site scenario: laborers who occasionally work near slab edges are trained too, not just the roofers.",
+        "citation": "1926.503(a)(1)"
+      },
+      {
+        "question": "Which topic must fall protection training cover, as applicable, under 1926.503(a)(2)?",
+        "options": [
+          "How to calculate payroll",
+          "The use and operation of guardrails, personal fall arrest systems, safety nets, warning lines, safety monitoring systems, controlled access zones, and other protection to be used",
+          "Company history",
+          "Crane load charts"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Training must cover, as applicable, the use and operation of guardrail systems, personal fall arrest systems, safety net systems, warning line systems, safety monitoring systems, controlled access zones, and other protection to be used (1926.503(a)(2)(iii)), among other listed topics. Job-site scenario: the roofing crew is trained on the warning line system they will use.",
+        "citation": "1926.503(a)(2)(iii)"
+      },
+      {
+        "question": "Under 1926.503(a)(2)(v), what must training cover for roofing work on low-sloped roofs?",
+        "options": [
+          "Nothing special",
+          "Shingle colors",
+          "The limitations on the use of mechanical equipment during roofing work on low-sloped roofs",
+          "Weather forecasting"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Training must cover, as applicable, the limitations on using mechanical equipment during roofing work on low-sloped roofs (1926.503(a)(2)(v)). Job-site scenario: the crew learns why the warning line is set 10 feet back where the felt-laying machine travels toward the edge (1926.502(f)(1)(ii)).",
+        "citation": "1926.503(a)(2)(v)"
+      },
+      {
+        "question": "Under 1926.503(a)(2)(iv) and (vii), training must also cover each employee's role in:",
+        "options": [
+          "The company softball team",
+          "Payroll",
+          "Purchasing",
+          "The safety monitoring system (when used) and fall protection plans"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Training must cover, as applicable, the role of each employee in the safety monitoring system when it is used (1926.503(a)(2)(iv)) and the role of employees in fall protection plans (1926.503(a)(2)(vii)). Job-site scenario: residential framers working under a fall protection plan are trained on their role in it.",
+        "citation": "1926.503(a)(2)(iv) and (vii)"
+      },
+      {
+        "question": "What must the written fall protection training certification contain under 1926.503(b)(1)?",
+        "options": [
+          "The name or other identity of the employee, the date(s) of training, and the signature of the trainer or the employer",
+          "Only the date",
+          "Only the trainer's phone number",
+          "The test score only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must prepare a written certification record with the employee's name or other identity, the date(s) of training, and the signature of the person who conducted the training or of the employer (1926.503(b)(1)). Job-site scenario: the training roster is signed by the competent person who taught the class.",
+        "citation": "1926.503(b)(1)"
+      },
+      {
+        "question": "Under 1926.503(b)(2), which training certification must be maintained?",
+        "options": [
+          "Every certification forever",
+          "The latest training certification",
+          "None",
+          "Only the first one"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The latest training certification must be maintained (1926.503(b)(2)). Job-site scenario: after a refresher, the new certification replaces the old one in the file.",
+        "citation": "1926.503(b)(2)"
+      },
+      {
+        "question": "Under 1926.503(c)(1), which change requires retraining?",
+        "options": [
+          "A change in lunch schedule",
+          "A new supervisor's preference",
+          "Changes in the workplace that make previous training obsolete",
+          "A holiday"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Retraining is required when changes in the workplace make previous training obsolete (1926.503(c)(1)). Job-site scenario: moving from flat-roof work to a steep-roof project with different hazards triggers retraining.",
+        "citation": "1926.503(c)(1)"
+      },
+      {
+        "question": "Under 1926.503(c)(2), when does a change in equipment require retraining?",
+        "options": [
+          "Never",
+          "Only when new harness colors arrive",
+          "Only once a year",
+          "When changes in the types of fall protection systems or equipment to be used make previous training obsolete"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Retraining is required when changes in the types of fall protection systems or equipment make previous training obsolete (1926.503(c)(2)). Job-site scenario: switching from guardrails to self-retracting lifelines requires retraining.",
+        "citation": "1926.503(c)(2)"
+      },
+      {
+        "question": "Under 1926.503(c)(3), a supervisor sees a worker tie off to a conduit. What does this require?",
+        "options": [
+          "Retraining, because inadequacies in the employee's knowledge or use of fall protection show they have not retained the required understanding or skill",
+          "Nothing",
+          "Only a verbal warning",
+          "A new harness"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Retraining is required when inadequacies in an employee's knowledge or use of fall protection systems indicate they have not retained the required understanding or skill (1926.503(c)(3)). Job-site scenario: the worker is retrained on proper anchorage selection before returning to elevated work.",
+        "citation": "1926.503(c)(3)"
+      },
+      {
+        "question": "Under 1926.454(c), when must an employee who works on scaffolds be retrained?",
+        "options": [
+          "Never",
+          "When the employer has reason to believe they lack the skill or understanding needed, including worksite changes or changes in scaffold, fall protection, or falling-object protection that present a hazard they were not trained on, or observed inadequacies in their work",
+          "Every month",
+          "Only after an injury"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Scaffold retraining is required when the employer believes an employee lacks the needed skill or understanding, including where worksite changes (1926.454(c)(1)) or changes in scaffold, fall protection, falling-object protection, or other equipment (1926.454(c)(2)) present a hazard the employee was not previously trained on, or where inadequacies in the employee's scaffold work show proficiency was not retained (1926.454(c)(3)). Job-site scenario: a crew moving from frame to suspended scaffolds is retrained.",
+        "citation": "1926.454(c)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 47,
+    "title": "Cranes: Power Line Safety",
+    "duration": 45,
+    "topics": [
+      "Identifying the work zone",
+      "The 20-foot determination and options",
+      "Planning meetings",
+      "Non-conductive tag lines",
+      "Elevated warning lines",
+      "Additional encroachment measures",
+      "Voltage information",
+      "Operating below power lines",
+      "Power lines presumed energized",
+      "Training on electrical contact"
+    ],
+    "resources": [
+      {
+        "title": "Power Line Safety (up to 350 kV)",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1408",
+        "type": "standard",
+        "description": "Equipment operations near power lines"
+      },
+      {
+        "title": "Preventing Encroachment",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.1408#p-1926.1408(b)",
+        "type": "standard",
+        "description": "Encroachment prevention measures"
+      },
+      {
+        "title": "Crane, Derrick and Hoist Safety",
+        "url": "https://www.osha.gov/cranes-derricks",
+        "type": "guide",
+        "description": "OSHA overview of crane safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "Before crane operations begin, how must the work zone be identified under 1926.1408(a)(1)?",
+        "options": [
+          "It need not be",
+          "Only by the operator's memory",
+          "Either by demarcating boundaries (such as flags or a range limit device) and prohibiting operation past them, or by defining it as 360 degrees around the equipment up to its maximum working radius",
+          "Only on the lift plan"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must identify the work zone either by demarcating boundaries (such as flags or a range limit or range control warning device) and prohibiting operation past them (1926.1408(a)(1)(i)), or by defining it as 360 degrees around the equipment up to its maximum working radius (1926.1408(a)(1)(ii)). Job-site scenario: flags mark the swing limit on the side facing the street lines.",
+        "citation": "1926.1408(a)(1)"
+      },
+      {
+        "question": "If the equipment could get within 20 feet of a power line, what is Option (1) under 1926.1408(a)(2)(i)?",
+        "options": [
+          "Work faster",
+          "Use a taller crane",
+          "Wear rubber boots",
+          "Confirm with the utility owner/operator that the line has been deenergized and visibly grounded at the worksite"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Option (1) is to confirm with the utility owner/operator that the power line has been deenergized and visibly grounded at the worksite (1926.1408(a)(2)(i)). The other options are a 20-foot clearance (Option 2) or the Table A clearance (Option 3). Job-site scenario: the utility drops and grounds the line for the morning pick and confirms it to the crane contractor before work starts.",
+        "citation": "1926.1408(a)(2)(i)"
+      },
+      {
+        "question": "When encroachment precautions apply, what meeting does 1926.1408(b)(1) require?",
+        "options": [
+          "A planning meeting with the operator and other workers in the area of the equipment or load to review the power line locations and the steps to prevent encroachment/electrocution",
+          "None",
+          "A meeting with OSHA",
+          "A meeting with the owner only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A planning meeting must be held with the operator and other workers in the area of the equipment or load to review the power line locations and the steps that will prevent encroachment or electrocution (1926.1408(b)(1)). Job-site scenario: the morning huddle walks the crew through the flagged warning line.",
+        "citation": "1926.1408(b)(1)"
+      },
+      {
+        "question": "Under 1926.1408(b)(2), what kind of tag lines must be used near power lines?",
+        "options": [
+          "Steel cable",
+          "Non-conductive",
+          "Chain",
+          "Any rope"
+        ],
+        "correctAnswer": 1,
+        "explanation": "If tag lines are used, they must be non-conductive (1926.1408(b)(2)). Job-site scenario: dry synthetic tag lines replace a wire-core rope.",
+        "citation": "1926.1408(b)(2)"
+      },
+      {
+        "question": "Under 1926.1408(b)(3), where must the elevated warning line, barricade, or line of signs be placed when using Option (2)?",
+        "options": [
+          "At 10 feet from the power line",
+          "At the property line",
+          "At 20 feet from the power line, in view of the operator, with flags or similar high-visibility markings",
+          "Anywhere on site"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An elevated warning line, barricade, or line of signs, in view of the operator and with flags or similar high-visibility markings, must be erected at 20 feet from the power line under Option (2), or at the Table A distance under Option (3) (1926.1408(b)(3)). Job-site scenario: a flagged rope on stanchions marks the 20-foot line.",
+        "citation": "1926.1408(b)(3)"
+      },
+      {
+        "question": "Under 1926.1408(b)(4), besides the planning meeting and warning line, what else must be done?",
+        "options": [
+          "Nothing",
+          "Only call the utility",
+          "Only lower the boom",
+          "At least one additional measure: a proximity alarm, a dedicated spotter, a range control warning device, a range-limiting device, or an insulating link/device"
+        ],
+        "correctAnswer": 3,
+        "explanation": "At least one of these must be implemented: a proximity alarm, a dedicated spotter in continuous contact with the operator, a device that warns the operator when to stop, a device that automatically limits range of movement, or an insulating link/device (1926.1408(b)(4)(i)-(v)). This does not apply to Subpart V work (1926.1408(b)(5)). Job-site scenario: a dedicated spotter with a painted ground line and radio watches the boom tip.",
+        "citation": "1926.1408(b)(4)"
+      },
+      {
+        "question": "Under 1926.1408(c), when Option (3) is used, how quickly must the utility provide requested voltage information?",
+        "options": [
+          "Within two working days of the employer's request",
+          "Within 30 days",
+          "Within one hour",
+          "There is no deadline"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Where Option (3) is used, the utility owner/operator must provide the requested voltage information within two working days of the employer's request (1926.1408(c)). Job-site scenario: the contractor requests voltages on Monday and receives them by Wednesday.",
+        "citation": "1926.1408(c)"
+      },
+      {
+        "question": "Under 1926.1408(d)(1), may any part of the crane or load be below a power line?",
+        "options": [
+          "Yes, always",
+          "Not unless the utility has confirmed the line is deenergized and visibly grounded at the worksite, except for the exceptions in (d)(2)",
+          "Yes, if the operator is careful",
+          "Yes, with a spotter"
+        ],
+        "correctAnswer": 1,
+        "explanation": "No part of the equipment, load line, or load may be below a power line unless the utility owner/operator has confirmed the line is deenergized and visibly grounded at the worksite, except as provided in (d)(2) (1926.1408(d)(1)). Job-site scenario: setting trusses under a distribution line waits until the utility confirms deenergizing and grounding.",
+        "citation": "1926.1408(d)(1)"
+      },
+      {
+        "question": "Under 1926.1408(e), how must power lines be treated?",
+        "options": [
+          "As deenergized unless they spark",
+          "As insulated",
+          "As energized, unless the utility owner/operator confirms the line has been and continues to be deenergized and visibly grounded at the worksite",
+          "As the operator judges"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must assume all power lines are energized unless the utility owner/operator confirms the line has been and continues to be deenergized and visibly grounded at the worksite (1926.1408(e)). Job-site scenario: an apparently abandoned line is treated as live until the utility confirms otherwise.",
+        "citation": "1926.1408(e)"
+      },
+      {
+        "question": "What must operators and crew be trained on under 1926.1408(g)(1)(i) about electrical contact?",
+        "options": [
+          "Nothing",
+          "Jumping out immediately in all cases",
+          "Touching the crane to check for current",
+          "Procedures after contact, including staying inside the cab unless there is imminent danger of fire, explosion, or other emergency requiring exit"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Operators and crew must be trained on procedures for electrical contact, including the danger of touching equipment and ground at the same time, the importance of remaining inside the cab except for imminent danger of fire, explosion, or another emergency, the safest way to evacuate, step potential, crew staying clear of the equipment and load, and safe clearance distances (1926.1408(g)(1)(i)(A)-(F)). Job-site scenario: after a boom contacts a line, the operator stays in the cab and warns the crew away.",
+        "citation": "1926.1408(g)(1)(i)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 48,
+    "title": "Injury and Illness Recordkeeping for Construction (Part 1904)",
+    "duration": 45,
+    "topics": [
+      "What an establishment is in construction",
+      "Separate logs for projects lasting a year or more",
+      "Short-term projects",
+      "Linking mobile employees to an establishment",
+      "Injuries at another establishment",
+      "Central recordkeeping",
+      "Covered employees",
+      "Temporary and leased workers",
+      "Subcontractor injuries on multi-employer sites",
+      "Recording each case only once",
+      "Self-employed workers",
+      "Vehicle crashes in construction work zones"
+    ],
+    "resources": [
+      {
+        "title": "Multiple Business Establishments",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1904/1904.30",
+        "type": "standard",
+        "description": "Separate logs and short-term establishments"
+      },
+      {
+        "title": "Covered Employees",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1904/1904.31",
+        "type": "standard",
+        "description": "Recording injuries to payroll, temporary, leased, and contractor employees"
+      },
+      {
+        "title": "OSHA Recordkeeping",
+        "url": "https://www.osha.gov/recordkeeping",
+        "type": "guide",
+        "description": "OSHA recordkeeping forms and guidance"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1904.46, for activities like construction where employees do not work at one physical location, what represents the \"establishment\"?",
+        "options": [
+          "The main or branch offices, terminals, or stations that supervise the activities or are the base from which personnel carry them out",
+          "Each job site, regardless of duration",
+          "The owner's office",
+          "The OSHA area office"
+        ],
+        "correctAnswer": 0,
+        "explanation": "For activities where employees do not work at a single physical location, such as construction, the establishment is represented by the main or branch offices, terminals, stations, etc. that supervise the activities or are the base from which personnel carry them out (1904.46 (definitions)). Job-site scenario: a contractor's short service jobs can be recorded under the branch office that dispatches the crews, or on a log covering short-term establishments (1904.30(b)(1)); either approach is permitted.",
+        "citation": "1904.46 (definitions)"
+      },
+      {
+        "question": "A general contractor treats its 18-month hospital project as its own establishment (OSHA treats a construction site expected to operate a year or more as an establishment). Under 1904.30(a), what is required?",
+        "options": [
+          "Nothing; use the home office log",
+          "A separate OSHA 300 Log for that establishment, because it is expected to operate for one year or longer",
+          "A log only if there are over 50 workers",
+          "A log only for fatalities"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A separate OSHA 300 Log must be kept for each establishment expected to be in operation for one year or longer (1904.30(a)). Treating a long-duration construction site as an establishment is OSHA's interpretation; the regulation text itself defines construction establishments by the supervising office (1904.46). Job-site scenario: the 18-month hospital job gets its own 300 Log.",
+        "citation": "1904.30(a)"
+      },
+      {
+        "question": "A contractor runs many jobs lasting a few weeks each. How may their injuries be recorded under 1904.30(b)(1)?",
+        "options": [
+          "They are not recorded",
+          "On the client's log",
+          "On one OSHA 300 Log covering all short-term establishments (or logs covering short-term establishments for divisions or geographic regions)",
+          "Only in the 301 file"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Records must still be kept for short-term establishments (those existing less than a year), but a separate log is not required for each. One log may cover all short-term establishments, or logs may cover short-term establishments by company division or geographic region (1904.30(b)(1)). Job-site scenario: all of a roofing contractor's two-week jobs share one short-term log.",
+        "citation": "1904.30(b)(1)"
+      },
+      {
+        "question": "Some employees float between job sites. Under 1904.30(b)(3), how are their cases recorded?",
+        "options": [
+          "They are exempt",
+          "On any log the foreman chooses",
+          "Only on the 301",
+          "Each employee must be linked to one establishment, and the case is recorded on that establishment's log (or the log covering their short-term establishment)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Each employee must be linked to one of the employer's establishments for recordkeeping. The injury or illness is recorded on that establishment's 300 Log, or on a log covering the employee's short-term establishment (1904.30(b)(3)). Job-site scenario: a traveling estimator is assigned to the regional office's log.",
+        "citation": "1904.30(b)(3)"
+      },
+      {
+        "question": "An employee based at the main office is hurt while working at the company's 2-year highway project, which the company keeps as a separate establishment. Under 1904.30(b)(4), where is the case recorded?",
+        "options": [
+          "On the 300 Log of the establishment where the injury occurred (the highway project)",
+          "On the main office log",
+          "On the state DOT's log",
+          "Not recorded"
+        ],
+        "correctAnswer": 0,
+        "explanation": "If the injury occurs at one of the employer's establishments, it must be recorded on the 300 Log of the establishment where it occurred (1904.30(b)(4)). Job-site scenario: the visiting superintendent's sprain goes on the highway project's log.",
+        "citation": "1904.30(b)(4)"
+      },
+      {
+        "question": "A contractor keeps all project logs at headquarters. What does 1904.30(b)(2)(i) require?",
+        "options": [
+          "Nothing",
+          "Central recordkeeping is allowed only if information about each injury can be transmitted from the site to the central location within 7 calendar days of receiving information that a recordable case occurred",
+          "Logs must be mailed monthly",
+          "Only an annual transfer"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Records may be kept centrally if the employer can transmit injury information from the establishment to the central location within seven calendar days of learning that a recordable case occurred (1904.30(b)(2)(i)), and produce records within the required time frames when asked (1904.30(b)(2)(ii)). Job-site scenario: the site safety lead emails each recordable case to the home office the same week.",
+        "citation": "1904.30(b)(2)(i)"
+      },
+      {
+        "question": "Under 1904.31(a), whose injuries must an employer record?",
+        "options": [
+          "Only full-time payroll employees",
+          "Only union members",
+          "All payroll employees (labor, executive, hourly, salary, part-time, seasonal, migrant), plus non-payroll employees the employer supervises day to day",
+          "Only employees over 18"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Employers must record recordable injuries and illnesses of all employees on their payroll, whether labor, executive, hourly, salary, part-time, seasonal, or migrant, and also of employees not on their payroll whom they supervise day to day (1904.31(a)). Job-site scenario: a seasonal laborer's recordable cut goes on the log.",
+        "citation": "1904.31(a)"
+      },
+      {
+        "question": "A contractor uses laborers from a temporary staffing agency and directs their work daily. Under 1904.31(b)(2), who records their injuries?",
+        "options": [
+          "The staffing agency always",
+          "No one",
+          "The workers themselves",
+          "The contractor, because it supervises them on a day-to-day basis"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Injuries to employees from a temporary help service, employee leasing service, or personnel supply service must be recorded by the employer that supervises them day to day (1904.31(b)(2)). Job-site scenario: the GC's foreman directs the temp laborers, so the GC records their injuries.",
+        "citation": "1904.31(b)(2)"
+      },
+      {
+        "question": "On a multi-employer site, a drywall subcontractor's employee is injured. The sub's own foreman directs their work daily. Under 1904.31(b)(3), whose 300 Log does the case go on?",
+        "options": [
+          "The subcontractor's, because the contractor's employee is under the contractor's day-to-day supervision",
+          "The general contractor's",
+          "The owner's",
+          "Both logs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "If a contractor's employee is under the day-to-day supervision of the contractor, the contractor records the injury. If the host employer supervises that employee day to day, the host records it (1904.31(b)(3)). Job-site scenario: the drywall sub logs its own worker's injury, not the GC.",
+        "citation": "1904.31(b)(3)"
+      },
+      {
+        "question": "Under 1904.31(b)(4), must both the host employer and the staffing agency record the same temp worker's injury?",
+        "options": [
+          "Yes, both always",
+          "No; they should coordinate so each case is recorded only once, on the log of the employer providing day-to-day supervision",
+          "Only the agency",
+          "Neither"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The host employer and the temporary help, leasing, or personnel supply service (or contractor) should coordinate so each injury is recorded only once, on the log of the employer providing day-to-day supervision (1904.31(b)(4)). Job-site scenario: the GC and the staffing agency agree in writing on who logs temp-worker injuries.",
+        "citation": "1904.31(b)(4)"
+      },
+      {
+        "question": "A self-employed electrician is injured on a contractor's site. Under 1904.31(b)(1), must the contractor record it?",
+        "options": [
+          "Yes",
+          "Only if hospitalized",
+          "No; self-employed individuals are not covered by the OSH Act or Part 1904",
+          "Only if the GC hired them"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Self-employed individuals are not covered by the OSH Act or this regulation, so their injuries are not recorded (1904.31(b)(1)). Job-site scenario: an owner-operator electrician with no employees handles their own injury; it does not go on the GC's log.",
+        "citation": "1904.31(b)(1)"
+      },
+      {
+        "question": "A worker is hospitalized after a vehicle strikes them inside a highway construction work zone. Under 1904.39(b)(3), must it be reported to OSHA?",
+        "options": [
+          "No; motor vehicle accidents on public roads are never reportable",
+          "Only if the driver was an employee",
+          "Only fatalities",
+          "Yes; motor vehicle accidents in a construction work zone must be reported"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Motor vehicle accidents on a public street or highway generally need not be reported, but if the accident occurred in a construction work zone, the fatality, in-patient hospitalization, amputation, or loss of an eye must be reported (1904.39(b)(3)). In-patient hospitalization must be reported within 24 hours (1904.39(a)(2)). Job-site scenario: a flagger struck in the work zone and admitted to the hospital is reported within 24 hours.",
+        "citation": "1904.39(b)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 49,
+    "title": "Hoisting Personnel with Cranes",
+    "duration": 45,
+    "topics": [
+      "Capacity limits for personnel platforms",
+      "Platform design and strength",
+      "Posted platform weight and capacity",
+      "Trial lifts",
+      "Proof testing",
+      "Work practices",
+      "Wind limits",
+      "Fall protection in the platform",
+      "Pre-lift meetings",
+      "Power line distances"
+    ],
+    "resources": [
+      {
+        "title": "Hoisting Personnel",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1431",
+        "type": "standard",
+        "description": "Requirements for hoisting personnel with cranes and derricks"
+      },
+      {
+        "title": "Pre-Lift Meeting",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.1431#p-1926.1431(m)",
+        "type": "standard",
+        "description": "Pre-lift meeting requirements"
+      },
+      {
+        "title": "Crane, Derrick and Hoist Safety",
+        "url": "https://www.osha.gov/cranes-derricks",
+        "type": "guide",
+        "description": "OSHA overview of crane safety"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.1431(d)(1), what is the maximum total load (platform, hook, load line, and rigging) when using a suspended personnel platform?",
+        "options": [
+          "75% of rated capacity",
+          "50% of the rated capacity for the radius and configuration, except during proof testing",
+          "100% of rated capacity",
+          "25% of rated capacity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The total load (with the platform loaded, including hook, load line, and rigging) must not exceed 50 percent of the rated capacity for the radius and configuration, except during proof testing (1926.1431(d)(1)). Job-site scenario: a crane rated 8,000 lb at the planned radius may carry no more than 4,000 lb total.",
+        "citation": "1926.1431(d)(1)"
+      },
+      {
+        "question": "Under 1926.1431(e)(1), who must design the personnel platform and its attachment/suspension system?",
+        "options": [
+          "The crane operator",
+          "A qualified person familiar with structural design",
+          "Any welder",
+          "The rental company clerk"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A qualified person familiar with structural design must design the personnel platform and the attachment/suspension system (1926.1431(e)(1)). Job-site scenario: a job-built basket is not used without a qualified designer's drawings.",
+        "citation": "1926.1431(e)(1)"
+      },
+      {
+        "question": "Under 1926.1431(e)(4), what must the personnel platform itself (excluding guardrails and fall arrest anchorages) support?",
+        "options": [
+          "Its rated load only",
+          "Twice the intended load",
+          "Its own weight and at least five times the maximum intended load",
+          "Ten times the intended load"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The platform itself, excluding the guardrail system and personal fall arrest anchorages, must support its own weight and at least five times the maximum intended load without failure (1926.1431(e)(4)). Job-site scenario: the manufacturer's data confirms a 5:1 design factor.",
+        "citation": "1926.1431(e)(4)"
+      },
+      {
+        "question": "What must be posted on a personnel platform under 1926.1431(e)(12)?",
+        "options": [
+          "Nothing",
+          "Only the owner's name",
+          "Only the color code",
+          "The platform weight and its rated capacity, on a plate or other permanent marking"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The platform's weight and rated capacity must be conspicuously posted with a plate or other permanent marking (1926.1431(e)(12)). The platform may not be loaded beyond its rated capacity (1926.1431(f)(1)). Job-site scenario: the operator checks the plate before calculating total load.",
+        "citation": "1926.1431(e)(12)"
+      },
+      {
+        "question": "Under 1926.1431(h)(1)-(2), when must a trial lift be made with the unoccupied platform?",
+        "options": [
+          "Immediately before each shift in which personnel will be hoisted (and again when listed conditions change), loaded at least to the anticipated lift weight",
+          "Once per project",
+          "Only after an accident",
+          "Never"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A trial lift with the unoccupied platform loaded at least to the anticipated lift weight must be made from ground level (or wherever employees will board) to each location the platform will be hoisted to (1926.1431(h)(1)). It must be done immediately before each shift in which personnel will be hoisted, and repeated in listed circumstances such as moving the equipment to a new location (1926.1431(h)(2)). Job-site scenario: each morning, the empty basket with test weights is flown through the route first.",
+        "citation": "1926.1431(h)(1)-(2)"
+      },
+      {
+        "question": "Under 1926.1431(j)(1), to what level must the platform and rigging be proof tested at each jobsite?",
+        "options": [
+          "100% of rated capacity",
+          "125% of the platform's rated capacity",
+          "200% of rated capacity",
+          "No proof test is needed"
+        ],
+        "correctAnswer": 1,
+        "explanation": "At each jobsite, before hoisting employees and after any repair or modification, the platform and rigging must be proof tested to 125 percent of the platform's rated capacity (1926.1431(j)(1)). Job-site scenario: test weights at 125% are held in the basket before anyone rides.",
+        "citation": "1926.1431(j)(1)"
+      },
+      {
+        "question": "How must the personnel platform be hoisted under 1926.1431(k)(1)?",
+        "options": [
+          "As fast as possible",
+          "With free fall",
+          "In a slow, controlled, cautious manner, with no sudden movements",
+          "At any speed"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hoisting of the personnel platform must be slow, controlled, and cautious, with no sudden movements of the equipment or the platform (1926.1431(k)(1)). Job-site scenario: the operator feathers the controls as the basket rises.",
+        "citation": "1926.1431(k)(1)"
+      },
+      {
+        "question": "Under 1926.1431(k)(8)(i), what happens when wind speed (sustained or gusts) exceeds 20 mph at the platform?",
+        "options": [
+          "Lifting continues normally",
+          "The lift is always cancelled",
+          "Only the operator decides",
+          "A qualified person must determine whether it is safe to lift personnel; if not, the lift must not begin or must be terminated"
+        ],
+        "correctAnswer": 3,
+        "explanation": "When wind speed, sustained or gusts, exceeds 20 mph at the platform, a qualified person must determine whether it is safe to lift personnel. If it is not, the lift must not begin, or must be terminated if under way (1926.1431(k)(8)(i)). Job-site scenario: with 25 mph gusts at height, the qualified person calls off the basket work.",
+        "citation": "1926.1431(k)(8)(i)"
+      },
+      {
+        "question": "What fall protection does 1926.1431(k)(10)(i) require for employees in the platform (except over water)?",
+        "options": [
+          "A personal fall arrest system attached to a structural member within the personnel platform",
+          "None; the guardrails are enough",
+          "A body belt tied to the crane hook",
+          "A lanyard tied to the building"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Except over water, employees in the platform must use a personal fall arrest system attached to a structural member within the platform. Over or near water, 1926.106 applies (1926.1431(k)(10)(i)). Job-site scenario: each rider clips to the basket's rated anchorage, not to the load line.",
+        "citation": "1926.1431(k)(10)(i)"
+      },
+      {
+        "question": "Under 1926.1431(m), who must attend the pre-lift meeting, and when?",
+        "options": [
+          "Only the operator, once a year",
+          "The operator, signal person (if used), employees to be hoisted, and the person responsible for the task, before the trial lift at each new work location, repeated for newly assigned employees",
+          "Only the supervisor",
+          "No meeting is required"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A pre-lift meeting must review the requirements and procedures (1926.1431(m)(1)). It must be attended by the operator, the signal person if used, the employees to be hoisted, and the person responsible for the task (1926.1431(m)(2)). It must be held before the trial lift at each new work location and repeated for newly assigned employees (1926.1431(m)(3)). Hoisting personnel within 20 feet of a line up to 350 kV is prohibited except for Subpart V work (1926.1431(n)). Job-site scenario: the pre-lift meeting is held at the crane before the first trial lift.",
+        "citation": "1926.1431(m)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 50,
+    "title": "Hazardous Waste Operations and Emergency Response (Construction)",
+    "duration": 60,
+    "topics": [
+      "Scope",
+      "Written safety and health program",
+      "Site control and the buddy system",
+      "Initial training for site workers",
+      "Occasional workers",
+      "Supervisor training",
+      "Annual refresher training",
+      "Medical exam frequency",
+      "Emergency response plans",
+      "First responder awareness level"
+    ],
+    "resources": [
+      {
+        "title": "HAZWOPER (Construction)",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.65",
+        "type": "standard",
+        "description": "Hazardous waste operations and emergency response"
+      },
+      {
+        "title": "HAZWOPER Training",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.65#p-1926.65(e)",
+        "type": "standard",
+        "description": "Training requirements for hazardous waste operations"
+      },
+      {
+        "title": "Hazardous Waste Topic Page",
+        "url": "https://www.osha.gov/hazardous-waste",
+        "type": "guide",
+        "description": "OSHA overview of hazardous waste operations"
+      }
+    ],
+    "test": [
+      {
+        "question": "Which operation is covered by 1926.65 under 1926.65(a)(1)?",
+        "options": [
+          "Routine drywall installation",
+          "Painting an office",
+          "Clean-up operations required by a governmental body involving hazardous substances at uncontrolled hazardous waste sites (among the other listed operations, including emergency response to releases)",
+          "Pouring footings on a clean site"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The standard covers listed operations, including government-required clean-ups at uncontrolled hazardous waste sites (1926.65(a)(1)(i)), RCRA corrective actions, voluntary clean-ups at recognized sites, TSD facility operations, and emergency response to releases or substantial threats of releases of hazardous substances (1926.65(a)(1)(v)). Job-site scenario: an excavation contractor hired for a Superfund soil removal is covered.",
+        "citation": "1926.65(a)(1)"
+      },
+      {
+        "question": "Under 1926.65(b)(1)(i), what must employers involved in hazardous waste operations develop?",
+        "options": [
+          "A verbal plan",
+          "Only a sign-in sheet",
+          "Only an SDS binder",
+          "A written safety and health program designed to identify, evaluate, and control safety and health hazards and provide for emergency response"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employers must develop and implement a written safety and health program for employees in hazardous waste operations, designed to identify, evaluate, and control safety and health hazards and to provide for emergency response (1926.65(b)(1)(i)). Job-site scenario: the remediation contractor's site-specific HASP is on site and available.",
+        "citation": "1926.65(b)(1)(i)"
+      },
+      {
+        "question": "Which item must a site control program include at minimum under 1926.65(d)(3)?",
+        "options": [
+          "Use of a \"buddy system\", along with a site map, work zones, site communications, safe work practices, and identification of the nearest medical assistance",
+          "A company logo",
+          "A cafeteria",
+          "Only a fence"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The site control program must include at minimum a site map, site work zones, use of a buddy system, site communications including emergency alerting, standard operating procedures or safe work practices, and identification of the nearest medical assistance (1926.65(d)(3)). Job-site scenario: no one enters the exclusion zone without an assigned buddy.",
+        "citation": "1926.65(d)(3)"
+      },
+      {
+        "question": "What initial training does 1926.65(e)(3)(i) require for general site workers exposed or potentially exposed to hazardous substances?",
+        "options": [
+          "8 hours online",
+          "At least 40 hours of off-site instruction and at least three days of field experience under a trained, experienced supervisor",
+          "24 hours only",
+          "One day of shadowing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "General site workers such as equipment operators, general laborers, and supervisory personnel must receive at least 40 hours of off-site instruction and at least three days of actual field experience under the direct supervision of a trained, experienced supervisor (1926.65(e)(3)(i)). Job-site scenario: the excavator operator on the remediation job has a 40-hour HAZWOPER card and three supervised field days.",
+        "citation": "1926.65(e)(3)(i)"
+      },
+      {
+        "question": "Under 1926.65(e)(3)(ii), what training do workers on site only occasionally for a specific limited task (such as surveying), and unlikely to be exposed over the limits, need?",
+        "options": [
+          "None",
+          "40 hours and three days",
+          "At least 24 hours of off-site instruction and at least one day of supervised field experience",
+          "8 hours only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Workers on site only occasionally for a specific limited task, such as ground water monitoring or land surveying, who are unlikely to be exposed over the permissible and published limits, need at least 24 hours of off-site instruction and at least one day of actual field experience under direct supervision (1926.65(e)(3)(ii)). Job-site scenario: the survey crew has 24-hour training.",
+        "citation": "1926.65(e)(3)(ii)"
+      },
+      {
+        "question": "Under 1926.65(e)(4), what initial training do on-site managers and supervisors directly responsible for hazardous waste operations need?",
+        "options": [
+          "None beyond experience",
+          "8 hours",
+          "Only a supervisor certificate",
+          "40 hours of initial training and three days of supervised field experience (reducible to 24 hours and one day only if they supervise only (e)(3)(ii)-(iii) workers), plus at least eight additional hours of specialized training"
+        ],
+        "correctAnswer": 3,
+        "explanation": "On-site managers and supervisors directly responsible for hazardous waste operations must receive 40 hours of initial training and three days of supervised field experience. This may be reduced to 24 hours and one day only if they supervise only employees under (e)(3)(ii) or (iii). They also need at least eight additional hours of specialized training on managing such operations (1926.65(e)(4)). Job-site scenario: the remediation superintendent holds the 40-hour card plus supervisor training.",
+        "citation": "1926.65(e)(4)"
+      },
+      {
+        "question": "Under 1926.65(e)(8), how much refresher training must covered employees, managers, and supervisors receive?",
+        "options": [
+          "Eight hours annually",
+          "None",
+          "40 hours annually",
+          "24 hours every three years"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employees covered by (e)(1), and managers and supervisors covered by (e)(4), must receive eight hours of refresher training annually (1926.65(e)(8)). Job-site scenario: the crew's 8-hour refresher is scheduled before their 40-hour anniversary.",
+        "citation": "1926.65(e)(8)"
+      },
+      {
+        "question": "Under 1926.65(f)(3)(i)(B), how often must medical examinations be made available to employees covered under 1926.65(f)(2)(i), (ii), and (iv)?",
+        "options": [
+          "Every five years",
+          "At least once every twelve months, unless the attending physician believes a longer interval (not greater than biennially) is appropriate",
+          "Only at hire",
+          "Only after exposure"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Medical exams must be made available at least once every twelve months, unless the attending physician believes a longer interval, not greater than every two years, is appropriate (1926.65(f)(3)(i)(B)). Exams are also required before assignment (1926.65(f)(3)(i)(A)). Job-site scenario: remediation workers get annual HAZWOPER physicals.",
+        "citation": "1926.65(f)(3)(i)(B)"
+      },
+      {
+        "question": "Under 1926.65(q)(1), when must an emergency response plan for hazardous substance releases be developed?",
+        "options": [
+          "After the first spill",
+          "Only if requested",
+          "Before emergency response operations begin; it must be written and available for inspection and copying by employees, their representatives, and OSHA",
+          "Within 30 days of a release"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An emergency response plan must be developed and implemented to handle anticipated emergencies before emergency response operations begin. It must be in writing and available for inspection and copying by employees, their representatives, and OSHA personnel (1926.65(q)(1)). Employers who evacuate employees, do not permit them to assist, and provide an emergency action plan under 1926.35 are exempt from this plan requirement (1926.65(q)(1)). Job-site scenario: the contractor's written plan for a fuel tank rupture is in place before the work starts.",
+        "citation": "1926.65(q)(1)"
+      },
+      {
+        "question": "Under 1926.65(q)(6)(i), what does a first responder at the awareness level do?",
+        "options": [
+          "Plugs and patches leaks in hot zones",
+          "Commands the incident",
+          "Performs decontamination",
+          "Witnesses or discovers a release and initiates an emergency response sequence by notifying the proper authorities"
+        ],
+        "correctAnswer": 3,
+        "explanation": "First responders at the awareness level are individuals likely to witness or discover a hazardous substance release who have been trained to initiate an emergency response sequence by notifying the proper authorities (1926.65(q)(6)(i)). Job-site scenario: a laborer who smells gas from a struck line backs away and calls it in.",
+        "citation": "1926.65(q)(6)(i)"
       }
     ]
   }

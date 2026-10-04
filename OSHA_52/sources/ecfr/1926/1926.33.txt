@@ -1,0 +1,12 @@
+Source: eCFR, 29 CFR 1926.33 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.33
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.33
+Retrieved: 2026-10-04
+
+§ 1926.33 Access to employee exposure and medical records.
+
+Note:
+
+The requirements applicable to construction work under this section are identical to those set forth at § 1910.1020 of this chapter.
+
+[61 FR 31431, June 20, 1996]

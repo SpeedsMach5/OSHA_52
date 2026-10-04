@@ -2898,5 +2898,727 @@
         "citation": "1904.41(c)"
       }
     ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 17,
+    "title": "Occupational Noise and Hearing Conservation",
+    "duration": 60,
+    "topics": [
+      "Action level and hearing conservation programs",
+      "Engineering and administrative controls",
+      "Noise monitoring and employee notification",
+      "Baseline and annual audiograms",
+      "Standard threshold shift and follow-up",
+      "Hearing protector availability and selection",
+      "Annual training",
+      "Record retention"
+    ],
+    "resources": [
+      {
+        "title": "Occupational Noise Exposure Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.95 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.95",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.95",
+        "type": "standard",
+        "description": "Current official text of the occupational noise standard"
+      },
+      {
+        "title": "Occupational Noise Exposure Topic Page",
+        "url": "https://www.osha.gov/noise",
+        "type": "guide",
+        "description": "OSHA overview and guidance on noise and hearing conservation"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.95(c)(1)-(2), when must an employer administer a continuing, effective hearing conservation program?",
+        "options": [
+          "Only when exposure exceeds 90 dBA",
+          "Whenever employee noise exposure equals or exceeds an 8-hour TWA of 85 dBA (or a 50% dose), which is the action level",
+          "Only after an employee reports hearing loss",
+          "Only in facilities with more than 50 employees"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A hearing conservation program is required whenever exposures equal or exceed an 8-hour TWA of 85 dBA (slow response), or equivalently a dose of 50% (1910.95(c)(1)). That level is the action level (1910.95(c)(2)). Workplace example: stamping-line operators with a measured TWA of 87 dBA are enrolled in the program.",
+        "citation": "1910.95(c)(1)-(2)"
+      },
+      {
+        "question": "Under 1910.95(b)(1), what must be used first when sound levels exceed Table G-16?",
+        "options": [
+          "Earplugs for everyone",
+          "Shorter breaks only",
+          "Feasible administrative or engineering controls; personal protective equipment is used if they fail to reduce levels within the table",
+          "Nothing until audiograms show loss"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When employees are exposed above Table G-16, feasible administrative or engineering controls must be used. If they fail to reduce sound levels within the table, PPE must be provided and used (1910.95(b)(1)). Workplace example: an enclosure is built around the blower before relying on earmuffs.",
+        "citation": "1910.95(b)(1)"
+      },
+      {
+        "question": "Under 1910.95(d)(1), when must the employer develop and implement a noise monitoring program?",
+        "options": [
+          "Only after an OSHA inspection",
+          "Every 5 years regardless of exposure",
+          "Only when a new building is built",
+          "When information indicates any employee's exposure may equal or exceed an 8-hour TWA of 85 decibels"
+        ],
+        "correctAnswer": 3,
+        "explanation": "When information indicates that any employee's exposure may equal or exceed an 8-hour TWA of 85 decibels, the employer must develop and implement a monitoring program (1910.95(d)(1)). Monitoring must be repeated when changes may expose more employees at or above the action level, or make hearing protector attenuation inadequate (1910.95(d)(3)). Workplace example: a new chipper prompts dosimetry on nearby workers.",
+        "citation": "1910.95(d)(1)"
+      },
+      {
+        "question": "Under 1910.95(e), which employees must be notified of their monitoring results?",
+        "options": [
+          "Each employee exposed at or above an 8-hour TWA of 85 decibels",
+          "All employees in the plant",
+          "Only employees above 90 dBA",
+          "No one; results are confidential"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must notify each employee exposed at or above an 8-hour TWA of 85 decibels of the monitoring results (1910.95(e)). Employees or their representatives must also have the chance to observe measurements (1910.95(f)). Workplace example: dosimetry results are handed to each operator measured at 86 dBA or more.",
+        "citation": "1910.95(e)"
+      },
+      {
+        "question": "Under 1910.95(g)(5)(i), how soon after first exposure at or above the action level must a valid baseline audiogram be established (without the mobile-van exception)?",
+        "options": [
+          "Within 30 days",
+          "Within 6 months",
+          "Within 1 year",
+          "Within 2 years"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A valid baseline audiogram must be established within 6 months of first exposure at or above the action level (1910.95(g)(5)(i)). Where mobile test vans are used, it may be within 1 year, with hearing protectors worn after 6 months until the baseline is obtained (1910.95(g)(5)(ii)). Workplace example: a new hire on the press line gets a baseline within their first 6 months.",
+        "citation": "1910.95(g)(5)(i)"
+      },
+      {
+        "question": "What must precede a baseline audiogram under 1910.95(g)(5)(iii)?",
+        "options": [
+          "A 1-hour quiet period",
+          "A full medical exam",
+          "At least 14 hours without exposure to workplace noise (hearing protectors may substitute)",
+          "Nothing"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Baseline testing must be preceded by at least 14 hours without exposure to workplace noise. Hearing protectors may substitute for that quiet period (1910.95(g)(5)(iii)). Employees must also be told to avoid high non-occupational noise during the 14 hours before the test (1910.95(g)(5)(iv)). Workplace example: the baseline is scheduled first thing Monday morning after the weekend.",
+        "citation": "1910.95(g)(5)(iii)"
+      },
+      {
+        "question": "Under 1910.95(g)(6), how often must a new audiogram be obtained for each employee exposed at or above an 8-hour TWA of 85 decibels?",
+        "options": [
+          "Every 5 years",
+          "Only when the employee asks",
+          "Every 3 years",
+          "At least annually after the baseline"
+        ],
+        "correctAnswer": 3,
+        "explanation": "At least annually after the baseline audiogram, the employer must obtain a new audiogram for each employee exposed at or above an 8-hour TWA of 85 decibels (1910.95(g)(6)). Each annual audiogram is compared to the baseline (1910.95(g)(7)(i)). Workplace example: the mobile test van returns each year for the annual tests.",
+        "citation": "1910.95(g)(6)"
+      },
+      {
+        "question": "How does 1910.95(g)(10)(i) define a standard threshold shift?",
+        "options": [
+          "A change in hearing threshold relative to baseline averaging 10 dB or more at 2000, 3000, and 4000 Hz in either ear",
+          "Any change in hearing at any frequency",
+          "A 25 dB loss at 1000 Hz",
+          "A change of 5 dB at 500 Hz in both ears"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A standard threshold shift is a change in hearing threshold relative to the baseline audiogram averaging 10 dB or more at 2000, 3000, and 4000 Hz in either ear (1910.95(g)(10)(i)). Workplace example: an employee's right ear shows an average 12 dB shift across those three frequencies, which is a standard threshold shift.",
+        "citation": "1910.95(g)(10)(i)"
+      },
+      {
+        "question": "If an annual audiogram shows a standard threshold shift, within how many days must the employee be informed in writing under 1910.95(g)(8)(i)?",
+        "options": [
+          "7 days",
+          "21 days",
+          "30 days",
+          "90 days"
+        ],
+        "correctAnswer": 1,
+        "explanation": "If comparison shows a standard threshold shift, the employee must be informed in writing within 21 days of the determination (1910.95(g)(8)(i)). A retest within 30 days may be used as the annual audiogram (1910.95(g)(7)(ii)). Workplace example: the program coordinator mails the notice within three weeks of the audiologist's review.",
+        "citation": "1910.95(g)(8)(i)"
+      },
+      {
+        "question": "What does 1910.95(i) require for hearing protectors?",
+        "options": [
+          "Employees buy their own",
+          "One type is enough for everyone",
+          "They must be available at no cost to all employees exposed to an 8-hour TWA of 85 dB or greater, and employees must be able to choose from a variety of suitable protectors",
+          "Only for employees above 100 dB"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hearing protectors must be made available at no cost to all employees exposed to an 8-hour TWA of 85 dB or greater, and replaced as necessary (1910.95(i)(1)). Employees must be able to select from a variety of suitable protectors provided by the employer (1910.95(i)(3)). Workplace example: the dispenser offers foam plugs, banded plugs, and earmuffs.",
+        "citation": "1910.95(i)(1) and (i)(3)"
+      },
+      {
+        "question": "Under 1910.95(k)(2), how often must hearing conservation training be repeated?",
+        "options": [
+          "Every 3 years",
+          "Only at hire",
+          "Only after a threshold shift",
+          "Annually for each employee in the hearing conservation program"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The training program must be repeated annually for each employee in the hearing conservation program, with information updated for changes in protective equipment and work processes (1910.95(k)(2)). It must cover the effects of noise, protectors, and audiometric testing (1910.95(k)(3)). Workplace example: the annual refresher includes the new earmuffs issued this year.",
+        "citation": "1910.95(k)(2)"
+      },
+      {
+        "question": "Under 1910.95(m)(3), how long must noise exposure measurement records and audiometric test records be kept?",
+        "options": [
+          "Exposure measurements for 2 years; audiometric records for the duration of the affected employee's employment",
+          "Both for 30 years",
+          "Both for 1 year",
+          "Exposure measurements for 5 years; audiograms for 2 years"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Noise exposure measurement records must be kept for 2 years (1910.95(m)(3)(i)). Audiometric test records must be kept for the duration of the affected employee's employment (1910.95(m)(3)(ii)). Workplace example: dosimetry files older than 2 years may be purged, but an active employee's audiograms stay on file.",
+        "citation": "1910.95(m)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 18,
+    "title": "Flammable Liquids",
+    "duration": 45,
+    "topics": [
+      "Approved containers and portable tanks",
+      "Storage cabinet capacity and fire resistance",
+      "Keeping exits clear",
+      "Office occupancies",
+      "Extinguisher placement",
+      "No open flames or smoking",
+      "Quantities allowed outside cabinets or rooms",
+      "Transfer methods",
+      "Electrical interconnection when dispensing",
+      "Covered containers"
+    ],
+    "resources": [
+      {
+        "title": "Flammable Liquids Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.106",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.106 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.106",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.106",
+        "type": "standard",
+        "description": "Current official text of the flammable liquids standard"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.106(d)(2)(i), what containers may be used to store flammable liquids in container and portable tank storage?",
+        "options": [
+          "Any clean container",
+          "Only approved containers and portable tanks (DOT-compliant metal containers and portable tanks are acceptable)",
+          "Glass jars",
+          "Open buckets"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Only approved containers and portable tanks may be used. Metal containers and portable tanks meeting DOT regulations (49 CFR chapter I) are deemed acceptable (1910.106(d)(2)(i)). Workplace example: solvent is kept in its DOT drum or an approved safety can, not a coffee can.",
+        "citation": "1910.106(d)(2)(i)"
+      },
+      {
+        "question": "Under 1910.106(d)(3)(i), how much flammable liquid may be stored in a single storage cabinet?",
+        "options": [
+          "25 gallons of any category",
+          "120 gallons of any category",
+          "Not more than 60 gallons of Category 1, 2, or 3, nor more than 120 gallons of Category 4",
+          "250 gallons"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Not more than 60 gallons of Category 1, 2, or 3 flammable liquids, nor more than 120 gallons of Category 4, may be stored in a storage cabinet (1910.106(d)(3)(i)). Workplace example: the paint shop cabinet holds 55 gallons of thinners and stays under the 60-gallon limit.",
+        "citation": "1910.106(d)(3)(i)"
+      },
+      {
+        "question": "Under 1910.106(d)(3)(ii), what fire performance must a storage cabinet meet?",
+        "options": [
+          "None",
+          "Withstand a 2-hour fire",
+          "Be made of wood only",
+          "Limit internal temperature to not more than 325 °F during a 10-minute fire test"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Storage cabinets must be designed and built to limit internal temperature to not more than 325 °F when subjected to a 10-minute fire test using the standard time-temperature curve (1910.106(d)(3)(ii)). Workplace example: the replacement cabinet purchased is listed as meeting the 10-minute test.",
+        "citation": "1910.106(d)(3)(ii)"
+      },
+      {
+        "question": "What does 1910.106(d)(5)(i) prohibit?",
+        "options": [
+          "Storing flammable liquids, including stock for sale, so as to limit use of exits, stairways, or areas normally used for safe egress",
+          "Storing flammable liquids indoors at all",
+          "Using safety cans",
+          "Using storage cabinets"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Flammable liquids, including stock for sale, may not be stored so as to limit use of exits, stairways, or areas normally used for safe egress (1910.106(d)(5)(i)). Workplace example: drums staged in the corridor to the fire exit are moved to the storage room.",
+        "citation": "1910.106(d)(5)(i)"
+      },
+      {
+        "question": "Under 1910.106(d)(5)(iii), what flammable liquid storage is allowed in office occupancies?",
+        "options": [
+          "Unlimited storage in desk drawers",
+          "Only what is required for building maintenance and equipment operation, kept in closed metal containers in a storage cabinet, in safety cans, or in an inside storage room not opening into public areas",
+          "None at all, ever",
+          "Up to 60 gallons anywhere"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In office occupancies, storage is prohibited except that required for maintenance and operation of the building and equipment. That storage must be in closed metal containers in a storage cabinet, in safety cans, or in an inside storage room without a door opening into the portion of the building used by the public (1910.106(d)(5)(iii)). Workplace example: the generator's fuel is kept in a safety can in the mechanical room, not the lobby.",
+        "citation": "1910.106(d)(5)(iii)"
+      },
+      {
+        "question": "Under 1910.106(d)(7)(i)(a), where must a portable fire extinguisher be located for a room used for flammable liquid storage?",
+        "options": [
+          "Inside the room at the back",
+          "Within 100 feet anywhere",
+          "Outside the room, not more than 10 feet from the door, rated not less than 12-B units",
+          "No extinguisher is required"
+        ],
+        "correctAnswer": 2,
+        "explanation": "At least one portable fire extinguisher rated not less than 12-B units must be located outside of, but not more than 10 feet from, the door of any room used for storage (1910.106(d)(7)(i)(a)). Workplace example: a 12-B (or higher) extinguisher hangs just outside the solvent room door.",
+        "citation": "1910.106(d)(7)(i)(a)"
+      },
+      {
+        "question": "For a Category 1, 2, or 3 flammable liquid storage area inside a building but outside a storage room, where must a 12-B extinguisher be placed under 1910.106(d)(7)(i)(b)?",
+        "options": [
+          "Within 5 feet",
+          "At least 50 feet away",
+          "Anywhere in the building",
+          "Not less than 10 feet nor more than 25 feet from the storage area"
+        ],
+        "correctAnswer": 3,
+        "explanation": "At least one extinguisher rated not less than 12-B units must be located not less than 10 feet, nor more than 25 feet, from any Category 1, 2, or 3 flammable liquid storage area outside a storage room but inside a building (1910.106(d)(7)(i)(b)). Workplace example: the extinguisher for the maintenance shop's fuel can area hangs 15 feet away, not right next to it.",
+        "citation": "1910.106(d)(7)(i)(b)"
+      },
+      {
+        "question": "What does 1910.106(d)(7)(iii) say about flammable liquid storage areas?",
+        "options": [
+          "Open flames and smoking are not permitted",
+          "Smoking is allowed if a sign is posted",
+          "Open flames are allowed if an extinguisher is nearby",
+          "Nothing about ignition sources"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Open flames and smoking are not permitted in flammable liquid storage areas (1910.106(d)(7)(iii)). Workplace example: the storage room door is posted \"No Smoking - No Open Flames\" and the rule is enforced.",
+        "citation": "1910.106(d)(7)(iii)"
+      },
+      {
+        "question": "In a plant where flammable liquid use is incidental to the main business, how much Category 1 flammable liquid in containers may be kept outside an inside storage room or cabinet in one fire area, under 1910.106(e)(2)(ii)(b)?",
+        "options": [
+          "10 gallons",
+          "25 gallons",
+          "60 gallons",
+          "120 gallons"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Outside an inside storage room or storage cabinet, in a building or any one fire area, the limits are 25 gallons of Category 1 in containers, 120 gallons of Category 2, 3, or 4 in containers, and 660 gallons of Category 2, 3, or 4 in a single portable tank (1910.106(e)(2)(ii)(b)). Workplace example: the furniture plant's finishing area keeps no more than 25 gallons of Category 1 lacquer thinner out of the cabinet.",
+        "citation": "1910.106(e)(2)(ii)(b)"
+      },
+      {
+        "question": "Under 1910.106(e)(2)(iv)(d), which method of transferring flammable liquids within a building is prohibited?",
+        "options": [
+          "Through a closed piping system",
+          "From safety cans",
+          "By applying air pressure to the container or portable tank",
+          "By gravity through an approved self-closing valve"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Flammable liquids may be drawn from or transferred into vessels, containers, or portable tanks inside a building only through a closed piping system, from safety cans, by a device drawing through the top, or by gravity through an approved self-closing valve. Transferring by air pressure on the container or portable tank is prohibited (1910.106(e)(2)(iv)(d)). Workplace example: a drum pump is used instead of pressurizing the drum with shop air.",
+        "citation": "1910.106(e)(2)(iv)(d)"
+      },
+      {
+        "question": "Under 1910.106(e)(6)(ii), when may Category 1 or 2 flammable liquids (or Category 3 below 100 °F flashpoint) be dispensed into containers?",
+        "options": [
+          "At any time",
+          "Only outdoors",
+          "Only with a plastic funnel",
+          "Only when the nozzle and container are electrically interconnected"
+        ],
+        "correctAnswer": 3,
+        "explanation": "These liquids may not be dispensed into containers unless the nozzle and container are electrically interconnected. A metallic floorplate electrically connected to the fill stem, or a fill stem bonded to the container during filling, satisfies this (1910.106(e)(6)(ii)). Workplace example: a bonding clip connects the drum and the metal can before solvent is dispensed.",
+        "citation": "1910.106(e)(6)(ii)"
+      },
+      {
+        "question": "Under 1910.106(e)(2)(iv)(a), how must Category 1 or 2 flammable liquids (or Category 3 below 100 °F flashpoint) be kept at the point of final use?",
+        "options": [
+          "In covered containers when not actually in use",
+          "In open pans for convenience",
+          "Only in glass",
+          "In any container"
+        ],
+        "correctAnswer": 0,
+        "explanation": "At the point of final use, these liquids must be kept in covered containers when not actually in use (1910.106(e)(2)(iv)(a)). Means must be provided to promptly and safely dispose of leaks or spills (1910.106(e)(2)(iv)(b)). Workplace example: the parts-wash solvent pail has a lid that is closed between uses.",
+        "citation": "1910.106(e)(2)(iv)(a)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 19,
+    "title": "Welding, Cutting, and Brazing",
+    "duration": 60,
+    "topics": [
+      "Basic fire precautions and when not to weld",
+      "Fire watch triggers and duration",
+      "Hot work authorization",
+      "Prohibited areas",
+      "Relocating combustibles and sweeping floors",
+      "Management responsibilities",
+      "Mechanical ventilation",
+      "Oxygen cylinder storage",
+      "Acetylene pressure limit",
+      "Grounding arc welding machines"
+    ],
+    "resources": [
+      {
+        "title": "Welding General Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.252",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.252 on osha.gov"
+      },
+      {
+        "title": "Oxygen-Fuel Gas Welding and Cutting",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.253",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.253 on osha.gov"
+      },
+      {
+        "title": "Arc Welding and Cutting",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.254",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.254 on osha.gov"
+      },
+      {
+        "title": "Welding, Cutting, and Brazing Topic Page",
+        "url": "https://www.osha.gov/welding-cutting-brazing",
+        "type": "guide",
+        "description": "OSHA overview and guidance on hot work"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.252(a)(1), what happens if the object cannot be moved, the fire hazards cannot be removed, and guards cannot confine the heat, sparks, and slag?",
+        "options": [
+          "Weld anyway with a fire watch",
+          "Welding and cutting shall not be performed",
+          "Weld only at night",
+          "Wet the area and proceed"
+        ],
+        "correctAnswer": 1,
+        "explanation": "If the object cannot be moved, movable fire hazards must be taken to a safe place (1910.252(a)(1)(i)). If hazards cannot all be removed, guards must confine heat, sparks, and slag (1910.252(a)(1)(ii)). If those requirements cannot be followed, welding and cutting shall not be performed (1910.252(a)(1)(iii)). Workplace example: a cut next to a fixed, unprotectable stock of baled cardboard is postponed until the stock is moved.",
+        "citation": "1910.252(a)(1)(iii)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(iii)(A), which condition requires a fire watcher?",
+        "options": [
+          "Any welding, anywhere",
+          "Welding on a sunny day",
+          "Appreciable combustible material, in building construction or contents, closer than 35 feet to the point of operation",
+          "Welding by an apprentice"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Fire watchers are required wherever more than a minor fire might develop, or when any listed condition exists. One condition is appreciable combustible material closer than 35 feet to the point of operation (1910.252(a)(2)(iii)(A)(1)). Others include easily ignited combustibles beyond 35 feet, openings within 35 feet, and combustibles on the other side of metal walls. Workplace example: welding a bracket 20 feet from wooden pallets requires a fire watcher.",
+        "citation": "1910.252(a)(2)(iii)(A)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(iii)(B), how long must a fire watch be maintained after welding or cutting is completed?",
+        "options": [
+          "It ends when the welding ends",
+          "At least 2 hours",
+          "Until the next shift",
+          "At least a half hour"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A fire watch must be maintained for at least a half hour after welding or cutting is completed, to detect and extinguish possible smoldering fires. Fire watchers must have extinguishing equipment readily available, be trained in its use, and know how to sound an alarm (1910.252(a)(2)(iii)(B)). Workplace example: the fire watcher stays 30 minutes after the torch goes out, checking below the work.",
+        "citation": "1910.252(a)(2)(iii)(B)"
+      },
+      {
+        "question": "What does 1910.252(a)(2)(iv) require before cutting or welding is permitted?",
+        "options": [
+          "The area must be inspected by the individual responsible for authorizing cutting and welding, who designates precautions, preferably in the form of a written permit",
+          "Nothing beyond the welder's judgment",
+          "A permit from the fire department in all cases",
+          "Approval from OSHA"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Before cutting or welding is permitted, the area must be inspected by the individual responsible for authorizing cutting and welding. That person designates the precautions to follow in granting authorization, preferably in the form of a written permit (1910.252(a)(2)(iv)). The text prefers, but does not mandate, a written permit. A permit is mandatory near PSM-covered processes (1910.119(k), Week 20). Workplace example: the maintenance supervisor walks the area and signs the plant's hot work permit form.",
+        "citation": "1910.252(a)(2)(iv)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(vi), in which situation is cutting or welding prohibited?",
+        "options": [
+          "In a designated welding shop",
+          "In sprinklered buildings while the sprinkler protection is impaired",
+          "On steel beams",
+          "Outdoors"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cutting or welding is not permitted in areas not authorized by management, in sprinklered buildings while protection is impaired, in the presence of explosive atmospheres, or near large quantities of exposed, readily ignitable materials (1910.252(a)(2)(vi)(A)-(D)). Workplace example: hot work is rescheduled while the sprinkler riser is shut down for repair.",
+        "citation": "1910.252(a)(2)(vi)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(vii), how far must combustibles be relocated from the work site where practicable?",
+        "options": [
+          "10 feet",
+          "20 feet",
+          "At least 35 feet",
+          "50 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Where practicable, all combustibles must be relocated at least 35 feet from the work site. Where relocation is impracticable, they must be protected with flameproofed covers or shielded with metal or asbestos guards or curtains (1910.252(a)(2)(vii)). Workplace example: the cardboard stock is moved 40 feet away, and the fixed wooden bench is covered with a welding blanket.",
+        "citation": "1910.252(a)(2)(vii)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(v), where combustible materials such as wood shavings are on the floor, how far must the floor be swept clean?",
+        "options": [
+          "A 5-foot radius",
+          "A 10-foot radius",
+          "Only directly under the work",
+          "A 35-foot radius"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Where combustible materials such as paper clippings, wood shavings, or textile fibers are on the floor, it must be swept clean for a radius of 35 feet. Combustible floors must be kept wet, covered with damp sand, or protected by fire-resistant shields (1910.252(a)(2)(v)). Workplace example: the woodshop floor is swept within 35 feet before a repair weld.",
+        "citation": "1910.252(a)(2)(v)"
+      },
+      {
+        "question": "Under 1910.252(a)(2)(xiii)(B), what must management do regarding hot work outside designated areas?",
+        "options": [
+          "Designate an individual responsible for authorizing cutting and welding operations in areas not specifically designed for those processes",
+          "Nothing; welders self-authorize",
+          "Hire an outside fire marshal",
+          "Ban all hot work"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Management must designate an individual responsible for authorizing cutting and welding in areas not specifically designed for those processes (1910.252(a)(2)(xiii)(B)). It must also establish areas and procedures, insist on training, and advise contractors of hazards (1910.252(a)(2)(xiii)(A), (C), (D)). Workplace example: the plant engineer is the designated hot work authorizer.",
+        "citation": "1910.252(a)(2)(xiii)(B)"
+      },
+      {
+        "question": "Under 1910.252(c)(2), what minimum rate of mechanical ventilation is required for general welding in a space of less than 10,000 cubic feet per welder?",
+        "options": [
+          "500 cubic feet per minute per welder",
+          "2,000 cubic feet per minute per welder",
+          "1,000 cubic feet per minute per welder",
+          "No ventilation is required"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mechanical ventilation is required when welding in a space of less than 10,000 cubic feet per welder, in a room with a ceiling under 16 feet, or in confined spaces with obstructed cross ventilation (1910.252(c)(2)(i)(A)-(C)). It must be at least 2,000 cfm per welder unless local exhaust hoods or approved airline respirators are used (1910.252(c)(2)(ii)). Workplace example: two welders in a small low-ceiling room need at least 4,000 cfm.",
+        "citation": "1910.252(c)(2)"
+      },
+      {
+        "question": "Under 1910.253(b)(4)(iii), how must oxygen cylinders in storage be separated from fuel-gas cylinders?",
+        "options": [
+          "5 feet",
+          "10 feet with no barrier option",
+          "At least 20 feet, or by a noncombustible barrier at least 5 feet high with a fire-resistance rating of at least one-half hour",
+          "They may be stored together if chained"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Oxygen cylinders in storage must be separated from fuel-gas cylinders or combustibles (especially oil or grease) by at least 20 feet, or by a noncombustible barrier at least 5 feet high with a fire-resistance rating of at least one-half hour (1910.253(b)(4)(iii)). Workplace example: the cylinder cage has a rated block wall between the oxygen and acetylene sections.",
+        "citation": "1910.253(b)(4)(iii)"
+      },
+      {
+        "question": "Under 1910.253(a)(2), what is the maximum pressure at which acetylene may be generated, piped (outside approved cylinder manifolds), or used?",
+        "options": [
+          "5 psig",
+          "15 psig (30 psia)",
+          "50 psig",
+          "100 psig"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Acetylene may not be generated, piped (except in approved cylinder manifolds), or used at a pressure above 15 psig or 30 psia (1910.253(a)(2)). Workplace example: the acetylene regulator is never set above 15 psig.",
+        "citation": "1910.253(a)(2)"
+      },
+      {
+        "question": "Under 1910.254(c)(2)(i), which arc welding machines must have their frame or case grounded per Subpart S?",
+        "options": [
+          "All welding machines except engine-driven machines",
+          "None",
+          "Only machines over 600 volts",
+          "Only machines used outdoors"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The frame or case of the welding machine, except engine-driven machines, must be grounded under the conditions and methods in Subpart S (1910.254(c)(2)(i)). Workplace example: the shop's plug-in welder has an intact grounding conductor on its supply cord.",
+        "citation": "1910.254(c)(2)(i)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 20,
+    "title": "Process Safety Management",
+    "duration": 60,
+    "topics": [
+      "Applicability thresholds",
+      "Employee participation",
+      "Process hazard analysis teams and revalidation",
+      "Refresher training",
+      "Pre-startup safety review",
+      "Hot work permits",
+      "Management of change",
+      "Incident investigation",
+      "Emergency planning",
+      "Compliance audits"
+    ],
+    "resources": [
+      {
+        "title": "Process Safety Management Standard",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.119 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.119",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.119",
+        "type": "standard",
+        "description": "Current official text of the PSM standard"
+      },
+      {
+        "title": "Process Safety Management Topic Page",
+        "url": "https://www.osha.gov/process-safety-management",
+        "type": "guide",
+        "description": "OSHA overview and guidance for PSM"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.119(a)(1)(ii), PSM applies to a process involving a Category 1 flammable gas or a flammable liquid with a flashpoint below 100 °F on site in one location in what quantity (subject to listed exceptions)?",
+        "options": [
+          "1,000 pounds or more",
+          "5,000 pounds or more",
+          "10,000 pounds or more",
+          "100,000 pounds or more"
+        ],
+        "correctAnswer": 2,
+        "explanation": "PSM applies to a process involving a Category 1 flammable gas or a flammable liquid with a flashpoint below 100 °F on site in one location in a quantity of 10,000 pounds or more, except for the listed exclusions (1910.119(a)(1)(ii)). It also applies to processes with Appendix A chemicals at or above their threshold quantities (1910.119(a)(1)(i)). Workplace example: a plant with 15,000 pounds of hexane in a process vessel is covered, unless one of the (a)(1)(ii) exceptions applies (for example, flammable liquids kept in atmospheric storage below their normal boiling point without chilling).",
+        "citation": "1910.119(a)(1)(ii)"
+      },
+      {
+        "question": "What does 1910.119(c)(1) require regarding employee participation?",
+        "options": [
+          "Nothing written",
+          "A union contract",
+          "A written plan of action for implementing employee participation",
+          "An annual employee vote"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Employers must develop a written plan of action regarding the implementation of employee participation required by paragraph (c) (1910.119(c)(1)). Workplace example: the plan describes how operators sit on PHA teams and access PSM information.",
+        "citation": "1910.119(c)(1)"
+      },
+      {
+        "question": "Under 1910.119(e)(4), who must be on the process hazard analysis team?",
+        "options": [
+          "Only outside consultants",
+          "Only the plant manager",
+          "Any two employees",
+          "A team with engineering and process operations expertise, including at least one employee with experience and knowledge specific to the process, and one member knowledgeable in the PHA methodology"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The PHA must be performed by a team with expertise in engineering and process operations. It must include at least one employee with experience and knowledge specific to the process, and one member knowledgeable in the specific PHA methodology used (1910.119(e)(4)). Workplace example: a senior operator from the unit joins the HAZOP team alongside the process engineer and a trained facilitator.",
+        "citation": "1910.119(e)(4)"
+      },
+      {
+        "question": "Under 1910.119(e)(6), how often must the process hazard analysis be updated and revalidated?",
+        "options": [
+          "At least every five years after the initial PHA",
+          "Every year",
+          "Every ten years",
+          "Only after an incident"
+        ],
+        "correctAnswer": 0,
+        "explanation": "At least every five years after the initial PHA, it must be updated and revalidated by a team meeting (e)(4), to keep it consistent with the current process (1910.119(e)(6)). PHAs and revalidations must be retained for the life of the process (1910.119(e)(7)). Workplace example: the unit's 2021 HAZOP is revalidated by 2026.",
+        "citation": "1910.119(e)(6)"
+      },
+      {
+        "question": "Under 1910.119(g)(2), how often must refresher training be provided to employees involved in operating a process?",
+        "options": [
+          "Every year",
+          "At least every three years, and more often if necessary",
+          "Every five years",
+          "Only at hire"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Refresher training must be provided at least every three years, and more often if necessary, to each employee involved in operating a process. The employer, in consultation with those employees, determines the frequency (1910.119(g)(2)). Workplace example: operators complete refresher training on current operating procedures every three years.",
+        "citation": "1910.119(g)(2)"
+      },
+      {
+        "question": "Under 1910.119(i), when must a pre-startup safety review be performed, and what must it confirm?",
+        "options": [
+          "Only for brand-new plants, confirming paperwork is filed",
+          "Monthly for all processes",
+          "For new facilities and for modified facilities when the change requires a change in process safety information; it must confirm before highly hazardous chemicals are introduced that construction matches design, procedures are in place, PHA/MOC requirements are met, and employee training is complete",
+          "Only after an incident"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A pre-startup safety review is required for new facilities and for modified facilities when the modification requires a change in process safety information (1910.119(i)(1)). Before highly hazardous chemicals are introduced, it must confirm construction and equipment match design, procedures are in place and adequate, a PHA is done for new facilities, modified facilities meet MOC requirements, and training of each employee operating the process is complete (1910.119(i)(2)). Workplace example: a new reactor loop is not charged until the PSSR checklist is signed.",
+        "citation": "1910.119(i)(1)-(2)"
+      },
+      {
+        "question": "Under 1910.119(k), what is required for hot work on or near a covered process?",
+        "options": [
+          "A permit is only \"preferred\"",
+          "Only verbal approval",
+          "Nothing beyond 1910.252",
+          "A hot work permit that documents the 1910.252(a) fire prevention requirements were implemented, shows the authorized date(s), identifies the object, and is kept on file until the work is complete"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The employer must issue a hot work permit for hot work on or near a covered process (1910.119(k)(1)). The permit must document that the 1910.252(a) fire prevention and protection requirements were implemented before the work, indicate the authorized date(s), identify the object, and be kept on file until the hot work is completed (1910.119(k)(2)). Workplace example: welding on a pipe rack in the covered unit requires a signed, dated permit naming the line being welded.",
+        "citation": "1910.119(k)(1)-(2)"
+      },
+      {
+        "question": "Under 1910.119(l)(1), which changes must go through written management of change procedures?",
+        "options": [
+          "Changes to process chemicals, technology, equipment, procedures, and facilities that affect a covered process, except replacements in kind",
+          "Only changes costing over $10,000",
+          "Only equipment purchases",
+          "Only staffing changes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must establish and implement written procedures to manage changes (except replacements in kind) to process chemicals, technology, equipment, and procedures, and changes to facilities that affect a covered process (1910.119(l)(1)). Workplace example: swapping a pump for a different model with a different seal design goes through MOC; an identical spare does not.",
+        "citation": "1910.119(l)(1)"
+      },
+      {
+        "question": "Under 1910.119(m)(2), when must an incident investigation be initiated?",
+        "options": [
+          "Within 30 days",
+          "As promptly as possible, but not later than 48 hours following the incident",
+          "Within one week",
+          "At the next annual review"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An incident investigation must be initiated as promptly as possible, but not later than 48 hours after the incident (1910.119(m)(2)). This applies to each incident that resulted in, or could reasonably have resulted in, a catastrophic release (1910.119(m)(1)). Investigation reports must be kept for five years (1910.119(m)(7)). Workplace example: a near-miss flange leak on Friday night has an investigation team started by Sunday night.",
+        "citation": "1910.119(m)(2)"
+      },
+      {
+        "question": "What does 1910.119(n) require for emergency planning?",
+        "options": [
+          "Nothing beyond a phone list",
+          "Only an annual drill",
+          "An emergency action plan for the entire plant per 1910.38, including procedures for handling small releases",
+          "A plan only for the covered unit"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must establish and implement an emergency action plan for the entire plant in accordance with 1910.38, including procedures for handling small releases (1910.119(n)). Workplace example: the plant EAP includes how operators isolate and report a small chlorine leak.",
+        "citation": "1910.119(n)"
+      },
+      {
+        "question": "Under 1910.119(o), how often must compliance audits be certified, and which reports must be kept?",
+        "options": [
+          "Every year; all reports forever",
+          "Every five years; only the latest report",
+          "Only when OSHA asks",
+          "At least every three years; the two most recent audit reports"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employers must certify that they have evaluated compliance with PSM at least every three years (1910.119(o)(1)). The audit must involve at least one person knowledgeable in the process (1910.119(o)(2)), and the two most recent audit reports must be retained (1910.119(o)(5)). Workplace example: the 2023 and 2026 audit reports are both kept on file.",
+        "citation": "1910.119(o)(1) and (o)(5)"
+      }
+    ]
   }
 ]

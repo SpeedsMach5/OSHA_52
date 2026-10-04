@@ -2,7 +2,7 @@
 
 Every question in weeks 1-10, with the original (from `src/components/WeeklyTests.jsx`), the replacement in `data/osha1926.json`, the cited paragraph, and the reason for the change. Correct answers are in **bold**. Source text for each citation is in `sources/ecfr/<part>/<section>.txt` (eCFR, title 29 current as of 2026-09-30).
 
-Reason categories: *Answer was correct* (same answer, now cited); *Wrong as written* (the original answer contradicts the regulation); *Oversimplified/Overstated* (partly right but missing or adding conditions); *Unsupported* (no paragraph of the cited standard says it); *Off-week topic* (valid topic, but belongs in a different week); *New question added* (added to reach 10).
+Reason categories: *Answer was correct* (same answer, now cited); *Wrong as written* (the original answer contradicts the regulation); *Oversimplified/Overstated* (partly right but missing or adding conditions); *Unsupported* (no paragraph of the cited standard says it); *Not in 1926* (the requirement comes from a 1910 standard); *Off-week topic* / *Duplicate topic* (valid topic, but belongs in or is already covered by a different week); *New question added*.
 
 ## Week 1: Introduction to OSHA 1926 & Worker Rights
 
@@ -64,7 +64,7 @@ Reason categories: *Answer was correct* (same answer, now cited); *Wrong as writ
 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.95 | 200 | unchanged |
 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.102 | 200 | unchanged |
 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.100 | 200 | unchanged |
-| https://www.osha.gov/sites/default/files/publications/osha3151.pdf | 200 | https://www.osha.gov/sites/default/files/publications/OSHA3151.pdf |
+| https://www.osha.gov/sites/default/files/publications/osha3151.pdf | 200 (redirects) | https://www.osha.gov/sites/default/files/publications/OSHA3151.pdf |
 
 ### Questions
 
@@ -114,7 +114,7 @@ Reason categories: *Answer was correct* (same answer, now cited); *Wrong as writ
 |---|---|---|
 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.20 | 200 | unchanged |
 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.51 | 200 | unchanged |
-| https://www.osha.gov/sites/default/files/publications/construction_pocket_guide.pdf | 404 | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.35 |
+| https://www.osha.gov/sites/default/files/publications/construction_pocket_guide.pdf | 404 (redirects) | https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.35 |
 
 ### Questions
 

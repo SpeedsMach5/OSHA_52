@@ -1,0 +1,8 @@
+Source: eCFR, 29 CFR 1926.431 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1926&section=1926.431
+Human-readable: https://www.ecfr.gov/current/title-29/section-1926.431
+Retrieved: 2026-10-04
+
+§ 1926.431 Maintenance of equipment.
+
+The employer shall ensure that all wiring components and utilization equipment in hazardous locations are maintained in a dust-tight, dust-ignition-proof, or explosion-proof condition, as appropriate. There shall be no loose or missing screws, gaskets, threaded connections, seals, or other impairments to a tight condition.

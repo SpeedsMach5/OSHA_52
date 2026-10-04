@@ -667,5 +667,757 @@
         "citation": "1910.178(m)(2)"
       }
     ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 5,
+    "title": "Machine Guarding: General Requirements",
+    "duration": 30,
+    "topics": [
+      "Methods of machine guarding",
+      "Guard attachment",
+      "Point of operation guarding",
+      "Special hand tools",
+      "Revolving drums and fan blades",
+      "Anchoring fixed machinery"
+    ],
+    "resources": [
+      {
+        "title": "General Requirements for All Machines",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.212 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.212",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.212",
+        "type": "standard",
+        "description": "Current official text of the general machine guarding standard"
+      },
+      {
+        "title": "Machine Guarding Topic Page",
+        "url": "https://www.osha.gov/machine-guarding",
+        "type": "guide",
+        "description": "OSHA overview and guidance for machine guarding"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.212(a)(1), whom must machine guarding protect?",
+        "options": [
+          "Only the machine operator",
+          "Only maintenance staff",
+          "Only visitors",
+          "The operator and other employees in the machine area"
+        ],
+        "correctAnswer": 3,
+        "explanation": "One or more methods of machine guarding must protect the operator and other employees in the machine area from hazards such as point of operation, ingoing nip points, rotating parts, and flying chips and sparks (1910.212(a)(1)). Workplace example: a lathe's chip shield also protects the worker at the next station.",
+        "citation": "1910.212(a)(1)"
+      },
+      {
+        "question": "Which of these does 1910.212(a)(1) list as an example of a guarding method?",
+        "options": [
+          "Two-hand tripping devices",
+          "Warning signs alone",
+          "Operator experience",
+          "Reduced machine speed"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Examples of guarding methods given in 1910.212(a)(1) are barrier guards, two-hand tripping devices, and electronic safety devices (1910.212(a)(1)). Workplace example: a press brake set up so it cycles only when both palm buttons are pressed.",
+        "citation": "1910.212(a)(1)"
+      },
+      {
+        "question": "Under 1910.212(a)(2), where must machine guards be affixed?",
+        "options": [
+          "Anywhere near the machine",
+          "To the machine where possible, and secured elsewhere if attaching to the machine is not possible",
+          "Only to the floor",
+          "Guards may be hand-held"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Guards must be affixed to the machine where possible and secured elsewhere if attachment is not possible, and the guard itself must not create an accident hazard (1910.212(a)(2)). Workplace example: a bolted-on belt guard rather than a loose sheet of plywood leaning against the frame.",
+        "citation": "1910.212(a)(2)"
+      },
+      {
+        "question": "How does 1910.212(a)(3)(i) define the \"point of operation\"?",
+        "options": [
+          "The machine's on/off switch",
+          "The machine's motor housing",
+          "The area on a machine where work is actually performed on the material being processed",
+          "The operator's workstation"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The point of operation is the area on a machine where work is actually performed upon the material being processed (1910.212(a)(3)(i)). Workplace example: the die area of a punch press, or the blade contact zone of a band saw.",
+        "citation": "1910.212(a)(3)(i)"
+      },
+      {
+        "question": "Where no specific standard applies, how must a point-of-operation guarding device be designed under 1910.212(a)(3)(ii)?",
+        "options": [
+          "To slow the machine when a hand is near",
+          "To sound an alarm when the danger zone is entered",
+          "To be removable for faster setup",
+          "To prevent the operator from having any part of their body in the danger zone during the operating cycle"
+        ],
+        "correctAnswer": 3,
+        "explanation": "In the absence of applicable specific standards, the guard must be designed and constructed to prevent the operator from having any part of their body in the danger zone during the operating cycle (1910.212(a)(3)(ii)). Workplace example: a fixed barrier on a shear whose openings are too small for fingers to reach the blade.",
+        "citation": "1910.212(a)(3)(ii)"
+      },
+      {
+        "question": "An operator uses tongs to place parts in a die. Under 1910.212(a)(3)(iii), these special hand tools:",
+        "options": [
+          "May only supplement other required guarding, not replace it",
+          "Replace the need for a point-of-operation guard",
+          "Are prohibited",
+          "Are required on every machine"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Special hand tools for placing and removing material must let the operator handle material without putting a hand in the danger zone, but they may not be used in place of other required guarding. They can only supplement it (1910.212(a)(3)(iii)). Workplace example: magnetic pick-ups are used on a guarded press, not as a reason to remove the guard.",
+        "citation": "1910.212(a)(3)(iii)"
+      },
+      {
+        "question": "Which machine does 1910.212(a)(3)(iv) list as one that usually requires point-of-operation guarding?",
+        "options": [
+          "Desktop computers",
+          "Power presses",
+          "Forklifts",
+          "Air compressors"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The listed machines that usually require point-of-operation guarding include guillotine cutters, shears, alligator shears, power presses, milling machines, power saws, jointers, portable power tools, and forming rolls and calenders (1910.212(a)(3)(iv)). Workplace example: a stamping shop's power presses all need point-of-operation guards or devices.",
+        "citation": "1910.212(a)(3)(iv)"
+      },
+      {
+        "question": "How must revolving drums, barrels, and containers be guarded under 1910.212(a)(4)?",
+        "options": [
+          "With a warning sign",
+          "By a rope barrier",
+          "By an enclosure interlocked with the drive so the drum cannot revolve unless the enclosure is in place",
+          "They need no guard"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Revolving drums, barrels, and containers must be guarded by an enclosure interlocked with the drive mechanism, so they cannot revolve unless the guard enclosure is in place (1910.212(a)(4)). Workplace example: a tumbling barrel whose door switch stops the drive when the door is opened.",
+        "citation": "1910.212(a)(4)"
+      },
+      {
+        "question": "Under 1910.212(a)(5), fan blades must be guarded when their periphery is less than how far above the floor or working level?",
+        "options": [
+          "5 feet",
+          "6 feet",
+          "7 feet",
+          "8 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When the periphery of fan blades is less than 7 feet above the floor or working level, the blades must be guarded (1910.212(a)(5)). Workplace example: a pedestal fan on a shop floor needs a blade guard; a ceiling fan 9 feet up does not under this paragraph.",
+        "citation": "1910.212(a)(5)"
+      },
+      {
+        "question": "What is the maximum opening size allowed in a fan blade guard under 1910.212(a)(5)?",
+        "options": [
+          "1/4 inch",
+          "1/2 inch",
+          "1 inch",
+          "2 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Fan blade guards must have openings no larger than one-half inch (1910.212(a)(5)). Workplace example: a floor fan with a wide-wire grille that a finger can pass through does not comply.",
+        "citation": "1910.212(a)(5)"
+      },
+      {
+        "question": "What does 1910.212(b) require of machines designed for a fixed location?",
+        "options": [
+          "They must be on wheels",
+          "They must be securely anchored to prevent walking or moving",
+          "They must be bolted only if over 1 ton",
+          "Nothing"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Machines designed for a fixed location must be securely anchored to prevent walking or moving (1910.212(b)). Workplace example: a drill press that creeps across the floor during use must be bolted down.",
+        "citation": "1910.212(b)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 6,
+    "title": "Machine Guarding: Power Transmission, Abrasive Wheels, Presses",
+    "duration": 60,
+    "topics": [
+      "Abrasive wheel guards, work rests, and tongue guards",
+      "Ring testing and wheel mounting",
+      "Guarding shafting, belts, sprockets, and chains",
+      "Point-of-operation safeguarding on power presses",
+      "Weekly press inspections and injury reporting",
+      "Press operator training"
+    ],
+    "resources": [
+      {
+        "title": "Abrasive Wheel Machinery",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.215",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.215 on osha.gov"
+      },
+      {
+        "title": "Mechanical Power Presses",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.217",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.217 on osha.gov"
+      },
+      {
+        "title": "Mechanical Power-Transmission Apparatus",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.219",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.219 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.217",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.217",
+        "type": "standard",
+        "description": "Current official text of the mechanical power press standard"
+      },
+      {
+        "title": "Machine Guarding Topic Page",
+        "url": "https://www.osha.gov/machine-guarding",
+        "type": "guide",
+        "description": "OSHA overview and guidance for machine guarding"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.215(a)(1), abrasive wheels may be used only on machines that:",
+        "options": [
+          "Run below 3,600 rpm",
+          "Are bolted to a bench",
+          "Are provided with safety guards as defined in 1910.215 (except for the listed exceptions)",
+          "Have a variable speed control"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Abrasive wheels may be used only on machines provided with safety guards as defined in the section, except for the specific exceptions listed (1910.215(a)(1)). Workplace example: a bench grinder with its wheel guard removed must be taken out of use until the guard is replaced.",
+        "citation": "1910.215(a)(1)"
+      },
+      {
+        "question": "On an offhand grinder, what is the maximum opening allowed between the work rest and the wheel under 1910.215(a)(4)?",
+        "options": [
+          "1/16 inch",
+          "1/8 inch",
+          "1/4 inch",
+          "1/2 inch"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Work rests must be kept adjusted closely to the wheel with a maximum opening of one-eighth inch. They must be securely clamped after each adjustment and must not be adjusted with the wheel in motion (1910.215(a)(4)). Workplace example: as the wheel wears, the operator stops the grinder and resets the rest to 1/8 inch or less.",
+        "citation": "1910.215(a)(4)"
+      },
+      {
+        "question": "Under 1910.215(b)(9), what is the maximum distance between the wheel periphery and the adjustable tongue (or top end of the peripheral member) on bench and floor stand guards?",
+        "options": [
+          "1/8 inch",
+          "1/4 inch",
+          "1/2 inch",
+          "1 inch"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The distance between the wheel periphery and the adjustable tongue or top end of the peripheral member must never exceed one-fourth inch (1910.215(b)(9)). Workplace example: the tongue guard is lowered toward the wheel as the wheel wears down.",
+        "citation": "1910.215(b)(9)"
+      },
+      {
+        "question": "What must the user do immediately before mounting an abrasive wheel under 1910.215(d)(1)?",
+        "options": [
+          "Nothing if the wheel is new",
+          "Closely inspect and sound the wheel (ring test), and check that spindle speed does not exceed the wheel's maximum marked operating speed",
+          "Soak the wheel in water",
+          "Run the wheel at double speed for one minute"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Immediately before mounting, wheels must be closely inspected and sounded by the user (ring test) to make sure they are undamaged, and the machine's spindle speed must be checked so it does not exceed the wheel's maximum operating speed (1910.215(d)(1)). Workplace example: a dull \"thud\" instead of a clear ring means a cracked vitrified wheel is set aside.",
+        "citation": "1910.215(d)(1)"
+      },
+      {
+        "question": "Under 1910.215(c)(1), abrasive wheels must be mounted between flanges that are at least what size?",
+        "options": [
+          "One-quarter of the wheel diameter",
+          "One-half of the wheel diameter",
+          "One-third of the wheel diameter",
+          "Any size"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All abrasive wheels must be mounted between flanges not less than one-third the diameter of the wheel, except for the wheel types listed (1910.215(c)(1)). Workplace example: a 9-inch straight wheel needs flanges at least 3 inches in diameter.",
+        "citation": "1910.215(c)(1)"
+      },
+      {
+        "question": "Under 1910.219(c)(2)(i), exposed horizontal shafting must be guarded when it is how far or less from the floor or working platform?",
+        "options": [
+          "4 feet",
+          "6 feet",
+          "7 feet",
+          "10 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All exposed parts of horizontal shafting 7 feet or less from the floor or working platform, except runways used only for oiling or running adjustments, must be protected by a stationary casing or trough (1910.219(c)(2)(i)). Workplace example: a line shaft running 5 feet above an aisle needs a full casing.",
+        "citation": "1910.219(c)(2)(i)"
+      },
+      {
+        "question": "When must sprocket wheels and chains be enclosed under 1910.219(f)(3)?",
+        "options": [
+          "Unless they are more than 7 feet above the floor or platform",
+          "Only when over 10 feet up",
+          "Only on new machines",
+          "Never, if painted yellow"
+        ],
+        "correctAnswer": 0,
+        "explanation": "All sprocket wheels and chains must be enclosed unless they are more than 7 feet above the floor or platform. Where the drive extends over other machine or working areas, protection against falling must be provided. Manually operated sprockets are excluded (1910.219(f)(3)). Workplace example: a conveyor drive chain at knee height must be fully enclosed.",
+        "citation": "1910.219(f)(3)"
+      },
+      {
+        "question": "Both runs of a horizontal belt are 42 inches or less from the floor. Under 1910.219(e)(1)(i), how must the belt be guarded?",
+        "options": [
+          "A guard 15 inches above the belt",
+          "The belt must be fully enclosed",
+          "A rail along one side",
+          "No guard is needed below 42 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Where both runs of a horizontal belt are 7 feet or less from the floor, the guard must extend at least 15 inches above the belt or to standard height. Where both runs are 42 inches or less from the floor, the belt must be fully enclosed (1910.219(e)(1)(i)). Workplace example: a low compressor drive belt gets a complete enclosure, not just a top rail.",
+        "citation": "1910.219(e)(1)(i)"
+      },
+      {
+        "question": "Under 1910.217(c)(1)(i), what is the employer's responsibility for mechanical power press operations?",
+        "options": [
+          "Provide gloves to operators",
+          "Post a warning sign at each press",
+          "Provide and ensure the usage of point-of-operation guards or properly applied and adjusted point-of-operation devices on every operation",
+          "Guard only presses over 50 tons"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must provide and ensure the usage of point-of-operation guards, or properly applied and adjusted point-of-operation devices, on every operation performed on a mechanical power press (1910.217(c)(1)(i)). Workplace example: a light curtain set to the correct safety distance is used on every job, including short runs.",
+        "citation": "1910.217(c)(1)(i)"
+      },
+      {
+        "question": "Under the directed component of the press inspection program, 1910.217(e)(1)(ii)(A) requires each press to be inspected and tested at least how often?",
+        "options": [
+          "Daily",
+          "Once a month",
+          "Once a year",
+          "Once a week"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Each press must be inspected and tested on a regular basis at least once a week to determine the condition of the clutch/brake mechanism, antirepeat feature, and single-stroke mechanism (1910.217(e)(1)(ii)(A)). This does not apply to presses that comply with (b)(13) and (14) (1910.217(e)(1)(iii)). Workplace example: every Monday maintenance tests the single-stroke function on each press.",
+        "citation": "1910.217(e)(1)(ii)(A)"
+      },
+      {
+        "question": "Within how many days must an employer report a point-of-operation injury on a mechanical power press under 1910.217(g)(1)?",
+        "options": [
+          "8 hours",
+          "7 days",
+          "30 days",
+          "90 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must report all point-of-operation injuries to operators or other employees within 30 days of the occurrence, to OSHA or to the State agency administering an approved plan (1910.217(g)(1)). This is in addition to Part 1904 recording and reporting. Workplace example: a finger laceration at a press die is reported under 1910.217(g) within 30 days.",
+        "citation": "1910.217(g)(1)"
+      },
+      {
+        "question": "When must the employer train and instruct a power press operator under 1910.217(f)(2)?",
+        "options": [
+          "Within 30 days of hire",
+          "Before the operator starts work on any operation covered by the section",
+          "Only after an injury",
+          "Annually only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The employer must train and instruct the operator in the safe method of work before starting work on any operation covered by 1910.217, and must ensure through adequate supervision that correct operating procedures are followed (1910.217(f)(2)). Workplace example: a new operator is trained on the specific die and safeguarding before running production.",
+        "citation": "1910.217(f)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 7,
+    "title": "Walking-Working Surfaces and Ladders",
+    "duration": 45,
+    "topics": [
+      "Surface conditions and hazard correction",
+      "Qualified-person repairs",
+      "Ladder rung spacing and width",
+      "Ladder inspection and tagging defective ladders",
+      "Safe climbing and stepladder use",
+      "Portable ladder extension above landings",
+      "Stair angles and headroom"
+    ],
+    "resources": [
+      {
+        "title": "Walking-Working Surfaces: General Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.22",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.22 on osha.gov"
+      },
+      {
+        "title": "Ladders",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.23",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.23 on osha.gov"
+      },
+      {
+        "title": "Stairways",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.25",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.25 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.23",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.23",
+        "type": "standard",
+        "description": "Current official text of the general industry ladder standard"
+      },
+      {
+        "title": "Walking-Working Surfaces Rule Page",
+        "url": "https://www.osha.gov/walking-working-surfaces",
+        "type": "guide",
+        "description": "OSHA page on the updated walking-working surfaces and fall protection rule"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.22(a)(3), walking-working surfaces must be kept free of hazards such as:",
+        "options": [
+          "Painted lines",
+          "Anti-slip mats",
+          "Sharp or protruding objects, loose boards, corrosion, leaks, spills, snow, and ice",
+          "Floor drains"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must ensure walking-working surfaces are free of hazards such as sharp or protruding objects, loose boards, corrosion, leaks, spills, snow, and ice (1910.22(a)(3)). Workplace example: a hydraulic leak under a press is cleaned up and the source repaired, not just covered with cardboard.",
+        "citation": "1910.22(a)(3)"
+      },
+      {
+        "question": "A floor plate at a loading dock is found broken and cannot be repaired right away. What does 1910.22(d)(2) require?",
+        "options": [
+          "Continue use with caution",
+          "Post a sign only",
+          "Repair it within 30 days",
+          "The hazard must be guarded to prevent employees from using the surface until it is corrected or repaired"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Hazardous conditions must be corrected or repaired before an employee uses the surface again. If that cannot be done immediately, the hazard must be guarded to prevent use until it is fixed (1910.22(d)(2)). Workplace example: the broken plate is barricaded and the dock door closed until it is replaced.",
+        "citation": "1910.22(d)(2)"
+      },
+      {
+        "question": "Under 1910.22(d)(3), who must perform or supervise a repair that involves the structural integrity of a walking-working surface?",
+        "options": [
+          "A qualified person",
+          "Any maintenance employee",
+          "The shift supervisor",
+          "The equipment vendor only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When a correction or repair involves the structural integrity of a walking-working surface, a qualified person must perform or supervise it (1910.22(d)(3)). Workplace example: replacing corroded mezzanine beams is done under a qualified engineer's supervision.",
+        "citation": "1910.22(d)(3)"
+      },
+      {
+        "question": "Under 1910.23(b)(2), ladder rungs, steps, and cleats generally must be spaced how far apart, measured between centerlines?",
+        "options": [
+          "6 to 10 inches",
+          "10 to 14 inches",
+          "12 to 18 inches",
+          "14 to 20 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Rungs, steps, and cleats must be spaced not less than 10 inches and not more than 14 inches apart, measured between centerlines, with exceptions for elevator shafts and telecommunication towers (1910.23(b)(2)). Workplace example: a shop-built ladder with 16-inch rung spacing may not be used.",
+        "citation": "1910.23(b)(2)"
+      },
+      {
+        "question": "What is the minimum clear width of rungs and steps on portable ladders under 1910.23(b)(4)?",
+        "options": [
+          "9 inches",
+          "10.5 inches",
+          "11.5 inches",
+          "16 inches"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Rungs, steps, and cleats must have a minimum clear width of 11.5 inches on portable ladders and 16 inches on fixed ladders, with listed exceptions (1910.23(b)(4)). Workplace example: a narrow homemade step ladder under 11.5 inches wide is removed from use.",
+        "citation": "1910.23(b)(4)"
+      },
+      {
+        "question": "How often must ladders be inspected under 1910.23(b)(9)?",
+        "options": [
+          "Monthly",
+          "Annually",
+          "Only when a defect is reported",
+          "Before initial use in each work shift, and more often as necessary"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Ladders must be inspected before initial use in each work shift, and more frequently as necessary, to identify visible defects that could cause injury (1910.23(b)(9)). Workplace example: the first maintenance tech to use the extension ladder each shift checks the rails, rungs, feet, and locks.",
+        "citation": "1910.23(b)(9)"
+      },
+      {
+        "question": "A stepladder has a cracked side rail. Under 1910.23(b)(10), the employer must:",
+        "options": [
+          "Immediately tag it \"Dangerous: Do Not Use\" (or similar) and remove it from service until repaired or replaced",
+          "Tape the crack and keep using it",
+          "Use it only for light tasks",
+          "Report it at the next safety meeting"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Any ladder with structural or other defects must immediately be tagged \"Dangerous: Do Not Use\" or similar, per 1910.145, and removed from service until repaired under 1910.22(d) or replaced (1910.23(b)(10)). Workplace example: the cracked ladder is tagged and moved to the repair cage.",
+        "citation": "1910.23(b)(10)"
+      },
+      {
+        "question": "Which is required of each employee climbing up or down a ladder under 1910.23(b)?",
+        "options": [
+          "Facing away from the ladder",
+          "Facing the ladder and using at least one hand to grasp it",
+          "Carrying tools in both hands",
+          "Sliding down the rails"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each employee must face the ladder when climbing up or down it (1910.23(b)(11)) and use at least one hand to grasp it (1910.23(b)(12)), and must not carry any load that could cause loss of balance (1910.23(b)(13)). Workplace example: tools go up in a bucket on a hand line, not in the climber's hands.",
+        "citation": "1910.23(b)(12)"
+      },
+      {
+        "question": "Under 1910.23(c)(8), which parts of a stepladder may not be used as steps?",
+        "options": [
+          "The bottom step",
+          "Any step below the spreader",
+          "The cap (if equipped) and the top step",
+          "The middle steps"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The cap (if equipped) and top step of a stepladder may not be used as steps (1910.23(c)(8)). Workplace example: if the task requires standing on the top step, a taller ladder or a lift is needed.",
+        "citation": "1910.23(c)(8)"
+      },
+      {
+        "question": "A portable ladder is used to reach a roof. Under 1910.23(c)(11), how far must the side rails extend above the upper landing surface?",
+        "options": [
+          "1 foot",
+          "2 feet",
+          "3 feet",
+          "4 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portable ladders used to gain access to an upper landing surface must have side rails that extend at least 3 feet above that surface (1910.23(c)(11)). Workplace example: an extension ladder to a mezzanine is set so 3 feet of rail sticks up above the deck.",
+        "citation": "1910.23(c)(11)"
+      },
+      {
+        "question": "Under 1910.25(c)(1), standard stairs must be installed at what angle from the horizontal?",
+        "options": [
+          "15 to 30 degrees",
+          "30 to 50 degrees",
+          "50 to 70 degrees",
+          "70 to 90 degrees"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Standard stairs must be installed at angles between 30 and 50 degrees from the horizontal (1910.25(c)(1)). Workplace example: a steeper stair to an equipment platform would have to qualify as a ship stair, which is allowed only when standard stairs are not feasible (1910.25(b)(8)).",
+        "citation": "1910.25(c)(1)"
+      },
+      {
+        "question": "Under 1910.25(b)(2), what is the minimum vertical clearance above any stair tread to an overhead obstruction?",
+        "options": [
+          "6 feet",
+          "6 feet, 8 inches",
+          "7 feet",
+          "7 feet, 6 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vertical clearance above any stair tread to any overhead obstruction must be at least 6 feet, 8 inches, measured from the leading edge of the tread. Spiral stairs follow 1910.25(d)(3) (1910.25(b)(2)). Workplace example: a duct run hung at 6 feet 2 inches over a stair must be relocated or the stair re-routed.",
+        "citation": "1910.25(b)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1910",
+    "week": 8,
+    "title": "Fall Protection Systems in General Industry",
+    "duration": 60,
+    "topics": [
+      "4-foot trigger for unprotected sides and edges",
+      "Low-slope roof work zones",
+      "Fixed ladders over 24 feet",
+      "Guardrail height and strength",
+      "Personal fall arrest anchorages, free fall, and body belts",
+      "Inspection and prompt rescue",
+      "Fall protection training"
+    ],
+    "resources": [
+      {
+        "title": "Duty to Have Fall Protection",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.28",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.28 on osha.gov"
+      },
+      {
+        "title": "Fall Protection Systems Criteria",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.29",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.29 on osha.gov"
+      },
+      {
+        "title": "Personal Fall Protection Systems",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.140",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.140 on osha.gov"
+      },
+      {
+        "title": "Fall Protection Training Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.30",
+        "type": "standard",
+        "description": "Full text of 29 CFR 1910.30 on osha.gov"
+      },
+      {
+        "title": "eCFR: 29 CFR 1910.28",
+        "url": "https://www.ecfr.gov/current/title-29/section-1910.28",
+        "type": "standard",
+        "description": "Current official text of the duty to have fall protection"
+      },
+      {
+        "title": "Fall Protection Topic Page",
+        "url": "https://www.osha.gov/fall-protection",
+        "type": "guide",
+        "description": "OSHA overview and guidance for fall protection"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1910.28(b)(1)(i), at what height must an employee on a walking-working surface with an unprotected side or edge be protected from falling?",
+        "options": [
+          "4 feet or more above a lower level",
+          "6 feet or more",
+          "10 feet or more",
+          "15 feet or more"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Each employee on a walking-working surface with an unprotected side or edge 4 feet or more above a lower level must be protected by guardrail systems, safety net systems, or personal fall protection systems (1910.28(b)(1)(i)). Workplace example: a 5-foot-high storage mezzanine edge needs guardrails.",
+        "citation": "1910.28(b)(1)(i)"
+      },
+      {
+        "question": "An employee works 4 feet from the edge of a low-slope roof. Under 1910.28(b)(13)(i), which protection is acceptable?",
+        "options": [
+          "A designated area",
+          "A work rule only",
+          "No protection is needed",
+          "A guardrail system, safety net system, travel restraint system, or personal fall arrest system"
+        ],
+        "correctAnswer": 3,
+        "explanation": "When work is performed less than 6 feet from the roof edge, each employee must be protected by a guardrail system, safety net system, travel restraint system, or personal fall arrest system (1910.28(b)(13)(i)). Designated areas are allowed only from 6 feet out, for infrequent and temporary work. Workplace example: a tech servicing a rooftop unit 4 feet from the edge ties off to a travel restraint anchor.",
+        "citation": "1910.28(b)(13)(i)"
+      },
+      {
+        "question": "Work on a low-slope roof is 15 feet or more from the edge and is both infrequent and temporary. What does 1910.28(b)(13)(iii) require?",
+        "options": [
+          "No fall protection is required for that work, but the employer must enforce a work rule prohibiting going within 15 feet of the edge without fall protection",
+          "A guardrail is always required",
+          "A personal fall arrest system is always required",
+          "A safety net is required"
+        ],
+        "correctAnswer": 0,
+        "explanation": "At 15 feet or more from the edge, fall protection is not required if the work is both infrequent and temporary, but the employer must implement and enforce a work rule prohibiting employees from going within 15 feet of the edge without fall protection (1910.28(b)(13)(iii)). Workplace example: a once-a-year roof drain inspection in the middle of the roof, under a posted 15-foot rule.",
+        "citation": "1910.28(b)(13)(iii)"
+      },
+      {
+        "question": "Under 1910.28(b)(9)(i)(D), by what date must all fixed ladders extending more than 24 feet above a lower level be equipped with a personal fall arrest system or ladder safety system?",
+        "options": [
+          "November 19, 2018",
+          "November 18, 2036",
+          "May 17, 2017",
+          "They never need one if caged"
+        ],
+        "correctAnswer": 1,
+        "explanation": "On and after November 18, 2036, all fixed ladders over 24 feet must have a personal fall arrest system or ladder safety system (1910.28(b)(9)(i)(D)). Ladders installed on or after November 19, 2018 already need one (1910.28(b)(9)(i)(B)). Existing ladders may use a cage or well until then (1910.28(b)(9)(i)(A)). Workplace example: a caged 30-foot ladder from 2005 must be retrofitted with a ladder safety system by the 2036 deadline, or sooner if a section is replaced.",
+        "citation": "1910.28(b)(9)(i)(D)"
+      },
+      {
+        "question": "Under 1910.29(b)(1), what must the top edge height of a guardrail top rail be above the walking-working surface?",
+        "options": [
+          "36 inches, plus or minus 3 inches",
+          "39 inches minimum",
+          "42 inches, plus or minus 3 inches",
+          "48 inches minimum"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The top edge height of top rails must be 42 inches, plus or minus 3 inches, above the walking-working surface. It may exceed 45 inches if all other criteria are met (1910.29(b)(1)). Workplace example: a new platform guardrail measured at 37 inches is too low.",
+        "citation": "1910.29(b)(1)"
+      },
+      {
+        "question": "Under 1910.29(b)(3), a guardrail system must withstand, without failure, a force of at least how much applied within 2 inches of the top edge?",
+        "options": [
+          "100 pounds",
+          "150 pounds",
+          "200 pounds",
+          "300 pounds"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Guardrail systems must withstand, without failure, at least 200 pounds applied downward or outward within 2 inches of the top edge at any point along the top rail (1910.29(b)(3)). Under that load, the top rail must not deflect below 39 inches (1910.29(b)(4)). Workplace example: a chain-only \"guardrail\" that sags under a 200-pound push does not comply.",
+        "citation": "1910.29(b)(3)"
+      },
+      {
+        "question": "Under 1910.140(c)(13)(i), an anchorage for personal fall protection equipment that is not designed by a qualified person must be capable of supporting at least:",
+        "options": [
+          "1,800 pounds per employee",
+          "3,000 pounds per employee",
+          "5,000 pounds for each employee attached",
+          "10,000 pounds total"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Anchorages must be capable of supporting at least 5,000 pounds for each employee attached, or be designed, installed, and used under a qualified person's supervision as part of a complete system with a safety factor of at least two (1910.140(c)(13)(i)-(ii)). Workplace example: tying off to a conduit strap is not acceptable; a rated anchor or structural beam is.",
+        "citation": "1910.140(c)(13)(i)"
+      },
+      {
+        "question": "Under 1910.140(d)(2)(ii), a personal fall arrest system must be rigged so the employee cannot free fall more than:",
+        "options": [
+          "2 feet",
+          "4 feet",
+          "6 feet, or contact a lower level",
+          "10 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Personal fall arrest systems must be rigged so the employee cannot free fall more than 6 feet or contact a lower level, unless the manufacturer designed and tested the system for a longer free fall with a maximum arresting force of 1,800 pounds (1910.140(d)(2)(ii)). Workplace example: a 6-foot lanyard anchored at foot level could allow nearly 12 feet of free fall, so the anchor must be raised.",
+        "citation": "1910.140(d)(2)(ii)"
+      },
+      {
+        "question": "What does 1910.140(d)(3) say about body belts?",
+        "options": [
+          "They may be used for fall arrest under 10 feet",
+          "They are preferred over harnesses",
+          "They are prohibited as part of a personal fall arrest system",
+          "They may be used if padded"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Body belts are prohibited as part of a personal fall arrest system (1910.140(d)(3)). Workplace example: an old waist belt found in a gang box may not be used for fall arrest; a full-body harness is required.",
+        "citation": "1910.140(d)(3)"
+      },
+      {
+        "question": "Under 1910.140(c)(18), when must personal fall protection systems be inspected?",
+        "options": [
+          "Annually by the manufacturer",
+          "Monthly",
+          "Only after a fall",
+          "Before initial use during each workshift, with defective components removed from service"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Personal fall protection systems must be inspected before initial use during each workshift for mildew, wear, damage, and other deterioration, and defective components must be removed from service (1910.140(c)(18)). Workplace example: a harness with a cut webbing strap found during the pre-shift check is taken out of service.",
+        "citation": "1910.140(c)(18)"
+      },
+      {
+        "question": "What does 1910.140(c)(21) require in the event of a fall?",
+        "options": [
+          "The employer must provide for prompt rescue of each employee",
+          "Calling OSHA first",
+          "Waiting for the fire department only",
+          "Nothing beyond first aid"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must provide for prompt rescue of each employee in the event of a fall (1910.140(c)(21)). Workplace example: a rescue plan with a ladder or lift staged nearby before anyone works suspended in a harness.",
+        "citation": "1910.140(c)(21)"
+      },
+      {
+        "question": "Under 1910.30(a), when and by whom must employees who use personal fall protection systems be trained?",
+        "options": [
+          "Within 90 days, by any coworker",
+          "Before any exposure to a fall hazard, by a qualified person",
+          "After their first year, by the manufacturer",
+          "Only if they request it"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Before any employee is exposed to a fall hazard, the employer must train each employee who uses personal fall protection systems (1910.30(a)(1)), and each employee must be trained by a qualified person (1910.30(a)(2)). Workplace example: a new rooftop HVAC tech is trained by the company's qualified fall protection trainer before their first roof job.",
+        "citation": "1910.30(a)(1)"
+      }
+    ]
   }
 ]

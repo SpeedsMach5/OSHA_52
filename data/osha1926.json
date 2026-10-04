@@ -1580,5 +1580,1597 @@
         "citation": "1926.452(w)(2)"
       }
     ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 11,
+    "title": "Fall Protection Basics",
+    "duration": 60,
+    "topics": [
+      "The 6-foot trigger height",
+      "Lanyards, lifelines, and anchorages",
+      "Free fall and inspection of personal fall arrest systems",
+      "Warning lines on low-slope roofs",
+      "Safety nets",
+      "Hole covers",
+      "Guardrail height",
+      "Fall protection training"
+    ],
+    "resources": [
+      {
+        "title": "Fall Protection Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.501",
+        "type": "standard",
+        "description": "Duty to have fall protection"
+      },
+      {
+        "title": "Personal Fall Arrest Systems",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.502",
+        "type": "standard",
+        "description": "Fall protection systems criteria and practices"
+      },
+      {
+        "title": "Fall Protection Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.503",
+        "type": "standard",
+        "description": "Fall protection training requirements"
+      }
+    ],
+    "test": [
+      {
+        "question": "At what height above a lower level does 1926.501(b)(1) require fall protection for an employee at an unprotected side or edge?",
+        "options": [
+          "4 feet",
+          "6 feet",
+          "8 feet",
+          "10 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employees on a walking/working surface with an unprotected side or edge 6 feet or more above a lower level must be protected by guardrail systems, safety net systems, or personal fall arrest systems (1926.501(b)(1)). Residential construction uses the same 6-foot trigger (1926.501(b)(13)). Job-site scenario: framers setting roof trusses 8 feet up need one of those systems.",
+        "citation": "1926.501(b)(1)"
+      },
+      {
+        "question": "What minimum breaking strength does 1926.502(d)(9) require for lanyards and vertical lifelines?",
+        "options": [
+          "2,500 pounds",
+          "3,000 pounds",
+          "5,000 pounds",
+          "10,000 pounds"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lanyards and vertical lifelines must have a minimum breaking strength of 5,000 pounds (1926.502(d)(9)). Horizontal lifelines are handled differently: they must be designed, installed, and used under the supervision of a qualified person (1926.502(d)(8)). Job-site scenario: the roofer's rope grab and vertical lifeline are rated 5,000 lb.",
+        "citation": "1926.502(d)(9)"
+      },
+      {
+        "question": "How often must personal fall arrest systems be inspected under 1926.502(d)(21)?",
+        "options": [
+          "Weekly",
+          "Monthly",
+          "Prior to each use, with defective components removed from service",
+          "Annually"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Personal fall arrest systems must be inspected before each use for wear, damage, and other deterioration, and defective components removed from service (1926.502(d)(21)). Job-site scenario: the ironworker checks harness webbing, stitching, D-ring, and lanyard snap hooks before tying off.",
+        "citation": "1926.502(d)(21)"
+      },
+      {
+        "question": "On a low-slope roof where no mechanical equipment is being used, how far from the roof edge must a warning line be erected under 1926.502(f)(1)(i)?",
+        "options": [
+          "Not less than 10 feet",
+          "Not less than 15 feet",
+          "Not less than 20 feet",
+          "Not less than 6 feet"
+        ],
+        "correctAnswer": 3,
+        "explanation": "When mechanical equipment is not being used, the warning line must be at least 6 feet from the roof edge (1926.502(f)(1)(i)). With mechanical equipment, it must be at least 6 feet from edges parallel to the equipment's direction of travel and 10 feet from edges perpendicular to it (1926.502(f)(1)(ii)). Job-site scenario: HVAC crews hand-carrying parts work inside a line set 6 feet back.",
+        "citation": "1926.502(f)(1)(i)"
+      },
+      {
+        "question": "Under 1926.502(c)(1), how far below the working surface may a safety net be installed?",
+        "options": [
+          "As close as practicable, and never more than 30 feet below",
+          "At least 30 feet below",
+          "Exactly 25 feet below",
+          "Any distance, if inspected weekly"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Safety nets must be installed as close as practicable under the working surface, and never more than 30 feet below it (1926.502(c)(1)). Nets are one of three accepted systems, along with guardrails and personal fall arrest (1926.501(b)(1)). They are not limited to cases where other systems are infeasible. Job-site scenario: on a bridge deck, the net hangs directly below the work area with nothing obstructing the fall zone.",
+        "citation": "1926.502(c)(1)"
+      },
+      {
+        "question": "Under 1926.502(d)(16)(iii), a personal fall arrest system must be rigged so the employee can free fall no more than:",
+        "options": [
+          "4 feet",
+          "6 feet",
+          "8 feet",
+          "10 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A personal fall arrest system must be rigged so the employee can neither free fall more than 6 feet nor contact any lower level (1926.502(d)(16)(iii)). Maximum arresting force with a body harness is 1,800 pounds (1926.502(d)(16)(ii)). Job-site scenario: an ironworker ties off overhead with a 6-foot lanyard so the free fall stays under 6 feet.",
+        "citation": "1926.502(d)(16)(iii)"
+      },
+      {
+        "question": "Under 1926.502(d)(15), anchorages for personal fall arrest equipment must be independent of platform supports and either support at least ___ per employee attached, or be designed by a qualified person with a safety factor of at least two.",
+        "options": [
+          "2,000 pounds",
+          "3,000 pounds",
+          "5,000 pounds",
+          "10,000 pounds"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Anchorages must be independent of any anchorage supporting platforms and capable of supporting at least 5,000 pounds per employee attached. Alternatively, they can be part of a complete system with a safety factor of at least two, under the supervision of a qualified person (1926.502(d)(15)). Job-site scenario: a roof anchor for two workers either holds 10,000 lb or is engineered by a qualified person.",
+        "citation": "1926.502(d)(15)"
+      },
+      {
+        "question": "What does 1926.502(i) require of covers over floor holes?",
+        "options": [
+          "Any material may be used",
+          "They are only temporary and need no marking",
+          "Supervisor approval only",
+          "They must support at least twice the weight imposed on them, be secured against displacement, and be color coded or marked \"HOLE\" or \"COVER\""
+        ],
+        "correctAnswer": 3,
+        "explanation": "Covers must support at least twice the weight of employees, equipment, and materials that may be imposed on them (1926.502(i)(2)), be secured against accidental displacement (1926.502(i)(3)), and be color coded or marked \"HOLE\" or \"COVER\" (1926.502(i)(4)). Job-site scenario: a plywood cover over a slab penetration is screwed down and spray-painted \"HOLE.\"",
+        "citation": "1926.502(i)(4)"
+      },
+      {
+        "question": "Under 1926.502(b)(1), what is the required top-edge height of a guardrail system's top rail?",
+        "options": [
+          "36 inches, plus or minus 3 inches",
+          "39 inches minimum",
+          "42 inches, plus or minus 3 inches",
+          "48 inches minimum"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The top rail must be 42 inches plus or minus 3 inches above the walking/working level (1926.502(b)(1)). It must withstand at least 200 pounds applied within 2 inches of the top edge, outward or downward (1926.502(b)(3)). Job-site scenario: a perimeter cable is set between 39 and 45 inches above the deck.",
+        "citation": "1926.502(b)(1)"
+      },
+      {
+        "question": "Under 1926.503(a), who must train employees who might be exposed to fall hazards?",
+        "options": [
+          "Anyone with an OSHA 10 card",
+          "A competent person qualified in the listed areas",
+          "The employee may self-train using the manufacturer's manual",
+          "Only the owner's representative"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The employer must provide a training program for each employee who might be exposed to fall hazards (1926.503(a)(1)), with training given by a competent person qualified in the listed areas (1926.503(a)(2)). Training must be certified in writing (1926.503(b)(1)), and retraining is required when an employee lacks understanding or skill (1926.503(c)). Job-site scenario: new hires are trained by the site's competent person before going up on the deck.",
+        "citation": "1926.503(a)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 12,
+    "title": "Ladder Safety",
+    "duration": 45,
+    "topics": [
+      "Setup angle for non-self-supporting ladders",
+      "Extension above the landing",
+      "Competent-person inspections and removing defective ladders",
+      "Load capacity",
+      "Footing and securing",
+      "Carrying loads",
+      "Nonconductive siderails",
+      "Stepladder top step"
+    ],
+    "resources": [
+      {
+        "title": "Ladder Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1053",
+        "type": "standard",
+        "description": "Ladder requirements"
+      },
+      {
+        "title": "Stairways and Ladders Guide",
+        "url": "https://www.osha.gov/sites/default/files/publications/OSHA3124.pdf",
+        "type": "guide",
+        "description": "Complete guide to ladder safety"
+      },
+      {
+        "title": "Ladder Use Requirements",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.1053#p-1926.1053(b)",
+        "type": "standard",
+        "description": "Rules for using all ladders, including job-made ladders"
+      }
+    ],
+    "test": [
+      {
+        "question": "At what angle must a non-self-supporting ladder be set under 1926.1053(b)(5)(i)?",
+        "options": [
+          "3:1",
+          "2:1",
+          "About 4:1 (horizontal distance at the foot is about one-quarter of the working length)",
+          "1:1"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Non-self-supporting ladders must be set so the horizontal distance from the top support to the foot is approximately one-quarter of the working length, roughly a 4:1 ratio (1926.1053(b)(5)(i)). Job-site scenario: an extension ladder with 20 feet of working length has its foot about 5 feet out from the wall.",
+        "citation": "1926.1053(b)(5)(i)"
+      },
+      {
+        "question": "When a portable ladder is used to reach an upper landing, how far must its side rails extend above the landing under 1926.1053(b)(1)?",
+        "options": [
+          "2 feet",
+          "3 feet",
+          "4 feet",
+          "5 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Side rails must extend at least 3 feet above the upper landing surface. If that is not possible, the ladder must be secured at its top to a rigid support and a grasping device provided (1926.1053(b)(1)). Job-site scenario: the extension ladder to the roof sticks up 3 feet past the eave.",
+        "citation": "1926.1053(b)(1)"
+      },
+      {
+        "question": "What inspection does 1926.1053(b)(15) require for ladders?",
+        "options": [
+          "Inspection by a competent person for visible defects periodically and after any occurrence that could affect safe use",
+          "Monthly inspection by the manufacturer",
+          "Weekly inspection by the owner",
+          "An annual third-party inspection"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ladders must be inspected by a competent person for visible defects on a periodic basis and after any occurrence that could affect their safe use (1926.1053(b)(15)). Checking before each use is good practice, but the standard sets the competent-person inspection. Job-site scenario: after a stepladder is knocked over by a forklift, the competent person inspects it before reuse.",
+        "citation": "1926.1053(b)(15)"
+      },
+      {
+        "question": "Under 1926.1053(a)(1), a portable ladder must be able to support at least how much without failure?",
+        "options": [
+          "300 pounds",
+          "Four times the maximum intended load (3.3 times for extra-heavy-duty type 1A metal or plastic ladders)",
+          "Its rated capacity plus 50 pounds",
+          "Twice the worker's weight"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Self-supporting and non-self-supporting portable ladders must support at least four times the maximum intended load, except extra-heavy-duty type 1A metal or plastic ladders, which must sustain at least 3.3 times (1926.1053(a)(1)(i)-(ii)). Ladders may not be loaded beyond their maximum intended load or rated capacity (1926.1053(b)(3)). Job-site scenario: pick a ladder whose rating covers the worker plus tools and materials.",
+        "citation": "1926.1053(a)(1)"
+      },
+      {
+        "question": "A ladder is found with a split side rail. What does 1926.1053(b)(16) require?",
+        "options": [
+          "Keep using it until the end of the job",
+          "Wrap the rail with tape",
+          "Mark it as defective or tag it \"Do Not Use\", and withdraw it from service until repaired",
+          "Supervisor decides"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Portable ladders with structural defects such as broken or split rails must be immediately marked as defective or tagged \"Do Not Use\" (or similar) and withdrawn from service until repaired (1926.1053(b)(16)). Repairs must restore the original design criteria (1926.1053(b)(18)). Job-site scenario: the split ladder is tagged and removed from the job.",
+        "citation": "1926.1053(b)(16)"
+      },
+      {
+        "question": "Under 1926.1053(b)(6), on what surfaces may ladders be used?",
+        "options": [
+          "Concrete only",
+          "Any surface if someone holds the ladder",
+          "Only indoors",
+          "Only on stable and level surfaces, unless secured to prevent accidental displacement"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Ladders may be used only on stable and level surfaces unless secured against accidental displacement (1926.1053(b)(6)). On slippery surfaces they must be secured or have slip-resistant feet (1926.1053(b)(7)). Job-site scenario: on soft soil, set the ladder on a firm, level base and secure it.",
+        "citation": "1926.1053(b)(6)"
+      },
+      {
+        "question": "What does 1926.1053(b)(22) say about carrying items on a ladder?",
+        "options": [
+          "An employee may not carry any object or load that could cause them to lose balance and fall",
+          "Anything may be carried in one hand",
+          "Tools may only be carried in pockets",
+          "There is no restriction"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An employee may not carry any object or load that could cause them to lose balance and fall (1926.1053(b)(22)). At least one hand must grasp the ladder while climbing (1926.1053(b)(21)), and the user must face the ladder (1926.1053(b)(20)). Job-site scenario: the electrician uses a tool belt and hoists the conduit bundle up by hand line.",
+        "citation": "1926.1053(b)(22)"
+      },
+      {
+        "question": "A ladder is set up in a doorway where foot traffic could knock it. What does 1926.1053(b)(8) require?",
+        "options": [
+          "Tying off is optional",
+          "Secure the ladder to prevent accidental displacement, or barricade to keep traffic away",
+          "Only tie it off above 20 feet",
+          "Post a sign only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ladders placed where workplace activities or traffic could displace them, such as passageways, doorways, or driveways, must be secured or barricaded (1926.1053(b)(8)). Job-site scenario: cones and caution tape route traffic around a ladder in a corridor door.",
+        "citation": "1926.1053(b)(8)"
+      },
+      {
+        "question": "Under 1926.1053(b)(12), what kind of ladder is required where the employee or ladder could contact exposed energized electrical equipment?",
+        "options": [
+          "Any ladder, used carefully",
+          "An aluminum ladder with rubber feet",
+          "A ladder with nonconductive siderails",
+          "A wooden ladder painted with opaque coating"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ladders must have nonconductive siderails if used where the employee or ladder could contact exposed energized electrical equipment, except as provided in 1926.955 (1926.1053(b)(12)). Wood ladders may not be coated with an opaque covering (1926.1053(a)(12)). Job-site scenario: a fiberglass stepladder is used to work near an open panel.",
+        "citation": "1926.1053(b)(12)"
+      },
+      {
+        "question": "What does 1926.1053(b)(13) say about the top of a stepladder?",
+        "options": [
+          "It may be used if someone holds the ladder",
+          "Standing on it is fine for short tasks",
+          "The second step from the top is also prohibited",
+          "The top or top step may not be used as a step"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The top or top step of a stepladder may not be used as a step (1926.1053(b)(13)). The \"two steps down\" rule is manufacturer and ANSI labeling, not 1926 text. Job-site scenario: if the painter needs the top step to reach, get a taller ladder.",
+        "citation": "1926.1053(b)(13)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 13,
+    "title": "Scaffolding Safety",
+    "duration": 45,
+    "topics": [
+      "Platform overlap and front-edge distance",
+      "Competent-person inspections and supervision",
+      "Falling object protection and toeboards",
+      "Suspension rope capacity and inspection",
+      "Bracing of frame scaffolds",
+      "Access ladders",
+      "Damaged components"
+    ],
+    "resources": [
+      {
+        "title": "Scaffold Requirements",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.451",
+        "type": "standard",
+        "description": "General scaffold requirements"
+      },
+      {
+        "title": "Scaffold Training",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.454",
+        "type": "standard",
+        "description": "Training requirements"
+      },
+      {
+        "title": "Scaffold eTool",
+        "url": "https://www.osha.gov/etools/scaffolding",
+        "type": "tool",
+        "description": "Interactive scaffold safety guide"
+      }
+    ],
+    "test": [
+      {
+        "question": "Where platforms are overlapped to make a longer platform, what does 1926.451(b)(7) require?",
+        "options": [
+          "The overlap must occur only over supports and be at least 12 inches, unless the platforms are nailed together or otherwise restrained",
+          "The overlap must be at least 6 inches anywhere",
+          "The overlap must be 18 inches between supports",
+          "No overlap is needed if cleated"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Overlaps must occur only over supports and be at least 12 inches, unless the platforms are nailed together or otherwise restrained (1926.451(b)(7)). Separately, each platform end must extend over the centerline of its support by at least 6 inches unless cleated or restrained (1926.451(b)(4)). Job-site scenario: two planks overlap 12 inches directly over a frame bearer.",
+        "citation": "1926.451(b)(7)"
+      },
+      {
+        "question": "Who must inspect scaffolds before each work shift under 1926.451(f)(3)?",
+        "options": [
+          "Any worker",
+          "A competent person",
+          "The supervisor",
+          "The safety manager"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Scaffolds and components must be inspected for visible defects by a competent person before each work shift and after any occurrence that could affect structural integrity (1926.451(f)(3)). Job-site scenario: the designated competent person tags the scaffold green after the morning inspection.",
+        "citation": "1926.451(f)(3)"
+      },
+      {
+        "question": "Under 1926.451(f)(7), scaffolds may be erected, moved, dismantled, or altered only:",
+        "options": [
+          "By any available laborer",
+          "After an engineer stamps the drawing",
+          "Under the supervision and direction of a competent person qualified in those activities, by experienced and trained employees selected for the work",
+          "On weekends"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Erecting, moving, dismantling, or altering scaffolds must be done only under the supervision and direction of a qualified competent person, by experienced and trained employees selected by that competent person (1926.451(f)(7)). Job-site scenario: the scaffold foreman directs a trained crew when adding a lift.",
+        "citation": "1926.451(f)(7)"
+      },
+      {
+        "question": "When there is a danger of tools or materials falling from a scaffold onto employees below, which does 1926.451(h)(2) require?",
+        "options": [
+          "Toeboards on every scaffold at all heights",
+          "Only hard hats for workers below",
+          "Nothing if the scaffold is under 20 feet",
+          "Either barricade the area below and keep employees out, or erect a toeboard along platform edges more than 10 feet above lower levels"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Where objects could fall and strike employees below, either barricade the area below and keep employees out (1926.451(h)(2)(i)), or install a toeboard along platform edges more than 10 feet above lower levels (1926.451(h)(2)(ii)). Toeboards must be at least 3.5 inches high and withstand 50 pounds (1926.451(h)(4)). Job-site scenario: masons 14 feet up get toeboards because the sidewalk below stays open.",
+        "citation": "1926.451(h)(2)"
+      },
+      {
+        "question": "Under 1926.451(b)(3), how far may the front edge of a platform be from the face of the work unless guardrails or personal fall arrest are used?",
+        "options": [
+          "8 inches",
+          "14 inches",
+          "18 inches",
+          "24 inches"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The front edge of platforms may not be more than 14 inches from the face of the work unless guardrails are erected along the front edge and/or personal fall arrest systems are used, with listed exceptions (1926.451(b)(3)). Job-site scenario: bricklayers keep the platform within 14 inches of the wall.",
+        "citation": "1926.451(b)(3)"
+      },
+      {
+        "question": "How often must suspension scaffold ropes be inspected under 1926.451(d)(10)?",
+        "options": [
+          "Daily by the operator",
+          "By a competent person prior to each workshift and after every occurrence that could affect the rope's integrity",
+          "Monthly",
+          "Annually"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Ropes must be inspected for defects by a competent person before each workshift and after every occurrence that could affect their integrity, and replaced if listed conditions exist (1926.451(d)(10)). Job-site scenario: the window-washing crew's competent person checks the ropes for broken wires each morning.",
+        "citation": "1926.451(d)(10)"
+      },
+      {
+        "question": "Where must the bottom rung of a hook-on or attachable scaffold ladder be positioned under 1926.451(e)(2)(ii)?",
+        "options": [
+          "No more than 36 inches above grade",
+          "Touching the ground",
+          "No more than 24 inches above the scaffold supporting level",
+          "Anywhere convenient"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hook-on and attachable ladders must be positioned so their bottom rung is no more than 24 inches above the scaffold supporting level (1926.451(e)(2)(ii)). Ladders or other listed access are required when platforms are more than 2 feet above or below the access point (1926.451(e)(1)). Job-site scenario: after grading, the attachable ladder is extended so the first rung is within 24 inches of the ground.",
+        "citation": "1926.451(e)(2)(ii)"
+      },
+      {
+        "question": "How must fabricated frame scaffolds be braced under 1926.452(c)(2)?",
+        "options": [
+          "Bracing is optional",
+          "Only the end sections",
+          "Only above 20 feet",
+          "By cross, horizontal, or diagonal braces (or a combination) that secure vertical members together laterally, with all brace connections secured"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Frames and panels must be braced by cross, horizontal, or diagonal braces, or a combination, that secure vertical members together laterally and keep the scaffold plumb, level, and square. All brace connections must be secured (1926.452(c)(2)). Job-site scenario: every frame set gets its cross braces pinned before planking.",
+        "citation": "1926.452(c)(2)"
+      },
+      {
+        "question": "What load must each suspension rope on a non-adjustable suspension scaffold support under 1926.451(a)(3)?",
+        "options": [
+          "4 times the maximum intended load",
+          "6 times the maximum intended load",
+          "8 times the maximum intended load",
+          "10 times the maximum intended load"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Each suspension rope and its connecting hardware must support at least 6 times the maximum intended load (1926.451(a)(3)). Adjustable suspension scaffolds also require 6 times, calculated at the greater of the hoist's rated load or twice its stall load (1926.451(a)(4)). Job-site scenario: rigging for a two-point swing stage is checked against the 6:1 requirement.",
+        "citation": "1926.451(a)(3)"
+      },
+      {
+        "question": "A scaffold frame member is bent. What does 1926.451(f)(4) require?",
+        "options": [
+          "Keep using it carefully",
+          "Immediately repair, replace, or brace it to meet capacity requirements, or remove it from service until repaired",
+          "Mark it for later",
+          "Report it at the weekly meeting"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Any scaffold part damaged or weakened below the required strength must be immediately repaired or replaced, braced to meet the capacity provisions, or removed from service until repaired (1926.451(f)(4)). Job-site scenario: the bent frame is swapped out before work resumes.",
+        "citation": "1926.451(f)(4)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 14,
+    "title": "Steel Erection Safety",
+    "duration": 60,
+    "topics": [
+      "Fall protection triggers for steel erection and connectors",
+      "Written notification before erection begins",
+      "Multiple lift rigging",
+      "Site-specific erection plans",
+      "Securing metal decking",
+      "Hoisting personnel",
+      "Working under loads",
+      "Training by a qualified person"
+    ],
+    "resources": [
+      {
+        "title": "Steel Erection Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.750",
+        "type": "standard",
+        "description": "Steel erection requirements"
+      },
+      {
+        "title": "Steel Erection Fall Protection",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.760",
+        "type": "standard",
+        "description": "Fall protection for steel erection, connectors, and controlled decking zones"
+      },
+      {
+        "title": "Multiple Lift Rigging",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.753",
+        "type": "standard",
+        "description": "Hoisting and rigging requirements"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.760(b)(1), connectors must be protected from fall hazards of more than:",
+        "options": [
+          "15 feet",
+          "30 feet only",
+          "Two stories or 30 feet above a lower level, whichever is less",
+          "Three stories"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Connectors must be protected from fall hazards of more than two stories or 30 feet above a lower level, whichever is less (1926.760(b)(1)). At heights over 15 and up to 30 feet, they must be provided with a personal fall arrest, positioning, or restraint system and wear the equipment needed to tie off (1926.760(b)(3)). Job-site scenario: on a building with 12-foot stories, a connector at 25 feet (above two stories) must be protected.",
+        "citation": "1926.760(b)(1)"
+      },
+      {
+        "question": "Before steel erection begins, what does 1926.752(b) require the steel erector to have received?",
+        "options": [
+          "Verbal approval from the owner",
+          "A building permit only",
+          "A team meeting sign-in sheet",
+          "Written notification that the concrete in footings, piers, and walls (or masonry mortar) has reached 75% of design strength or enough strength to support erection loads"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A steel erector may not erect steel without written notification that the concrete or mortar has reached, based on an appropriate ASTM test of field-cured samples, 75% of the intended minimum compressive design strength or enough strength to support the loads imposed during erection (1926.752(b)). The controlling contractor provides it (1926.752(a)). Job-site scenario: the GC hands the erector the test report and written approval before the first column is set.",
+        "citation": "1926.752(b)"
+      },
+      {
+        "question": "Under 1926.760(a)(1), above what height must an employee doing steel erection (other than connectors and CDZ workers) be protected at an unprotected side or edge?",
+        "options": [
+          "6 feet",
+          "10 feet",
+          "15 feet",
+          "30 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Each employee in steel erection on a surface with an unprotected side or edge more than 15 feet above a lower level must be protected by guardrails, safety nets, personal fall arrest, positioning device, or fall restraint systems. Connectors and controlled decking zone workers are covered separately (1926.760(a)(1), (a)(3)). Job-site scenario: a welder on an 18-foot beam ties off.",
+        "citation": "1926.760(a)(1)"
+      },
+      {
+        "question": "Under 1926.753(e)(1)(i), what must be used to perform a multiple lift?",
+        "options": [
+          "Any rigging",
+          "A multiple lift rigging assembly",
+          "Standard chains",
+          "Rope only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A multiple lift may be performed only if a multiple lift rigging assembly is used, among other criteria (1926.753(e)(1)(i)). Employees doing multiple lift rigging need special training (1926.761(c)(1)). Job-site scenario: the raising gang uses a purpose-built multiple lift assembly for the beam pick.",
+        "citation": "1926.753(e)(1)(i)"
+      },
+      {
+        "question": "When is a site-specific erection plan required under 1926.752(e)?",
+        "options": [
+          "Always",
+          "Only above 5 stories",
+          "When the employer chooses, because of site conditions, to use alternate means and methods allowed by 1926.753(c)(5), 1926.757(a)(4), or 1926.757(e)(4); it must be developed by a qualified person",
+          "Never"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Where the employer elects alternate means and methods under the listed paragraphs because of site-specific conditions, a site-specific erection plan must be developed by a qualified person and be available at the work site (1926.752(e)). Job-site scenario: a curved roof requiring an alternative to standard column stability needs a plan from a qualified person.",
+        "citation": "1926.752(e)"
+      },
+      {
+        "question": "What is the maximum number of members that may be hoisted in one multiple lift under 1926.753(e)(1)(ii)?",
+        "options": [
+          "3",
+          "5",
+          "7",
+          "10"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A maximum of five members may be hoisted per lift, and only beams and similar structural members may be lifted (1926.753(e)(1)(ii)-(iii)). Job-site scenario: a christmas-tree lift of five beams is the limit.",
+        "citation": "1926.753(e)(1)(ii)"
+      },
+      {
+        "question": "Under 1926.754(e)(5)(i), when must metal decking be secured (outside a controlled decking zone)?",
+        "options": [
+          "Laid tightly and immediately secured upon placement",
+          "At the end of the shift",
+          "At the end of the week",
+          "Only when wind is forecast"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Except in a controlled decking zone under 1926.760(c), metal decking must be laid tightly and immediately secured upon placement (1926.754(e)(5)(i)). Bundles must also be secured at the end of the shift or when conditions require (1926.754(e)(1)(v)). Job-site scenario: each sheet is tack-welded or screwed as it is placed.",
+        "citation": "1926.754(e)(5)(i)"
+      },
+      {
+        "question": "During steel erection, how may a crane hoist employees under 1926.753(c)(4)?",
+        "options": [
+          "On the hook or headache ball",
+          "On a personnel platform, provided all provisions of 1926.1431 (except 1926.1431(a)) are met",
+          "On a load of steel",
+          "In any secure container"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cranes or derricks may hoist employees on a personnel platform during steel erection, provided all provisions of 1926.1431 except 1926.1431(a) are met (1926.753(c)(4)). Job-site scenario: bolt-up crews ride a certified personnel platform rigged per 1926.1431, never the hook.",
+        "citation": "1926.753(c)(4)"
+      },
+      {
+        "question": "Under 1926.753(d)(1), which employees may work directly below a suspended load during steel erection?",
+        "options": [
+          "Anyone wearing a hard hat",
+          "Only the foreman",
+          "Only employees engaged in the initial connection of the steel, or those needed to hook or unhook the load",
+          "Anyone if the load is under 1 ton"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Routes for suspended loads must be pre-planned so no employee works directly below a suspended load, except employees engaged in the initial connection of the steel or those needed to hook or unhook the load (1926.753(d)(1)). Job-site scenario: the decking crew moves aside while the beam swings over.",
+        "citation": "1926.753(d)(1)"
+      },
+      {
+        "question": "Under 1926.761(a), who must provide the training required by the steel erection standard?",
+        "options": [
+          "Any experienced ironworker",
+          "The crane operator",
+          "OSHA",
+          "A qualified person"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Training required by 1926.761 must be provided by a qualified person (1926.761(a)). Each employee exposed to a fall hazard must be trained in recognizing hazards and using fall protection systems (1926.761(b)). Job-site scenario: a qualified trainer delivers the connector and decking training before the raising gang starts.",
+        "citation": "1926.761(a)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 15,
+    "title": "Electrical Safety Fundamentals",
+    "duration": 60,
+    "topics": [
+      "GFCI or assured equipment grounding program",
+      "Protection from energized circuits",
+      "Assured grounding test schedule",
+      "Identifying grounding conductors",
+      "Insulated tools for fuses",
+      "Temporary lighting and flexible cords",
+      "Working clearances",
+      "Locating energized circuits before work"
+    ],
+    "resources": [
+      {
+        "title": "Electrical Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.404",
+        "type": "standard",
+        "description": "Wiring design and protection"
+      },
+      {
+        "title": "Ground Fault Protection",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.404#p-1926.404(b)(1)",
+        "type": "standard",
+        "description": "GFCI and assured equipment grounding conductor program requirements"
+      },
+      {
+        "title": "Electrical Safety-Related Work Practices",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.416",
+        "type": "standard",
+        "description": "Protection of employees from energized circuits"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.404(b)(1)(ii), which receptacles need GFCI protection if the employer uses the GFCI option?",
+        "options": [
+          "All 120-volt, single-phase, 15- and 20-amp receptacles on construction sites that are not part of the building's permanent wiring and are in use by employees",
+          "Only those in wet locations",
+          "Every circuit of any voltage",
+          "Only receptacles on generators"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must use either GFCIs or an assured equipment grounding conductor program (1926.404(b)(1)(i)). Under the GFCI option, all 120-volt, single-phase, 15- and 20-amp receptacles not part of the permanent wiring and in use by employees need GFCIs. Small listed generators are exempt (1926.404(b)(1)(ii)). Job-site scenario: every temporary-power outlet on the spider box is GFCI-protected.",
+        "citation": "1926.404(b)(1)(ii)"
+      },
+      {
+        "question": "Under 1926.416(a)(1), when may an employee work close enough to contact part of an electric power circuit?",
+        "options": [
+          "Whenever they stay at least 1 foot away",
+          "Only when protected against electric shock by deenergizing and grounding the circuit, or by guarding it effectively with insulation or other means",
+          "Whenever wearing leather gloves",
+          "Never, under any conditions"
+        ],
+        "correctAnswer": 1,
+        "explanation": "No employee may work in proximity to any part of an electric power circuit they could contact unless protected by deenergizing and grounding the circuit or by guarding it effectively with insulation or other means (1926.416(a)(1)). Job-site scenario: before pulling wire near a live bus, the circuit is deenergized and grounded, or the bus is covered with insulating blankets.",
+        "citation": "1926.416(a)(1)"
+      },
+      {
+        "question": "Under an assured equipment grounding conductor program, when must the required tests be performed (1926.404(b)(1)(iii)(E))?",
+        "options": [
+          "Monthly only",
+          "Annually",
+          "Before first use, after repairs, after any incident suspected of causing damage, and at intervals not exceeding 3 months (6 months for fixed cord sets and receptacles not exposed to damage)",
+          "Only when a GFCI trips"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tests are required before first use, before return to service after repairs, before use after a suspected-damage incident, and at least every 3 months (6 months for fixed cord sets and receptacles not exposed to damage) (1926.404(b)(1)(iii)(E)). Cords and equipment must also be visually inspected before each day's use (1926.404(b)(1)(iii)(C)), and tests must be recorded (1926.404(b)(1)(iii)(G)). Job-site scenario: a cord run over by a skid steer is retested before reuse.",
+        "citation": "1926.404(b)(1)(iii)(E)"
+      },
+      {
+        "question": "What does 1926.404(a)(1) require of an equipment grounding conductor?",
+        "options": [
+          "It must be green",
+          "It must be the largest conductor",
+          "Nothing specific",
+          "It must be identifiable and distinguishable from all other conductors"
+        ],
+        "correctAnswer": 3,
+        "explanation": "A conductor used as an equipment grounding conductor must be identifiable and distinguishable from all other conductors (1926.404(a)(1)). Green (or bare) is the common electrical-code convention, but that color is not stated in 1926 text. Job-site scenario: the electrician confirms the cord's grounding conductor goes to the grounding terminal and polarity is not reversed (1926.404(a)(2)).",
+        "citation": "1926.404(a)(1)"
+      },
+      {
+        "question": "Under 1926.416(d), what must be used when fuses are installed or removed with one or both terminals energized?",
+        "options": [
+          "Special tools insulated for the voltage",
+          "Bare hands with dry gloves",
+          "Any screwdriver",
+          "Pliers with tape on the handles"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When fuses are installed or removed with one or both terminals energized, special tools insulated for the voltage must be used (1926.416(d)). Job-site scenario: the electrician uses a rated fuse puller on the live disconnect.",
+        "citation": "1926.416(d)"
+      },
+      {
+        "question": "What does 1926.405(a)(2)(ii)(E) require for temporary lighting?",
+        "options": [
+          "Any bulb type",
+          "Lamps for general illumination must be protected from accidental contact or breakage, and metal-case sockets must be grounded",
+          "Lights at least 10 feet high",
+          "Daily replacement"
+        ],
+        "correctAnswer": 1,
+        "explanation": "All lamps for general illumination must be protected from accidental contact or breakage, and metal-case sockets must be grounded (1926.405(a)(2)(ii)(E)). Job-site scenario: temporary string lights in the stairwell have cage guards on every bulb.",
+        "citation": "1926.405(a)(2)(ii)(E)"
+      },
+      {
+        "question": "How must flexible cords be protected on a job site?",
+        "options": [
+          "Any method",
+          "Only covered with plywood",
+          "They must be protected from damage, and extension cords may not be fastened with staples, hung from nails, or suspended by wire",
+          "Only marked with paint"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Flexible cords and cables must be protected from damage, avoiding sharp corners and projections (1926.405(a)(2)(ii)(I)). Extension cords may not be stapled, hung from nails, or suspended by wire (1926.416(e)(2)), and worn or frayed cords may not be used (1926.416(e)(1)). Job-site scenario: cords crossing a doorway are run through a cord protector, not nailed to the frame.",
+        "citation": "1926.405(a)(2)(ii)(I)"
+      },
+      {
+        "question": "A 120/208-volt panel (150 volts or less to ground) has exposed live parts on one side and no live or grounded parts on the other. What is the minimum working clearance in front of it under Table K-1 of 1926.403(i)(1)(i)?",
+        "options": [
+          "1 foot",
+          "2 feet",
+          "3 feet",
+          "4 feet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "For 0-150 volts to ground, Table K-1 requires 3 feet for conditions (a), (b), and (c). For 151-600 volts, it requires 3, 3.5, or 4 feet depending on the condition. Workspace must also be at least 30 inches wide (1926.403(i)(1)(i)). Job-site scenario: keep 3 feet clear in front of the temporary panel; no material staging there.",
+        "citation": "1926.403(i)(1)(i)"
+      },
+      {
+        "question": "Before work begins, what does 1926.416(a)(3) require the employer to determine?",
+        "options": [
+          "Whether any part of an energized electric power circuit, exposed or concealed, is located so the work could bring a person, tool, or machine into contact with it, with warning signs posted and employees advised",
+          "Nothing; electricians check as they go",
+          "Only the location of the main panel",
+          "The utility account number"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Before work begins, the employer must find out by inquiry, direct observation, or instruments whether any energized circuit, exposed or concealed, could be contacted during the work. Where one exists, the employer must post and maintain warning signs and advise employees (1926.416(a)(3)). Job-site scenario: before core drilling a wall, check drawings and scan for live conduits.",
+        "citation": "1926.416(a)(3)"
+      },
+      {
+        "question": "Workers will use jackhammers where the exact location of underground power lines is unknown. What does 1926.416(a)(2) require?",
+        "options": [
+          "Nothing extra",
+          "Insulated protective gloves for employees using jackhammers, bars, or other hand tools that may contact a line",
+          "Only a face shield",
+          "Rubber boots only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Where the exact location of underground electric powerlines is unknown, employees using jackhammers, bars, or other hand tools that may contact a line must be given insulated protective gloves (1926.416(a)(2)). Job-site scenario: the crew breaking a slab over an unknown duct bank wears rated insulating gloves.",
+        "citation": "1926.416(a)(2)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 16,
+    "title": "Lockout and Tagging of Circuits (Construction)",
+    "duration": 45,
+    "topics": [
+      "Tagging controls that are deactivated",
+      "Rendering deenergized circuits inoperative and tagging every energizing point",
+      "Tag identification",
+      "Deenergizing and grounding or guarding",
+      "Locating energized circuits and posting warnings",
+      "Fuses, passageways, and load ratings"
+    ],
+    "resources": [
+      {
+        "title": "Lockout and Tagging of Circuits",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.417",
+        "type": "standard",
+        "description": "Construction requirements for tagging controls and deenergized circuits"
+      },
+      {
+        "title": "Electrical Safety-Related Work Practices",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.416",
+        "type": "standard",
+        "description": "Protection from energized circuits during construction"
+      },
+      {
+        "title": "LOTO eTool",
+        "url": "https://www.osha.gov/etools/lockout-tagout",
+        "type": "tool",
+        "description": "Interactive LOTO training. The full energy control program (written procedures, periodic inspection, training certification) is covered in the 1910 track, Week 2 (29 CFR 1910.147)."
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.417(a), what must be done to controls that are to be deactivated while work is done on energized or deenergized equipment or circuits?",
+        "options": [
+          "Nothing if the electrician is nearby",
+          "They must be removed",
+          "They must be tagged",
+          "They must be painted red"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Controls that are to be deactivated during work on energized or deenergized equipment or circuits must be tagged (1926.417(a)). Job-site scenario: the motor starter switched off for conduit work gets a tag before the crew starts. (The full lockout program, including who removes devices, is 1910.147 and is covered in 1910 Week 2.)",
+        "citation": "1926.417(a)"
+      },
+      {
+        "question": "Under 1926.417(b), what is required for equipment or circuits that are deenergized?",
+        "options": [
+          "A sign at the main panel only",
+          "A verbal warning to the crew",
+          "Nothing if the breaker is off",
+          "They must be rendered inoperative and have tags attached at all points where they can be energized"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Deenergized equipment or circuits must be rendered inoperative and have tags attached at all points where they can be energized (1926.417(b)). Job-site scenario: a feeder that can be energized from two panels is made inoperative and tagged at both.",
+        "citation": "1926.417(b)"
+      },
+      {
+        "question": "Under 1926.417(c), how must tags be placed?",
+        "options": [
+          "To identify plainly the equipment or circuits being worked on",
+          "Anywhere on the panel door",
+          "Only on the main breaker",
+          "On the worker's hard hat"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Tags must be placed to plainly identify the equipment or circuits being worked on (1926.417(c)). Job-site scenario: the tag on breaker 14 reads \"Panel LP-2, circuit 14, lighting Level 3 - men working.\"",
+        "citation": "1926.417(c)"
+      },
+      {
+        "question": "Under 1926.416(a)(1), how must an employee be protected before working where they could contact part of an electric power circuit?",
+        "options": [
+          "By trying to operate the equipment",
+          "By deenergizing the circuit and grounding it, or by guarding it effectively with insulation or other means",
+          "By a visual check only",
+          "By wearing a hard hat"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An employee may not work where they could contact any part of an electric power circuit unless protected by deenergizing and grounding it, or by guarding it effectively by insulation or other means (1926.416(a)(1)). Job-site scenario: after tagging the circuit, the electrician tests it dead and applies grounds before working on the conductors.",
+        "citation": "1926.416(a)(1)"
+      },
+      {
+        "question": "Under 1926.416(a)(3), what must the employer do before work begins near possibly energized circuits?",
+        "options": [
+          "Rely on the drawings only",
+          "Only notify the utility",
+          "Find out by inquiry, observation, or instruments whether energized circuits could be contacted; post and maintain warning signs; and advise employees",
+          "Nothing until a problem appears"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must determine whether any part of an energized circuit, exposed or concealed, could be contacted during the work. Where one exists, it must post and maintain warning signs and advise employees of its location and hazards (1926.416(a)(3)). Job-site scenario: before demo of a ceiling, the crew locates live branch circuits and flags them.",
+        "citation": "1926.416(a)(3)"
+      },
+      {
+        "question": "Under 1926.416(d), what must be used to install or remove fuses when one or both terminals are energized?",
+        "options": [
+          "Any tool",
+          "Gloves only",
+          "A wooden stick",
+          "Special tools insulated for the voltage"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Fuses installed or removed with one or both terminals energized require special tools insulated for the voltage (1926.416(d)). Job-site scenario: an insulated fuse puller is used on the energized switch.",
+        "citation": "1926.416(d)"
+      },
+      {
+        "question": "Under 1926.416(b)(1), what must be provided when energized parts of electrical equipment are exposed?",
+        "options": [
+          "Barriers or other guarding so the workspace is not used as a passageway",
+          "Nothing if workers are careful",
+          "Extra lighting only",
+          "A second electrician"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Barriers or other guarding must keep the workspace for electrical equipment from being used as a passageway while energized parts are exposed (1926.416(b)(1)). Working spaces and walkways must be kept clear of cords (1926.416(b)(2)). Job-site scenario: caution tape and stanchions close the corridor in front of the open switchboard.",
+        "citation": "1926.416(b)(1)"
+      },
+      {
+        "question": "In an existing installation, what does 1926.416(c) prohibit?",
+        "options": [
+          "Replacing breakers",
+          "Changing circuit protection to increase the load beyond the load rating of the circuit wiring",
+          "Adding GFCIs",
+          "Labeling circuits"
+        ],
+        "correctAnswer": 1,
+        "explanation": "In existing installations, no change in circuit protection may be made to increase the load beyond the load rating of the circuit wiring (1926.416(c)). Job-site scenario: a 15-amp breaker on 14-gauge wire is not swapped for a 30-amp to stop nuisance trips.",
+        "citation": "1926.416(c)"
+      },
+      {
+        "question": "A crew finds a frayed extension cord on the job. Under 1926.416(e)(1), what is required?",
+        "options": [
+          "Tape it and keep using it",
+          "Use it only outdoors",
+          "Worn or frayed cords may not be used",
+          "Use it only at 120 volts"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Worn or frayed electric cords or cables may not be used (1926.416(e)(1)). Job-site scenario: the frayed cord is tagged out and removed (see also 1926.20(b)(3)).",
+        "citation": "1926.416(e)(1)"
+      },
+      {
+        "question": "Under 1926.20(b)(3), how may equipment that does not comply with Part 1926 be taken out of use?",
+        "options": [
+          "It may stay in use until the shift ends",
+          "By telling the operator not to use it",
+          "By painting it",
+          "By tagging it as unsafe or locking its controls so it cannot be operated, or by physically removing it"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Noncompliant machinery, tools, materials, or equipment must be identified as unsafe by tagging or locking the controls to make them inoperable, or physically removed (1926.20(b)(3)). This is the general 1926 basis for locking out controls. Job-site scenario: a saw table with a broken guard has its disconnect locked and tagged.",
+        "citation": "1926.20(b)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 17,
+    "title": "Excavation Safety Basics",
+    "duration": 60,
+    "topics": [
+      "When protective systems are required",
+      "Daily competent-person inspections",
+      "Sloping in Type C soil and the default slope",
+      "Means of egress from trenches",
+      "Spoil pile placement",
+      "Hazardous atmosphere testing",
+      "Soil reclassification",
+      "Water accumulation and surface encumbrances"
+    ],
+    "resources": [
+      {
+        "title": "Excavation Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.651",
+        "type": "standard",
+        "description": "Excavation requirements"
+      },
+      {
+        "title": "Soil Classification",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.652",
+        "type": "standard",
+        "description": "Soil classification requirements"
+      },
+      {
+        "title": "Trenching Guide",
+        "url": "https://www.osha.gov/sites/default/files/publications/OSHA2226.pdf",
+        "type": "guide",
+        "description": "Excavation safety guide"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.652(a)(1), when is a protective system NOT required in an excavation?",
+        "options": [
+          "When it is made entirely in stable rock, or is less than 5 feet deep and a competent person finds no indication of a potential cave-in",
+          "When the excavation is less than 8 feet deep",
+          "When work will take less than an hour",
+          "When the soil is dry"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Each employee in an excavation must be protected from cave-ins by an adequate protective system, except in excavations made entirely in stable rock, or less than 5 feet deep where a competent person's examination shows no indication of a potential cave-in (1926.652(a)(1)). Job-site scenario: a 5.5-foot water-line trench needs a protective system.",
+        "citation": "1926.652(a)(1)"
+      },
+      {
+        "question": "When must a competent person inspect excavations under 1926.651(k)(1)?",
+        "options": [
+          "Weekly",
+          "Daily before work starts, as needed throughout the shift, and after every rainstorm or other hazard-increasing occurrence",
+          "Only after rain",
+          "Only before use"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Daily inspections of excavations, adjacent areas, and protective systems must be made by a competent person before work starts and as needed throughout the shift, and after every rainstorm or other hazard-increasing occurrence, when employee exposure can be reasonably anticipated (1926.651(k)(1)). Job-site scenario: after an overnight storm, the competent person inspects before anyone enters.",
+        "citation": "1926.651(k)(1)"
+      },
+      {
+        "question": "What is the maximum allowable slope for a simple slope excavation 20 feet or less deep in Type C soil (1926 Subpart P, Appendix B, B-1.3)?",
+        "options": [
+          "1/2:1",
+          "3/4:1",
+          "1:1",
+          "1 1/2:1"
+        ],
+        "correctAnswer": 3,
+        "explanation": "All simple slope excavations 20 feet or less deep in Type C soil have a maximum allowable slope of 1 1/2:1 (horizontal:vertical) (1926 Subpart P Appendix B (B-1.3)). Job-site scenario: an 8-foot-deep cut in sandy Type C soil is laid back 12 feet horizontally on each side.",
+        "citation": "1926 Subpart P Appendix B (B-1.3)"
+      },
+      {
+        "question": "If the employer does not classify the soil, what slope does Option (1) of 1926.652(b)(1)(i) require?",
+        "options": [
+          "Vertical sides are fine under 10 feet",
+          "1:1",
+          "3/4:1",
+          "No steeper than 1 1/2 horizontal to 1 vertical (34 degrees from horizontal)"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Under Option (1), excavations must be sloped no steeper than 1 1/2H:1V (34 degrees from horizontal) unless another option is used (1926.652(b)(1)(i)), in Type C configurations (1926.652(b)(1)(ii)). Job-site scenario: with no competent-person soil classification, the crew slopes at 1 1/2:1.",
+        "citation": "1926.652(b)(1)(i)"
+      },
+      {
+        "question": "Under 1926.651(c)(2), trench excavations 4 feet or more deep must have a stairway, ladder, ramp, or other safe means of egress located so employees need no more than ___ of lateral travel.",
+        "options": [
+          "25 feet",
+          "50 feet",
+          "75 feet",
+          "100 feet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A safe means of egress must be in trenches 4 feet or more deep so employees travel no more than 25 feet laterally to reach it (1926.651(c)(2)). Job-site scenario: in a 100-foot trench, ladders are placed so no one is more than 25 feet from one.",
+        "citation": "1926.651(c)(2)"
+      },
+      {
+        "question": "How far from the edge of an excavation must spoil and equipment be kept under 1926.651(j)(2)?",
+        "options": [
+          "5 feet",
+          "At least 2 feet, or use retaining devices (or both)",
+          "10 feet",
+          "Any distance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employees must be protected from excavated material or equipment falling or rolling into the excavation by keeping it at least 2 feet from the edge, by retaining devices, or both (1926.651(j)(2)). Job-site scenario: the excavator places spoil at least 2 feet back from the trench lip.",
+        "citation": "1926.651(j)(2)"
+      },
+      {
+        "question": "Under 1926.651(g)(1)(i), when must the atmosphere be tested before employees enter an excavation?",
+        "options": [
+          "Never",
+          "Only when there is a visible vapor",
+          "When the excavation is more than 4 feet deep and an oxygen deficiency (below 19.5%) or hazardous atmosphere exists or could reasonably be expected",
+          "Weekly"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Where oxygen deficiency (below 19.5%) or a hazardous atmosphere exists or could reasonably be expected, such as near landfills or stored hazardous substances, the atmosphere must be tested before employees enter excavations more than 4 feet deep (1926.651(g)(1)(i)). Job-site scenario: a trench next to an old fuel tank is tested before entry.",
+        "citation": "1926.651(g)(1)(i)"
+      },
+      {
+        "question": "After soil is classified, conditions change after heavy rain. What does Appendix A to Subpart P require (1926 Subpart P Appendix A (c)(5))?",
+        "options": [
+          "Nothing; the original classification stands",
+          "Reclassify only annually",
+          "Reclassify only at project start",
+          "A competent person must evaluate the changes and reclassify the deposit as necessary"
+        ],
+        "correctAnswer": 3,
+        "explanation": "If the properties, factors, or conditions affecting a classification change in any way, a competent person must evaluate the changes and reclassify the deposit as necessary (1926 Subpart P Appendix A (c)(5)). Job-site scenario: after saturation, the Type B classification is downgraded to Type C and slopes are cut back.",
+        "citation": "1926 Subpart P Appendix A (c)(5)"
+      },
+      {
+        "question": "If water removal equipment is used to control water in an excavation, what does 1926.651(h)(2) require?",
+        "options": [
+          "The equipment and operations must be monitored by a competent person",
+          "Nothing further",
+          "Pumping only at night",
+          "Workers must wait until it is fully dry"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employees may not work in excavations with accumulated or accumulating water unless adequate precautions are taken (1926.651(h)(1)). If water removal equipment is used, a competent person must monitor it and its operation (1926.651(h)(2)). Job-site scenario: the competent person checks the sump pumps throughout the shift.",
+        "citation": "1926.651(h)(2)"
+      },
+      {
+        "question": "What does 1926.651(a) require for surface encumbrances, such as a sidewalk slab next to a planned trench?",
+        "options": [
+          "Address them after digging",
+          "Those located so as to create a hazard must be removed or supported as necessary to safeguard employees",
+          "Leave them in place",
+          "Only mark them with paint"
+        ],
+        "correctAnswer": 1,
+        "explanation": "All surface encumbrances located so as to create a hazard must be removed or supported as necessary to safeguard employees (1926.651(a)). Job-site scenario: the sidewalk panel next to the trench line is saw-cut and removed before digging alongside it.",
+        "citation": "1926.651(a)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 18,
+    "title": "Trenching Protection Systems",
+    "duration": 60,
+    "topics": [
+      "Sloping in Type B soil",
+      "Vertically sided lower portions and shield height",
+      "Inspecting protective systems",
+      "Installing and removing supports",
+      "Manufacturer tabulated data",
+      "Entering and exiting shields",
+      "Warning systems for mobile equipment",
+      "Limits on being in a shield and digging below it"
+    ],
+    "resources": [
+      {
+        "title": "Protective Systems",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.652",
+        "type": "standard",
+        "description": "Requirements for protective systems"
+      },
+      {
+        "title": "Sloping and Benching (Appendix B to Subpart P)",
+        "url": "https://www.ecfr.gov/current/title-29/part-1926/appendix-Appendix%20B%20to%20Subpart%20P%20of%20Part%201926",
+        "type": "standard",
+        "description": "Sloping and benching configurations by soil type"
+      },
+      {
+        "title": "Excavation Inspection Requirement",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.651#p-1926.651(k)",
+        "type": "standard",
+        "description": "Daily competent-person inspection of excavations and protective systems"
+      }
+    ],
+    "test": [
+      {
+        "question": "What is the maximum allowable slope for a simple slope excavation 20 feet or less deep in Type B soil (1926 Subpart P Appendix B (B-1.2))?",
+        "options": [
+          "1/2:1",
+          "3/4:1",
+          "1:1",
+          "1 1/2:1"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All simple slope excavations 20 feet or less deep in Type B soil have a maximum allowable slope of 1:1 (1926 Subpart P Appendix B (B-1.2)). Job-site scenario: a 6-foot cut in Type B silty clay is laid back 6 feet horizontally.",
+        "citation": "1926 Subpart P Appendix B (B-1.2)"
+      },
+      {
+        "question": "In Type B soil, an excavation 20 feet or less deep has a vertically sided lower portion. Per 1926 Subpart P Appendix B (B-1.2), how high must the shield or support extend?",
+        "options": [
+          "18 inches above the surrounding ground",
+          "Flush with the vertical side",
+          "36 inches above grade",
+          "At least 18 inches above the top of the vertical side"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Excavations 20 feet or less deep with vertically sided lower portions must be shielded or supported to at least 18 inches above the top of the vertical side, with a maximum allowable slope of 1:1 above (1926 Subpart P Appendix B (B-1.2)). Job-site scenario: a trench box in the bottom of a benched cut sticks up 18 inches past the vertical wall.",
+        "citation": "1926 Subpart P Appendix B (B-1.2)"
+      },
+      {
+        "question": "In Type A soil, an excavation 8 feet or less deep has an unsupported vertically sided lower portion. What is the maximum height of that vertical side (1926 Subpart P Appendix B (B-1.1))?",
+        "options": [
+          "3 1/2 feet",
+          "4 feet",
+          "5 feet",
+          "6 feet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Type A excavations 8 feet or less deep with unsupported vertically sided lower portions may have a vertical side no higher than 3 1/2 feet (1926 Subpart P Appendix B (B-1.1)). Excavations entirely in stable rock need no protective system (1926.652(a)(1)(i)). Job-site scenario: a 7-foot Type A cut keeps its bottom vertical wall at 3.5 feet or less.",
+        "citation": "1926 Subpart P Appendix B (B-1.1)"
+      },
+      {
+        "question": "How often must protective systems be inspected under 1926.651(k)(1)?",
+        "options": [
+          "Weekly",
+          "Daily by a competent person, before work and as needed during the shift, and after hazard-increasing events",
+          "Monthly",
+          "Only before first use"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Daily inspections of excavations, adjacent areas, and protective systems must be made by a competent person, before work and as needed throughout the shift, and after rainstorms or other hazard-increasing occurrences (1926.651(k)(1)). If failure indications are found, employees must be removed until it is made safe (1926.651(k)(2)). Job-site scenario: hydraulic shores are checked every morning before entry.",
+        "citation": "1926.651(k)(1)"
+      },
+      {
+        "question": "How must support systems be removed under 1926.652(e)(1)(v)?",
+        "options": [
+          "Top first, quickly",
+          "All at once with the excavator",
+          "Starting at and progressing from the bottom of the excavation, releasing members slowly to watch for signs of failure",
+          "In any order"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Removal must begin at and progress from the bottom of the excavation, with members released slowly to note any sign of failure or cave-in (1926.652(e)(1)(v)). Backfilling must progress together with removal (1926.652(e)(1)(vi)). Job-site scenario: the bottom hydraulic shore is released first, then backfill is placed before the next shore comes out.",
+        "citation": "1926.652(e)(1)(v)"
+      },
+      {
+        "question": "When a support or shield system comes from the manufacturer's tabulated data, what does 1926.652(c)(2) require?",
+        "options": [
+          "Nothing needs to be on site",
+          "Any engineer may verbally approve changes",
+          "Only the box serial number is needed",
+          "It must follow all manufacturer specifications, recommendations, and limitations; deviation requires the manufacturer's specific written approval; and the data must be in writing at the jobsite during construction"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Designs from manufacturer's tabulated data must follow all of the manufacturer's specifications, recommendations, and limitations (1926.652(c)(2)(i)). Deviation requires the manufacturer's specific written approval (1926.652(c)(2)(ii)). The data and any approvals must be in writing at the jobsite during construction (1926.652(c)(2)(iii)). Job-site scenario: the trench box tab data is in the foreman's truck.",
+        "citation": "1926.652(c)(2)"
+      },
+      {
+        "question": "Trench boxes will be stacked. Under 1926.652(c)(2)(ii), when may the crew deviate from the manufacturer's stacking limits?",
+        "options": [
+          "Only after the manufacturer issues specific written approval",
+          "Never question it; any stack height works",
+          "With the foreman's approval",
+          "If the trench is under 10 feet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Deviation from the manufacturer's specifications, recommendations, and limitations is allowed only after the manufacturer issues specific written approval (1926.652(c)(2)(ii)). Job-site scenario: stacking a third box beyond the tab data requires a written approval letter from the manufacturer.",
+        "citation": "1926.652(c)(2)(ii)"
+      },
+      {
+        "question": "Under 1926.652(g)(1)(iii), how must employees be protected when entering or exiting areas protected by shields?",
+        "options": [
+          "They may move quickly between shields",
+          "They must be protected from cave-ins when entering or exiting",
+          "Only by a spotter",
+          "Any method"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employees must be protected from cave-ins when entering or exiting areas protected by shields (1926.652(g)(1)(iii)). Job-site scenario: the ladder is placed inside the trench box so workers never step into the unprotected trench.",
+        "citation": "1926.652(g)(1)(iii)"
+      },
+      {
+        "question": "A loader will work next to a trench, and the operator cannot see the edge. What does 1926.651(f) require?",
+        "options": [
+          "Operator judgment",
+          "A spotter only on request",
+          "A warning system such as barricades, hand or mechanical signals, or stop logs",
+          "Nothing"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When mobile equipment operates next to or approaches the edge of an excavation and the operator lacks a clear and direct view of the edge, a warning system such as barricades, hand or mechanical signals, or stop logs must be used (1926.651(f)). Job-site scenario: stop logs keep the loader's wheels back from the trench edge.",
+        "citation": "1926.651(f)"
+      },
+      {
+        "question": "Under 1926.652(g)(1)(iv), when may employees NOT be inside a shield?",
+        "options": [
+          "During lunch",
+          "When it is raining",
+          "When the shield is more than 10 feet deep",
+          "While the shield is being installed, removed, or moved vertically"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employees may not be in shields while they are being installed, removed, or moved vertically (1926.652(g)(1)(iv)). Excavating up to 2 feet below the bottom of a shield is allowed only if it is designed for the full trench depth and there are no signs of loss of soil (1926.652(g)(2)). Job-site scenario: the pipe crew climbs out before the box is dragged forward.",
+        "citation": "1926.652(g)(1)(iv)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 19,
+    "title": "Confined Space Entry",
+    "duration": 60,
+    "topics": [
+      "Oxygen limits and hazardous atmospheres",
+      "Continuous monitoring and testing order",
+      "What makes a space permit-required",
+      "Attendant duties",
+      "Retrieval for vertical spaces",
+      "Cancelling a permit",
+      "Entrant training",
+      "Signs",
+      "Forced-air ventilation"
+    ],
+    "resources": [
+      {
+        "title": "Confined Space Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1203",
+        "type": "standard",
+        "description": "Confined space requirements"
+      },
+      {
+        "title": "Permit Program Guide",
+        "url": "https://www.osha.gov/sites/default/files/publications/OSHA3138.pdf",
+        "type": "guide",
+        "description": "Permit-required confined space guide"
+      },
+      {
+        "title": "Entry Permit",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.1206",
+        "type": "standard",
+        "description": "Required contents of a construction confined space entry permit"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under the definitions in 1926.1202, an oxygen-deficient atmosphere contains less than what percentage of oxygen by volume?",
+        "options": [
+          "17.5%",
+          "18.5%",
+          "19.5%",
+          "20.5%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "An oxygen-deficient atmosphere contains less than 19.5% oxygen by volume. A hazardous atmosphere includes oxygen below 19.5% or above 23.5% (1926.1202 (definitions)). Job-site scenario: the storm drain reads 19.0% oxygen, so entry cannot proceed until it is ventilated and retested.",
+        "citation": "1926.1202 (definitions)"
+      },
+      {
+        "question": "After entry into a permit space is authorized, how must entry conditions be monitored under 1926.1204(e)(1)(ii)?",
+        "options": [
+          "Only before entry",
+          "Continuously in the areas where entrants work, except that periodic monitoring may be used for a hazard if continuous monitoring equipment is not commercially available",
+          "Hourly",
+          "Daily"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Once entry is authorized, entry conditions must be monitored continuously where authorized entrants are working. Periodic monitoring is allowed only for a hazard where continuous monitoring equipment is not commercially available (1926.1204(e)(1)(ii), (e)(2)). Job-site scenario: a 4-gas meter stays running with the entrant during welding inside the tank.",
+        "citation": "1926.1204(e)(1)(ii)"
+      },
+      {
+        "question": "Which characteristic makes a confined space a permit-required confined space under 1926.1202?",
+        "options": [
+          "Its size alone",
+          "Any hazard at all",
+          "It contains or may contain a hazardous atmosphere, an engulfment material, an inwardly converging or tapering configuration, or any other recognized serious safety or health hazard",
+          "Its depth alone"
+        ],
+        "correctAnswer": 2,
+        "explanation": "A permit space has one or more of these: contains or may contain a hazardous atmosphere; contains material that could engulf an entrant; has an internal configuration that could trap or asphyxiate an entrant; or contains any other recognized serious safety or health hazard (1926.1202 (definitions)). Job-site scenario: a vault with possible sewer gas is a permit space.",
+        "citation": "1926.1202 (definitions)"
+      },
+      {
+        "question": "Under 1926.1209, which is a duty of the attendant?",
+        "options": [
+          "Entering the space to help the entrant",
+          "Writing the permit",
+          "Testing the atmosphere only",
+          "Continuously keeping an accurate count of authorized entrants and remaining outside the permit space until relieved by another attendant"
+        ],
+        "correctAnswer": 3,
+        "explanation": "The attendant must continuously keep an accurate count of authorized entrants (1926.1209(c)) and remain outside the permit space during entry operations until relieved by another attendant (1926.1209(d)), among other duties. Job-site scenario: at the manhole, the attendant keeps the entrant log and never climbs in.",
+        "citation": "1926.1209(d)"
+      },
+      {
+        "question": "Under 1926.1211(c)(2), what must be available to retrieve personnel from vertical permit spaces more than 5 feet deep?",
+        "options": [
+          "A mechanical device",
+          "Any rope",
+          "A ladder only",
+          "Nothing if a rescue team is on call"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The retrieval line must attach to a mechanical device or fixed point outside the space, and a mechanical device must be available to retrieve personnel from vertical permit spaces more than 5 feet deep (1926.1211(c)(2)). Non-entry rescue is required unless retrieval equipment would increase risk or not help (1926.1211(c)). Job-site scenario: a tripod and winch are set over the 12-foot sewer manhole.",
+        "citation": "1926.1211(c)(2)"
+      },
+      {
+        "question": "When must the entry supervisor cancel an entry permit under 1926.1205(e)?",
+        "options": [
+          "Only at the end of the shift",
+          "When the covered entry operations are completed, or when a condition not allowed under the permit arises (suspend or cancel and fully reassess if the condition is temporary)",
+          "Only when the supervisor decides",
+          "Never; permits last the whole project"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The entry supervisor must terminate entry and cancel the permit when operations are complete (1926.1205(e)(1)), or when a condition not allowed under the permit arises. A temporary condition that creates no new hazard may lead to suspension and full reassessment instead (1926.1205(e)(2)-(3)). Job-site scenario: the ventilation blower fails, entrants exit, and the permit is suspended until reassessed.",
+        "citation": "1926.1205(e)"
+      },
+      {
+        "question": "What does 1926.1207(a) require for confined space training?",
+        "options": [
+          "Basic safety training only",
+          "Annual training only",
+          "Training at no cost to each employee whose work is regulated, so they have the understanding, knowledge, and skills needed for their assigned duties",
+          "Training is optional"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The employer must provide training, at no cost, to each employee whose work is regulated by the standard, giving them the understanding, knowledge, and skills to safely perform their assigned duties (1926.1207(a)). Records must include names, trainers, and dates (1926.1207(d)). Job-site scenario: the tank-cleaning crew is trained on the specific hazards of that tank before entry.",
+        "citation": "1926.1207(a)"
+      },
+      {
+        "question": "How does 1926.1203(b)(1) require employers to inform exposed employees of a permit space?",
+        "options": [
+          "No notice is required",
+          "Only by a verbal warning at the morning meeting",
+          "Only by marking the space on drawings",
+          "By posting danger signs or other equally effective means; a sign reading \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" satisfies it"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Employers must inform exposed employees of the existence, location, and danger of each permit space by posting danger signs or other equally effective means. \"DANGER--PERMIT-REQUIRED CONFINED SPACE, DO NOT ENTER\" or similar language satisfies the sign requirement (1926.1203(b)(1)). Job-site scenario: the sign is posted at the vault hatch.",
+        "citation": "1926.1203(b)(1)"
+      },
+      {
+        "question": "What communication duty does 1926.1209(e) give the attendant?",
+        "options": [
+          "Communicating with authorized entrants as necessary to assess their status and alert them to evacuate",
+          "None",
+          "Only hand signals",
+          "Only at the start of entry"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The attendant must communicate with authorized entrants as necessary to assess their status and to alert them of the need to evacuate (1926.1209(e)). The employer must provide the communications equipment needed (1926.1204(c)(3)). Job-site scenario: radio contact between attendant and entrant in a long tunnel.",
+        "citation": "1926.1209(e)"
+      },
+      {
+        "question": "Under the alternate entry procedures, what does 1926.1203(e)(2)(v)(A) require before an employee enters a space ventilated with continuous forced air?",
+        "options": [
+          "Nothing; ventilation is optional",
+          "The employee may not enter until the forced-air ventilation has eliminated any hazardous atmosphere",
+          "Entry may begin while the blower warms up",
+          "Ventilation only if the supervisor asks"
+        ],
+        "correctAnswer": 1,
+        "explanation": "An employee may not enter until forced-air ventilation has eliminated any hazardous atmosphere (1926.1203(e)(2)(v)(A)). Ventilation must be directed to where employees are and continue until all have left (1926.1203(e)(2)(v)(B)). Job-site scenario: the blower runs, the meter reads clean, then entry begins.",
+        "citation": "1926.1203(e)(2)(v)(A)"
+      },
+      {
+        "question": "In what order must atmospheric hazards be tested under 1926.1204(e)(3)?",
+        "options": [
+          "Toxic gases, then oxygen, then combustibles",
+          "Combustibles first, then toxics, then oxygen",
+          "Oxygen first, then combustible gases and vapors, then toxic gases and vapors",
+          "Any order"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Testing must check oxygen first, then combustible gases and vapors, then toxic gases and vapors (1926.1204(e)(3)). Job-site scenario: the meter warm-up and readout follow O2, LEL, then H2S and CO.",
+        "citation": "1926.1204(e)(3)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 20,
+    "title": "Demolition Safety",
+    "duration": 45,
+    "topics": [
+      "Engineering survey",
+      "Utility shutoff",
+      "Chutes and dropping material",
+      "Floor openings",
+      "Continuing competent-person inspections",
+      "Hazardous substances in pipes and tanks",
+      "Top-down sequence",
+      "Debris drop areas",
+      "Wall bracing",
+      "Protected entrances"
+    ],
+    "resources": [
+      {
+        "title": "Demolition Standards",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.850",
+        "type": "standard",
+        "description": "Demolition requirements"
+      },
+      {
+        "title": "Chutes",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.852",
+        "type": "standard",
+        "description": "Requirements for material chutes during demolition"
+      },
+      {
+        "title": "Engineering Survey Requirement",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.850#p-1926.850(a)",
+        "type": "standard",
+        "description": "Competent-person engineering survey required before demolition"
+      }
+    ],
+    "test": [
+      {
+        "question": "What does 1926.850(a) require before employees start demolition?",
+        "options": [
+          "A work plan from the owner",
+          "A permit only",
+          "A team meeting",
+          "An engineering survey of the structure by a competent person, with written evidence that it was performed"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Before demolition starts, a competent person must make an engineering survey of the structure to determine the condition of the framing, floors, and walls and the possibility of unplanned collapse, including adjacent structures where employees may be exposed. The employer must have written evidence of the survey (1926.850(a)). Job-site scenario: the survey of a fire-damaged warehouse is on file before the crew goes in.",
+        "citation": "1926.850(a)"
+      },
+      {
+        "question": "Under 1926.850(c), when must electric, gas, water, steam, sewer, and other service lines be shut off, capped, or controlled?",
+        "options": [
+          "Before demolition work is started, outside the building line, with any involved utility company notified in advance",
+          "During the work",
+          "As needed",
+          "At the end of the day"
+        ],
+        "correctAnswer": 0,
+        "explanation": "All service lines must be shut off, capped, or otherwise controlled outside the building line before demolition starts, and any involved utility company notified in advance (1926.850(c)). Job-site scenario: gas is capped at the meter and electric is disconnected by the utility before demolition begins.",
+        "citation": "1926.850(c)"
+      },
+      {
+        "question": "Under 1926.252(a), material dropped more than how many feet to a point outside the building's exterior walls requires an enclosed chute?",
+        "options": [
+          "10 feet",
+          "20 feet",
+          "30 feet",
+          "40 feet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Whenever materials are dropped more than 20 feet to any point outside the exterior walls, an enclosed chute must be used (1926.252(a)). Under 1926.852(a), no material may be dropped outside the exterior walls unless the area is effectively protected. Job-site scenario: debris from the third floor goes down an enclosed chute into the dumpster.",
+        "citation": "1926.252(a)"
+      },
+      {
+        "question": "What does 1926.850(i) require for floor openings not used as material drops?",
+        "options": [
+          "Covering at the end of the shift",
+          "Covering during breaks only",
+          "Covering with material strong enough to support any load that may be imposed, secured against accidental movement",
+          "Flagging only"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Floor openings not used as material drops must be covered with material substantial enough to support any load that may be imposed, and secured to prevent accidental movement (1926.850(i)). Job-site scenario: the hole left by a removed floor drain is covered and screwed down.",
+        "citation": "1926.850(i)"
+      },
+      {
+        "question": "Under 1926.859(g), what inspections are required during demolition?",
+        "options": [
+          "None after the engineering survey",
+          "Daily inspections only",
+          "Weekly reviews only",
+          "Continuing inspections by a competent person as the work progresses, to detect hazards from weakened floors or walls or loosened material"
+        ],
+        "correctAnswer": 3,
+        "explanation": "During demolition, a competent person must make continuing inspections as the work progresses to detect hazards from weakened or deteriorated floors or walls or loosened material. No one may work where such hazards exist until they are corrected (1926.859(g)). Job-site scenario: the competent person watches the wall as the excavator pulls each section.",
+        "citation": "1926.859(g)"
+      },
+      {
+        "question": "Under 1926.850(e), what must be done if hazardous chemicals, gases, or flammable materials may have been used in pipes or tanks on the property?",
+        "options": [
+          "Testing and purging must be performed and the hazard eliminated before demolition starts",
+          "Nothing; dispose normally",
+          "Remove quickly with the excavator",
+          "The crew decides"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The employer must determine whether hazardous chemicals, gases, explosives, flammables, or similar substances were used in pipes, tanks, or equipment. If their presence is apparent or suspected, testing and purging must be performed and the hazard eliminated before demolition starts (1926.850(e)). Asbestos has its own standard (1926.1101). Job-site scenario: an old fuel oil tank is purged and tested before it is cut.",
+        "citation": "1926.850(e)"
+      },
+      {
+        "question": "Under 1926.850(j), in what order must exterior walls and floor construction be demolished?",
+        "options": [
+          "Bottom up",
+          "Beginning at the top of the structure and proceeding downward",
+          "All floors at once",
+          "In any order"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Except for necessary preparatory work, demolition of exterior walls and floor construction must begin at the top and proceed downward, with each story removed before work starts on the one below (1926.850(j)). Job-site scenario: the roof and top floor come off first.",
+        "citation": "1926.850(j)"
+      },
+      {
+        "question": "Debris is dropped through floor holes without chutes. What does 1926.850(h) require for the area where it lands?",
+        "options": [
+          "Nothing if a spotter is present",
+          "A catch platform is optional",
+          "It must be completely enclosed with barricades at least 42 inches high and at least 6 feet back from the projected edge of the opening above, with warning signs at each level",
+          "Only a cone"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The drop area must be completely enclosed with barricades at least 42 inches high and at least 6 feet back from the projected edge of the opening above. Signs warning of falling material must be posted at each level, and removal from that area is not allowed until debris handling above stops (1926.850(h)). Job-site scenario: barricades surround the drop zone below the slab openings.",
+        "citation": "1926.850(h)"
+      },
+      {
+        "question": "Under 1926.854(b), may a masonry wall section more than one story high stand alone without lateral bracing?",
+        "options": [
+          "Yes, always",
+          "Yes, overnight only",
+          "Only if it is under 30 feet",
+          "No, unless it was designed to stand without lateral support and is safe enough to be self-supporting; all walls must be left stable at the end of each shift"
+        ],
+        "correctAnswer": 3,
+        "explanation": "No wall section more than one story high may stand alone without lateral bracing unless it was designed to stand without it and is in a safe, self-supporting condition. All walls must be left stable at the end of each shift (1926.854(b)). Job-site scenario: a two-story gable wall is braced before the crew leaves for the day.",
+        "citation": "1926.854(b)"
+      },
+      {
+        "question": "Under 1926.850(k), how must employee entrances to a multi-story structure being demolished be protected?",
+        "options": [
+          "By sidewalk sheds or canopies extending at least 8 feet from the building face, at least 2 feet wider than the opening, and able to hold 150 psf",
+          "A warning sign only",
+          "By a hard hat requirement only",
+          "No protection is needed"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Employee entrances must be completely protected by sidewalk sheds or canopies providing protection at least 8 feet from the face of the building, at least 2 feet wider than the entrance, and capable of sustaining 150 pounds per square foot (1926.850(k)). Job-site scenario: a plywood canopy protects the only crew entrance during facade demolition.",
+        "citation": "1926.850(k)"
+      }
+    ]
   }
 ]

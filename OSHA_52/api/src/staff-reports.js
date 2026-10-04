@@ -1,6 +1,11 @@
 // Reviewer dashboard reports (Stage C): summary, trainee detail, filtered results with CSV export, full attempt
 // detail, per-week stats, most-missed questions, and the per-trainee PDF training record. Reviewers and admins only.
+const path = require('path');
 const PDFDocument = require('pdfkit');
+
+// Noto Sans (SIL OFL, api/fonts/OFL.txt) covers Latin script including Vietnamese diacritics; the built-in
+// PDF fonts don't (e.g. "Nguyễn" would print garbled).
+const FONTS = { Body: path.join(__dirname, '..', 'fonts', 'NotoSans-Regular.ttf'), Bold: path.join(__dirname, '..', 'fonts', 'NotoSans-Bold.ttf') };
 
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const RESULTS = ['pass', 'fail', 'practice', 'graded'];
@@ -265,6 +270,17 @@ const TRACK_NAMES = { 1926: 'Construction (29 CFR 1926)', 1910: 'General Industr
 function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDate, fmtDateTime, passMark }) {
   return new Promise((resolve, reject) => {
     const doc = new PDFDocument({ size: 'LETTER', margin: 54, bufferPages: true, info: { Title: `OSHA 52 Training Record: ${trainee.name}`, Author: 'OSHA 52' } });
+    doc.registerFont('Body', FONTS.Body);
+    doc.registerFont('Bold', FONTS.Bold);
+    // No fi/ff ligatures: with them the PDF's text layer drops letters ("Scafolding"), breaking copy and search.
+    const NO_LIGATURES = { liga: false, clig: false };
+    const withFeatures = o => ({ features: NO_LIGATURES, ...(o || {}) });
+    for (const fn of ['heightOfString', 'widthOfString']) { // (string, options)
+      const orig = doc[fn].bind(doc);
+      doc[fn] = (str, o) => orig(str, withFeatures(o));
+    }
+    const text = doc.text.bind(doc); // (text, options) or (text, x, y, options)
+    doc.text = (t, x, y, o) => (typeof x === 'number' || typeof y === 'number' ? text(t, x, y, withFeatures(o)) : text(t, withFeatures(x)));
     const chunks = [];
     doc.on('data', c => chunks.push(c));
     doc.on('end', () => resolve(Buffer.concat(chunks)));
@@ -278,13 +294,13 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
     const ink = '#111827', muted = '#4b5563', line = '#c7ccd4';
 
     // Title block
-    doc.font('Helvetica-Bold').fontSize(18).fillColor(ink).text('OSHA 52 Training Record', L, doc.y);
-    doc.moveDown(0.2).font('Helvetica').fontSize(10).fillColor(muted)
+    doc.font('Bold').fontSize(18).fillColor(ink).text('OSHA 52 Training Record', L, doc.y);
+    doc.moveDown(0.2).font('Body').fontSize(10).fillColor(muted)
       .text(`Generated ${fmtDateTime(new Date())} (${tz}) by ${generatedBy}. Pass mark ${passMark}%.`);
     doc.moveDown(0.8);
-    doc.font('Helvetica-Bold').fontSize(13).fillColor(ink).text(trainee.name);
+    doc.font('Bold').fontSize(13).fillColor(ink).text(trainee.name);
     const status = trainee.approval !== 'approved' ? 'Pending approval' : trainee.active ? 'Active' : 'Deactivated';
-    doc.font('Helvetica').fontSize(10).fillColor(muted).text(`Account created ${fmtDate(trainee.createdAt)} · Status: ${status}`);
+    doc.font('Body').fontSize(10).fillColor(muted).text(`Account created ${fmtDate(trainee.createdAt)} · Status: ${status}`);
     doc.moveDown(0.6);
 
     // Columns: widths add up to W.
@@ -293,9 +309,10 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
       { h: 'Date passed', w: 74 }, { h: 'Best', w: 56 }, { h: 'Tests*', w: 52 },
     ];
     const row = (cells, { bold = false, fill = null } = {}) => {
-      doc.font(bold ? 'Helvetica-Bold' : 'Helvetica').fontSize(9);
+      doc.font(bold ? 'Bold' : 'Body').fontSize(9);
       const h = Math.max(...cells.map((c, i) => doc.heightOfString(String(c), { width: cols[i].w - 8 }))) + 8;
       ensure(h);
+      doc.font(bold ? 'Bold' : 'Body').fontSize(9); // a page break may have drawn a header row in another font
       const y = doc.y;
       if (fill) doc.save().rect(L, y, W, h).fill(fill).restore();
       let x = L;
@@ -308,8 +325,8 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
       const passed = weeks.filter(w => w.progress?.passed);
       const minutes = passed.reduce((s, w) => s + w.duration, 0);
       ensure(80);
-      doc.moveDown(0.6).font('Helvetica-Bold').fontSize(12).fillColor(ink).text(TRACK_NAMES[track] || track, L);
-      doc.font('Helvetica').fontSize(10).fillColor(muted)
+      doc.moveDown(0.6).font('Bold').fontSize(12).fillColor(ink).text(TRACK_NAMES[track] || track, L);
+      doc.font('Body').fontSize(10).fillColor(muted)
         .text(`${passed.length} of ${weeks.length} weeks passed · ${Math.floor(minutes / 60)} h ${minutes % 60} min of training completed`);
       doc.moveDown(0.3);
       const started = weeks.filter(w => w.progress);
@@ -320,18 +337,18 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
       for (const w of weeks) {
         const p = w.progress;
         const passAttempt = p?.passed ? attempts.filter(a => a.track === track && a.week === w.week && a.passed && !a.practice).at(-1) : null;
-        const result = !p ? 'Not started' : p.passed ? 'Passed' : p.locked ? 'Locked (2 fails)' : 'Not passed';
+        const result = !p ? 'Not started' : p.passed ? 'Passed' : 'Not passed'; // a locked week shows as Not passed (the dashboard shows the lock)
         row([w.week, w.title, result, passAttempt ? fmtDate(passAttempt.submittedAt) : '', p?.bestScore != null ? `${Math.round(p.bestScore)}%` : '', p?.attempts || 0]);
       }
     }
 
     onNewPage = null;
     ensure(14);
-    doc.font('Helvetica').fontSize(8).fillColor(muted).text('* Tests taken on the week, including practice attempts after it was passed.', L);
+    doc.font('Body').fontSize(8).fillColor(muted).text('* Tests taken on the week, including practice attempts after it was passed.', L);
     // Attempt history
     ensure(60);
-    doc.moveDown(1).font('Helvetica-Bold').fontSize(12).fillColor(ink).text('Attempt history', L);
-    doc.font('Helvetica').fontSize(10).fillColor(muted).text(attempts.length ? `${attempts.length} attempts, newest first. Practice attempts were taken after the week was passed.` : 'No attempts.');
+    doc.moveDown(1).font('Bold').fontSize(12).fillColor(ink).text('Attempt history', L);
+    doc.font('Body').fontSize(10).fillColor(muted).text(attempts.length ? `${attempts.length} attempts, newest first. Practice attempts were taken after the week was passed.` : 'No attempts.');
     doc.moveDown(0.3);
     if (attempts.length) {
       const hcols = [{ w: 104 }, { w: 58 }, { w: W - 104 - 58 - 84 - 96 }, { w: 84 }, { w: 96 }];
@@ -347,7 +364,7 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
     onNewPage = null;
     // Sign-off
     ensure(110);
-    doc.moveDown(2).font('Helvetica').fontSize(10).fillColor(ink);
+    doc.moveDown(2).font('Body').fontSize(10).fillColor(ink);
     const sig = label => {
       const y = doc.y + 18;
       doc.moveTo(L, y).lineTo(L + 260, y).moveTo(L + 300, y).lineTo(L + W, y).lineWidth(0.7).strokeColor(ink).stroke();
@@ -362,11 +379,11 @@ function buildRecordPdf({ trainee, tracks, attempts }, { generatedBy, tz, fmtDat
     for (let i = range.start; i < range.start + range.count; i++) {
       doc.switchToPage(i);
       doc.page.margins.bottom = 0; // write in the margin without starting a new page
-      doc.font('Helvetica').fontSize(8).fillColor(muted)
+      doc.font('Body').fontSize(8).fillColor(muted)
         .text(`OSHA 52 training record · ${trainee.name} · Page ${i + 1} of ${range.count}`, L, doc.page.height - 40, { width: W, align: 'center', lineBreak: false });
     }
     doc.end();
   });
 }
 
-module.exports = { registerStaffReports };
+module.exports = { registerStaffReports, buildRecordPdf };

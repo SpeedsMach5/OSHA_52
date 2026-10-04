@@ -43,6 +43,20 @@ async function main() {
   await new Promise(r => server.once('listening', r));
   const base = `http://localhost:${PORT}`;
   console.log(`Dev API on ${base} (in-memory; data is lost on exit). Admin: ${ADMIN.ADMIN_EMAIL} / ${ADMIN.ADMIN_INITIAL_PASSWORD}`);
+  // Dev-only test hook on a separate port (never part of the app): moves a trainee's attempts back in time, so an
+  // end-to-end run can cover "a second fail on another day" without waiting a day. Used by web/scripts/e2e.mjs.
+  require('http').createServer((req, res) => {
+    let body = '';
+    req.on('data', c => { body += c; });
+    req.on('end', async () => {
+      try {
+        const { name, days } = JSON.parse(body || '{}');
+        const r = await db.query(`UPDATE attempts SET submitted_at = submitted_at - ($2 || ' days')::interval
+                                  WHERE trainee_id = (SELECT id FROM trainees WHERE name = $1)`, [name, String(days || 1)]);
+        res.end(JSON.stringify({ updated: r.affectedRows ?? r.rowCount ?? null }));
+      } catch (err) { res.statusCode = 500; res.end(String(err.message)); }
+    });
+  }).listen(PORT + 1, '127.0.0.1');
   if (process.argv.includes('--demo')) await seedDemo(base, db, content);
 }
 

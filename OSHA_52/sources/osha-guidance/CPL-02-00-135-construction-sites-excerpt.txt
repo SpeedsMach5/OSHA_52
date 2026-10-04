@@ -1,0 +1,33 @@
+Source: OSHA Directive CPL 02-00-135, Recordkeeping Policies and Procedures Manual (excerpt: establishments and construction work sites)
+URL: https://www.osha.gov/enforcement/directives/cpl-02-00-135
+Retrieved: 2026-10-04
+Note: OSHA enforcement guidance (interpretation), not regulation text. Excerpt only; see URL for the full directive.
+
+Definitions.
+Days Away, Restricted, or Transferred (DART) Rate: This includes cases involving days away from work, restricted work activity, and transfers to another job and is calculated based on (N/EH) x (200,000) where N is the number of cases involving days away and/or job transfer or restriction, EH is the total number of hours worked by all employees during the calendar year, and 200,000 is the base for 100 full-time equivalent employees. For example:
+Employees of an establishment (XYZ Company), including temporary and leased workers, worked 645,089 hours at XYZ company. There were 22 injury and illness cases involving days away and/or restricted work activity and/or job transfer from the OSHA 300 Log (total of column H plus column I). The DART rate would be (22/645,089) x (200,000) = 6.8.
+Note: The DART rate will replace the Lost Workday Injury and Illness (LWDII) rate. See Figure 2-8 at the end of this Chapter for an optional Incidence Rate Worksheet.
+Establishment: An establishment is a single physical location where business is conducted or where services or industrial operations are performed. For activities where employees do not work at a single physical location, such as construction; transportation; communications, electric, gas and sanitary services; and similar operations, the establishment is represented by main or branch offices, terminals, stations, etc. that either supervise such activities or are the base from which personnel carry out these activities.
+Normally, one business location has only one establishment. Under limited conditions, the employer may consider two or more separate businesses that share a single location to be separate establishments. An employer may divide one location into two or more establishments when:
+- Each of the establishments represents a distinctly separate business;
+- Each business is engaged in a different economic activity;
+- No one industry description in the Standard Industrial Classification Manual (1987) applies to the joint activities of the establishments; and
+- Separate reports are routinely prepared for each establishment on the number of employees, their wages and salaries, sales or receipts, and other business information.
+For example: If an employer operates a construction company at the same location as a lumber yard, the employer may consider each business to be a separate establishment.
+An establishment can include more than one physical location, but only under certain conditions. An employer may combine two or more physical locations into a single establishment only when:
+- The employer operates the locations as a single business operation under common management;
+- The locations are all located in close proximity to each other; and
+- The employer keeps one set of business records for the locations, such as records on the number of employees, their wages and salaries, sales or receipts, and other kinds of business information.
+For example: One manufacturing establishment might include the main plant, a warehouse a few blocks away, and an administrative services building across the street.
+For employees who telecommute from home, the employee's home is not a business establishment and a separate 300 Log is not required. Employees who telecommute shall be linked to one of the employer's establishments under §1904.30(b)(3).
+Construction work sites that are:
+Scheduled to continue for a year or more:
+A separate OSHA 300 Log must be maintained for each establishment.
+The log may be maintained either
+At the construction site, or
+At an established central location provided the employer can:
+-- Transmit information about the injuries and illnesses from the establishment to the central location within seven (7) calendar days of receiving information that a recordable injury or illness has occurred, and
+-- Produce and send records from the central location to the establishment within four business hours when the employer is required to provide to a government representative or by the end of the next business day when providing records to an employee, former employee or employee representative.
+Scheduled to continue for less than a year:
+A Separate OSHA 300 Log need not be maintained for each establishment.
+One OSHA 300 Log may be maintained to cover:

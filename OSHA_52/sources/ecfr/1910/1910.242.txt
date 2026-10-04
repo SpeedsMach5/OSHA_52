@@ -1,0 +1,10 @@
+Source: eCFR, 29 CFR 1910.242 (title 29 current as of 2026-09-30)
+API: https://www.ecfr.gov/api/versioner/v1/full/2026-09-30/title-29.xml?part=1910&section=1910.242
+Human-readable: https://www.ecfr.gov/current/title-29/section-1910.242
+Retrieved: 2026-10-04
+
+§ 1910.242 Hand and portable powered tools and equipment, general.
+
+(a) General requirements. Each employer shall be responsible for the safe condition of tools and equipment used by employees, including tools and equipment which may be furnished by employees.
+
+(b) Compressed air used for cleaning. Compressed air shall not be used for cleaning purposes except where reduced to less than 30 p.s.i. and then only with effective chip guarding and personal protective equipment.

@@ -6223,6 +6223,18 @@
         "correctAnswer": 3,
         "explanation": "Access to all available firefighting equipment must be maintained at all times (1926.150(a)(2)), and employer-provided firefighting equipment must be conspicuously located (1926.150(a)(3)). Job-site scenario: extinguishers are not blocked by material deliveries and are marked with signs.",
         "citation": "1926.150(a)(2)-(3)"
+      },
+      {
+        "question": "1926.35(c)(1) requires an employee alarm system complying with 1926.159, which Appendix A to Part 1926 designates as 1910.165. Under 1910.165(b)(2), how must the alarm perform?",
+        "options": [
+          "It only needs to be heard in the site office",
+          "It must be perceivable above ambient noise or light levels by all employees in the affected portions of the workplace (tactile devices may be used for employees who cannot recognize audible or visual alarms)",
+          "It must be a siren",
+          "It must be tested annually only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "The employer must establish an employee alarm system that complies with 1926.159 (1926.35(c)(1)). Appendix A to Part 1926 designates 1926.159 as 1910.165, Employee alarm systems. Under that section, the alarm must be perceivable above ambient noise or light levels by all employees in the affected portions of the workplace, and tactile devices may be used for those who cannot recognize an audible or visual alarm (1910.165(b)(2)). It must also be distinctive and recognizable as a signal to evacuate or act under the plan (1910.165(b)(3)). Job-site scenario: on a noisy demolition floor, strobe lights are added to the air-horn evacuation signal.",
+        "citation": "1926.35(c)(1) and 1910.165(b)(2) (via 1926 Appendix A)"
       }
     ]
   },
@@ -6552,11 +6564,11 @@
       "Inspecting flotation devices",
       "Ring buoys",
       "Lifesaving skiffs",
-      "When 1926.105 applies",
-      "Testing nets before work",
-      "Net extension and drop distance",
-      "Net mesh and strength",
-      "Net attachments"
+      "How far nets must extend",
+      "Drop-testing nets",
+      "Weekly net inspections",
+      "Clearing debris from nets",
+      "Net mesh size"
     ],
     "resources": [
       {
@@ -6566,10 +6578,10 @@
         "description": "Flotation, ring buoys, and skiffs"
       },
       {
-        "title": "Safety Nets (Tank and Tower Erection)",
-        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.105",
+        "title": "Safety Net Systems",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.502#p-1926.502(c)",
         "type": "standard",
-        "description": "Safety net requirements that apply to tank and communication/broadcast tower erection"
+        "description": "Safety net criteria and practices under Subpart M"
       },
       {
         "title": "eCFR: 29 CFR 1926.106",
@@ -6640,64 +6652,64 @@
         "citation": "1926.106(d)"
       },
       {
-        "question": "Under 1926.500(a)(2)(v), fall protection requirements for which work are provided in 1926.105?",
+        "question": "Under 1926.502(c)(2), when the net is more than 10 feet below the working level, how far must it extend outward from the outermost projection of the work surface?",
         "options": [
-          "All construction fall protection",
-          "Fall protection for employees erecting tanks and communication and broadcast towers",
-          "Only bridges",
-          "Only scaffolds"
-        ],
-        "correctAnswer": 1,
-        "explanation": "Fall protection for employees erecting tanks and communication and broadcast towers is provided in 1926.105 (1926.500(a)(2)(v)), and 1926.502 does not apply to that erection work (1926.500(a)(3)(iv)). For other work covered by Subpart M, safety nets follow 1926.502(c) (Week 11). Job-site scenario: a crew erecting a water tank follows 1926.105 for nets.",
-        "citation": "1926.500(a)(2)(v)"
-      },
-      {
-        "question": "Under 1926.105(b), when net protection is required for tank or tower erection, when may operations start?",
-        "options": [
-          "Immediately",
-          "After lunch",
-          "Only after the net is in place and has been tested",
-          "Once the net is ordered"
+          "8 feet",
+          "10 feet",
+          "13 feet",
+          "20 feet"
         ],
         "correctAnswer": 2,
-        "explanation": "Where safety net protection is required, operations may not begin until the net is in place and has been tested (1926.105(b)). Job-site scenario: the net under the tank shell is drop-tested before the ironworkers go up.",
-        "citation": "1926.105(b)"
+        "explanation": "Safety nets must extend outward from the outermost projection of the work surface at least 8 feet when the net is up to 5 feet below, 10 feet when more than 5 up to 10 feet below, and 13 feet when more than 10 feet below (1926.502(c)(2)). Job-site scenario: a net hung 15 feet below a bridge deck edge must reach at least 13 feet out.",
+        "citation": "1926.502(c)(2)"
       },
       {
-        "question": "Under 1926.105(c)(1), how must safety nets for tank and tower erection be hung?",
+        "question": "Under 1926.502(c)(4)(i), when must safety nets and their installations be drop-tested at the jobsite (unless the employer shows it is unreasonable and certifies the net instead)?",
         "options": [
-          "Anywhere below",
-          "Exactly 30 feet below",
-          "Only at ground level",
-          "Extending 8 feet beyond the edge of the work surface, as close under it as practical but never more than 25 feet below"
+          "Only once, at the factory",
+          "Monthly with a 200-pound weight",
+          "After initial installation and before use, whenever relocated, after major repair, and at 6-month intervals if left in one place, using a 400-pound bag of sand 30 ±2 inches in diameter",
+          "Never"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Nets and installations must be drop-tested at the jobsite after initial installation and before use, whenever relocated, after major repair, and at 6-month intervals if left in place. The test uses a 400-pound bag of sand 30 ±2 inches in diameter (1926.502(c)(4)(i)). If the employer can show the drop test is unreasonable, the employer or a designated competent person must prepare a certification record instead before the net is used (1926.502(c)(4)(ii)). Job-site scenario: the net is drop-tested again after it is moved to the next bay.",
+        "citation": "1926.502(c)(4)(i)"
+      },
+      {
+        "question": "Under 1926.502(c)(5), how often must safety nets be inspected?",
+        "options": [
+          "Monthly",
+          "Annually",
+          "Only after a fall",
+          "At least once a week for wear, damage, and deterioration, and after any occurrence that could affect the net's integrity"
         ],
         "correctAnswer": 3,
-        "explanation": "Nets must extend 8 feet beyond the edge of the work surface where employees are exposed and be installed as close under the work surface as practical, but never more than 25 feet below it, with enough clearance to prevent contact with surfaces below (1926.105(c)(1)). This differs from the general Subpart M limit of 30 feet in 1926.502(c)(1). Job-site scenario: the net is hung 15 feet below the tower work platform.",
-        "citation": "1926.105(c)(1)"
+        "explanation": "Safety nets must be inspected at least once a week for wear, damage, and other deterioration, and after any occurrence that could affect the integrity of the system. Defective nets may not be used, and defective components must be removed from service (1926.502(c)(5)). Job-site scenario: after a steel beam drops into the net, it is inspected before anyone works above it again.",
+        "citation": "1926.502(c)(5)"
       },
       {
-        "question": "Under 1926.105(d), what are the requirements for net mesh and edge ropes?",
+        "question": "Under 1926.502(c)(6), when must materials, scrap, equipment, and tools that fall into a safety net be removed?",
         "options": [
-          "Mesh no larger than 6 by 6 inches, new nets certified for 17,500 foot-pounds minimum impact resistance with a proof-test label, and edge ropes of at least 5,000 pounds breaking strength",
-          "Any mesh size",
-          "Mesh up to 12 inches",
-          "Edge ropes of 1,000 pounds"
+          "As soon as possible, and at least before the next work shift",
+          "At the end of the week",
+          "Only when the net is full",
+          "Only at project end"
         ],
         "correctAnswer": 0,
-        "explanation": "Net mesh may not exceed 6 by 6 inches. New nets must meet 17,500 foot-pounds minimum impact resistance, certified by the manufacturer, and bear a proof-test label. Edge ropes must have at least 5,000 pounds breaking strength (1926.105(d)). Job-site scenario: the net label is checked for the proof-test certification.",
-        "citation": "1926.105(d)"
+        "explanation": "Materials, scrap pieces, equipment, and tools that have fallen into the safety net must be removed as soon as possible, and at least before the next work shift (1926.502(c)(6)). Job-site scenario: bolts and offcuts are cleared from the net at the end of each day.",
+        "citation": "1926.502(c)(6)"
       },
       {
-        "question": "Under 1926.105(e), what must be used to fasten safety nets to their supports?",
+        "question": "Under 1926.502(c)(7), what is the maximum size of a safety net mesh opening?",
         "options": [
-          "Rope knots",
-          "Forged steel safety hooks or shackles",
-          "Zip ties",
-          "Wire twists"
+          "No more than 100 square inches",
+          "No more than 36 square inches, and no side or center-to-center measurement longer than 6 inches",
+          "Any size, if the border rope is strong",
+          "No more than 12 inches on a side"
         ],
         "correctAnswer": 1,
-        "explanation": "Forged steel safety hooks or shackles must be used to fasten the net to its supports (1926.105(e)). Connections between net panels must develop the full strength of the net (1926.105(f)). Job-site scenario: the rigger uses forged shackles at every support point.",
-        "citation": "1926.105(e)"
+        "explanation": "Each mesh opening may not exceed 36 square inches or be longer than 6 inches on any side, and the opening measured center-to-center of mesh ropes or webbing may not exceed 6 inches. All mesh crossings must be secured against enlargement (1926.502(c)(7)). Border ropes must have at least 5,000 pounds breaking strength (1926.502(c)(8)). Job-site scenario: a net with 8-inch mesh is rejected.",
+        "citation": "1926.502(c)(7)"
       }
     ]
   },
@@ -7524,10 +7536,10 @@
         "description": "Recording injuries to payroll, temporary, leased, and contractor employees"
       },
       {
-        "title": "OSHA Recordkeeping",
-        "url": "https://www.osha.gov/recordkeeping",
+        "title": "Recordkeeping Policies and Procedures Manual (CPL 02-00-135)",
+        "url": "https://www.osha.gov/enforcement/directives/cpl-02-00-135",
         "type": "guide",
-        "description": "OSHA recordkeeping forms and guidance"
+        "description": "OSHA directive with guidance on construction work sites as establishments"
       }
     ],
     "test": [
@@ -7544,7 +7556,7 @@
         "citation": "1904.46 (definitions)"
       },
       {
-        "question": "A general contractor treats its 18-month hospital project as its own establishment (OSHA treats a construction site expected to operate a year or more as an establishment). Under 1904.30(a), what is required?",
+        "question": "A general contractor treats its 18-month hospital project as its own establishment (OSHA's Recordkeeping Policies and Procedures Manual, CPL 02-00-135, treats construction work sites scheduled to continue a year or more as establishments). Under 1904.30(a), what is required?",
         "options": [
           "Nothing; use the home office log",
           "A separate OSHA 300 Log for that establishment, because it is expected to operate for one year or longer",
@@ -7552,8 +7564,8 @@
           "A log only for fatalities"
         ],
         "correctAnswer": 1,
-        "explanation": "A separate OSHA 300 Log must be kept for each establishment expected to be in operation for one year or longer (1904.30(a)). Treating a long-duration construction site as an establishment is OSHA's interpretation; the regulation text itself defines construction establishments by the supervising office (1904.46). Job-site scenario: the 18-month hospital job gets its own 300 Log.",
-        "citation": "1904.30(a)"
+        "explanation": "A separate OSHA 300 Log must be kept for each establishment expected to be in operation for one year or longer (1904.30(a)). The regulation text defines construction establishments by the supervising office (1904.46); treating a construction work site scheduled to continue a year or more as its own establishment with a separate log comes from OSHA's Recordkeeping Policies and Procedures Manual (CPL 02-00-135) and the February 28, 2014 interpretation letter on 1904.30 (continuous presence at a job site for a year or longer). This is OSHA interpretation, not rule text. Job-site scenario: the 18-month hospital job gets its own 300 Log.",
+        "citation": "1904.30(a) (with CPL 02-00-135)"
       },
       {
         "question": "A contractor runs many jobs lasting a few weeks each. How may their injuries be recorded under 1904.30(b)(1)?",
@@ -7580,7 +7592,7 @@
         "citation": "1904.30(b)(3)"
       },
       {
-        "question": "An employee based at the main office is hurt while working at the company's 2-year highway project, which the company keeps as a separate establishment. Under 1904.30(b)(4), where is the case recorded?",
+        "question": "An employee based at the main office is hurt while working at the company's 2-year highway project, which the company keeps as a separate establishment (per CPL 02-00-135, a construction site scheduled to continue a year or more). Under 1904.30(b)(4), where is the case recorded?",
         "options": [
           "On the 300 Log of the establishment where the injury occurred (the highway project)",
           "On the main office log",
@@ -7588,8 +7600,8 @@
           "Not recorded"
         ],
         "correctAnswer": 0,
-        "explanation": "If the injury occurs at one of the employer's establishments, it must be recorded on the 300 Log of the establishment where it occurred (1904.30(b)(4)). Job-site scenario: the visiting superintendent's sprain goes on the highway project's log.",
-        "citation": "1904.30(b)(4)"
+        "explanation": "If the injury occurs at one of the employer's establishments, it must be recorded on the 300 Log of the establishment where it occurred (1904.30(b)(4)). The premise that the project is an establishment comes from OSHA's Recordkeeping Policies and Procedures Manual (CPL 02-00-135), not the rule text. Job-site scenario: the visiting superintendent's sprain goes on the highway project's log.",
+        "citation": "1904.30(b)(4) (with CPL 02-00-135)"
       },
       {
         "question": "A contractor keeps all project logs at headquarters. What does 1904.30(b)(2)(i) require?",
@@ -7994,6 +8006,324 @@
         "correctAnswer": 3,
         "explanation": "First responders at the awareness level are individuals likely to witness or discover a hazardous substance release who have been trained to initiate an emergency response sequence by notifying the proper authorities (1926.65(q)(6)(i)). Job-site scenario: a laborer who smells gas from a struck line backs away and calls it in.",
         "citation": "1926.65(q)(6)(i)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 51,
+    "title": "Arc Welding and Cutting",
+    "duration": 45,
+    "topics": [
+      "Electrode holder design and insulation",
+      "Cable type and capacity",
+      "Connecting and splicing cables",
+      "Worn cables",
+      "Ground return cable capacity",
+      "Structures and pipelines as ground returns",
+      "Inspecting ground connections",
+      "Opening the power switch",
+      "Reporting defective equipment"
+    ],
+    "resources": [
+      {
+        "title": "Arc Welding and Cutting",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.351",
+        "type": "standard",
+        "description": "Electrode holders, cables, grounding, operating instructions, and shielding"
+      },
+      {
+        "title": "Ground Returns and Machine Grounding",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.351#p-1926.351(c)",
+        "type": "standard",
+        "description": "Ground return and grounding requirements"
+      },
+      {
+        "title": "Ventilation and Protection in Welding",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.353",
+        "type": "standard",
+        "description": "Ventilation and eye protection for welding, cutting, and heating"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.351(a)(1), what manual electrode holders may be used?",
+        "options": [
+          "Only holders specifically designed for arc welding and cutting, with capacity to safely handle the maximum rated current the electrodes require",
+          "Any clamp that grips the rod",
+          "Holders rated for half the current",
+          "Homemade holders if insulated with tape"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Only manual electrode holders specifically designed for arc welding and cutting, with capacity to safely handle the maximum rated current required by the electrodes, may be used (1926.351(a)(1)). Job-site scenario: a cheap holder that overheats at the amperage needed for 1/4-inch rod is replaced with a properly rated one.",
+        "citation": "1926.351(a)(1)"
+      },
+      {
+        "question": "Under 1926.351(a)(2), which parts of an electrode holder must be fully insulated?",
+        "options": [
+          "None",
+          "Current-carrying parts passing through the part the welder grips, and the outer surfaces of the jaws, insulated against the maximum voltage to ground",
+          "Only the cable",
+          "Only the jaw tips"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Any current-carrying parts passing through the portion of the holder the welder grips, and the outer surfaces of the jaws, must be fully insulated against the maximum voltage encountered to ground (1926.351(a)(2)). Job-site scenario: a holder with cracked jaw insulation is taken out of service.",
+        "citation": "1926.351(a)(2)"
+      },
+      {
+        "question": "What type of cable does 1926.351(b)(1) require for arc welding and cutting?",
+        "options": [
+          "Any extension cord",
+          "Bare copper cable",
+          "Completely insulated, flexible cable able to handle the maximum current of the work, considering the duty cycle",
+          "Solid wire"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All arc welding and cutting cables must be completely insulated, flexible, and able to handle the maximum current requirements of the work, taking the duty cycle into account (1926.351(b)(1)). Job-site scenario: heavier leads are used for long runs at high duty cycle on structural steel.",
+        "citation": "1926.351(b)(1)"
+      },
+      {
+        "question": "Under 1926.351(b)(3), how must lengths of welding cable be connected?",
+        "options": [
+          "Twisted together and taped",
+          "With hose clamps",
+          "Any method that conducts",
+          "With substantial insulated connectors of capacity at least equal to the cable; if lugs are used, they must be securely fastened with exposed metal completely insulated"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Cable lengths must be joined with substantial insulated connectors of capacity at least equal to the cable. If cable lugs are used, they must be securely fastened for good electrical contact and the exposed metal parts completely insulated (1926.351(b)(3)). Job-site scenario: the crew uses rated insulated cable connectors to extend the lead up the column.",
+        "citation": "1926.351(b)(3)"
+      },
+      {
+        "question": "A welding cable (not the electrode-holder lead) is worn so bare conductors are exposed. What does 1926.351(b)(4) require?",
+        "options": [
+          "The exposed portion must be protected with rubber and friction tape or equivalent insulation (cables in need of repair may not be used)",
+          "Keep using it as is",
+          "Wrap it in duct tape only",
+          "Throw it away at the end of the week"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cables in need of repair may not be used. When a cable, other than the electrode-holder lead covered by (b)(2), is worn so bare conductors are exposed, the exposed portion must be protected with rubber and friction tape or equivalent insulation (1926.351(b)(4)). Job-site scenario: a nicked section of the work lead is properly wrapped before use. Damage within 10 feet of the electrode-holder end is handled differently: that section may only have standard insulated connectors or splices of equal insulating quality, or it must be replaced (1926.351(b)(2)).",
+        "citation": "1926.351(b)(4)"
+      },
+      {
+        "question": "Under 1926.351(c)(1), what capacity must a ground return cable have when it serves more than one welding unit?",
+        "options": [
+          "The capacity of the smallest unit",
+          "At least the total specified maximum output capacities of all the units it serves",
+          "Half the total output",
+          "Any capacity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "A ground return cable must have a safe current-carrying capacity equal to or exceeding the maximum output of the unit it serves. When one ground return serves more than one unit, its capacity must equal or exceed the total maximum output of all the units (1926.351(c)(1)). Job-site scenario: a shared ground for three 300-amp machines must be rated for 900 amps.",
+        "citation": "1926.351(c)(1)"
+      },
+      {
+        "question": "When a structure or pipeline is used as a ground return circuit, what does 1926.351(c)(3) require?",
+        "options": [
+          "Nothing",
+          "Paint the joints",
+          "Confirm the required electrical contact exists at all joints; any arc, sparks, or heat at any point means the structure must be rejected as a ground circuit",
+          "Use it only at night"
+        ],
+        "correctAnswer": 2,
+        "explanation": "When a structure or pipeline is used as a ground return, it must be determined that the required electrical contact exists at all joints. Any arc, sparks, or heat at any point requires rejecting the structure as a ground circuit (1926.351(c)(3)). Pipelines carrying gases or flammable liquids may never be used (1926.351(c)(2)). Job-site scenario: sparking at a bolted splice means the welder runs a dedicated ground lead instead.",
+        "citation": "1926.351(c)(3)"
+      },
+      {
+        "question": "Under 1926.351(c)(4), what is required when a structure or pipeline is continuously used as a ground return circuit?",
+        "options": [
+          "Nothing extra",
+          "An annual paint job",
+          "A new ground every day",
+          "All joints must be bonded, and periodic inspections must ensure no electrolysis or fire hazard exists"
+        ],
+        "correctAnswer": 3,
+        "explanation": "When a structure or pipeline is continuously employed as a ground return, all joints must be bonded and periodic inspections conducted to ensure no electrolysis or fire hazard exists (1926.351(c)(4)). Ground connections must also be inspected to ensure they are mechanically strong and electrically adequate (1926.351(c)(6)). Job-site scenario: on a long shop-fabrication run using the steel frame as ground, bonding jumpers are installed at each joint.",
+        "citation": "1926.351(c)(4)"
+      },
+      {
+        "question": "Under 1926.351(d)(3), what must the welder do when leaving the work for an appreciable time, or when the machine is to be moved?",
+        "options": [
+          "Open the power supply switch to the equipment",
+          "Leave the machine running",
+          "Unplug only the ground",
+          "Nothing"
+        ],
+        "correctAnswer": 0,
+        "explanation": "When the arc welder or cutter leaves the work or stops for any appreciable length of time, or when the machine is to be moved, the power supply switch to the equipment must be opened (1926.351(d)(3)). Job-site scenario: before lunch and before dragging the machine to the next column, the welder kills the disconnect.",
+        "citation": "1926.351(d)(3)"
+      },
+      {
+        "question": "What does 1926.351(d)(4) require for faulty or defective arc welding equipment?",
+        "options": [
+          "Fix it yourself and keep working",
+          "It must be reported to the supervisor",
+          "Nothing until it fails",
+          "Return it to the manufacturer only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Employers must instruct employees that any faulty or defective equipment must be reported to the supervisor (1926.351(d)(4)). Job-site scenario: a welder notices the machine case is shocking and reports it before anyone else uses it.",
+        "citation": "1926.351(d)(4)"
+      }
+    ]
+  },
+  {
+    "standard": "29 CFR 1926",
+    "week": 52,
+    "title": "Lift-Slab and Precast Construction",
+    "duration": 45,
+    "topics": [
+      "Engineered lift-slab plans",
+      "Jack rated capacity and marking",
+      "Jacking equipment strength",
+      "Synchronized lifting and level tolerance",
+      "Manual control limits",
+      "Who may be in the building during jacking",
+      "Securing wedges and certified welding",
+      "Load transfer after welds cool",
+      "Bracing precast members"
+    ],
+    "resources": [
+      {
+        "title": "Lift-Slab Construction",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.705",
+        "type": "standard",
+        "description": "Requirements for lift-slab construction operations"
+      },
+      {
+        "title": "Precast Concrete",
+        "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.704",
+        "type": "standard",
+        "description": "Requirements for precast concrete"
+      },
+      {
+        "title": "eCFR: 29 CFR 1926.705",
+        "url": "https://www.ecfr.gov/current/title-29/section-1926.705",
+        "type": "standard",
+        "description": "Current official text, including the non-mandatory appendix"
+      }
+    ],
+    "test": [
+      {
+        "question": "Under 1926.705(a), who must design and plan lift-slab operations?",
+        "options": [
+          "The jacking foreman",
+          "Any engineer",
+          "A registered professional engineer experienced in lift-slab construction, with plans that include detailed erection instructions, sketches, and provisions for lateral stability",
+          "The concrete supplier"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lift-slab operations must be designed and planned by a registered professional engineer experienced in lift-slab construction. The plans must include detailed instructions and sketches of the erection method and provisions for lateral stability during construction, and the employer must implement them (1926.705(a)). Job-site scenario: the lift sequence follows the PE's stamped jacking plan.",
+        "citation": "1926.705(a)"
+      },
+      {
+        "question": "What does 1926.705(b)-(c) require for jacks and lifting units?",
+        "options": [
+          "Nothing if they are new",
+          "Only a daily visual check",
+          "Only paint-coded",
+          "They must be marked with the manufacturer's rated capacity and not loaded beyond it"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Jacks/lifting units must be marked with their rated capacity as established by the manufacturer (1926.705(b)) and may not be loaded beyond that capacity (1926.705(c)). They must also be designed so they will not lift, or continue to lift, when overloaded (1926.705(e)). Job-site scenario: the crew checks each jack plate against the calculated column load.",
+        "citation": "1926.705(b)-(c)"
+      },
+      {
+        "question": "Under 1926.705(d), what must jacking equipment be capable of supporting?",
+        "options": [
+          "At least two and one-half times the load being lifted during jacking operations",
+          "The load being lifted",
+          "Twice the load",
+          "Five times the load"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Jacking equipment, including any load-bearing component used in the lifting operation, must support at least two and one-half times the load being lifted and may not be overloaded (1926.705(d)). Job-site scenario: lifting rods and nuts are rated for 2.5 times the slab load at each column.",
+        "citation": "1926.705(d)"
+      },
+      {
+        "question": "Under 1926.705(g), how level must the slab be kept during lifting?",
+        "options": [
+          "Within 2 inches",
+          "All support points within 1/2 inch of that needed to keep the slab level, with jacking synchronized",
+          "Within 1 inch",
+          "Level does not matter"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Jacking operations must be synchronized for even, uniform lifting, and all support points must stay within 1/2 inch of that needed to keep the slab level (1926.705(g)). If leveling is automatic, a device must stop the operation when the 1/2-inch tolerance is exceeded or the system malfunctions (1926.705(h)). Job-site scenario: the control panel halts the lift when one corner drifts beyond tolerance.",
+        "citation": "1926.705(g)"
+      },
+      {
+        "question": "If leveling is maintained manually, what does 1926.705(i) require?",
+        "options": [
+          "Anyone may run the controls",
+          "Controls at each column",
+          "The controls must be in a central location and attended by a competent person experienced in the lifting operation and equipment while lifting is in progress",
+          "No attendant"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Manual leveling controls must be in a central location and attended by a competent person while lifting is in progress. Beyond the 1926.32(f) definition, that person must be experienced in the lifting operation and the equipment used (1926.705(i)). Job-site scenario: an experienced lift-slab foreman stays at the central console for the whole lift.",
+        "citation": "1926.705(i)"
+      },
+      {
+        "question": "Under 1926.705(j), what is the maximum number of manually controlled jacks/lifting units on one slab?",
+        "options": [
+          "8",
+          "10",
+          "14",
+          "20"
+        ],
+        "correctAnswer": 2,
+        "explanation": "The number of manually controlled jacks on one slab must allow the operator to keep the slab level within the (g) tolerance, and in no case may it exceed 14 (1926.705(j)). Job-site scenario: a slab needing 18 lift points uses automatic leveling instead of manual control.",
+        "citation": "1926.705(j)"
+      },
+      {
+        "question": "Under 1926.705(k)(2), who may be immediately beneath a slab while it is being lifted?",
+        "options": [
+          "No employee who is not essential to the jacking operation, under any circumstances",
+          "Anyone wearing a hard hat",
+          "Inspectors only",
+          "All trades, if the building is reinforced"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Under no circumstances may an employee who is not essential to the jacking operation be immediately beneath a slab while it is being lifted (1926.705(k)(2)). Nonessential employees may not be in the building during jacking unless it has been reinforced as defined in 1926.705(k)(1), which requires a determination by an independent registered professional engineer. Job-site scenario: the electricians wait outside until the slab is secured.",
+        "citation": "1926.705(k)(2)"
+      },
+      {
+        "question": "When making temporary connections to support slabs, what does 1926.705(l) require?",
+        "options": [
+          "Wedges may be loose",
+          "Wedges must be secured by tack welding or an equivalent method, and lifting rods may not be released until the wedges at that column are secured",
+          "Only one wedge per column",
+          "Release rods first, then secure wedges"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Wedges must be secured by tack welding or an equivalent method to keep them from falling out of position, and lifting rods may not be released until the wedges at that column have been secured (1926.705(l)). Job-site scenario: the welder tacks every wedge before the jack crew backs off the rods.",
+        "citation": "1926.705(l)"
+      },
+      {
+        "question": "Under 1926.705(m)-(n), what applies to welding on lift-slab connections?",
+        "options": [
+          "Any welder may weld; load can be transferred immediately",
+          "Only tack welds are needed",
+          "Welding on temporary and permanent connections must be done by a certified welder familiar with the plan's welding requirements, and load may not be transferred to the columns until the shear plate welds cool to air temperature",
+          "Welds are optional"
+        ],
+        "correctAnswer": 2,
+        "explanation": "All welding on temporary and permanent connections must be performed by a certified welder familiar with the welding requirements in the lift-slab plans and specifications (1926.705(m)). Load transfer from jacks to building columns may not occur until the welds on the column shear plates (weld blocks) have cooled to air temperature (1926.705(n)). Job-site scenario: the crew waits for the weld blocks to cool before releasing the jacks.",
+        "citation": "1926.705(m)-(n)"
+      },
+      {
+        "question": "Under 1926.704(a), how must precast concrete wall units, structural framing, and tilt-up panels be handled until permanent connections are completed?",
+        "options": [
+          "They may stand unbraced",
+          "Only braced overnight",
+          "Only braced in high wind",
+          "They must be adequately supported to prevent overturning and collapse"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Precast concrete wall units, structural framing, and tilt-up wall panels must be adequately supported to prevent overturning and collapse until permanent connections are completed (1926.704(a)). Lifting insert and hardware strength rules are covered in Week 24. Job-site scenario: tilt-up panels stay on pipe braces until the roof diaphragm is connected.",
+        "citation": "1926.704(a)"
       }
     ]
   }

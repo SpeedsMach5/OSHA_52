@@ -187,6 +187,7 @@ test('server-side grading: pass at 80%, fail below, every attempt kept', async (
   // Fail: missed questions get their citation; no correct option or explanation anywhere.
   assert.ok(fail.body.results.every(r => r.correctIndex === undefined && r.explanation === undefined));
   assert.ok(fail.body.results.every(r => (r.isCorrect ? r.citation === undefined : !!r.citation)));
+  assert.ok(fail.body.results.filter(r => r.isCorrect).every(r => r.options === undefined && r.selectedIndex === undefined), 'right answers on a fail are not shown (they would reveal the correct option)');
   assert.equal(fail.body.results.filter(r => !r.isCorrect).length, 3);
   assert.deepEqual(fail.body.results.map(r => r.question), f.test.questions.map(q => q.question), 'results in displayed order');
 

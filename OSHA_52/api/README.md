@@ -30,13 +30,14 @@ These settings are stored on the Railway service. Railway no longer accepts `rai
 
 ```
 npm install          # from OSHA_52/
-npm test             # 30 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
+npm run dev:api      # local API on :8787 with an in-memory Postgres and demo trainees (api/scripts/dev.js)
+npm test             # 32 end-to-end tests on an in-process Postgres (PGlite); no external DB needed
 ```
 
 ## Endpoints
 
 **Auth**
-- `POST /auth/trainee/register` `{name, pin}`: a first-time trainee chooses a 4-digit PIN.
+- `POST /auth/trainee/register` `{name, pin}`: a first-time trainee chooses a 4-digit PIN. The account is pending until a reviewer or admin approves it, and no token is issued. Login returns 403 `pending_approval`, "Your account is waiting for approval."
 - `POST /auth/trainee/login` `{name, pin}`. After a PIN reset this returns 409 `pin_reset_required`.
 - `POST /auth/trainee/reset-pin` `{name, code, pin}`: the 6-digit one-time code from a reviewer, plus the new PIN.
 - `POST /auth/staff/login` `{email, password}` returns `mustChangePassword`.
@@ -52,18 +53,20 @@ npm test             # 30 end-to-end tests on an in-process Postgres (PGlite); n
 - `GET /tracks/:track/weeks/:week`
 - `GET /tracks/:track/weeks/:week/test`: questions and options only, in a fresh random question and option order each time, plus `attemptToken`.
 
-**Retake rules**: one attempt per week per calendar day (`APP_TIMEZONE`). After a second fail on the same week, that week locks (423 `week_locked`, "Talk to your trainer") until a reviewer unlocks it. The daily limit returns 429 `daily_limit` with `availableAt`. Week progress includes `locked`, `availableAt`, and `totalFails`.
+**Retake rules**: a passed week stays passed, and later attempts are `practice`. Practice attempts don't count toward the lock and don't change pass status or best score; a pass resets the fail count. One attempt per week per calendar day (`APP_TIMEZONE`). After a second fail on the same week, that week locks (423 `week_locked`, "Talk to your trainer") until a reviewer unlocks it. The daily limit returns 429 `daily_limit` with `availableAt`. Week progress includes `locked`, `availableAt`, and `totalFails`.
 
 **Attempts** (trainee)
 - `POST /tracks/:track/weeks/:week/attempts` `{answers: [displayedOptionIndex, ...], attemptToken}`:
   - Graded on the server. Each served test can be submitted once.
   - Pass: every question shows the correct option, explanation and citation.
-  - Fail: shows which questions were missed and the citation for each, but not the correct option or explanation.
+  - Fail: questions answered correctly show only that they were right. Missed questions show the trainee's pick and the citation, never the correct option or explanation.
 - `GET /me/attempts` and `GET /me/attempts/:id`: the same pass/fail rule, in the order the trainee saw.
 
 **Staff** (reviewer, admin)
 - `GET /staff/trainees`
-- `GET /staff/trainees` includes `flagged` and `flaggedWeeks` (any week with 2+ fails).
+- `GET /staff/trainees` lists pending sign-ups first. It includes `approval`, plus `flagged` and `flaggedWeeks` (any unpassed week with 2+ fails).
+- `GET /staff/signups`: pending sign-ups, each with `similarTo` (existing trainees with similar names).
+- `POST /staff/trainees/:id/approve` and `/reject`. A rejected account can never log in, and its name is released.
 - `POST /staff/trainees/:id/unlock-week` `{track, week}`: unlocks a locked week. The fail count starts over, and one attempt is allowed today.
 - `POST /staff/trainees/:id/reset-pin`: returns a 6-digit `code`, valid for 24 hours and shown once, to give to the trainee in person.
 

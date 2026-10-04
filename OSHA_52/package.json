@@ -3,7 +3,8 @@
   "private": true,
   "description": "OSHA 52 training app (API now; web frontend added in Stage B)",
   "workspaces": [
-    "api"
+    "api",
+    "web"
   ],
   "engines": {
     "node": ">=20"
@@ -14,6 +15,9 @@
     "migrate": "npm run migrate -w api",
     "seed:admin": "npm run seed:admin -w api",
     "check:content": "node scripts/check-answer-length.js --quiet",
-    "build": "npm run check:content"
+    "build": "npm run check:content",
+    "dev:web": "npm run dev -w web",
+    "build:web": "npm run build -w web",
+    "dev:api": "npm run dev:demo -w api"
   }
 }

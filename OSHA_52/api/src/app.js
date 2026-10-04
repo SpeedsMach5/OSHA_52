@@ -274,10 +274,13 @@ function createApp({ cfg, db, content }) {
 
   // What a trainee sees per question after submitting. Pass: everything. Fail: which questions were
   // missed and the citation for each, but not the correct option or the explanation.
-  const visibleResult = (r, passed) => (passed ? r : {
-    index: r.index, question: r.question, options: r.options, selectedIndex: r.selectedIndex, isCorrect: r.isCorrect,
-    ...(r.isCorrect ? {} : { citation: r.citation }),
-  });
+  // On a fail, questions answered correctly show only that they were right (showing the picked option would
+  // reveal the correct one); missed questions show the trainee's wrong pick and the citation.
+  const visibleResult = (r, passed) => {
+    if (passed) return r;
+    if (r.isCorrect) return { index: r.index, question: r.question, isCorrect: true };
+    return { index: r.index, question: r.question, options: r.options, selectedIndex: r.selectedIndex, isCorrect: false, citation: r.citation };
+  };
 
   // Test questions WITHOUT correct answers, explanations, or citations, in a fresh random question and
   // option order every time. attemptToken carries that order (signed) and is required to submit, once.

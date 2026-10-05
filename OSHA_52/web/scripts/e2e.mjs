@@ -34,7 +34,9 @@ async function backdate(name) {
   if (process.env.E2E_BACKDATE === 'railway') {
     const js = `const {Client}=require('/app/node_modules/pg');(async()=>{const c=new Client({connectionString:process.env.DATABASE_URL});await c.connect();const r=await c.query("UPDATE attempts SET submitted_at=submitted_at-interval '1 day' WHERE trainee_id=(SELECT id FROM trainees WHERE name=$1)",[${JSON.stringify(name)}]);console.log('updated',r.rowCount);await c.end();})()`;
     const b64 = Buffer.from(js).toString('base64');
-    return execFileSync('railway', ['ssh', '-s', 'OSHA 52 API', '--', 'sh', '-c', `'echo ${b64} | base64 -d > /tmp/e2e-backdate.js && node /tmp/e2e-backdate.js'`], { cwd: resolve(here, '../..'), encoding: 'utf8', shell: true }).trim();
+    // Through bash so the remote command keeps its quoting (cmd.exe would mangle it on Windows).
+    const cmd = `railway ssh -s 'OSHA 52 API' -- sh -c "'echo ${b64} | base64 -d > /tmp/e2e-backdate.js && node /tmp/e2e-backdate.js'"`;
+    return execFileSync('bash', ['-c', cmd], { cwd: resolve(here, '../..'), encoding: 'utf8' }).trim().split(/\r?\n/).pop();
   }
   const r = await fetch('http://127.0.0.1:8788/', { method: 'POST', body: JSON.stringify({ name, days: 1 }) });
   return r.text();
